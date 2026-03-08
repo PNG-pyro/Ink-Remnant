@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="1_yl0ah"]
 [ext_resource type="Resource" uid="uid://b481l10tmoxct" path="res://Currencies/Crystal/Crystal.tres" id="2_cen1s"]
 [ext_resource type="Resource" uid="uid://diuwc33l8lqgb" path="res://Currencies/Scrolls/Scrolls.tres" id="3_o3508"]
-[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="5_s3noh"]
+[ext_resource type="Resource" uid="uid://blmi45f8gjetk" path="res://Currencies/Scrolls/Ticker/Auto_quill.tres" id="5_bd4gn"]
 
 [resource]
 script = ExtResource("1_yl0ah")
@@ -21,5 +21,5 @@ ExtResource("2_cen1s"): 1
 job_mask = Dictionary[ExtResource("1_tuihe"), int]({
 ExtResource("2_cen1s"): 1
 })
-upgrade_name = ExtResource("5_s3noh")
+upper_mask = Array[ExtResource("1_tuihe")]([ExtResource("5_bd4gn")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

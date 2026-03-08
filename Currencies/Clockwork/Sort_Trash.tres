@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_rdbpx"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="1_wskvc"]
 [ext_resource type="Resource" uid="uid://buakd3dxh85m5" path="res://Currencies/Clockwork/Clockwork.tres" id="2_io6do"]
+[ext_resource type="Resource" uid="uid://s7moftfa1cc4" path="res://Currencies/Clockwork/Tickers/Clockwork_Arm.tres" id="4_6g0sr"]
 
 [resource]
 script = ExtResource("1_wskvc")
@@ -13,4 +14,5 @@ job_duration = 2
 job_reward = Dictionary[ExtResource("1_rdbpx"), int]({
 ExtResource("2_io6do"): 3
 })
+upper_mask = Array[ExtResource("1_rdbpx")]([ExtResource("4_6g0sr")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

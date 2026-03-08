@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="1_7fto5"]
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_ow22n"]
 [ext_resource type="Resource" uid="uid://ev540b7kiffg" path="res://Currencies/Herbs/Herbs.tres" id="2_dg78w"]
+[ext_resource type="Resource" uid="uid://bu8yhdlg7r8i6" path="res://Currencies/Herbs/Tickers/PlanterBox.tres" id="4_aiub8"]
 
 [resource]
 script = ExtResource("1_7fto5")
@@ -13,4 +14,5 @@ job_duration = 4
 job_reward = Dictionary[ExtResource("1_ow22n"), int]({
 ExtResource("2_dg78w"): 2
 })
+upper_mask = Array[ExtResource("1_ow22n")]([ExtResource("4_aiub8")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

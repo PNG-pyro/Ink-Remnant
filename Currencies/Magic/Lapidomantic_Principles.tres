@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_pfsi6")
 name = "Rules of Lapidamancy"
-max_amount = 14
+max_amount = 21
 tick_types = null
 is_upgrade = true
 upgrade_target = Dictionary[ExtResource("1_pfsi6"), int]({

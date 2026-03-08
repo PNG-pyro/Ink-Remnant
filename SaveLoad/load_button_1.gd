@@ -1,4 +1,4 @@
 extends Button
 
 func _on_pressed() -> void:
-	SaveManager.save()	
+	SaveManager.load(SaveManager.save_name_1)

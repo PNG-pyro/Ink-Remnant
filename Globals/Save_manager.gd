@@ -1,19 +1,26 @@
 extends Node
 
+var save_name_1: String = "Slot 1"
+var save_name_2: String = "Slot 2"
+var save_name_3: String = "Autosave"
 
-func save():
+
+func save(savename: String):
 	var save_state: SaveState = SaveState.new()
 	save_state.ui_state = SceneManager.current_scene
 	
 	save_state.all_currencies = []
 	for currency in CurrencyManager.all_currencies:
 		save_state.all_currencies.append(currency.duplicate())
-	ResourceSaver.save(save_state, "user://save.tres")
+	ResourceSaver.save(save_state, "user://" + savename + ".tres")
 	
-func load():
-	if not ResourceLoader.exists("user://save.tres"):
+	if savename != save_name_3:
+		SignalHub.display.emit("Game saved: " + savename + "\n\n")
+	
+func load(savename: String):
+	if not ResourceLoader.exists("user://" + savename + ".tres"):
 		return
-	var save_state: SaveState = ResourceLoader.load("user://save.tres")
+	var save_state: SaveState = ResourceLoader.load("user://" + savename + ".tres")
 	
 	SceneManager.set_scene(save_state.ui_state as SceneManager.Scene)
 	
@@ -26,3 +33,5 @@ func load():
 	
 	for currency in CurrencyManager.all_currencies:
 		currency.get_max()
+		
+	SignalHub.display.emit("Game loaded: " + savename + "\n\n")

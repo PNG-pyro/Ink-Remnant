@@ -4,10 +4,11 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="1_crrgb"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="2_n8frf"]
 [ext_resource type="Resource" uid="uid://b481l10tmoxct" path="res://Currencies/Crystal/Crystal.tres" id="3_5fln2"]
+[ext_resource type="Resource" uid="uid://dlqqv0bkfrvug" path="res://Currencies/Magic/Gem_Seed.tres" id="5_0xf0q"]
 
 [resource]
 script = ExtResource("1_crrgb")
-job_name = "Buy a crystal on the street"
+job_name = "Buy a crystal"
 job_desc = "A child is hawking a semi-precious gem..."
 job_story = "The urchin is surprised, but surrenders the rock easily when you jingle some coin."
 job_duration = 1
@@ -20,4 +21,5 @@ ExtResource("2_n8frf"): 5
 job_mask = Dictionary[ExtResource("1_0biky"), int]({
 ExtResource("2_n8frf"): 5
 })
+upper_mask = Array[ExtResource("1_0biky")]([ExtResource("5_0xf0q")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

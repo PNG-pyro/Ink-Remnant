@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_jxf63")
-name = "Planter Box"
+name = "Window Box Garden"
 max_amount = 6
 is_ticker = true
 tick_types = Dictionary[Object, int]({

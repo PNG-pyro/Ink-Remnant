@@ -10,8 +10,11 @@
 [ext_resource type="Script" uid="uid://bsyeifs8bjboy" path="res://StartScreen/story_box.gd" id="7_xnqce"]
 [ext_resource type="Resource" uid="uid://cr35lb2c65e2t" path="res://Currencies/Houses/Buy_big_house.tres" id="8_ffxqw"]
 [ext_resource type="Resource" uid="uid://ptbubdulbbkv" path="res://Currencies/Houses/Acquire_hovel.tres" id="10_ly71l"]
-[ext_resource type="Script" uid="uid://bbetulrfv706p" path="res://SaveLoad/save_button.gd" id="11_f01go"]
-[ext_resource type="Script" uid="uid://briafwutsdv85" path="res://SaveLoad/load_button.gd" id="12_ly71l"]
+[ext_resource type="Script" uid="uid://3sfevxrkvyvi" path="res://StartScreen/save_button_2.gd" id="11_11t3j"]
+[ext_resource type="Script" uid="uid://bbetulrfv706p" path="res://SaveLoad/save_button_1.gd" id="11_f01go"]
+[ext_resource type="Script" uid="uid://briafwutsdv85" path="res://SaveLoad/load_button_1.gd" id="12_ly71l"]
+[ext_resource type="Script" uid="uid://ytoyuhgr1fcl" path="res://StartScreen/load_button_2.gd" id="13_7envs"]
+[ext_resource type="Script" uid="uid://dcqjqbyxbt48c" path="res://StartScreen/load_button_3.gd" id="14_7envs"]
 [ext_resource type="PackedScene" uid="uid://cxse6vagl4302" path="res://StoryPopup/story_popup.tscn" id="16_a6fgy"]
 [ext_resource type="Texture2D" uid="uid://em2o1giqs2ap" path="res://Borders/panel-border-028.png" id="16_ffxqw"]
 [ext_resource type="Script" uid="uid://yew3twuogt1b" path="res://StartScreen/Settings_button.gd" id="18_yp2c4"]
@@ -84,13 +87,14 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("8_ffxqw")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
-[node name="SaveTabFrame" type="NinePatchRect" parent="." unique_id=1012192946 groups=["SaveTabFrame"]]
+[node name="SaveTabFrame2" type="NinePatchRect" parent="." unique_id=1625848577 groups=["SaveTabFrame"]]
+visible = false
 anchors_preset = -1
 anchor_left = 0.43046874
-anchor_top = 0.6388889
+anchor_top = 0.68472224
 anchor_right = 0.85234374
 anchor_bottom = 0.98194444
-size_flags_horizontal = 3
+size_flags_horizontal = 0
 texture = ExtResource("4_8lyn0")
 patch_margin_left = 16
 patch_margin_top = 16
@@ -98,26 +102,59 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
-[node name="SaveButton" type="Button" parent="SaveTabFrame" unique_id=252257809]
+[node name="SaveButton1" type="Button" parent="SaveTabFrame2" unique_id=252257809]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.018518575
-anchor_top = 0.7165991
-anchor_right = 0.49259266
-anchor_bottom = 0.9504495
-text = "Save"
+anchor_left = 0.022222223
+anchor_top = 0.67289716
+anchor_right = 0.4925926
+anchor_bottom = 0.94859815
+text = "Save Slot 1"
 script = ExtResource("11_f01go")
 metadata/_edit_use_anchors_ = true
 
-[node name="LoadButton" type="Button" parent="SaveTabFrame" unique_id=2080955132]
+[node name="SaveButton2" type="Button" parent="SaveTabFrame2" unique_id=1075350053]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5055556
-anchor_top = 0.7165993
+anchor_left = 0.022222223
+anchor_top = 0.3457943
+anchor_right = 0.4925926
+anchor_bottom = 0.6448598
+text = "Save Slot 2"
+script = ExtResource("11_11t3j")
+metadata/_edit_use_anchors_ = true
+
+[node name="LoadButton1" type="Button" parent="SaveTabFrame2" unique_id=2080955132]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.50555557
+anchor_top = 0.67289716
 anchor_right = 0.97962964
-anchor_bottom = 0.94736856
-text = "Load"
+anchor_bottom = 0.94859815
+text = "Load Slot 1"
 script = ExtResource("12_ly71l")
+metadata/_edit_use_anchors_ = true
+
+[node name="LoadButton2" type="Button" parent="SaveTabFrame2" unique_id=801560958]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.50555557
+anchor_top = 0.3457943
+anchor_right = 0.97962964
+anchor_bottom = 0.6448598
+text = "Load Slot 2"
+script = ExtResource("13_7envs")
+metadata/_edit_use_anchors_ = true
+
+[node name="LoadButton3" type="Button" parent="SaveTabFrame2" unique_id=1484189838]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.50555557
+anchor_top = 0.05607463
+anchor_right = 0.97962964
+anchor_bottom = 0.31955403
+text = "Load Autosave"
+script = ExtResource("14_7envs")
 metadata/_edit_use_anchors_ = true
 
 [node name="StoryBoxFrame" type="NinePatchRect" parent="." unique_id=1487746963]
@@ -179,7 +216,6 @@ script = ExtResource("2_2fenb")
 metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackJobsFrame" type="NinePatchRect" parent="." unique_id=2035962465 groups=["ButtonFrames"]]
-visible = false
 anchors_preset = -1
 anchor_left = 0.21796875
 anchor_top = 0.3861111
@@ -207,7 +243,6 @@ metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackTradesFrame" type="NinePatchRect" parent="." unique_id=869406193 groups=["ButtonFrames"]]
-visible = false
 anchors_preset = -1
 anchor_left = 0.43046874
 anchor_top = 0.3861111
@@ -234,7 +269,6 @@ metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackUpgradesFrame" type="NinePatchRect" parent="." unique_id=1994909261 groups=["ButtonFrames"]]
-visible = false
 anchors_preset = -1
 anchor_left = 0.6460937
 anchor_top = 0.3861111
@@ -263,16 +297,13 @@ metadata/_edit_use_anchors_ = true
 
 [node name="SettingsButton" type="Button" parent="." unique_id=1193410101]
 anchors_preset = -1
-anchor_left = 10.790219
-anchor_top = 3.4660132
-anchor_right = 10.790219
-anchor_bottom = 3.4660132
-offset_left = -12701.48
-offset_top = -1834.5295
-offset_right = -12551.48
-offset_bottom = -1790.5295
+anchor_left = 0.8671875
+anchor_top = 0.91805553
+anchor_right = 0.984375
+anchor_bottom = 0.9791667
 text = "Settings"
 script = ExtResource("18_yp2c4")
+metadata/_edit_use_anchors_ = true
 
 [node name="CityButton" type="Button" parent="." unique_id=1065092866]
 anchors_preset = -1
@@ -285,7 +316,10 @@ script = ExtResource("19_4asdo")
 metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="HouseButton" to="HouseButton" method="_on_pressed"]
-[connection signal="pressed" from="SaveTabFrame/SaveButton" to="SaveTabFrame/SaveButton" method="_on_pressed"]
-[connection signal="pressed" from="SaveTabFrame/LoadButton" to="SaveTabFrame/LoadButton" method="_on_pressed"]
+[connection signal="pressed" from="SaveTabFrame2/SaveButton1" to="SaveTabFrame2/SaveButton1" method="_on_pressed"]
+[connection signal="pressed" from="SaveTabFrame2/SaveButton2" to="SaveTabFrame2/SaveButton2" method="_on_pressed"]
+[connection signal="pressed" from="SaveTabFrame2/LoadButton1" to="SaveTabFrame2/LoadButton1" method="_on_pressed"]
+[connection signal="pressed" from="SaveTabFrame2/LoadButton2" to="SaveTabFrame2/LoadButton2" method="_on_pressed"]
+[connection signal="pressed" from="SaveTabFrame2/LoadButton3" to="SaveTabFrame2/LoadButton3" method="_on_pressed"]
 [connection signal="pressed" from="SettingsButton" to="SettingsButton" method="_on_pressed"]
 [connection signal="pressed" from="CityButton" to="CityButton" method="_on_pressed"]

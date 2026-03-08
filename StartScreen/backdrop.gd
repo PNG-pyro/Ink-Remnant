@@ -21,6 +21,7 @@ func _ready():
 	starting_popup.popup_centered()
 	SignalHub.second_popup_open.connect(second_popup_open_recieved)
 	SignalHub.job_complete.connect(check_maxes)
+	SignalHub.job_complete.connect(autosave)
 
 
 func _process(delta: float) -> void:
@@ -28,7 +29,6 @@ func _process(delta: float) -> void:
 	if timer >= 1.0:
 		timer = 0.0
 		increment_currencies()
-		
 
 
 func increment_currencies():
@@ -52,3 +52,7 @@ func check_maxes(_a = null):
 	for currency in CurrencyManager.all_currencies:
 		if currency.has_been_seen:
 			currency.get_max()
+
+
+func autosave(_a = null):
+	SaveManager.save(SaveManager.save_name_3)
