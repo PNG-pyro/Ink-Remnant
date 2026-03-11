@@ -22,4 +22,5 @@ job_mask = Dictionary[ExtResource("1_0biky"), int]({
 ExtResource("2_n8frf"): 5
 })
 upper_mask = Array[ExtResource("1_0biky")]([ExtResource("5_0xf0q")])
+make_tooltip = false
 metadata/_custom_type_script = "uid://chnttjydh538r"

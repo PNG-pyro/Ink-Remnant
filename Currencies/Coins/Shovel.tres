@@ -15,4 +15,5 @@ job_reward = Dictionary[ExtResource("1_xvdgt"), int]({
 ExtResource("2_qr6d5"): 5
 })
 upper_mask = Array[ExtResource("1_xvdgt")]([ExtResource("4_vort3")])
+make_tooltip = false
 metadata/_custom_type_script = "uid://chnttjydh538r"

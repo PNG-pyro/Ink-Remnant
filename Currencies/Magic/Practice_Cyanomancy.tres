@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://lvuueud1i1yt"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_uc8lf"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_24e8r"]
+[ext_resource type="Resource" uid="uid://buakd3dxh85m5" path="res://Currencies/Clockwork/Clockwork.tres" id="2_bewnk"]
+[ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Rules_Of_Cyanomancy.tres" id="2_ykyui"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_bewnk"]
+
+[resource]
+script = ExtResource("2_24e8r")
+job_name = "Gather blue magic"
+job_desc = "You follow the breathing pattern carefully, carefully..."
+job_story = "Looking in the mirror on completion, your eyes burn blue for long moments. "
+job_duration = 2
+job_reward = Dictionary[ExtResource("1_uc8lf"), int]({
+ExtResource("3_bewnk"): 2
+})
+job_cost = Dictionary[ExtResource("1_uc8lf"), int]({
+ExtResource("2_bewnk"): 7
+})
+job_mask = Dictionary[ExtResource("1_uc8lf"), int]({
+ExtResource("2_ykyui"): 1
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

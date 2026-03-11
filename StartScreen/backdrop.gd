@@ -19,6 +19,7 @@ func _ready():
 	starting_popup.borderless = true
 	add_child(starting_popup)
 	starting_popup.popup_centered()
+	
 	SignalHub.second_popup_open.connect(second_popup_open_recieved)
 	SignalHub.job_complete.connect(check_maxes)
 	SignalHub.job_complete.connect(autosave)

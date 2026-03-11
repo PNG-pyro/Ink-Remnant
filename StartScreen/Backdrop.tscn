@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" uid="uid://b4gwyj4h5xuui" path="res://StartScreen/backdrop.gd" id="1_1vt0a"]
 [ext_resource type="Script" uid="uid://cq4t44bcucve" path="res://StartScreen/button_stack.gd" id="1_2fenb"]
+[ext_resource type="Theme" uid="uid://x4ycbmwsug2v" path="res://theme_day.tres" id="1_ptm2y"]
 [ext_resource type="Script" uid="uid://gciinqn85vni" path="res://StartScreen/currency_stack.gd" id="2_2fenb"]
 [ext_resource type="Texture2D" uid="uid://caqs4hxqhxc4u" path="res://Borders/panel-border-004.png" id="4_6dj8j"]
 [ext_resource type="Texture2D" uid="uid://ghf4w0mqty8t" path="res://Borders/panel-border-000.png" id="4_8lyn0"]
 [ext_resource type="Texture2D" uid="uid://bolh8b4tgcfqi" path="res://Borders/panel-border-006.png" id="6_iordt"]
-[ext_resource type="Theme" uid="uid://ccqkno7t5mybt" path="res://tween_theme.tres" id="7_qe2qs"]
+[ext_resource type="Theme" uid="uid://ccqkno7t5mybt" path="res://theme_night.tres" id="7_qe2qs"]
 [ext_resource type="Script" uid="uid://bsyeifs8bjboy" path="res://StartScreen/story_box.gd" id="7_xnqce"]
 [ext_resource type="Resource" uid="uid://cr35lb2c65e2t" path="res://Currencies/Houses/Buy_big_house.tres" id="8_ffxqw"]
 [ext_resource type="Resource" uid="uid://ptbubdulbbkv" path="res://Currencies/Houses/Acquire_hovel.tres" id="10_ly71l"]
@@ -17,13 +18,46 @@
 [ext_resource type="Script" uid="uid://dcqjqbyxbt48c" path="res://StartScreen/load_button_3.gd" id="14_7envs"]
 [ext_resource type="PackedScene" uid="uid://cxse6vagl4302" path="res://StoryPopup/story_popup.tscn" id="16_a6fgy"]
 [ext_resource type="Texture2D" uid="uid://em2o1giqs2ap" path="res://Borders/panel-border-028.png" id="16_ffxqw"]
+[ext_resource type="Shader" uid="uid://b7ojvexq3o8o8" path="res://StartScreen/Frames_Shader.tres" id="17_eo2o8"]
 [ext_resource type="Script" uid="uid://yew3twuogt1b" path="res://StartScreen/Settings_button.gd" id="18_yp2c4"]
 [ext_resource type="Script" uid="uid://b4r2u7m0gndal" path="res://StartScreen/city_button.gd" id="19_4asdo"]
 [ext_resource type="Script" uid="uid://ckrbnf8hb3cgl" path="res://StartScreen/house_button.gd" id="19_yp2c4"]
 [ext_resource type="Script" uid="uid://c554iuqrsupxi" path="res://StartScreen/house_tabs.gd" id="20_4asdo"]
 [ext_resource type="Script" uid="uid://ddubjwaefbdws" path="res://StartScreen/bar_button.gd" id="21_11t3j"]
+[ext_resource type="Shader" uid="uid://dslgj8u3kyl7y" path="res://StartScreen/Backdrop_Shader.tres" id="24_jd06h"]
 
-[node name="Backdrop" type="Node" unique_id=1736178503]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_plbck"]
+shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x5hg1"]
+shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eo2o8"]
+shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jd06h"]
+shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ptm2y"]
+shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ushch"]
+shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_do1qa"]
+shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sr1na"]
+shader = ExtResource("24_jd06h")
+
+[node name="Backdrop" type="Control" unique_id=1863823846]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ptm2y")
 script = ExtResource("1_1vt0a")
 
 [node name="StoryPopup" parent="." unique_id=329997860 instance=ExtResource("16_a6fgy")]
@@ -32,6 +66,7 @@ label_text = "You are a homeless waif alone in a magical city. The only place to
 button_text = "Search the city"
 
 [node name="HouseButton" type="Button" parent="." unique_id=333215365]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.8671875
 anchor_top = 0.47361112
@@ -44,6 +79,8 @@ metadata/_edit_use_anchors_ = true
 
 [node name="HouseTabFrame" type="NinePatchRect" parent="." unique_id=2079112509 groups=["HouseTabFrame"]]
 visible = false
+material = SubResource("ShaderMaterial_plbck")
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.21796875
 anchor_top = 0.3861111
@@ -89,6 +126,8 @@ metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
 [node name="SaveTabFrame2" type="NinePatchRect" parent="." unique_id=1625848577 groups=["SaveTabFrame"]]
 visible = false
+material = SubResource("ShaderMaterial_x5hg1")
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.43046874
 anchor_top = 0.68472224
@@ -158,6 +197,8 @@ script = ExtResource("14_7envs")
 metadata/_edit_use_anchors_ = true
 
 [node name="StoryBoxFrame" type="NinePatchRect" parent="." unique_id=1487746963]
+material = SubResource("ShaderMaterial_eo2o8")
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.21796875
 anchor_top = 0.019444445
@@ -187,6 +228,8 @@ script = ExtResource("7_xnqce")
 metadata/_edit_use_anchors_ = true
 
 [node name="CurrencyStackFrame" type="NinePatchRect" parent="." unique_id=1379427192]
+material = SubResource("ShaderMaterial_jd06h")
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.009375
 anchor_top = 0.019444445
@@ -216,6 +259,8 @@ script = ExtResource("2_2fenb")
 metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackJobsFrame" type="NinePatchRect" parent="." unique_id=2035962465 groups=["ButtonFrames"]]
+material = SubResource("ShaderMaterial_ptm2y")
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.21796875
 anchor_top = 0.3861111
@@ -235,14 +280,15 @@ anchors_preset = -1
 anchor_left = 0.039215688
 anchor_top = 0.025641061
 anchor_right = 0.95686275
-anchor_bottom = 0.99797106
+anchor_bottom = 0.9743589
 offset_bottom = 3.0517578e-05
 script = ExtResource("1_2fenb")
-my_theme = ExtResource("7_qe2qs")
 metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackTradesFrame" type="NinePatchRect" parent="." unique_id=869406193 groups=["ButtonFrames"]]
+material = SubResource("ShaderMaterial_ushch")
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.43046874
 anchor_top = 0.3861111
@@ -269,6 +315,8 @@ metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackUpgradesFrame" type="NinePatchRect" parent="." unique_id=1994909261 groups=["ButtonFrames"]]
+material = SubResource("ShaderMaterial_do1qa")
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.6460937
 anchor_top = 0.3861111
@@ -296,6 +344,7 @@ metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
 
 [node name="SettingsButton" type="Button" parent="." unique_id=1193410101]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.8671875
 anchor_top = 0.91805553
@@ -306,6 +355,7 @@ script = ExtResource("18_yp2c4")
 metadata/_edit_use_anchors_ = true
 
 [node name="CityButton" type="Button" parent="." unique_id=1065092866]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.8671875
 anchor_top = 0.3861111
@@ -314,6 +364,15 @@ anchor_bottom = 0.4486111
 text = "Work"
 script = ExtResource("19_4asdo")
 metadata/_edit_use_anchors_ = true
+
+[node name="Node2D" type="ColorRect" parent="." unique_id=800926911]
+z_index = -10
+y_sort_enabled = true
+material = SubResource("ShaderMaterial_sr1na")
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
 
 [connection signal="pressed" from="HouseButton" to="HouseButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame2/SaveButton1" to="SaveTabFrame2/SaveButton1" method="_on_pressed"]

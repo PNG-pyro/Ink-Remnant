@@ -12,6 +12,11 @@ func save(savename: String):
 	save_state.all_currencies = []
 	for currency in CurrencyManager.all_currencies:
 		save_state.all_currencies.append(currency.duplicate())
+	
+	save_state.all_jobs = []
+	for job in JobManager.all_jobs:
+		save_state.all_jobs.append(job.duplicate())
+	
 	ResourceSaver.save(save_state, "user://" + savename + ".tres")
 	
 	if savename != save_name_3:
@@ -30,6 +35,11 @@ func load(savename: String):
 				currency.amount = saved_currency.amount
 				currency.has_been_seen = saved_currency.has_been_seen
 				SignalHub.resource_updated.emit(currency, currency.amount)
+				
+	for saved_job in save_state.all_jobs:
+		for job in JobManager.all_jobs:
+			if saved_job.job_name == job.job_name:
+				job.shows_up = saved_job.shows_up
 	
 	for currency in CurrencyManager.all_currencies:
 		currency.get_max()

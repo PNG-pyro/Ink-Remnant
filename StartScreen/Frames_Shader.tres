@@ -1,0 +1,11 @@
+[gd_resource type="VisualShader" format=3 uid="uid://b7ojvexq3o8o8"]
+
+[sub_resource type="VisualShaderNodeColorConstant" id="VisualShaderNodeColorConstant_a0wme"]
+constant = Color(0, 0.08100012, 0.81, 1)
+
+[resource]
+mode = 1
+flags/light_only = false
+nodes/vertex/2/node = SubResource("VisualShaderNodeColorConstant_a0wme")
+nodes/vertex/2/position = Vector2(-120.31874, 120.51741)
+nodes/vertex/connections = PackedInt32Array(2, 0, 0, 2)

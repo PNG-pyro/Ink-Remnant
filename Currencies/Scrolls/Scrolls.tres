@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_u4st1")
-name = "scrolls"
+name = "Scrolls"
 max_amount = 20
+tick_types = null
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

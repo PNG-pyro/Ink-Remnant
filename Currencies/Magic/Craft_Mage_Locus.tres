@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cq4iutsnnrnag"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_li843"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_58c6v"]
+[ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Rules_Of_Cyanomancy.tres" id="2_rxyt5"]
+[ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Rules_of_Lapidamancy.tres" id="3_8hfi4"]
+[ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Rules_Of_Octomancy.tres" id="4_6137h"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="5_plwgl"]
+[ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Kingly_Blue.tres" id="6_wnqpu"]
+[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Magic_Crystal.tres" id="7_e30po"]
+[ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="8_wtqrm"]
+
+[resource]
+script = ExtResource("2_58c6v")
+job_name = "Craft a Mage Locus"
+job_desc = "An eight-sided blue diamond... not a thing lightly made."
+job_story = "The pinnacle of three magics, it pulses in your hand."
+job_duration = 15
+job_reward = Dictionary[ExtResource("1_li843"), int]({
+ExtResource("8_wtqrm"): 1
+})
+job_cost = Dictionary[ExtResource("1_li843"), int]({
+ExtResource("2_rxyt5"): 3,
+ExtResource("3_8hfi4"): 5,
+ExtResource("4_6137h"): 8,
+ExtResource("5_plwgl"): 117,
+ExtResource("6_wnqpu"): 3,
+ExtResource("7_e30po"): 8
+})
+job_mask = Dictionary[ExtResource("1_li843"), int]({
+ExtResource("4_6137h"): 1,
+ExtResource("2_rxyt5"): 1,
+ExtResource("3_8hfi4"): 1
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

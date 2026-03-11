@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_kv3jk")
-name = "crystal"
+name = "Crystal"
 max_amount = 18
+tick_types = null
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

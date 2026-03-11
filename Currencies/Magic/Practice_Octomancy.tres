@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Job" format=3 uid="uid://1b40s1i23jjg"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_bv0w8"]
-[ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Octomantic_Principles.tres" id="2_cwpus"]
+[ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Rules_Of_Octomancy.tres" id="2_cwpus"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_jfg4n"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_6vitu"]
 

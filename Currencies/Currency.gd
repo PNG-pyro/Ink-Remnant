@@ -11,6 +11,7 @@ class_name Currency
 @export var makes_label: bool = true
 @export var has_been_seen: bool = false
 @export var upgrade_target: Dictionary[Currency,int]
+#@export var make_tooltip: bool = true
 
 var base: int 
 

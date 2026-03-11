@@ -6,10 +6,9 @@ extends Node
 #@onready var floorspace: Currency = load("res://Currencies/Houses/Floor_Space.tres")
 
 @onready var all_currencies: Array[Currency] = [
-	load("res://Currencies/Books/Books.tres"),
 	load("res://Currencies/Books/Upgrades/Bookshelf.tres"),
-	load("res://Currencies/Clockwork/Clockwork.tres"),
 	load("res://Currencies/Coins/Coins.tres"),
+	load("res://Currencies/Clockwork/Clockwork.tres"),
 	load("res://Currencies/Crystal/Crystal.tres"),
 	load("res://Currencies/Herbs/Herbs.tres"),
 	load("res://Currencies/Scrolls/Scrolls.tres"),
@@ -27,14 +26,18 @@ extends Node
 	load("res://Currencies/Houses/Big_house.tres"),
 	load("res://Currencies/Houses/Floor_Space.tres"),
 	load("res://Currencies/Research/Research.tres"),
+	load("res://Currencies/Books/Books.tres"),
 	load("res://Currencies/Research/Star_Chart.tres"),
 	load("res://Currencies/Magic/Magic_Crystal.tres"),
 	load("res://Currencies/Magic/Gem_Seed.tres"),
 	load("res://Currencies/Telescope/Telescope.tres"),
 	load("res://Currencies/Magic/Magic.tres"),
-	load("res://Currencies/Magic/Lapidomantic_Principles.tres"),
-	load("res://Currencies/Magic/Octomantic_Principles.tres"),
+	load("res://Currencies/Magic/Rules_of_Lapidamancy.tres"),
+	load("res://Currencies/Magic/Rules_Of_Octomancy.tres"),
+	load("res://Currencies/Magic/Rules_Of_Cyanomancy.tres"),
+	load("res://Currencies/Magic/Kingly_Blue.tres"),
 	load("res://Currencies/Magic/Octagon.tres"),
+	load("res://Currencies/Magic/Mage_Locus.tres")
 ]
 
 #func _process(_delta: float) -> void:

@@ -1,7 +1,7 @@
 extends VBoxContainer
 class_name ButtonStack
 
-@export var my_theme: Theme = load("res://tween_theme.tres")
+#@export var my_theme: Theme = load("res://tween_theme.tres")
 
 
 func _ready():
@@ -18,7 +18,7 @@ func populate(job_batch: Array[Job]):
 		new_button.set_job(job)
 		new_button.add_to_group("BarButtons")
 		new_button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		new_button.theme = my_theme
+		#new_button.theme = my_theme
 		add_child(new_button)
 
 

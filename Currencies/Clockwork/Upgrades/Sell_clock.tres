@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_00i4w"]
 [ext_resource type="Resource" uid="uid://eynuhxro6yab" path="res://Currencies/Houses/Floor_Space.tres" id="3_8a2kr"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="4_8a2kr"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="4_crr52"]
 
 [resource]
 script = ExtResource("2_00i4w")
@@ -20,6 +21,7 @@ ExtResource("2_0bfey"): 1,
 ExtResource("3_8a2kr"): 1
 })
 job_mask = Dictionary[ExtResource("1_lwweo"), int]({
-ExtResource("2_0bfey"): 1
+ExtResource("2_0bfey"): 1,
+ExtResource("4_crr52"): 999
 })
 metadata/_custom_type_script = "uid://chnttjydh538r"

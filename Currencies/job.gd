@@ -12,6 +12,7 @@ class_name Job
 #@export var is_upgrade: bool = false
 #@export var upgrade_name: Currency = CurrencyManager.default_curency
 @export var shows_up: bool = false
+@export var make_tooltip: bool = true
 
 
 func pay_reward():

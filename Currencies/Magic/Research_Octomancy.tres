@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_8vmjt"]
 [ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_iv7ks"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_p0m7p"]
-[ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Octomantic_Principles.tres" id="3_uthvu"]
+[ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Rules_Of_Octomancy.tres" id="3_uthvu"]
 
 [resource]
 script = ExtResource("2_p0m7p")

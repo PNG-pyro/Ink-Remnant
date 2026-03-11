@@ -1,6 +1,6 @@
 extends VBoxContainer
 
-var my_theme: Theme = load("res://tween_theme.tres")
+#var my_theme: Theme = load("res://tween_theme.tres")
 var visible_labels: Array[CurrencyLabel] = []
 
 

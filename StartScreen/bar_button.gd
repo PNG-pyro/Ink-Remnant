@@ -103,14 +103,18 @@ func check_visible(_resource, _amount):
 
 
 func update_tooltip():
-	var line: String = "Required:"
+	var line: String = "Required:\n"
 	for price in job_run.job_cost:
-		line += " " + str(job_run.job_cost[price]) + " " + price.name + ","
-	for price in job_run.upper_mask:
-		line += "\n" + "Max: " + str(price.amount) + "/" + str(price.max_amount)
-	#for price in job_run.job_reward:
-		#if price.name == "Floor Space":
-			#line += "\n" + "Floor Space: " + str(job_run.job_reward[price]) # + "/" + str(price.max_amount)
+		if price.is_affordable(job_run.job_cost[price]):
+			line += " [color=pale_green]" + str(job_run.job_cost[price]) + " " + price.name + ",[/color]\n"
+		else: 
+			line += " [color=tomato]" + str(job_run.job_cost[price]) + " " + price.name + ",[/color]\n"
+	if job_run.make_tooltip == true:
+		for price in job_run.upper_mask:
+			line += "Max: " + str(price.amount) + "/" + str(price.max_amount)
+	for price in job_run.job_reward:
+		if price.name == "Floor Space":
+			line += "\n" + "Floor Space: " + str(job_run.job_reward[price]) # + "/" + str(price.max_amount)
 	tooltip_text = line
 	
 func disable_others(button: BarButton):
@@ -119,3 +123,13 @@ func disable_others(button: BarButton):
 
 func enable_self():
 	disabled = false
+
+func _make_custom_tooltip(for_text):
+	var label = RichTextLabel.new()
+	label.bbcode_enabled = true
+	label.fit_content = true
+	label.text = for_text
+	label.fit_content = true
+	label.autowrap_mode = TextServer.AUTOWRAP_OFF
+	label.fit_content = true
+	return label

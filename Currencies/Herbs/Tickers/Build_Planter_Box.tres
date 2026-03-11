@@ -23,6 +23,4 @@ job_mask = Dictionary[ExtResource("1_an7ms"), int]({
 ExtResource("2_fu4o1"): 2
 })
 upper_mask = Array[ExtResource("1_an7ms")]([ExtResource("4_lyiy1")])
-is_upgrade = true
-upgrade_name = ExtResource("4_lyiy1")
 metadata/_custom_type_script = "uid://chnttjydh538r"

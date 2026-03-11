@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_1byq6"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_i44vy"]
 [ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_tth0q"]
-[ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Lapidomantic_Principles.tres" id="3_ahrsa"]
+[ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Rules_of_Lapidamancy.tres" id="3_ahrsa"]
 
 [resource]
 script = ExtResource("2_i44vy")
