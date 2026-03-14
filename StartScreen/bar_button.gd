@@ -56,8 +56,8 @@ func _ready():
 	icon_label.fit_content = true
 	visual_state |= VisualState.AFFORDABLE
 	update_visuals()
-	icon_label.position = Vector2(10, 5)
-	#icon_label.position.y = (size.y - icon_label.size.y) / 2
+	icon_label.position = Vector2(10, 6)
+	#icon_label.position.y = (size.y) / 2
 	add_child(icon_label)
 	
 	pressed.connect(_on_pressed)
@@ -68,10 +68,11 @@ func _ready():
 	mouse_exited.connect(on_mouse_exit)
 	SignalHub.resource_updated.connect(func(_a, _b):check_affordable())
 	SignalHub.job_begun.connect(update_visuals)
-
-	update_visuals()
-	check_affordable()
 	
+	check_affordable()
+	update_visuals()
+
+
 func _on_pressed():
 	match current_state:
 		State.IDLE:
@@ -102,10 +103,10 @@ func update_visuals():
 		border.hide()
 	
 	if visual_state & VisualState.AFFORDABLE:
-		icon_label.text = "✓"
+		icon_label.text = "o"
 		icon_label.modulate = Color.GREEN
 	elif visual_state & VisualState.UNAFFORDABLE:
-		icon_label.text = "✗"
+		icon_label.text = "×"
 		icon_label.modulate = Color.RED
 
 

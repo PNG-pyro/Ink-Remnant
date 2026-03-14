@@ -19,6 +19,7 @@ func _ready():
 	starting_popup.label_text = "You're a homeless waif in a magical city. The only way to go from here is up!"
 	starting_popup.button_text = "Search the city"
 	starting_popup.borderless = true
+	
 	add_child(starting_popup)
 	starting_popup.popup_centered()
 	

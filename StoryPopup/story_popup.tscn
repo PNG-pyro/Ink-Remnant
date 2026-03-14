@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cxse6vagl4302"]
 
+[ext_resource type="Theme" uid="uid://ccqkno7t5mybt" path="res://theme_dark.tres" id="1_myvlp"]
 [ext_resource type="Script" uid="uid://bgumw0rw1fi0l" path="res://StoryPopup/button.gd" id="1_v7gsd"]
 [ext_resource type="Script" uid="uid://b3y0vye5gke62" path="res://StoryPopup/story_popup.gd" id="1_xtf0v"]
 
@@ -7,6 +8,7 @@
 oversampling_override = 1.0
 position = Vector2i(0, 36)
 size = Vector2i(500, 300)
+theme = ExtResource("1_myvlp")
 script = ExtResource("1_xtf0v")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=413083036]

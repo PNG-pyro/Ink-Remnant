@@ -115,7 +115,7 @@ size_flags_horizontal = 3
 script = ExtResource("20_4asdo")
 
 [node name="Button" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=21447503 groups=["BarButtons"]]
-custom_minimum_size = Vector2(150, 0)
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 theme = ExtResource("7_qe2qs")
 toggle_mode = true
@@ -126,6 +126,7 @@ metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
 [node name="Button2" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=927397340 groups=["BarButtons"]]
 layout_mode = 2
+size_flags_vertical = 0
 theme = ExtResource("7_qe2qs")
 toggle_mode = true
 text = "Testbutton"
