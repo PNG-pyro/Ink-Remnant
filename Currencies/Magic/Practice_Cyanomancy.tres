@@ -5,6 +5,7 @@
 [ext_resource type="Resource" uid="uid://buakd3dxh85m5" path="res://Currencies/Clockwork/Clockwork.tres" id="2_bewnk"]
 [ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Rules_Of_Cyanomancy.tres" id="2_ykyui"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_bewnk"]
+[ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="6_co8aa"]
 
 [resource]
 script = ExtResource("2_24e8r")
@@ -21,4 +22,5 @@ ExtResource("2_bewnk"): 7
 job_mask = Dictionary[ExtResource("1_uc8lf"), int]({
 ExtResource("2_ykyui"): 1
 })
+upper_mask = Array[ExtResource("1_uc8lf")]([ExtResource("6_co8aa")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -4,10 +4,11 @@
 [ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Rules_Of_Octomancy.tres" id="2_cwpus"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_jfg4n"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_6vitu"]
+[ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="5_cwpus"]
 
 [resource]
 script = ExtResource("4_6vitu")
-job_name = "Gather octagonal magic"
+job_name = "     Gather octagonal magic"
 job_desc = "Octomancy isn't exactly hard, per se. But it is complicated."
 job_story = "You feel your mystical reserves replenish. It's painstaking but steady growth."
 job_duration = 3
@@ -17,4 +18,5 @@ ExtResource("3_jfg4n"): 8
 job_mask = Dictionary[ExtResource("1_bv0w8"), int]({
 ExtResource("2_cwpus"): 1
 })
+upper_mask = Array[ExtResource("1_bv0w8")]([ExtResource("5_cwpus")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -7,7 +7,7 @@
 
 [resource]
 script = ExtResource("4_8ou72")
-job_name = "Combine scrolls into a book"
+job_name = "    Combine scrolls into a book"
 job_desc = "There's something similar here..."
 job_story = "You collect three similar sheaves into a folio. A preface and a binding... there!"
 job_duration = 1

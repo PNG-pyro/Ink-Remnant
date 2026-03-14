@@ -1,10 +1,5 @@
 [gd_resource type="Theme" format=3 uid="uid://x4ycbmwsug2v"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfa6t"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drs5g"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_focus_color = Color(0, 0, 0, 1)
@@ -18,8 +13,6 @@ Button/colors/icon_hover_color = Color(1, 1, 1, 0)
 Button/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 Button/colors/icon_normal_color = Color(1, 1, 1, 0)
 Button/colors/icon_pressed_color = Color(0, 0, 0, 1)
-Button/styles/hover = SubResource("StyleBoxFlat_tfa6t")
-Button/styles/normal = SubResource("StyleBoxFlat_drs5g")
 Label/colors/font_color = Color(0, 0, 0, 1)
 Label/colors/font_outline_color = Color(1, 1, 1, 1)
 RichTextLabel/colors/default_color = Color(0, 0, 0, 1)

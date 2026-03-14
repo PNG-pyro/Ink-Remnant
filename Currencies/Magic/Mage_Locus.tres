@@ -1,10 +1,14 @@
 [gd_resource type="Resource" script_class="Currency" format=3 uid="uid://c26syl0sp43iv"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_ykca7"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="2_erhj8"]
 
 [resource]
 script = ExtResource("1_ykca7")
 name = "Mage Locus"
 max_amount = 1
-tick_types = null
+is_ticker = true
+tick_types = Dictionary[Object, int]({
+ExtResource("2_erhj8"): 1
+})
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

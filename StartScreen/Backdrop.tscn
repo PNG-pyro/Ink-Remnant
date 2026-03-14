@@ -105,8 +105,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 11.0
-offset_top = 11.0
+offset_left = 10.0
+offset_top = 12.0
 offset_right = -11.0
 offset_bottom = -11.0
 grow_horizontal = 2
@@ -114,17 +114,20 @@ grow_vertical = 2
 size_flags_horizontal = 3
 script = ExtResource("20_4asdo")
 
-[node name="Button" type="CheckButton" parent="HouseTabFrame/HouseTabs" unique_id=357930282 groups=["BarButtons"]]
+[node name="Button" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=21447503 groups=["BarButtons"]]
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 theme = ExtResource("7_qe2qs")
+toggle_mode = true
 text = "Testbutton"
 script = ExtResource("21_11t3j")
 job_run = ExtResource("10_ly71l")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
-[node name="Button2" type="CheckButton" parent="HouseTabFrame/HouseTabs" unique_id=1489040599 groups=["BarButtons"]]
+[node name="Button2" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=927397340 groups=["BarButtons"]]
 layout_mode = 2
 theme = ExtResource("7_qe2qs")
+toggle_mode = true
 text = "Testbutton"
 script = ExtResource("21_11t3j")
 job_run = ExtResource("8_ffxqw")

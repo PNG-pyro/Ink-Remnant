@@ -16,6 +16,7 @@ func setup_floorspace():
 		var upgrade_label = CurrencyLabel.new()
 		upgrade_label.text_set(currency)
 		upgrade_label.visible = currency.update_seen()
+		upgrade_label.custom_minimum_size = Vector2(300, 0)
 		visible_labels.append(upgrade_label)
 		add_child(upgrade_label)
 
@@ -34,6 +35,3 @@ func re_update(res_type: Currency, new_amount: int):
 			continue
 		label.visible = res_type.update_seen()
 		label.update(res_type, new_amount)
-
-#func set_vis(toggle: bool):
-	#self.visible = not toggle

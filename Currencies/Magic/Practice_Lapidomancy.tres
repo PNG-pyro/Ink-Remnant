@@ -5,10 +5,11 @@
 [ext_resource type="Resource" uid="uid://b481l10tmoxct" path="res://Currencies/Crystal/Crystal.tres" id="2_vonv7"]
 [ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Rules_of_Lapidamancy.tres" id="3_50oar"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="4_nh56p"]
+[ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="6_50oar"]
 
 [resource]
 script = ExtResource("2_50qla")
-job_name = "Gather gemcutting magic"
+job_name = "     Gather gemcutting magic"
 job_desc = "Lapidomancy is finnicky, painstaking work."
 job_story = "When you're done, you're tired and frustrated. But you feel slightly more powerful. "
 job_duration = 2
@@ -21,4 +22,5 @@ ExtResource("2_vonv7"): 3
 job_mask = Dictionary[ExtResource("1_y0csl"), int]({
 ExtResource("3_50oar"): 1
 })
+upper_mask = Array[ExtResource("1_y0csl")]([ExtResource("6_50oar")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

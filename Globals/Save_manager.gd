@@ -4,9 +4,6 @@ var save_name_1: String = "Slot 1"
 var save_name_2: String = "Slot 2"
 var save_name_3: String = "Autosave"
 
-@onready var volume_slider: = %VolumeSlider
-
-
 func save(savename: String):
 	var save_state: SaveState = SaveState.new()
 	save_state.ui_state = SceneManager.current_scene
