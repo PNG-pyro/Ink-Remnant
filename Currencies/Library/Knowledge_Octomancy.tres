@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://c1uth0w20e75b"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_6tt3x"]
+
+[resource]
+script = ExtResource("1_6tt3x")
+name = "Knowledge: Octomancy"
+max_amount = 999
+tick_types = null
+makes_label = false
+is_hidden = true
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

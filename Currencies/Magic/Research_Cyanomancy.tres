@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_a53mg"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_l11g5"]
 [ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Rules_Of_Cyanomancy.tres" id="3_1c3kb"]
+[ext_resource type="Resource" uid="uid://dq5dcilkobnc1" path="res://Currencies/Library/Knowledge_Cyanomancy.tres" id="3_lxdhp"]
 
 [resource]
 script = ExtResource("2_l11g5")
@@ -18,7 +19,9 @@ job_cost = Dictionary[ExtResource("1_e0d4a"), int]({
 ExtResource("2_a53mg"): 14
 })
 job_mask = Dictionary[ExtResource("1_e0d4a"), int]({
-ExtResource("2_a53mg"): 14
+ExtResource("2_a53mg"): 10,
+ExtResource("3_lxdhp"): 1
 })
 upper_mask = Array[ExtResource("1_e0d4a")]([ExtResource("3_1c3kb")])
+button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

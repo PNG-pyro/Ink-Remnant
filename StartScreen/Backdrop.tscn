@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://c5k5dxieu4r5w" path="res://Borders/Currencies_Border.png" id="19_ptm2y"]
 [ext_resource type="Script" uid="uid://ckrbnf8hb3cgl" path="res://StartScreen/house_button.gd" id="19_yp2c4"]
 [ext_resource type="Script" uid="uid://c554iuqrsupxi" path="res://StartScreen/house_tabs.gd" id="20_4asdo"]
+[ext_resource type="Resource" uid="uid://ce4igy77lu60x" path="res://Currencies/Library/Offer_Kingly_Blue.tres" id="20_i21m4"]
 [ext_resource type="Script" uid="uid://ddubjwaefbdws" path="res://StartScreen/bar_button.gd" id="21_11t3j"]
 [ext_resource type="Shader" uid="uid://dslgj8u3kyl7y" path="res://StartScreen/Backdrop_Shader.tres" id="24_jd06h"]
 [ext_resource type="Script" uid="uid://w7se8q4yrmtb" path="res://StartScreen/mute_button.gd" id="28_plbck"]
@@ -232,6 +233,13 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("19_ghnkm")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
+[node name="OfferKingBlue" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=841836538 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("20_i21m4")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
 [node name="SaveTabFrame" type="NinePatchRect" parent="." unique_id=1625848577 groups=["SaveTabFrame"]]
 visible = false
 material = SubResource("ShaderMaterial_x5hg1")
@@ -374,6 +382,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="CurrencyStackFrame" type="NinePatchRect" parent="." unique_id=1379427192]
 material = SubResource("ShaderMaterial_jd06h")
+clip_contents = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.009375
@@ -405,6 +414,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackJobsFrame" type="NinePatchRect" parent="." unique_id=2035962465 groups=["ButtonFrames"]]
 material = SubResource("ShaderMaterial_ptm2y")
+clip_contents = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.21796875
@@ -433,6 +443,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackTradesFrame" type="NinePatchRect" parent="." unique_id=869406193 groups=["ButtonFrames"]]
 material = SubResource("ShaderMaterial_ushch")
+clip_contents = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.43046874
@@ -461,6 +472,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="ButtonStackUpgradesFrame" type="NinePatchRect" parent="." unique_id=1994909261 groups=["ButtonFrames"]]
 material = SubResource("ShaderMaterial_do1qa")
+clip_contents = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.6460937

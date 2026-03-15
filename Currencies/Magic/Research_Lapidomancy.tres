@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_i44vy"]
 [ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_tth0q"]
 [ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Rules_of_Lapidamancy.tres" id="3_ahrsa"]
+[ext_resource type="Resource" uid="uid://b5ftjaguk3cim" path="res://Currencies/Library/Knowledge_Lapidamancy.tres" id="3_p5nfc"]
 
 [resource]
 script = ExtResource("2_i44vy")
@@ -18,7 +19,9 @@ job_cost = Dictionary[ExtResource("1_1byq6"), int]({
 ExtResource("2_tth0q"): 4
 })
 job_mask = Dictionary[ExtResource("1_1byq6"), int]({
-ExtResource("2_tth0q"): 10
+ExtResource("2_tth0q"): 10,
+ExtResource("3_p5nfc"): 1
 })
 upper_mask = Array[ExtResource("1_1byq6")]([ExtResource("3_ahrsa")])
+button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

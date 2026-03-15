@@ -3,12 +3,17 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_wp1hp"]
 [ext_resource type="Resource" uid="uid://ku2llglxbfjb" path="res://Currencies/Library/Library_Card.tres" id="2_u3qi5"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_ty88t"]
+[ext_resource type="Resource" uid="uid://dq5dcilkobnc1" path="res://Currencies/Library/Knowledge_Cyanomancy.tres" id="3_u3qi5"]
 
 [resource]
 script = ExtResource("3_ty88t")
-job_name = "Research Cyanomancy"
+job_name = "Discover Cyanomancy"
 job_desc = "You wander through the shelves, picking and browsing likely tomes. "
 job_story = "The only way to judge a book is by it's cover... thankfully, they've started providing little summaries on the back. "
+job_duration = 2
+job_reward = Dictionary[ExtResource("1_wp1hp"), int]({
+ExtResource("3_u3qi5"): 1
+})
 job_mask = Dictionary[ExtResource("1_wp1hp"), int]({
 ExtResource("2_u3qi5"): 1
 })

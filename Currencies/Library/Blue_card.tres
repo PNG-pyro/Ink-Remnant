@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://bmswe4en7y1nj"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_dhlwj"]
+
+[resource]
+script = ExtResource("1_dhlwj")
+name = "Blue Library Card"
+max_amount = 1
+tick_types = null
+makes_label = false
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

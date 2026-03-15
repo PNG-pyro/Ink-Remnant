@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_8vmjt"]
 [ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_iv7ks"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_p0m7p"]
+[ext_resource type="Resource" uid="uid://c1uth0w20e75b" path="res://Currencies/Library/Knowledge_Octomancy.tres" id="3_s24bc"]
 [ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Rules_Of_Octomancy.tres" id="3_uthvu"]
 
 [resource]
@@ -18,7 +19,9 @@ job_cost = Dictionary[ExtResource("1_8vmjt"), int]({
 ExtResource("2_iv7ks"): 88
 })
 job_mask = Dictionary[ExtResource("1_8vmjt"), int]({
-ExtResource("2_iv7ks"): 10
+ExtResource("2_iv7ks"): 10,
+ExtResource("3_s24bc"): 1
 })
 upper_mask = Array[ExtResource("1_8vmjt")]([ExtResource("3_uthvu")])
+button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

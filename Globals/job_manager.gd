@@ -57,6 +57,9 @@ var library_jobs: Array[Job] = [
 	load("res://Currencies/Library/Get_Library_Card.tres"),
 	load("res://Currencies/Library/Research_Lapidamancy.tres"),
 	load("res://Currencies/Library/Research_Octomancy.tres"),
+	load("res://Currencies/Library/Research_Cyanomancy.tres"),
+	load("res://Currencies/Library/Research_The_City.tres"),
+	load("res://Currencies/Library/Offer_Kingly_Blue.tres"),
 ]
 
 var all_jobs: Array[Job] = (tickers + upgrades + trades + simple_jobs + house_jobs + library_jobs)

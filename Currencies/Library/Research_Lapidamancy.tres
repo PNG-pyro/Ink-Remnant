@@ -3,12 +3,17 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_14ft3"]
 [ext_resource type="Resource" uid="uid://ku2llglxbfjb" path="res://Currencies/Library/Library_Card.tres" id="2_jneeo"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_x8hk8"]
+[ext_resource type="Resource" uid="uid://b5ftjaguk3cim" path="res://Currencies/Library/Knowledge_Lapidamancy.tres" id="3_jneeo"]
 
 [resource]
 script = ExtResource("2_x8hk8")
-job_name = "Research Lapidamancy"
+job_name = "Discover Lapidamancy"
 job_desc = "You wander through the shelves, picking and browsing likely tomes. "
 job_story = "The only way to judge a book is by it's cover... thankfully, they've started providing little summaries on the back. "
+job_duration = 2
+job_reward = Dictionary[ExtResource("1_14ft3"), int]({
+ExtResource("3_jneeo"): 1
+})
 job_mask = Dictionary[ExtResource("1_14ft3"), int]({
 ExtResource("2_jneeo"): 1
 })
