@@ -19,9 +19,9 @@ func _ready():
 	starting_popup.label_text = "You're a homeless waif in a magical city. The only way to go from here is up!"
 	starting_popup.button_text = "Search the city"
 	starting_popup.borderless = true
-	
-	add_child(starting_popup)
-	starting_popup.popup_centered()
+	display_popup(starting_popup)
+	#add_child(starting_popup)
+	#starting_popup.popup_centered()
 	
 	SignalHub.second_popup_open.connect(second_popup_open_recieved)
 	SignalHub.job_complete.connect(check_maxes)
@@ -47,8 +47,8 @@ func second_popup_open_recieved():
 	var sig = SignalHub.second_popup_closed
 	var newpop = story_popup.instantiate()
 	newpop.borderless = true
-	add_child(newpop)
 	newpop.create(label, button, sig)
+	add_child(newpop)
 	newpop.popup_centered()
 
 
@@ -60,6 +60,11 @@ func check_maxes(_a = null):
 
 func autosave(_a = null):
 	SaveManager.save(SaveManager.save_name_3)
+
+
+func display_popup(popup):
+	add_child(popup)
+	popup.popup_centered()
 
 
 func _on_light_mode_pressed() -> void:

@@ -13,6 +13,12 @@ class_name Job
 #@export var upgrade_name: Currency = CurrencyManager.default_curency
 @export var shows_up: bool = false
 @export var make_tooltip: bool = true
+@export var repeats: bool = true
+
+@export var make_popup: bool = false
+@export var popup_text: String = "Test"
+@export var button_text: String = "TestButton"
+@export var button_signal: Signal = SignalHub.make_visible
 
 
 func pay_reward():

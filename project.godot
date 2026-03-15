@@ -41,6 +41,7 @@ ButtonStacks="Stacks of buttons"
 ButtonFrames=""
 HouseTabFrame=""
 SaveTabFrame=""
+LibraryFrame=""
 
 [physics]
 

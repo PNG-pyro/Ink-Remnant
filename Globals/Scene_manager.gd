@@ -1,6 +1,6 @@
 extends Node
 
-enum Scene { HOUSE, CITY, SAVE }
+enum Scene { HOUSE, CITY, SAVE, LIBRARY }
 
 var current_scene: Scene = Scene.HOUSE:
 	set(new_scene):
@@ -14,6 +14,7 @@ func _update_visibility():
 	get_tree().call_group("ButtonFrames", "hide")
 	get_tree().call_group("HouseTabFrame", "hide")
 	get_tree().call_group("SaveTabFrame", "hide")
+	get_tree().call_group("LibraryFrame", "hide")
 	
 	match current_scene:
 		Scene.HOUSE:
@@ -22,3 +23,5 @@ func _update_visibility():
 			get_tree().call_group("ButtonFrames", "show")
 		Scene.SAVE:
 			get_tree().call_group("SaveTabFrame", "show")
+		Scene.LIBRARY:
+			get_tree().call_group("LibraryFrame", "show")

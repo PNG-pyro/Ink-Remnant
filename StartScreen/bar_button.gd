@@ -137,6 +137,9 @@ func start_filling():
 	
 	job_run.pay_reward()
 	job_run.pay_costs()
+
+	if not job_run.repeats:
+		self.button_pressed = false
 	
 	if self.button_pressed == true:
 		start_filling()
@@ -145,6 +148,8 @@ func start_filling():
 		SignalHub.display.emit(job_run.job_story + "\n\n")
 		SignalHub.job_complete.emit(job_run)
 		current_state = State.COMPLETE
+		if job_run.make_popup == true:
+			make_popup(job_run)
 		reset()
 
 
@@ -217,3 +222,11 @@ func check_affordable():
 	else: 
 		visual_state |= VisualState.UNAFFORDABLE
 		visual_state &= ~VisualState.AFFORDABLE
+	update_visuals()
+
+func make_popup(popup_job: Job):
+	var job_popup = preload("uid://cxse6vagl4302").instantiate()
+	job_popup.label_text = popup_job.popup_text
+	job_popup.button_text = popup_job.button_text
+	job_popup.borderless = true
+	get_tree().current_scene.display_popup(job_popup)

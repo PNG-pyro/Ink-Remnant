@@ -46,4 +46,17 @@ var tickers: Array[Job] = [
 	load("res://Currencies/Scrolls/Ticker/Build_Auto_Quill.tres")
 ]
 
-var all_jobs: Array[Job] = (tickers + upgrades + trades + simple_jobs)
+var house_jobs: Array[Job] = [
+	load("res://Currencies/Houses/Acquire_hovel.tres"),
+	load("res://Currencies/Houses/Buy_big_house.tres"),
+	load("res://Currencies/Houses/Make_Dimension_Rift.tres")
+]
+
+var library_jobs: Array[Job] = [
+	load("res://Currencies/Library/DiscoverLibrary.tres"),
+	load("res://Currencies/Library/Get_Library_Card.tres"),
+	load("res://Currencies/Library/Research_Lapidamancy.tres"),
+	load("res://Currencies/Library/Research_Octomancy.tres"),
+]
+
+var all_jobs: Array[Job] = (tickers + upgrades + trades + simple_jobs + house_jobs + library_jobs)

@@ -13,6 +13,8 @@ func setup_floorspace():
 	for currency in CurrencyManager.all_currencies:
 		if currency.makes_label:
 			continue
+		if currency.is_hidden:
+			continue
 		var upgrade_label = CurrencyLabel.new()
 		upgrade_label.text_set(currency)
 		upgrade_label.visible = currency.update_seen()

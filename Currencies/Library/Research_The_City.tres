@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dp2qh6y3buijp"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_mhf4n"]
+[ext_resource type="Resource" uid="uid://ku2llglxbfjb" path="res://Currencies/Library/Library_Card.tres" id="2_cu55s"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_u5hbc"]
+
+[resource]
+script = ExtResource("3_u5hbc")
+job_name = "Research the city"
+job_desc = "You wander through the shelves, picking and browsing likely tomes. "
+job_story = "The only way to judge a book is by it's cover... thankfully, they've started providing little summaries on the back. "
+job_duration = 2
+job_mask = Dictionary[ExtResource("1_mhf4n"), int]({
+ExtResource("2_cu55s"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "\"The city, the ancient city - it's proper name is Archeopolis, the Dawn City. It is the oldest place of human habitation, and filled with the wonders and terrors thereof. Do not speak of it vainly. It holds nine great magics and four minor, though none can say which are which...\""
+button_text = "Done reading"
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

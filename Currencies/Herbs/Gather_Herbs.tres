@@ -16,4 +16,7 @@ ExtResource("2_dg78w"): 2
 })
 upper_mask = Array[ExtResource("1_ow22n")]([ExtResource("4_aiub8")])
 make_tooltip = false
+popup_text = "You gathered herbs!"
+button_text = "Now go take a shower"
+button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

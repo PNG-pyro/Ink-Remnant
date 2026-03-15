@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://gciinqn85vni" path="res://StartScreen/currency_stack.gd" id="2_2fenb"]
 [ext_resource type="Texture2D" uid="uid://caqs4hxqhxc4u" path="res://Borders/Storybox_border.png" id="4_6dj8j"]
 [ext_resource type="Texture2D" uid="uid://ghf4w0mqty8t" path="res://Borders/Settings_Border.png" id="4_8lyn0"]
+[ext_resource type="Script" uid="uid://bma6kdk2rnhdd" path="res://StartScreen/library_button.gd" id="5_plbck"]
 [ext_resource type="Texture2D" uid="uid://bif7i0a14c2g3" path="res://Borders/Home_border.png" id="6_do1qa"]
 [ext_resource type="Theme" uid="uid://ccqkno7t5mybt" path="res://theme_dark.tres" id="7_qe2qs"]
 [ext_resource type="Script" uid="uid://bsyeifs8bjboy" path="res://StartScreen/story_box.gd" id="7_xnqce"]
@@ -15,12 +16,19 @@
 [ext_resource type="Script" uid="uid://bbetulrfv706p" path="res://SaveLoad/save_button_1.gd" id="11_f01go"]
 [ext_resource type="Script" uid="uid://briafwutsdv85" path="res://SaveLoad/load_button_1.gd" id="12_ly71l"]
 [ext_resource type="Script" uid="uid://ytoyuhgr1fcl" path="res://StartScreen/load_button_2.gd" id="13_7envs"]
+[ext_resource type="Resource" uid="uid://i505ijbajoo8" path="res://Currencies/Houses/Make_Dimension_Rift.tres" id="13_x5hg1"]
 [ext_resource type="Script" uid="uid://dcqjqbyxbt48c" path="res://StartScreen/load_button_3.gd" id="14_7envs"]
+[ext_resource type="Resource" uid="uid://d2peq1suonolm" path="res://Currencies/Library/DiscoverLibrary.tres" id="14_68wlb"]
+[ext_resource type="Resource" uid="uid://lced7xqyw2g6" path="res://Currencies/Library/Get_Library_Card.tres" id="15_7vltl"]
 [ext_resource type="PackedScene" uid="uid://cxse6vagl4302" path="res://StoryPopup/story_popup.tscn" id="16_a6fgy"]
+[ext_resource type="Resource" uid="uid://cdngx6721pslj" path="res://Currencies/Library/Research_Octomancy.tres" id="16_c8h1m"]
 [ext_resource type="Texture2D" uid="uid://em2o1giqs2ap" path="res://Borders/Work_borders.png" id="16_ffxqw"]
+[ext_resource type="Resource" uid="uid://chrmpvgxyaog0" path="res://Currencies/Library/Research_Lapidamancy.tres" id="17_17tle"]
 [ext_resource type="Shader" uid="uid://b7ojvexq3o8o8" path="res://StartScreen/Frames_Shader.tres" id="17_eo2o8"]
+[ext_resource type="Resource" uid="uid://dp2qh6y3buijp" path="res://Currencies/Library/Research_The_City.tres" id="18_satxg"]
 [ext_resource type="Script" uid="uid://yew3twuogt1b" path="res://StartScreen/Settings_button.gd" id="18_yp2c4"]
 [ext_resource type="Script" uid="uid://b4r2u7m0gndal" path="res://StartScreen/city_button.gd" id="19_4asdo"]
+[ext_resource type="Resource" uid="uid://drtwvyyuv2jxx" path="res://Currencies/Library/Research_Cyanomancy.tres" id="19_ghnkm"]
 [ext_resource type="Texture2D" uid="uid://c5k5dxieu4r5w" path="res://Borders/Currencies_Border.png" id="19_ptm2y"]
 [ext_resource type="Script" uid="uid://ckrbnf8hb3cgl" path="res://StartScreen/house_button.gd" id="19_yp2c4"]
 [ext_resource type="Script" uid="uid://c554iuqrsupxi" path="res://StartScreen/house_tabs.gd" id="20_4asdo"]
@@ -83,6 +91,18 @@ text = "Home"
 script = ExtResource("19_yp2c4")
 metadata/_edit_use_anchors_ = true
 
+[node name="LibraryButton" type="Button" parent="." unique_id=1546172386]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8671875
+anchor_top = 0.55972224
+anchor_right = 0.984375
+anchor_bottom = 0.62361115
+offset_bottom = -3.0517578e-05
+text = "The Library"
+script = ExtResource("5_plbck")
+metadata/_edit_use_anchors_ = true
+
 [node name="HouseTabFrame" type="NinePatchRect" parent="." unique_id=2079112509 groups=["HouseTabFrame"]]
 visible = false
 material = SubResource("ShaderMaterial_plbck")
@@ -114,7 +134,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 script = ExtResource("20_4asdo")
 
-[node name="Button" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=21447503 groups=["BarButtons"]]
+[node name="FindHouse" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=21447503 groups=["BarButtons"]]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 theme = ExtResource("7_qe2qs")
@@ -124,7 +144,7 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("10_ly71l")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
-[node name="Button2" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=927397340 groups=["BarButtons"]]
+[node name="GetBigHouse" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=927397340 groups=["BarButtons"]]
 layout_mode = 2
 size_flags_vertical = 0
 theme = ExtResource("7_qe2qs")
@@ -132,6 +152,84 @@ toggle_mode = true
 text = "Testbutton"
 script = ExtResource("21_11t3j")
 job_run = ExtResource("8_ffxqw")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="DimensionalRoom" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=1465726845 groups=["BarButtons"]]
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("13_x5hg1")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="LibraryFrame" type="NinePatchRect" parent="." unique_id=493527598 groups=["LibraryFrame"]]
+visible = false
+material = SubResource("ShaderMaterial_plbck")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21796875
+anchor_top = 0.3861111
+anchor_right = 0.85234374
+anchor_bottom = 0.98194444
+size_flags_horizontal = 3
+texture = ExtResource("6_do1qa")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="LibraryTabs" type="VFlowContainer" parent="LibraryFrame" unique_id=52442550]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 12.0
+offset_right = -11.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="DiscoverLibrary" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=827645359 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("14_68wlb")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="GetLibraryCard" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1054484814 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("15_7vltl")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="ResearchOctomancy" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=870211897 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("16_c8h1m")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="ResearchLapidamancy" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=289813396 groups=["BarButtons"]]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("17_17tle")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="ResearchTheCity" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1190868612 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("18_satxg")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="ResearchCyanomancy" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1372363066 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("19_ghnkm")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
 [node name="SaveTabFrame" type="NinePatchRect" parent="." unique_id=1625848577 groups=["SaveTabFrame"]]
@@ -468,6 +566,7 @@ text = "Mute"
 script = ExtResource("28_plbck")
 
 [connection signal="pressed" from="HouseButton" to="HouseButton" method="_on_pressed"]
+[connection signal="pressed" from="LibraryButton" to="LibraryButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/SaveButton1" to="SaveTabFrame/SaveButton1" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/SaveButton2" to="SaveTabFrame/SaveButton2" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/LoadButton1" to="SaveTabFrame/LoadButton1" method="_on_pressed"]
