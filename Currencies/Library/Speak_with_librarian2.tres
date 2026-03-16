@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://hcnywj2y3g5f"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_fh5e2"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_coi03"]
+[ext_resource type="Resource" uid="uid://dmdq7m6ihqtg6" path="res://Currencies/Library/Knowledge_poppy_1.tres" id="2_lt8sq"]
+
+[resource]
+script = ExtResource("2_coi03")
+job_name = "Ask Poppy about magic"
+job_desc = "A morose, middle-aged woman is unstacking books..."
+job_story = "She nods and returns to her work. "
+job_duration = 3
+job_mask = Dictionary[ExtResource("1_fh5e2"), int]({
+ExtResource("2_lt8sq"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "\"Magic... You must have already read the avaliable books.\" She nods. \"The ilbrary does have records of another magic, but it's in the Deep Stacks - you'll need a Blue Card if you want to go in there. The Curator gives them to people he likes.\""
+button_text = "Interesting..."
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -42,6 +42,7 @@ ButtonFrames=""
 HouseTabFrame=""
 SaveTabFrame=""
 LibraryFrame=""
+TowerFrame=""
 
 [physics]
 

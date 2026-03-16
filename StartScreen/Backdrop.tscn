@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://caqs4hxqhxc4u" path="res://Borders/Storybox_border.png" id="4_6dj8j"]
 [ext_resource type="Texture2D" uid="uid://ghf4w0mqty8t" path="res://Borders/Settings_Border.png" id="4_8lyn0"]
 [ext_resource type="Script" uid="uid://bma6kdk2rnhdd" path="res://StartScreen/library_button.gd" id="5_plbck"]
+[ext_resource type="Script" uid="uid://d338r1lm7h675" path="res://StartScreen/tower_button.gd" id="6_58m4n"]
 [ext_resource type="Texture2D" uid="uid://bif7i0a14c2g3" path="res://Borders/Home_border.png" id="6_do1qa"]
 [ext_resource type="Theme" uid="uid://ccqkno7t5mybt" path="res://theme_dark.tres" id="7_qe2qs"]
 [ext_resource type="Script" uid="uid://bsyeifs8bjboy" path="res://StartScreen/story_box.gd" id="7_xnqce"]
@@ -19,6 +20,7 @@
 [ext_resource type="Resource" uid="uid://i505ijbajoo8" path="res://Currencies/Houses/Make_Dimension_Rift.tres" id="13_x5hg1"]
 [ext_resource type="Script" uid="uid://dcqjqbyxbt48c" path="res://StartScreen/load_button_3.gd" id="14_7envs"]
 [ext_resource type="Resource" uid="uid://d2peq1suonolm" path="res://Currencies/Library/DiscoverLibrary.tres" id="14_68wlb"]
+[ext_resource type="Resource" uid="uid://6n1tvkx4nxu7" path="res://Currencies/Tower/Walk_by_Tower.tres" id="14_suwb6"]
 [ext_resource type="Resource" uid="uid://lced7xqyw2g6" path="res://Currencies/Library/Get_Library_Card.tres" id="15_7vltl"]
 [ext_resource type="PackedScene" uid="uid://cxse6vagl4302" path="res://StoryPopup/story_popup.tscn" id="16_a6fgy"]
 [ext_resource type="Resource" uid="uid://cdngx6721pslj" path="res://Currencies/Library/Research_Octomancy.tres" id="16_c8h1m"]
@@ -34,7 +36,12 @@
 [ext_resource type="Script" uid="uid://c554iuqrsupxi" path="res://StartScreen/house_tabs.gd" id="20_4asdo"]
 [ext_resource type="Resource" uid="uid://ce4igy77lu60x" path="res://Currencies/Library/Offer_Kingly_Blue.tres" id="20_i21m4"]
 [ext_resource type="Script" uid="uid://ddubjwaefbdws" path="res://StartScreen/bar_button.gd" id="21_11t3j"]
+[ext_resource type="Resource" uid="uid://krxohwh28ugm" path="res://Currencies/Library/Speak_with_Curator.tres" id="22_yrt3q"]
+[ext_resource type="Resource" uid="uid://didprjt16ny1k" path="res://Currencies/Library/Speak_with_librarian.tres" id="23_446pc"]
+[ext_resource type="Resource" uid="uid://dtumxpabqfivu" path="res://Currencies/Library/Speak_with_Curator_2.tres" id="23_b6ncd"]
 [ext_resource type="Shader" uid="uid://dslgj8u3kyl7y" path="res://StartScreen/Backdrop_Shader.tres" id="24_jd06h"]
+[ext_resource type="Resource" uid="uid://brueb2i7g2hyv" path="res://Currencies/Library/Speak_with_Curator_3.tres" id="24_tfair"]
+[ext_resource type="Resource" uid="uid://hcnywj2y3g5f" path="res://Currencies/Library/Speak_with_librarian2.tres" id="26_lxauj"]
 [ext_resource type="Script" uid="uid://w7se8q4yrmtb" path="res://StartScreen/mute_button.gd" id="28_plbck"]
 [ext_resource type="Script" uid="uid://d103c4xklkruj" path="res://StartScreen/volume_slider.gd" id="28_sr1na"]
 
@@ -104,6 +111,18 @@ text = "The Library"
 script = ExtResource("5_plbck")
 metadata/_edit_use_anchors_ = true
 
+[node name="TowerButton" type="Button" parent="." unique_id=259335983]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8671875
+anchor_top = 0.6458333
+anchor_right = 0.984375
+anchor_bottom = 0.7097223
+offset_bottom = -3.0517578e-05
+text = "Tower of Magic"
+script = ExtResource("6_58m4n")
+metadata/_edit_use_anchors_ = true
+
 [node name="HouseTabFrame" type="NinePatchRect" parent="." unique_id=2079112509 groups=["HouseTabFrame"]]
 visible = false
 material = SubResource("ShaderMaterial_plbck")
@@ -136,7 +155,7 @@ size_flags_horizontal = 3
 script = ExtResource("20_4asdo")
 
 [node name="FindHouse" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=21447503 groups=["BarButtons"]]
-custom_minimum_size = Vector2(200, 0)
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 theme = ExtResource("7_qe2qs")
 toggle_mode = true
@@ -159,6 +178,46 @@ metadata/_custom_type_script = "uid://ddubjwaefbdws"
 layout_mode = 2
 script = ExtResource("21_11t3j")
 job_run = ExtResource("13_x5hg1")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="TowerTabFrame" type="NinePatchRect" parent="." unique_id=1066116598 groups=["TowerFrame"]]
+visible = false
+material = SubResource("ShaderMaterial_plbck")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21796875
+anchor_top = 0.3861111
+anchor_right = 0.85234374
+anchor_bottom = 0.98194444
+size_flags_horizontal = 3
+texture = ExtResource("6_do1qa")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="TowerTab" type="VFlowContainer" parent="TowerTabFrame" unique_id=1591119967]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 12.0
+offset_right = -11.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="View_Tower" type="Button" parent="TowerTabFrame/TowerTab" unique_id=1072923820 groups=["BarButtons"]]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme = ExtResource("7_qe2qs")
+toggle_mode = true
+text = "Testbutton"
+script = ExtResource("21_11t3j")
+job_run = ExtResource("14_suwb6")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
 [node name="LibraryFrame" type="NinePatchRect" parent="." unique_id=493527598 groups=["LibraryFrame"]]
@@ -192,14 +251,14 @@ grow_vertical = 2
 size_flags_horizontal = 3
 
 [node name="DiscoverLibrary" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=827645359 groups=["BarButtons"]]
-custom_minimum_size = Vector2(200, 0)
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 script = ExtResource("21_11t3j")
 job_run = ExtResource("14_68wlb")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
 [node name="GetLibraryCard" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1054484814 groups=["BarButtons"]]
-custom_minimum_size = Vector2(200, 0)
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 script = ExtResource("21_11t3j")
 job_run = ExtResource("15_7vltl")
@@ -233,11 +292,46 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("19_ghnkm")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
+[node name="SpeakWithCurator" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1767807599 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("22_yrt3q")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="SpeakWithCurator2" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=2121627388 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("23_b6ncd")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="SpeakWithCurator3" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=2056126422 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("24_tfair")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
 [node name="OfferKingBlue" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=841836538 groups=["BarButtons"]]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 script = ExtResource("21_11t3j")
 job_run = ExtResource("20_i21m4")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="SpeakWithLibrarian" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1315296628 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("23_446pc")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="SpeakWithLibrarian2" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=167633648 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("26_lxauj")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
 [node name="SaveTabFrame" type="NinePatchRect" parent="." unique_id=1625848577 groups=["SaveTabFrame"]]
@@ -523,6 +617,7 @@ script = ExtResource("19_4asdo")
 metadata/_edit_use_anchors_ = true
 
 [node name="Backdrop" type="ColorRect" parent="." unique_id=800926911]
+visible = false
 z_index = -10
 y_sort_enabled = true
 material = SubResource("ShaderMaterial_sr1na")
@@ -579,6 +674,7 @@ script = ExtResource("28_plbck")
 
 [connection signal="pressed" from="HouseButton" to="HouseButton" method="_on_pressed"]
 [connection signal="pressed" from="LibraryButton" to="LibraryButton" method="_on_pressed"]
+[connection signal="pressed" from="TowerButton" to="TowerButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/SaveButton1" to="SaveTabFrame/SaveButton1" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/SaveButton2" to="SaveTabFrame/SaveButton2" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/LoadButton1" to="SaveTabFrame/LoadButton1" method="_on_pressed"]

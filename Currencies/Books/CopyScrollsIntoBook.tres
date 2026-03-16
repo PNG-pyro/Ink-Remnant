@@ -7,7 +7,7 @@
 
 [resource]
 script = ExtResource("4_8ou72")
-job_name = "    Combine scrolls into a book"
+job_name = "      Combine scrolls into a book"
 job_desc = "There's something similar here..."
 job_story = "You collect three similar sheaves into a folio. A preface and a binding... there!"
 job_duration = 1
@@ -20,4 +20,5 @@ ExtResource("2_2naqu"): 2
 job_mask = Dictionary[ExtResource("1_b10qx"), int]({
 ExtResource("2_2naqu"): 3
 })
+button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

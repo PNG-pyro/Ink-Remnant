@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://6n1tvkx4nxu7"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_phgyi"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_ni1iv"]
+[ext_resource type="Resource" uid="uid://do4gsn3h018gy" path="res://Currencies/Tower/Knowledge_of_tower.tres" id="2_y4amy"]
+
+[resource]
+script = ExtResource("2_ni1iv")
+job_name = "Examine the Tower"
+job_desc = "You walk along the seashore, staring out at the promontory..."
+job_story = "The Mage Tower is an impressive edifice, both architecturally and in the power it represents."
+job_duration = 3
+job_reward = Dictionary[ExtResource("1_phgyi"), int]({
+ExtResource("2_y4amy"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "You stalk the seashore on a cold, windy day, listening to the calls of gulls and staring at a distant promontory. Your interest is drawn to the tower there, a lonely brick outpost atop a bare spit of rock. A mage lived there once. You've wanted to explore it ever since you first heard of it, but the magic keeps anyone from getting close. You'd need magic of your own to break through..."
+button_text = "Stare for a while, then go home."
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

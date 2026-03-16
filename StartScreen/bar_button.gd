@@ -15,6 +15,7 @@ enum VisualState {
 	UNAFFORDABLE = 4,
 	AFFORDABLE = 8,
 	RUNNING = 16,
+	NEW = 32,
 }
 
 var visual_state: int = VisualState.NORMAL
@@ -25,7 +26,8 @@ var current_state = State.IDLE
 @onready var startrun: bool = true
 @onready var progress = ProgressBar.new()
 @onready var border = NinePatchRect.new()
-@onready var icon_label = RichTextLabel.new()
+@onready var ready_label = RichTextLabel.new()
+@onready var new_label = RichTextLabel.new()
 @onready var parent = $".."
 
 
@@ -33,6 +35,7 @@ func _ready():
 	visible = job_run.is_unmasked()
 	text = job_run.job_name
 	toggle_mode = true
+	visual_state |= VisualState.NEW
 	
 	progress.set_anchors_preset(Control.PRESET_FULL_RECT)
 	progress.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -51,14 +54,20 @@ func _ready():
 	border.patch_margin_bottom = 16
 	add_child(border)
 	
-	icon_label.bbcode_enabled = true
-	icon_label.autowrap_mode = TextServer.AUTOWRAP_OFF
-	icon_label.fit_content = true
+	ready_label.bbcode_enabled = true
+	ready_label.autowrap_mode = TextServer.AUTOWRAP_OFF
+	ready_label.fit_content = true
+	ready_label.position = Vector2(10, 6)
+	add_child(ready_label)
+	
+	new_label.bbcode_enabled = true
+	new_label.autowrap_mode = TextServer.AUTOWRAP_OFF
+	new_label.fit_content = true
+	new_label.position = Vector2(150, 6)
+	add_child(new_label)
+	
 	visual_state |= VisualState.AFFORDABLE
 	update_visuals()
-	icon_label.position = Vector2(10, 6)
-	#icon_label.position.y = (size.y) / 2
-	add_child(icon_label)
 	
 	pressed.connect(_on_pressed)
 	SignalHub.resource_updated.connect(check_visible)
@@ -85,6 +94,7 @@ func _on_pressed():
 
 func on_mouse_entry():
 	visual_state |= VisualState.HOVERED
+	visual_state &= ~VisualState.NEW
 	update_visuals()
 
 func on_mouse_exit():
@@ -102,12 +112,17 @@ func update_visuals():
 	else:
 		border.hide()
 	
+	if visual_state & VisualState.NEW:
+		self.text = job_run.job_name + " -New!"
+	else:
+		self.text = job_run.job_name
+		
 	if visual_state & VisualState.AFFORDABLE:
-		icon_label.text = "o"
-		icon_label.modulate = Color.GREEN
+		ready_label.text = "o"
+		ready_label.modulate = Color.GREEN
 	elif visual_state & VisualState.UNAFFORDABLE:
-		icon_label.text = "×"
-		icon_label.modulate = Color.RED
+		ready_label.text = "×"
+		ready_label.modulate = Color.RED
 
 
 func start_filling():
