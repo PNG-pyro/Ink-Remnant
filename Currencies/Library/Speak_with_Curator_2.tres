@@ -8,7 +8,7 @@
 
 [resource]
 script = ExtResource("5_e6nku")
-job_name = "Ask Curator about the Library"
+job_name = "...the  Library"
 job_desc = "You inquire into the origins of the Library - along with a donation for the trouble. "
 job_story = "Asking more deeply, you're politely rebuffed; the library has its own secrets."
 job_duration = 4
@@ -16,7 +16,7 @@ job_reward = Dictionary[ExtResource("1_kmdha"), int]({
 ExtResource("4_tqpkg"): 1
 })
 job_cost = Dictionary[ExtResource("1_kmdha"), int]({
-ExtResource("2_1gyg4"): 10
+ExtResource("2_1gyg4"): 5
 })
 job_mask = Dictionary[ExtResource("1_kmdha"), int]({
 ExtResource("3_dn7wd"): 1

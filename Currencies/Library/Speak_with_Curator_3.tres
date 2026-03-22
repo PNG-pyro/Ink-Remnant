@@ -8,7 +8,7 @@
 
 [resource]
 script = ExtResource("5_rc1px")
-job_name = "Ask Curator about magic"
+job_name = "...the Mage Tower"
 job_desc = "Curator listens to your question seriously, cleaning his glasses in contemplation before speaking:"
 job_story = "\"And that's really all I can say,\" he finishes, his tone adamant."
 job_duration = 4
@@ -23,7 +23,7 @@ ExtResource("3_n4p05"): 1
 })
 repeats = false
 make_popup = true
-popup_text = "\"Notable magic in the city... have you been to the Mage Tower along the coast? That's the last time a mage came out so publicly. Who knows where they are now...\""
+popup_text = "\"Ah, you mean the old tower on the east coast. I imagine a master of three magics could pierce the veil. Who knows what they would find?\""
 button_text = "Listen intently "
 button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

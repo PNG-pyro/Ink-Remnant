@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_6tt3x")
 name = "Knowledge: Octomancy"
-max_amount = 999
+max_amount = 1
 tick_types = null
 makes_label = false
 is_hidden = true

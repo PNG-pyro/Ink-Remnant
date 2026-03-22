@@ -17,6 +17,7 @@ ExtResource("3_u3qi5"): 1
 job_mask = Dictionary[ExtResource("1_wp1hp"), int]({
 ExtResource("2_u3qi5"): 1
 })
+upper_mask = Array[ExtResource("1_wp1hp")]([ExtResource("3_u3qi5")])
 repeats = false
 make_popup = true
 popup_text = "\"Cyanomancy is perhaps the most personal magic. If the crushing blue of the sky is caused by the bending of light, why do we not see it as purple? No, the mystery lies in the eye of the beholder, who understands the word 'blue' and gives it meaning. There are eleven distinct colors named in our language, but blue...\""

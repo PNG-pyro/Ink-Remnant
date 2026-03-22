@@ -17,6 +17,7 @@ ExtResource("3_v0odb"): 1
 job_mask = Dictionary[ExtResource("1_7gb1l"), int]({
 ExtResource("2_v0odb"): 1
 })
+upper_mask = Array[ExtResource("1_7gb1l")]([ExtResource("3_v0odb")])
 repeats = false
 make_popup = true
 popup_text = "\"Octomancy, or the magic of eights, is one of the oldest and simplest magics practiced in Archeopolis. It simply declares that eight of anything and everything is significant, and the more eight-aligned the number, the more powerful it becomes. Any practitioner will quickly realize that doing everything eight times has both a joy and frustration all it's own...\""

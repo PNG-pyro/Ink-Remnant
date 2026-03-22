@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://d4b7t4yojnf5r"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_1fgnm"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="2_b0y2i"]
+
+[resource]
+script = ExtResource("1_1fgnm")
+name = "Rules of Oneiromancy"
+max_amount = 12
+tick_types = null
+is_upgrade = true
+upgrade_target = Dictionary[ExtResource("1_1fgnm"), int]({
+ExtResource("2_b0y2i"): 16
+})
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("2_coi03")
-job_name = "Ask Poppy about magic"
+job_name = "...magical knowledge"
 job_desc = "A morose, middle-aged woman is unstacking books..."
 job_story = "She nods and returns to her work. "
 job_duration = 3

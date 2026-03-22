@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dwfcrs2fo7bsp"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_n35ha"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_bgff1"]
+[ext_resource type="Resource" uid="uid://dncrbwdwm20km" path="res://Currencies/Library/Knowledge_Oneiromancy.tres" id="3_n35ha"]
+[ext_resource type="Resource" uid="uid://d4b7t4yojnf5r" path="res://Currencies/Magic/Rules_of_Oneiromancy.tres" id="4_bgff1"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_xj236"]
+
+[resource]
+script = ExtResource("5_xj236")
+job_name = "Research Oneiromancy"
+job_desc = "Researching dream magic looks a lot like napping. It's not, though. "
+job_story = "It's also restful. But it's still not actually sleep, so you have to do that separately."
+job_duration = 4
+job_reward = Dictionary[ExtResource("1_n35ha"), int]({
+ExtResource("4_bgff1"): 1
+})
+job_cost = Dictionary[ExtResource("1_n35ha"), int]({
+ExtResource("2_bgff1"): 20
+})
+job_mask = Dictionary[ExtResource("1_n35ha"), int]({
+ExtResource("2_bgff1"): 10,
+ExtResource("3_n35ha"): 1
+})
+upper_mask = Array[ExtResource("1_n35ha")]([ExtResource("4_bgff1")])
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cww2sorkga0la"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_0sg7p"]
+[ext_resource type="Resource" uid="uid://dmdq7m6ihqtg6" path="res://Currencies/Library/Knowledge_poppy_1.tres" id="2_fj1nh"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_cw5r6"]
+
+[resource]
+script = ExtResource("3_cw5r6")
+job_name = "...the Mage Tower"
+job_desc = "A morose, middle-aged woman is unstacking books..."
+job_story = "She nods and returns to her work. "
+job_duration = 3
+job_mask = Dictionary[ExtResource("1_0sg7p"), int]({
+ExtResource("2_fj1nh"): 1
+})
+repeats = false
+make_popup = true
+popup_text = " \"Yes, I've heard of it, but not who built it. It has glass windows, so it can't be centuries old. There's ivy growing over the door, though, so the owner must have been gone for years...\""
+button_text = "Interesting..."
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

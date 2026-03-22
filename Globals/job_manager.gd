@@ -37,13 +37,15 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Herbs/Upgrades/Buy_Herb_Cupboard.tres"),
 	load("res://Currencies/Scrolls/Upgrades/Buy_Scroll_Case.tres"),
 	load("res://Currencies/Magic/Research_Cyanomancy.tres"),
+	load("res://Currencies/Magic/Research_Oneiromancy.tres"),
 	load("res://Currencies/Magic/Craft_Mage_Locus.tres")
 ]
 
 var tickers: Array[Job] = [
 	load("res://Currencies/Clockwork/Tickers/Build_Clockwork_Arm.tres"),
 	load("res://Currencies/Herbs/Tickers/Build_Planter_Box.tres"),
-	load("res://Currencies/Scrolls/Ticker/Build_Auto_Quill.tres")
+	load("res://Currencies/Scrolls/Ticker/Build_Auto_Quill.tres"),
+	load("res://Currencies/Research/Ticker/Craft_Clockwork_Dreamcatcher.tres")
 ]
 
 var house_jobs: Array[Job] = [
@@ -60,6 +62,16 @@ var library_jobs: Array[Job] = [
 	load("res://Currencies/Library/Research_Cyanomancy.tres"),
 	load("res://Currencies/Library/Research_The_City.tres"),
 	load("res://Currencies/Library/Offer_Kingly_Blue.tres"),
+	load("res://Currencies/Library/Speak_with_Curator.tres"),
+	load("res://Currencies/Library/Speak_with_Curator_2.tres"),
+	load("res://Currencies/Library/Speak_with_Curator_3.tres"),
+	load("res://Currencies/Library/Speak_with_librarian.tres"),
+	load("res://Currencies/Library/Speak_with_librarian2.tres"),
 ]
 
-var all_jobs: Array[Job] = (tickers + upgrades + trades + simple_jobs + house_jobs + library_jobs)
+var tower_jobs: Array[Job] = [
+	load("res://Currencies/Tower/Walk_by_Tower.tres"),
+	load("res://Currencies/Tower/Forge_Through.tres"),
+]
+
+var all_jobs: Array[Job] = (tickers + upgrades + trades + simple_jobs + house_jobs + library_jobs + tower_jobs)

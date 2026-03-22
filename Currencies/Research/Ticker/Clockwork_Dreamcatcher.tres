@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://bx5m2afmme1pm"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_l71t6"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_dttvr"]
+
+[resource]
+script = ExtResource("1_l71t6")
+name = "Clockwork Dreamcatcher"
+max_amount = 3
+is_ticker = true
+tick_types = Dictionary[Object, int]({
+ExtResource("2_dttvr"): 2
+})
+tick_amount = 1
+makes_label = false
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

@@ -118,11 +118,9 @@ func update_visuals():
 		self.text = job_run.job_name
 		
 	if visual_state & VisualState.AFFORDABLE:
-		ready_label.text = "o"
-		ready_label.modulate = Color.GREEN
+		ready_label.text = "[color=green]>[/color]"
 	elif visual_state & VisualState.UNAFFORDABLE:
-		ready_label.text = "×"
-		ready_label.modulate = Color.RED
+		ready_label.text = "[color=red]×[/color]"
 
 
 func start_filling():

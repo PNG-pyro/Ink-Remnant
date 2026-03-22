@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_06twx")
-name = "Knowledge: Tower"
+name = "Knowledge: Tower 2"
 max_amount = 999
 tick_types = null
 makes_label = false

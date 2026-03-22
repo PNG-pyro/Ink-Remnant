@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://cxse6vagl4302" path="res://StoryPopup/story_popup.tscn" id="16_a6fgy"]
 [ext_resource type="Resource" uid="uid://cdngx6721pslj" path="res://Currencies/Library/Research_Octomancy.tres" id="16_c8h1m"]
 [ext_resource type="Texture2D" uid="uid://em2o1giqs2ap" path="res://Borders/Work_borders.png" id="16_ffxqw"]
+[ext_resource type="Resource" uid="uid://c0c1eet8xuybi" path="res://Currencies/Tower/Forge_Through.tres" id="16_phwaq"]
 [ext_resource type="Resource" uid="uid://chrmpvgxyaog0" path="res://Currencies/Library/Research_Lapidamancy.tres" id="17_17tle"]
 [ext_resource type="Shader" uid="uid://b7ojvexq3o8o8" path="res://StartScreen/Frames_Shader.tres" id="17_eo2o8"]
 [ext_resource type="Resource" uid="uid://dp2qh6y3buijp" path="res://Currencies/Library/Research_The_City.tres" id="18_satxg"]
@@ -41,9 +42,13 @@
 [ext_resource type="Resource" uid="uid://dtumxpabqfivu" path="res://Currencies/Library/Speak_with_Curator_2.tres" id="23_b6ncd"]
 [ext_resource type="Shader" uid="uid://dslgj8u3kyl7y" path="res://StartScreen/Backdrop_Shader.tres" id="24_jd06h"]
 [ext_resource type="Resource" uid="uid://brueb2i7g2hyv" path="res://Currencies/Library/Speak_with_Curator_3.tres" id="24_tfair"]
+[ext_resource type="Resource" uid="uid://dpaoqfopoj84t" path="res://Currencies/Library/Speak_with_Curator_4.tres" id="26_02oxn"]
 [ext_resource type="Resource" uid="uid://hcnywj2y3g5f" path="res://Currencies/Library/Speak_with_librarian2.tres" id="26_lxauj"]
 [ext_resource type="Script" uid="uid://w7se8q4yrmtb" path="res://StartScreen/mute_button.gd" id="28_plbck"]
 [ext_resource type="Script" uid="uid://d103c4xklkruj" path="res://StartScreen/volume_slider.gd" id="28_sr1na"]
+[ext_resource type="Resource" uid="uid://5ajheyvconje" path="res://Currencies/Library/Research_Oneiromancy.tres" id="28_tium7"]
+[ext_resource type="Resource" uid="uid://cww2sorkga0la" path="res://Currencies/Library/Speak_with_librarian3.tres" id="29_tx01m"]
+[ext_resource type="Resource" uid="uid://cx3v5awy7hpjp" path="res://Currencies/Library/Speak_with_librarian4.tres" id="31_ccm5r"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_plbck"]
 shader = ExtResource("17_eo2o8")
@@ -220,6 +225,16 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("14_suwb6")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
+[node name="View_Tower2" type="Button" parent="TowerTabFrame/TowerTab" unique_id=933180595 groups=["BarButtons"]]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme = ExtResource("7_qe2qs")
+toggle_mode = true
+text = "Testbutton"
+script = ExtResource("21_11t3j")
+job_run = ExtResource("16_phwaq")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
 [node name="LibraryFrame" type="NinePatchRect" parent="." unique_id=493527598 groups=["LibraryFrame"]]
 visible = false
 material = SubResource("ShaderMaterial_plbck")
@@ -278,18 +293,18 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("17_17tle")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
-[node name="ResearchTheCity" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1190868612 groups=["BarButtons"]]
-custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
-script = ExtResource("21_11t3j")
-job_run = ExtResource("18_satxg")
-metadata/_custom_type_script = "uid://ddubjwaefbdws"
-
 [node name="ResearchCyanomancy" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1372363066 groups=["BarButtons"]]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 script = ExtResource("21_11t3j")
 job_run = ExtResource("19_ghnkm")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="ResearchTheCity" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1190868612 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("18_satxg")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
 [node name="SpeakWithCurator" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1767807599 groups=["BarButtons"]]
@@ -313,6 +328,13 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("24_tfair")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
+[node name="SpeakWithCurator4" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=538102255 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("26_02oxn")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
 [node name="OfferKingBlue" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=841836538 groups=["BarButtons"]]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
@@ -320,8 +342,15 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("20_i21m4")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
-[node name="SpeakWithLibrarian" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1315296628 groups=["BarButtons"]]
+[node name="ResearchOneiromancy" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=258391858 groups=["BarButtons"]]
 custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("28_tium7")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="SpeakWithLibrarian" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1315296628 groups=["BarButtons"]]
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 script = ExtResource("21_11t3j")
 job_run = ExtResource("23_446pc")
@@ -332,6 +361,20 @@ custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 script = ExtResource("21_11t3j")
 job_run = ExtResource("26_lxauj")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="SpeakWithLibrarian3" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1299685360 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("29_tx01m")
+metadata/_custom_type_script = "uid://ddubjwaefbdws"
+
+[node name="SpeakWithLibrarian4" type="Button" parent="LibraryFrame/LibraryTabs" unique_id=1829373987 groups=["BarButtons"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+script = ExtResource("21_11t3j")
+job_run = ExtResource("31_ccm5r")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
 [node name="SaveTabFrame" type="NinePatchRect" parent="." unique_id=1625848577 groups=["SaveTabFrame"]]
@@ -617,7 +660,6 @@ script = ExtResource("19_4asdo")
 metadata/_edit_use_anchors_ = true
 
 [node name="Backdrop" type="ColorRect" parent="." unique_id=800926911]
-visible = false
 z_index = -10
 y_sort_enabled = true
 material = SubResource("ShaderMaterial_sr1na")

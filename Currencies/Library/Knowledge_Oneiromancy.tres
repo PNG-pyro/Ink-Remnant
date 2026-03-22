@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://dncrbwdwm20km"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_4a8hq"]
+
+[resource]
+script = ExtResource("1_4a8hq")
+name = "Knowledge: Deep Stacks"
+max_amount = 1
+tick_types = null
+makes_label = false
+is_hidden = true
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

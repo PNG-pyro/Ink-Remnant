@@ -7,7 +7,7 @@
 
 [resource]
 script = ExtResource("2_qicc3")
-job_name = "Speak with Librarian Poppy"
+job_name = "Ask a Librarian about..."
 job_desc = "A morose, middle-aged woman is unstacking books..."
 job_story = "She nods and returns to her work. "
 job_duration = 3

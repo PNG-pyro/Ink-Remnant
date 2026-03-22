@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cx3v5awy7hpjp"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_5qk75"]
+[ext_resource type="Resource" uid="uid://dmdq7m6ihqtg6" path="res://Currencies/Library/Knowledge_poppy_1.tres" id="2_4oxs5"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_eh0qi"]
+
+[resource]
+script = ExtResource("3_eh0qi")
+job_name = "...the Library"
+job_desc = "A morose, middle-aged woman is unstacking books..."
+job_story = "She nods and returns to her work. "
+job_duration = 3
+job_mask = Dictionary[ExtResource("1_5qk75"), int]({
+ExtResource("2_4oxs5"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "\"It's a job. The Curator asks for long hours, but isn't stingy with the coin. Been here a long time, too...\""
+button_text = "Interesting..."
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

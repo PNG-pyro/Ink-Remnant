@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c0c1eet8xuybi"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_2j4j5"]
+[ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="2_51ddv"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_83bqb"]
+[ext_resource type="Resource" uid="uid://dtcnndc7v3wxx" path="res://Currencies/Tower/Knowledge_of_tower2.tres" id="3_uwp1m"]
+
+[resource]
+script = ExtResource("2_83bqb")
+job_name = "Forge a way through"
+job_desc = "Raising your mage locus high, you demand entry..."
+job_story = "The magics part and let you pass."
+job_duration = 5
+job_reward = Dictionary[ExtResource("1_2j4j5"), int]({
+ExtResource("3_uwp1m"): 1
+})
+job_mask = Dictionary[ExtResource("1_2j4j5"), int]({
+ExtResource("2_51ddv"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "Your Mage Locus, burning blue with power, floats precisely eight inches above your palm. You raise a hand skywards, and eight veils around the tower part, a path revealed before your step. "
+button_text = "Approach the tower"
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"
