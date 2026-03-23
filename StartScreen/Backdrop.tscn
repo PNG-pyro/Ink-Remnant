@@ -565,15 +565,23 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
-[node name="ButtonStackJobs" type="VBoxContainer" parent="ButtonStackJobsFrame" unique_id=1202219373 groups=["ButtonStacks"]]
-unique_name_in_owner = true
+[node name="ScrollContainer" type="ScrollContainer" parent="ButtonStackJobsFrame" unique_id=617786199]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.039215688
-anchor_top = 0.025641061
-anchor_right = 0.95686275
-anchor_bottom = 0.9743589
-offset_bottom = 3.0517578e-05
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = -10.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonStackJobs" type="VBoxContainer" parent="ButtonStackJobsFrame/ScrollContainer" unique_id=1202219373 groups=["ButtonStacks"]]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_2fenb")
 metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
@@ -595,14 +603,23 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
-[node name="ButtonStackTrades" type="VBoxContainer" parent="ButtonStackTradesFrame" unique_id=1978747784 groups=["ButtonStacks"]]
-unique_name_in_owner = true
+[node name="ScrollContainer" type="ScrollContainer" parent="ButtonStackTradesFrame" unique_id=1102136506]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.03937008
-anchor_top = 0.027431421
-anchor_right = 0.9606299
-anchor_bottom = 0.9750624
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = -11.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonStackTrades" type="VBoxContainer" parent="ButtonStackTradesFrame/ScrollContainer" unique_id=1978747784 groups=["ButtonStacks"]]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_2fenb")
 metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
@@ -625,14 +642,23 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
-[node name="ButtonStackUpgrades" type="VBoxContainer" parent="ButtonStackUpgradesFrame" unique_id=1940438939]
-unique_name_in_owner = true
+[node name="ScrollContainer" type="ScrollContainer" parent="ButtonStackUpgradesFrame" unique_id=950334852]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.042801555
-anchor_top = 0.024937656
-anchor_right = 0.95769227
-anchor_bottom = 0.974359
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = -11.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonStackUpgrades" type="VBoxContainer" parent="ButtonStackUpgradesFrame/ScrollContainer" unique_id=1940438939]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_2fenb")
 metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
