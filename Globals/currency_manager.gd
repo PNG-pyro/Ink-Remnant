@@ -56,13 +56,15 @@ extends Node
 	load("res://Currencies/Magic/Mage_Locus.tres")
 ]
 
-#func _process(_delta: float) -> void:
-	#for currency in all_currencies:
-		#if currency.name == "Coins" and currency.amount >= 10 and switch == false:
-			#SignalHub.second_popup_open.emit()
-			#switch = true
-		
-		
-		
-		
-		
+func eoc_check() -> bool:
+	var visible_currencies = all_currencies.filter(func(obj: Currency): 
+		#print("Checking hidden" + obj.name + "->" + str(obj.is_hidden))
+		return not obj.is_hidden and not obj.name == "Floor Space"
+	)
+	return visible_currencies.all(func(obj: Currency): 
+		print("Checking full" + obj.name + "->" + str(obj.is_full()))
+		return obj.is_full()
+	)
+
+
+	

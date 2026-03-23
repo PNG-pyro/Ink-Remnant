@@ -3,6 +3,15 @@
 [ext_resource type="Theme" uid="uid://ccqkno7t5mybt" path="res://theme_dark.tres" id="1_myvlp"]
 [ext_resource type="Script" uid="uid://bgumw0rw1fi0l" path="res://StoryPopup/button.gd" id="1_v7gsd"]
 [ext_resource type="Script" uid="uid://b3y0vye5gke62" path="res://StoryPopup/story_popup.gd" id="1_xtf0v"]
+[ext_resource type="Shader" uid="uid://dslgj8u3kyl7y" path="res://StartScreen/Backdrop_Shader.tres" id="4_5455g"]
+[ext_resource type="Texture2D" uid="uid://caqs4hxqhxc4u" path="res://Borders/Storybox_border.png" id="5_6g6n3"]
+[ext_resource type="Shader" uid="uid://b7ojvexq3o8o8" path="res://StartScreen/Frames_Shader.tres" id="5_y6vsg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6g6n3"]
+shader = ExtResource("4_5455g")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wwits"]
+shader = ExtResource("5_y6vsg")
 
 [node name="StoryPopup" type="Window" unique_id=329997860]
 oversampling_override = 1.0
@@ -12,19 +21,39 @@ theme = ExtResource("1_myvlp")
 script = ExtResource("1_xtf0v")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=413083036]
-offset_left = 11.0
+offset_left = 32.0
 offset_top = 23.0
-offset_right = 491.0
-offset_bottom = 242.0
+offset_right = 463.0
+offset_bottom = 217.0
 text = "You are a homeless waif alone in a magical city. The only place to go from here is up!"
 fit_content = true
 
 [node name="Button" type="Button" parent="." unique_id=1575610709]
-offset_left = 12.0
-offset_top = 261.0
-offset_right = 492.0
-offset_bottom = 292.0
+offset_left = 11.0
+offset_top = 242.0
+offset_right = 491.0
+offset_bottom = 288.0
 text = "Search the City"
 script = ExtResource("1_v7gsd")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1646264572]
+z_index = -10
+material = SubResource("ShaderMaterial_6g6n3")
+offset_left = -38.0
+offset_top = -38.0
+offset_right = 526.0
+offset_bottom = 310.0
+mouse_filter = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1656925721]
+material = SubResource("ShaderMaterial_wwits")
+offset_left = 1.0
+offset_right = 501.0
+offset_bottom = 298.0
+texture = ExtResource("5_6g6n3")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

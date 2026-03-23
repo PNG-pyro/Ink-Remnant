@@ -26,6 +26,7 @@ func _ready():
 	SignalHub.second_popup_open.connect(second_popup_open_recieved)
 	SignalHub.job_complete.connect(check_maxes)
 	SignalHub.job_complete.connect(autosave)
+	SignalHub.resource_updated.connect(end_of_content)
 
 
 func _process(delta: float) -> void:
@@ -33,6 +34,7 @@ func _process(delta: float) -> void:
 	if timer >= 1.0:
 		timer = 0.0
 		increment_currencies()
+
 
 
 func increment_currencies():
@@ -77,3 +79,14 @@ func _on_dark_mode_pressed() -> void:
 	self.theme = load("res://theme_dark.tres")
 	RenderingServer.global_shader_parameter_set("Background", Color.MIDNIGHT_BLUE)
 	RenderingServer.global_shader_parameter_set("FrameColors", Color.CORNSILK)
+
+
+func end_of_content(_a = null, _b = null):
+	if CurrencyManager.eoc_check():
+		print("True")
+		var eoc_popup = preload("uid://cxse6vagl4302").instantiate()
+		eoc_popup.label_text = "If you're seeing this, you've reached the end of the current content. Thanks for playing, I hope you had fun! Check back in a few weeks, I'll probably have added more."
+		eoc_popup.button_text = "One more click..."
+		eoc_popup.borderless = true
+		get_tree().current_scene.display_popup(eoc_popup)
+	
