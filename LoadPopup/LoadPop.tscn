@@ -38,55 +38,40 @@ anchor_left = 0.022
 anchor_top = 0.036666665
 anchor_right = 0.978
 anchor_bottom = 0.62666667
+placeholder_text = "Paste savestring here..."
 metadata/_edit_use_anchors_ = true
 
 [node name="Clear" type="Button" parent="." unique_id=965629940]
 anchors_preset = -1
 anchor_left = 0.022
-anchor_top = 0.83666664
+anchor_top = 0.6533333
 anchor_right = 0.488
-anchor_bottom = 0.95666665
+anchor_bottom = 0.7966667
+offset_top = 1.5258789e-05
 text = "Clear"
 metadata/_edit_use_anchors_ = true
 
 [node name="Close" type="Button" parent="." unique_id=221480319]
 anchors_preset = -1
-anchor_left = 0.506
-anchor_top = 0.83666664
-anchor_right = 0.978
-anchor_bottom = 0.95666665
-offset_left = 1.5258789e-05
+anchor_left = 0.262
+anchor_top = 0.83
+anchor_right = 0.734
+anchor_bottom = 0.95
 text = "Close
 "
 metadata/_edit_use_anchors_ = true
 
-[node name="Paste" type="Button" parent="." unique_id=637499883]
-anchors_preset = -1
-anchor_left = 0.018
-anchor_top = 0.7366667
-anchor_right = 0.484
-anchor_bottom = 0.88
-offset_left = 2.0
-offset_top = -25.0
-offset_right = 2.0
-offset_bottom = -24.999985
-text = "Paste from Clipboard"
-metadata/_edit_use_anchors_ = true
-
 [node name="Load" type="Button" parent="." unique_id=1932172508]
 anchors_preset = -1
-anchor_left = 0.502
-anchor_top = 0.7366667
-anchor_right = 0.974
-anchor_bottom = 0.88
-offset_left = 2.0000153
-offset_top = -25.0
-offset_right = 2.0
-offset_bottom = -24.999985
+anchor_left = 0.506
+anchor_top = 0.6533333
+anchor_right = 0.978
+anchor_bottom = 0.79666674
+offset_left = 1.5258789e-05
+offset_top = 1.5258789e-05
 text = "Load"
 metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Clear" to="." method="_on_clear_pressed"]
 [connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
-[connection signal="pressed" from="Paste" to="." method="_on_paste_pressed"]
 [connection signal="pressed" from="Load" to="." method="_on_load_pressed"]
