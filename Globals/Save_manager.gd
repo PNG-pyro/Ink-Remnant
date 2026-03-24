@@ -5,6 +5,7 @@ const SAVE_HEADER = "Ink_Remnant_Save_V1"
 var save_name_1: String = "Slot 1"
 var save_name_2: String = "Slot 2"
 var save_name_3: String = "Autosave"
+var last_focus_time: float = 0
 
 
 func save(savename: String) -> SaveState:
@@ -69,6 +70,16 @@ func _notification(what):
 	match what:
 		NOTIFICATION_APPLICATION_FOCUS_OUT:
 			# window lost focus - keep running but maybe throttle fps
-			Engine.max_fps = 10  # optional, saves CPU
+			Engine.max_fps = 10
+			last_focus_time = Time.get_unix_time_from_system() 
 		NOTIFICATION_APPLICATION_FOCUS_IN:
 			Engine.max_fps = 60  # 0 = unlimited, back to normal
+			if last_focus_time > 0:
+				var elapsed = Time.get_unix_time_from_system() - last_focus_time
+				apply_catch_up(elapsed)
+				last_focus_time = 0.0
+				
+func apply_catch_up(seconds: float):
+	var ticks_missed = floor(seconds)
+	for i in ticks_missed:
+		get_tree().current_scene.increment_currencies()
