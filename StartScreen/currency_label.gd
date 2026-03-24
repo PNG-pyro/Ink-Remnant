@@ -9,8 +9,8 @@ var currency_name: String = "None"
 
 
 func _ready() -> void:
-	if not label_type.makes_label:
-		mouse_filter = Control.MOUSE_FILTER_STOP
+	#if not label_type.makes_label:
+	mouse_filter = Control.MOUSE_FILTER_STOP
 	SignalHub.resource_updated.connect(update_tooltip)
 
 
@@ -76,11 +76,11 @@ func update_tooltip(_a = null, _b = null):
 	
 	if label_type.is_ticker:
 		for type in label_type.tick_types: 
-				line += str(label_type.tick_types[type] * label_type.get_amount()) + " " + type.name + " per second"
+				line += "Adds " + str(label_type.tick_types[type]) + " " + type.name + " per second each"
 	
 	if label_type.is_upgrade:
 		for upgrades in label_type.upgrade_target: 
-			line += "Adds " + str(label_type.upgrade_target[upgrades] * label_type.get_amount()) + " " + str(upgrades.name) + " capacity"
+			line += "Raises " + str(upgrades.name) + " cap " + str(label_type.upgrade_target[upgrades]) + " each"
 	
 	if label_type.make_tooltip:
 		line += label_type.tooltip_says

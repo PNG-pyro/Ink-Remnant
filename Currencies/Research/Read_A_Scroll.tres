@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://diuwc33l8lqgb" path="res://Currencies/Scrolls/Scrolls.tres" id="2_124ui"]
 [ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="3_cxpck"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_tbg1x"]
+[ext_resource type="Resource" uid="uid://bx5m2afmme1pm" path="res://Currencies/Research/Ticker/Clockwork_Dreamcatcher.tres" id="5_124ui"]
 
 [resource]
 script = ExtResource("4_tbg1x")
@@ -20,4 +21,7 @@ ExtResource("2_124ui"): 1
 job_mask = Dictionary[ExtResource("1_ijnh3"), int]({
 ExtResource("2_124ui"): 1
 })
+upper_mask = Array[ExtResource("1_ijnh3")]([ExtResource("5_124ui")])
+make_tooltip = false
+button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

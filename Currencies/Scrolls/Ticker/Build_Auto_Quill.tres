@@ -26,4 +26,5 @@ ExtResource("3_2sj82"): 1,
 ExtResource("4_2sj82"): 1
 })
 upper_mask = Array[ExtResource("1_vnm1f")]([ExtResource("4_88emt")])
+button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

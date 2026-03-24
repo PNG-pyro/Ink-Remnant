@@ -19,7 +19,6 @@ job_cost = Dictionary[ExtResource("1_8vmjt"), int]({
 ExtResource("2_iv7ks"): 88
 })
 job_mask = Dictionary[ExtResource("1_8vmjt"), int]({
-ExtResource("2_iv7ks"): 10,
 ExtResource("3_s24bc"): 1
 })
 upper_mask = Array[ExtResource("1_8vmjt")]([ExtResource("3_uthvu")])

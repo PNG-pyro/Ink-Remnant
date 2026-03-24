@@ -20,4 +20,7 @@ ExtResource("2_ug716"): 5
 job_mask = Dictionary[ExtResource("1_0uf8r"), int]({
 ExtResource("2_ug716"): 2
 })
+upper_mask = Array[ExtResource("1_0uf8r")]([ExtResource("3_ug716")])
+make_tooltip = false
+button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"
