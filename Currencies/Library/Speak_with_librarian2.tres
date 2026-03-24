@@ -15,7 +15,7 @@ ExtResource("2_lt8sq"): 1
 })
 repeats = false
 make_popup = true
-popup_text = "\"Magic... You must have already read the avaliable books.\" She nods. \"The ilbrary does have records of another magic, but it's in the Deep Stacks - you'll need a Blue Card if you want to go in there. The Curator gives them to people he likes.\""
+popup_text = "\"Magic... You must have already read the avaliable books.\" She nods. \"The library does have records of another magic, but it's in the Deep Stacks - you'll need a Blue Card if you want to go in there. The Curator gives them to people he likes.\""
 button_text = "Interesting..."
 button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"
