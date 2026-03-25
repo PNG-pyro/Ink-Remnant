@@ -245,7 +245,7 @@ func enable_self():
 	update_visuals()
 
 func _make_custom_tooltip(for_text):
-	#var panel = Panel.new()
+	var panel = PanelContainer.new()
 	var label = RichTextLabel.new()
 	label.bbcode_enabled = true
 	label.fit_content = true
@@ -253,9 +253,19 @@ func _make_custom_tooltip(for_text):
 	label.fit_content = true
 	label.autowrap_mode = TextServer.AUTOWRAP_OFF
 	label.fit_content = true
+	
+	var empty_style = StyleBoxEmpty.new()
+	label.add_theme_stylebox_override("normal", empty_style)
 	#label.theme = load("res://theme_light.tres")
-	#panel.add_child(label)
-	return label
+	panel.add_child(label)
+	
+		# make the background opaque
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color(0.1, 0.1, 0.1, 1.0)  # fully opaque dark background
+	style.set_corner_radius_all(4)  # optional, rounded corners
+	style.set_content_margin_all(8)  # optional, some padding
+	panel.add_theme_stylebox_override("panel", style)
+	return panel
 
 func check_affordable():
 	if job_run.can_afford():

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bbq3034q1lje8"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_bw24h"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_4jvan"]
+[ext_resource type="Resource" uid="uid://dj2di30qapb46" path="res://Currencies/Books/Books.tres" id="2_mc15c"]
+[ext_resource type="Resource" uid="uid://dfi2tbiu1u2ob" path="res://Currencies/Library/Knowledge_Curator.tres" id="3_f3xp1"]
+[ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="4_a4sbw"]
+
+[resource]
+script = ExtResource("2_4jvan")
+job_name = "Sell books"
+job_desc = "You take a few books to the library..."
+job_story = "\"Oh, I've been looking for a copy of this,\" the Curator exclaims happily. \"Yes, how much?\" "
+job_reward = Dictionary[ExtResource("1_bw24h"), int]({
+ExtResource("4_a4sbw"): 30
+})
+job_cost = Dictionary[ExtResource("1_bw24h"), int]({
+ExtResource("2_mc15c"): 3
+})
+job_mask = Dictionary[ExtResource("1_bw24h"), int]({
+ExtResource("3_f3xp1"): 1
+})
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"
