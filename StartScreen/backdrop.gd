@@ -23,18 +23,20 @@ func _ready():
 	button_stack_librarian.populate(JobManager.librarian_jobs)
 	button_stack_books.populate(JobManager.research_book_jobs)
 	
-	var starting_popup = story_popup.instantiate()
-	starting_popup.label_text = "You're a homeless waif in a magical city. The only way to go from here is up!"
-	starting_popup.button_text = "Search the city"
-	starting_popup.borderless = true
-	display_popup(starting_popup)
-	#add_child(starting_popup)
-	#starting_popup.popup_centered()
+	if not SaveManager.load(SaveManager.save_name_3):
+		var starting_popup = story_popup.instantiate()
+		starting_popup.label_text = "You're a homeless waif in a magical city. The only way to go from here is up!"
+		starting_popup.button_text = "Search the city"
+		starting_popup.borderless = true
+		display_popup(starting_popup)
+
 	
 	SignalHub.second_popup_open.connect(second_popup_open_recieved)
 	SignalHub.job_complete.connect(check_maxes)
 	SignalHub.job_complete.connect(autosave)
 	SignalHub.resource_updated.connect(end_of_content)
+	
+	
 
 
 func _process(delta: float) -> void:

@@ -7,6 +7,50 @@ var save_name_2: String = "Slot 2"
 var save_name_3: String = "Autosave"
 var last_focus_time: float = 0
 
+var focus_gained_callback
+var focus_lost_callback
+
+
+func _ready() -> void:
+	if OS.get_name() == "Web":
+		_setup_web_visibility()
+
+
+func load_autosave():
+	load(save_name_3)
+
+
+func _setup_web_visibility():
+	# create godot callbacks that javascript can call
+	focus_lost_callback = JavaScriptBridge.create_callback(_on_focus_lost)
+	focus_gained_callback = JavaScriptBridge.create_callback(_on_focus_gained)
+	
+	# expose them to javascript on the window object
+	var window = JavaScriptBridge.get_interface("window")
+	window.focus_lost = focus_lost_callback
+	window.focus_gained = focus_gained_callback
+		
+	# tell the browser to call them when visibility changes
+	JavaScriptBridge.eval("""
+		document.addEventListener('visibilitychange', function() {
+			if (document.hidden) {
+				window.focus_lost();
+		} else {
+				window.focus_gained();
+			}
+		});
+	""")
+
+func _on_focus_lost(_args):
+	last_focus_time = Time.get_unix_time_from_system()
+
+
+func _on_focus_gained(_args):
+	if last_focus_time > 0:
+		var elapsed = Time.get_unix_time_from_system() - last_focus_time
+		apply_catch_up(elapsed)
+		last_focus_time = 0.0
+
 
 func save(savename: String) -> SaveState:
 	var save_state: SaveState = SaveState.new()
@@ -31,12 +75,14 @@ func save(savename: String) -> SaveState:
 	return save_state
 
 
-func load(savename: String):
+func load(savename: String) -> bool:
 	if not ResourceLoader.exists("user://" + savename + ".tres"):
-		return
+		return false
 	var save_state: SaveState = ResourceLoader.load("user://" + savename + ".tres")
 	load_save(save_state)
 	SignalHub.display.emit("Game loaded: " + savename + "\n\n")
+	SignalHub.make_visible.emit()
+	return true
 	
 
 func load_save(save_to_load: SaveState):
@@ -67,6 +113,8 @@ func load_save(save_to_load: SaveState):
 
 
 func _notification(what):
+	if OS.get_name() == "Web":
+		return
 	match what:
 		NOTIFICATION_APPLICATION_FOCUS_OUT:
 			# window lost focus - keep running but maybe throttle fps
