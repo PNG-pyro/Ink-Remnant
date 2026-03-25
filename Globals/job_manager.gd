@@ -62,6 +62,7 @@ var curator_jobs: Array[Job] = [
 	load("res://Currencies/Library/Speak_with_Curator.tres"),
 	load("res://Currencies/Library/Speak_with_Curator_2.tres"),
 	load("res://Currencies/Library/Speak_with_Curator_3.tres"),
+	load("res://Currencies/Library/Speak_with_Curator_4.tres"),
 	load("res://Currencies/Library/Offer_Kingly_Blue.tres"),
 ]
 

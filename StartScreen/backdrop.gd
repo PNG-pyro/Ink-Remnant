@@ -23,6 +23,7 @@ func _ready():
 	button_stack_librarian.populate(JobManager.librarian_jobs)
 	button_stack_books.populate(JobManager.research_book_jobs)
 	
+	
 	if not SaveManager.load(SaveManager.save_name_3):
 		var starting_popup = story_popup.instantiate()
 		starting_popup.label_text = "You're a homeless waif in a magical city. The only way to go from here is up!"

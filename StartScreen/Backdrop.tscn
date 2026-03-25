@@ -348,14 +348,14 @@ anchor_bottom = 0.6448598
 text = "Import Save"
 metadata/_edit_use_anchors_ = true
 
-[node name="LoadAutosave" type="Button" parent="SaveTabFrame" unique_id=1484189838]
+[node name="NewGame" type="Button" parent="SaveTabFrame" unique_id=1484189838]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.50555557
 anchor_top = 0.05607463
 anchor_right = 0.97962964
 anchor_bottom = 0.31955403
-text = "Load Autosave"
+text = "New Game"
 script = ExtResource("14_7envs")
 metadata/_edit_use_anchors_ = true
 
@@ -698,7 +698,7 @@ visible = false
 [connection signal="pressed" from="SaveTabFrame/ExportSave" to="SavePopup" method="_on_export_save_pressed"]
 [connection signal="pressed" from="SaveTabFrame/LoadButton" to="SaveTabFrame/LoadButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/ImportSave" to="LoadPopup" method="_on_import_save_pressed"]
-[connection signal="pressed" from="SaveTabFrame/LoadAutosave" to="SaveTabFrame/LoadAutosave" method="_on_pressed"]
+[connection signal="pressed" from="SaveTabFrame/NewGame" to="SaveTabFrame/NewGame" method="_on_pressed"]
 [connection signal="pressed" from="ThemeControlFrame/DarkMode" to="." method="_on_dark_mode_pressed"]
 [connection signal="pressed" from="ThemeControlFrame/LightMode" to="." method="_on_light_mode_pressed"]
 [connection signal="pressed" from="SettingsButton" to="SettingsButton" method="_on_pressed"]

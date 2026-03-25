@@ -23,7 +23,7 @@ ExtResource("3_vx7vs"): 1
 })
 repeats = false
 make_popup = true
-popup_text = "\"Some say there are thirteen magics, and some say there are countless. No-one, however, totally disbelieves, because magic is something so fundamental to the world, despite it's intrinsically alien nature...\" "
+popup_text = "\"Some say there are thirteen magics, and some say there are countless. No-one, however, totally disbelieves, because magic is something so fundamental to the world, despite its intrinsically alien nature...\" "
 button_text = "Listen intently "
 button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"
