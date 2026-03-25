@@ -20,7 +20,7 @@ ExtResource("2_jneeo"): 1
 upper_mask = Array[ExtResource("1_14ft3")]([ExtResource("3_jneeo")])
 repeats = false
 make_popup = true
-popup_text = "\"Lapidamancy, from the art of lapidary, is famous for making it's practitioners rich. This isn't precisely correct, and is usually the other way around; the poor simply never have a chance to touch the threshold of this practice. There are some theories that cheaper stones could aid in practice, or other ideas. This author suggests...\""
+popup_text = "\"Lapidamancy, from the art of lapidary, is famous for making its practitioners rich. This isn't precisely correct, and is usually the other way around: the poor simply never have a chance to touch the threshold of this practice. There are some theories that cheaper stones could aid in practice, or other ideas. This author suggests...\""
 button_text = "Done reading"
 button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

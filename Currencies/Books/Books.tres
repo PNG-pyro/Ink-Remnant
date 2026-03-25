@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_q8bch")
-name = "books"
+name = "Books"
 max_amount = 5
 tick_types = null
 is_upgrade = true

@@ -21,6 +21,7 @@ var trades: Array[Job] = [
 	load("res://Currencies/Books/CopyScrollsIntoBook.tres"),
 	load("res://Currencies/Magic/Create_Magic_Gem.tres"),
 	load("res://Currencies/Magic/Create_Kingly_Blue.tres"),
+	load("res://Currencies/Coins/Sell_Book.tres")
 ]
 
 
