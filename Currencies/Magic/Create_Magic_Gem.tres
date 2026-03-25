@@ -23,6 +23,5 @@ ExtResource("3_jfqmu"): 10
 job_mask = Dictionary[ExtResource("1_q0pfs"), int]({
 ExtResource("4_jfqmu"): 1
 })
-upper_mask = Array[ExtResource("1_q0pfs")]([ExtResource("4_t0syn")])
 button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

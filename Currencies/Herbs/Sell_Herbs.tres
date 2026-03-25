@@ -10,7 +10,7 @@
 script = ExtResource("1_ih7g8")
 job_name = "Sell herbs"
 job_desc = "You take your herbs to the apothecary..."
-job_story = "They're not the freshest,' the apothecary sniffs, but he pays you happily."
+job_story = "'They're not the freshest,' the apothecary sniffs, but he pays you happily."
 job_duration = 1
 job_reward = Dictionary[ExtResource("1_0uf8r"), int]({
 ExtResource("3_ug716"): 5
