@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_5qk75"]
 [ext_resource type="Resource" uid="uid://dmdq7m6ihqtg6" path="res://Currencies/Library/Knowledge_poppy_1.tres" id="2_4oxs5"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_4oxs5"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_eh0qi"]
 
 [resource]
@@ -10,6 +11,9 @@ job_name = "...the Library"
 job_desc = "A morose, middle-aged woman is unstacking books..."
 job_story = "She nods and returns to her work. "
 job_duration = 3
+job_reward = Dictionary[ExtResource("1_5qk75"), int]({
+ExtResource("3_4oxs5"): 0
+})
 job_mask = Dictionary[ExtResource("1_5qk75"), int]({
 ExtResource("2_4oxs5"): 1
 })

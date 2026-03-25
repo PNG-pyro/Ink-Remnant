@@ -31,6 +31,7 @@ var current_state = State.IDLE
 @onready var new_label: RichTextLabel = RichTextLabel.new()
 @onready var parent: Node = $".."
 @onready var tween: Tween
+@onready var tween_duration: float = 0.5
 
 
 func _ready():
@@ -147,7 +148,8 @@ func start_filling():
 	progress.value = 0
 	
 	tween = create_tween()
-	tween.tween_property(progress, "value", 100, job_run.job_duration)
+	tween_duration = calc_duration()
+	tween.tween_property(progress, "value", 100, tween_duration)
 	await tween.finished
 	
 	job_run.pay_reward()
@@ -270,3 +272,23 @@ func make_popup(popup_job: Job):
 	job_popup.button_text = popup_job.button_text
 	job_popup.borderless = true
 	get_tree().current_scene.display_popup(job_popup)
+	
+func calc_duration() -> float:
+	var reward_currency: Currency = job_run.job_reward.keys()[0]
+	var reward_max: int = reward_currency.get_max()
+	var run_time: float = 1.0
+	
+	if reward_max >= 200:
+		run_time = 0.5
+	elif reward_max >= 100:
+		run_time = 1.0
+	elif reward_max >= 20:
+		run_time = 2.0
+	elif reward_max >= 10:
+		run_time = 3.0
+	elif reward_max >= 5:
+		run_time = 4.0
+	elif reward_max >= 1:
+		run_time = 5.0
+		
+	return run_time

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_mhf4n"]
 [ext_resource type="Resource" uid="uid://ku2llglxbfjb" path="res://Currencies/Library/Library_Card.tres" id="2_cu55s"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_cu55s"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_u5hbc"]
 
 [resource]
@@ -10,6 +11,9 @@ job_name = "Research the city"
 job_desc = "You wander through the shelves, picking and browsing likely tomes. "
 job_story = "The only way to judge a book is by it's cover... thankfully, they've started providing little summaries on the back. "
 job_duration = 2
+job_reward = Dictionary[ExtResource("1_mhf4n"), int]({
+ExtResource("3_cu55s"): 0
+})
 job_mask = Dictionary[ExtResource("1_mhf4n"), int]({
 ExtResource("2_cu55s"): 1
 })
