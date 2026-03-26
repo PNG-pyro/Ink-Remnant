@@ -2,8 +2,16 @@
 
 [ext_resource type="FontFile" uid="uid://ds46j10o17d8f" path="res://Font/NotoSansSymbols2-Regular.ttf" id="1_uc2gx"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uc2gx"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0, 0.010499939, 0.21, 1)
+
 [resource]
 Button/colors/icon_disabled_color = Color(1, 1, 1, 0)
 Button/colors/icon_hover_color = Color(1, 1, 1, 0)
 Button/colors/icon_normal_color = Color(1, 1, 1, 0)
 Button/fonts/font = ExtResource("1_uc2gx")
+TooltipPanel/styles/panel = SubResource("StyleBoxFlat_uc2gx")
