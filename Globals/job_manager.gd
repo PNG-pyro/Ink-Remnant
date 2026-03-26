@@ -10,6 +10,7 @@ var simple_jobs: Array[Job] = [
 	load("res://Currencies/Magic/Practice_Octomancy.tres"),
 	load("res://Currencies/Magic/Practice_Lapidomancy.tres"),
 	load("res://Currencies/Magic/Practice_Cyanomancy.tres"),
+	load("res://Currencies/Magic/Oneiromancy/Practice_Oneiromancy.tres"),
 
 
 
@@ -43,7 +44,7 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Magic/Research_Octomancy.tres"),
 	load("res://Currencies/Magic/Research_Lapidomancy.tres"),
 	load("res://Currencies/Magic/Research_Cyanomancy.tres"),
-	load("res://Currencies/Magic/Research_Oneiromancy.tres"),
+	load("res://Currencies/Magic/Oneiromancy/Research_Oneiromancy.tres"),
 	
 	load("res://Currencies/Scrolls/Upgrades/Buy_Scroll_Case.tres"),
 	load("res://Currencies/Telescope/Construct_telescope.tres"),

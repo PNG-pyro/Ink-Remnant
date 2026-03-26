@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_fpkgp"]
 [ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Rules_Of_Cyanomancy.tres" id="2_vhcen"]
 [ext_resource type="Resource" uid="uid://dq5dcilkobnc1" path="res://Currencies/Library/Knowledge_Cyanomancy.tres" id="3_vbmd3"]
+[ext_resource type="Resource" uid="uid://dmdq7m6ihqtg6" path="res://Currencies/Library/Knowledge_poppy_1.tres" id="3_vhcen"]
 [ext_resource type="Resource" uid="uid://eyav2ywl1wru" path="res://Currencies/Library/Librarian/Currencies/Librarian_cyanomancy.tres" id="5_p81m4"]
 
 [resource]
@@ -18,7 +19,8 @@ job_cost = Dictionary[ExtResource("1_aaked"), int]({
 ExtResource("2_vhcen"): 1
 })
 job_mask = Dictionary[ExtResource("1_aaked"), int]({
-ExtResource("3_vbmd3"): 1
+ExtResource("3_vbmd3"): 1,
+ExtResource("3_vhcen"): 1
 })
 make_tooltip = false
 repeats = false

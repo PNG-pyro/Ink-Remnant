@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dwnk4okf1pley"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_yds4l"]
+[ext_resource type="Resource" uid="uid://dncrbwdwm20km" path="res://Currencies/Library/Knowledge_Oneiromancy.tres" id="2_w5kut"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_k7075"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_8wkpc"]
+
+[resource]
+script = ExtResource("4_8wkpc")
+job_name = "Practice Oneiromancy"
+job_desc = "It's meditation, not napping."
+job_story = "Yes, it looks like napping, and feels like napping, and it's even very restful, but it's a distinctly different process."
+job_reward = Dictionary[ExtResource("1_yds4l"), int]({
+ExtResource("3_k7075"): 17
+})
+job_mask = Dictionary[ExtResource("1_yds4l"), int]({
+ExtResource("2_w5kut"): 1
+})
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"
