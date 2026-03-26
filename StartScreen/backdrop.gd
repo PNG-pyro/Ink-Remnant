@@ -10,7 +10,9 @@ extends Node
 @onready var seen_eoc = false
 
 @export var background_color_dark: Color = Color(0.06, 0.06, 0.06, 0.063)
-@export var background_color_light: Color = Color(1.0, 0.933, 0.0, 0.902)
+@export var background_color_light: Color = Color(1.0, 0.963, 0.45, 0.902)
+@export var frames_color_dark: Color = Color(0.0, 0.0, 0.0, 1.0)
+@export var frames_color_light: Color = Color(1.0, 1.0, 1.0, 1.0)
 
 var timer: float = 0.0
 
@@ -85,7 +87,7 @@ func display_popup(popup):
 func _on_light_mode_pressed() -> void:
 	self.theme = load("res://theme_light.tres")
 	RenderingServer.global_shader_parameter_set("Background", background_color_light)
-	RenderingServer.global_shader_parameter_set("FrameColors", background_color_dark)
+	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_dark)
 	$"BackdropDark".visible = false
 	$"BackdropLight".visible = true
 
@@ -93,7 +95,7 @@ func _on_light_mode_pressed() -> void:
 func _on_dark_mode_pressed() -> void:
 	self.theme = load("res://theme_dark.tres")
 	RenderingServer.global_shader_parameter_set("Background", background_color_dark)
-	RenderingServer.global_shader_parameter_set("FrameColors", background_color_light)
+	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_light)
 	$"BackdropDark".visible = true
 	$"BackdropLight".visible = false
 
