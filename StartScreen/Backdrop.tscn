@@ -31,6 +31,8 @@
 [ext_resource type="Shader" uid="uid://dslgj8u3kyl7y" path="res://StartScreen/Backdrop_Shader.tres" id="24_jd06h"]
 [ext_resource type="Script" uid="uid://w7se8q4yrmtb" path="res://StartScreen/mute_button.gd" id="28_plbck"]
 [ext_resource type="Script" uid="uid://d103c4xklkruj" path="res://StartScreen/volume_slider.gd" id="28_sr1na"]
+[ext_resource type="Texture2D" uid="uid://41gbucui5snq" path="res://Backgrounds/pixel_blue.png" id="30_satxg"]
+[ext_resource type="Texture2D" uid="uid://bc6vvshsbhrvr" path="res://Backgrounds/pixel_orangish.png" id="31_ghnkm"]
 [ext_resource type="Script" uid="uid://c2pr888kk80e8" path="res://StartScreen/jobs_autorun.gd" id="48_gpihu"]
 [ext_resource type="PackedScene" uid="uid://dm045skp7gvvq" path="res://LoadPopup/LoadPop.tscn" id="49_tium7"]
 [ext_resource type="PackedScene" uid="uid://n5c0w6akhri4" path="res://SavePopup/SavePop.tscn" id="50_gpihu"]
@@ -38,29 +40,65 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_plbck"]
 shader = ExtResource("17_eo2o8")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b6ncd"]
+shader = ExtResource("24_jd06h")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yrt3q"]
+shader = ExtResource("24_jd06h")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_446pc"]
+shader = ExtResource("24_jd06h")
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_x5hg1"]
 shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lxauj"]
+shader = ExtResource("24_jd06h")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tfair"]
+shader = ExtResource("24_jd06h")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_eo2o8"]
 shader = ExtResource("17_eo2o8")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i21m4"]
+shader = ExtResource("24_jd06h")
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jd06h"]
 shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_suwb6"]
+shader = ExtResource("24_jd06h")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ptm2y"]
 shader = ExtResource("17_eo2o8")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_satxg"]
+shader = ExtResource("24_jd06h")
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ushch"]
 shader = ExtResource("17_eo2o8")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ghnkm"]
+shader = ExtResource("24_jd06h")
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_do1qa"]
 shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_58m4n"]
+shader = ExtResource("24_jd06h")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sr1na"]
 shader = ExtResource("24_jd06h")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_68wlb"]
 shader = ExtResource("17_eo2o8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_phwaq"]
+shader = ExtResource("24_jd06h")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tx01m"]
+shader = ExtResource("24_jd06h")
 
 [node name="Backdrop" type="Control" unique_id=1863823846]
 layout_mode = 3
@@ -129,6 +167,18 @@ patch_margin_top = 16
 patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
+
+[node name="HouseTabPanel" type="Panel" parent="HouseTabFrame" unique_id=458288573 groups=["HouseTabFrame"]]
+z_index = -5
+material = SubResource("ShaderMaterial_b6ncd")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
 
 [node name="HouseTabs" type="VFlowContainer" parent="HouseTabFrame" unique_id=688112613]
 layout_mode = 1
@@ -220,6 +270,18 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("16_phwaq")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
+[node name="TowerTabPanel" type="Panel" parent="TowerTabFrame" unique_id=399982524 groups=["TowerFrame"]]
+z_index = -5
+material = SubResource("ShaderMaterial_yrt3q")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
 [node name="LibraryFrame" type="NinePatchRect" parent="." unique_id=493527598 groups=["LibraryFrame"]]
 visible = false
 material = SubResource("ShaderMaterial_plbck")
@@ -278,6 +340,18 @@ grow_vertical = 2
 script = ExtResource("1_2fenb")
 metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
+
+[node name="LibraryPanel" type="Panel" parent="LibraryFrame" unique_id=1924736668 groups=["LibraryFrame"]]
+z_index = -5
+material = SubResource("ShaderMaterial_446pc")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
 
 [node name="SaveTabFrame" type="NinePatchRect" parent="." unique_id=1625848577 groups=["SaveTabFrame"]]
 visible = false
@@ -359,6 +433,18 @@ text = "New Game"
 script = ExtResource("14_7envs")
 metadata/_edit_use_anchors_ = true
 
+[node name="SaveTabPanel" type="Panel" parent="SaveTabFrame" unique_id=763447259 groups=["SaveTabFrame"]]
+z_index = -5
+material = SubResource("ShaderMaterial_lxauj")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
 [node name="ThemeControlFrame" type="NinePatchRect" parent="." unique_id=1937613489 groups=["SaveTabFrame"]]
 visible = false
 material = SubResource("ShaderMaterial_x5hg1")
@@ -396,6 +482,18 @@ anchor_bottom = 0.87850463
 text = "Light Mode"
 metadata/_edit_use_anchors_ = true
 
+[node name="ThemeControlPanel" type="Panel" parent="ThemeControlFrame" unique_id=993674031 groups=["SaveTabFrame"]]
+z_index = -5
+material = SubResource("ShaderMaterial_tfair")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+
 [node name="StoryBoxFrame" type="NinePatchRect" parent="." unique_id=1487746963]
 material = SubResource("ShaderMaterial_eo2o8")
 layout_mode = 1
@@ -416,6 +514,28 @@ patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
 [node name="StoryBox" type="RichTextLabel" parent="StoryBoxFrame" unique_id=1493606125]
+clip_contents = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.008324662
+anchor_top = 0.041237112
+anchor_right = 0.9916753
+anchor_bottom = 0.9587629
+scroll_following = true
+script = ExtResource("7_xnqce")
+metadata/_edit_use_anchors_ = true
+
+[node name="StoryBoxPanel" type="Panel" parent="StoryBoxFrame" unique_id=1326325260]
+z_index = -5
+material = SubResource("ShaderMaterial_i21m4")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StoryBox" type="RichTextLabel" parent="StoryBoxFrame/StoryBoxPanel" unique_id=838007467]
 clip_contents = false
 layout_mode = 1
 anchors_preset = -1
@@ -460,6 +580,20 @@ size_flags_vertical = 0
 script = ExtResource("2_2fenb")
 metadata/_edit_use_anchors_ = true
 
+[node name="CurrencyStackPanel" type="Panel" parent="CurrencyStackFrame" unique_id=1714741717]
+z_index = -5
+material = SubResource("ShaderMaterial_suwb6")
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+mouse_filter = 2
+
 [node name="ButtonStackJobsFrame" type="NinePatchRect" parent="." unique_id=2035962465 groups=["ButtonFrames"]]
 material = SubResource("ShaderMaterial_ptm2y")
 clip_contents = true
@@ -475,6 +609,18 @@ patch_margin_top = 16
 patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
+
+[node name="JobsPanel" type="Panel" parent="ButtonStackJobsFrame" unique_id=1112396865 groups=["ButtonFrames"]]
+z_index = -5
+material = SubResource("ShaderMaterial_satxg")
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="ButtonStackJobsFrame" unique_id=617786199]
 layout_mode = 1
@@ -514,6 +660,19 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
+[node name="TradesPanel" type="Panel" parent="ButtonStackTradesFrame" unique_id=1602443773 groups=["ButtonFrames"]]
+z_index = -5
+material = SubResource("ShaderMaterial_ghnkm")
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
 [node name="ScrollContainer" type="ScrollContainer" parent="ButtonStackTradesFrame" unique_id=1102136506]
 layout_mode = 1
 anchors_preset = 15
@@ -552,6 +711,19 @@ patch_margin_top = 16
 patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
+
+[node name="UpgradesPanel" type="Panel" parent="ButtonStackUpgradesFrame" unique_id=1425329499 groups=["ButtonFrames"]]
+z_index = -5
+material = SubResource("ShaderMaterial_58m4n")
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="ButtonStackUpgradesFrame" unique_id=950334852]
 layout_mode = 1
@@ -597,6 +769,7 @@ script = ExtResource("19_4asdo")
 metadata/_edit_use_anchors_ = true
 
 [node name="Backdrop" type="ColorRect" parent="." unique_id=800926911]
+visible = false
 z_index = -10
 y_sort_enabled = true
 material = SubResource("ShaderMaterial_sr1na")
@@ -604,6 +777,28 @@ layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 720.0
 mouse_filter = 2
+
+[node name="BackdropDark" type="TextureRect" parent="." unique_id=1565207643]
+visible = false
+z_index = -10
+y_sort_enabled = true
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("30_satxg")
+expand_mode = 1
+
+[node name="BackdropLight" type="TextureRect" parent="." unique_id=1085629968]
+visible = false
+z_index = -10
+y_sort_enabled = true
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("31_ghnkm")
+expand_mode = 1
 
 [node name="MusicCreditsFrame" type="NinePatchRect" parent="." unique_id=426267421 groups=["SaveTabFrame"]]
 visible = false
@@ -652,6 +847,14 @@ offset_bottom = 154.0
 bbcode_enabled = true
 text = "[font_size=12]Volume"
 
+[node name="MusicCreditsPanel" type="Panel" parent="MusicCreditsFrame" unique_id=1394852088 groups=["SaveTabFrame"]]
+z_index = -5
+material = SubResource("ShaderMaterial_phwaq")
+layout_mode = 0
+offset_right = 456.0
+offset_bottom = 206.0
+mouse_filter = 2
+
 [node name="MiscSettingsFrame" type="NinePatchRect" parent="." unique_id=5497017 groups=["SaveTabFrame"]]
 visible = false
 material = SubResource("ShaderMaterial_68wlb")
@@ -665,6 +868,14 @@ patch_margin_left = 16
 patch_margin_top = 16
 patch_margin_right = 16
 patch_margin_bottom = 16
+
+[node name="MiscSettingsPanel" type="Panel" parent="MiscSettingsFrame" unique_id=866679981 groups=["SaveTabFrame"]]
+z_index = -5
+material = SubResource("ShaderMaterial_tx01m")
+layout_mode = 0
+offset_right = 339.0
+offset_bottom = 206.0
+mouse_filter = 2
 
 [node name="MuteButton" type="CheckButton" parent="MiscSettingsFrame" unique_id=380059048]
 layout_mode = 0
