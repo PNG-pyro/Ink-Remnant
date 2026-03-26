@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c2e6hpt8q3pi"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_wu0ke"]
+[ext_resource type="Resource" uid="uid://eyav2ywl1wru" path="res://Currencies/Library/Librarian/Currencies/Librarian_cyanomancy.tres" id="2_4dusi"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_7c54v"]
+
+[resource]
+script = ExtResource("3_7c54v")
+job_name = "...The Curator"
+job_desc = "\"Oh, him?\" She looks around, making sure he's not nearby. "
+job_story = "\"Really, I shouldn't gossip,\" she finishes, abashed."
+job_reward = Dictionary[ExtResource("1_wu0ke"), int]({
+ExtResource("2_4dusi"): 1
+})
+job_mask = Dictionary[ExtResource("1_wu0ke"), int]({
+ExtResource("2_4dusi"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "\"He and I... we go way back.\" She pauses, looking unsure, but continues after a moment. \"Truth be told, I've always... admired him.\" She looks away."
+button_text = "Oh, really?"
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

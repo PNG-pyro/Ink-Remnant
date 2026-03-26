@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cdngx6721pslj"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_7gb1l"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_trpni"]
+[ext_resource type="Resource" uid="uid://ku2llglxbfjb" path="res://Currencies/Library/Library_Card.tres" id="2_v0odb"]
+[ext_resource type="Resource" uid="uid://c1uth0w20e75b" path="res://Currencies/Library/Knowledge_Octomancy.tres" id="3_v0odb"]
+
+[resource]
+script = ExtResource("2_trpni")
+job_name = "Discover Octomancy"
+job_desc = "You wander through the shelves, picking and browsing likely tomes. "
+job_story = "The only way to judge a book is by it's cover... thankfully, they've started providing little summaries on the back. "
+job_duration = 2
+job_reward = Dictionary[ExtResource("1_7gb1l"), int]({
+ExtResource("3_v0odb"): 1
+})
+job_mask = Dictionary[ExtResource("1_7gb1l"), int]({
+ExtResource("2_v0odb"): 1
+})
+upper_mask = Array[ExtResource("1_7gb1l")]([ExtResource("3_v0odb")])
+repeats = false
+make_popup = true
+popup_text = "\"Octomancy, or the magic of eights, is one of the oldest and simplest magics practiced in Archeopolis. It merely declares that eight of anything and everything is significant, and the more eight-aligned the number, the more powerful it becomes. Any practitioner will quickly realize that doing everything eight times has both a joy and frustration all its own...\""
+button_text = "Done reading"
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

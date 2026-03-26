@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://da5s16w0nvg7e"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_nge5w"]
+[ext_resource type="Resource" uid="uid://dy5on0jkseb5" path="res://Currencies/Library/Curator/Currencies/Curator_Octomancy.tres" id="4_ax2m1"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_8qsri"]
+
+[resource]
+script = ExtResource("5_8qsri")
+job_name = "...Octomantic activites"
+job_desc = "\"Oh?\" The Curator takes out an eight-sided monocle and places it over his left eye. \"I didn't realize you tread a path of eight steps...\""
+job_story = "After a refreshing discussion, you leave, full of ideas."
+job_duration = 4
+job_reward = Dictionary[ExtResource("1_nge5w"), int]({
+ExtResource("4_ax2m1"): 1
+})
+job_mask = Dictionary[ExtResource("1_nge5w"), int]({
+ExtResource("4_ax2m1"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "\"Well, there are eight doors in the city that have particular octomantic uses. The Door into Summer is particularly intriguing in its implications, what with the solstice and the months harmonizing according to Gregorian modes...\""
+button_text = "Listen intently "
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

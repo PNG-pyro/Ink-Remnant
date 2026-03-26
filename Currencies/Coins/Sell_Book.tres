@@ -5,6 +5,7 @@
 [ext_resource type="Resource" uid="uid://dj2di30qapb46" path="res://Currencies/Books/Books.tres" id="2_mc15c"]
 [ext_resource type="Resource" uid="uid://dfi2tbiu1u2ob" path="res://Currencies/Library/Knowledge_Curator.tres" id="3_f3xp1"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="4_a4sbw"]
+[ext_resource type="Resource" uid="uid://xdaxoyxe6ppf" path="res://Currencies/Magic/Octagon.tres" id="6_f3xp1"]
 
 [resource]
 script = ExtResource("2_4jvan")
@@ -20,5 +21,6 @@ ExtResource("2_mc15c"): 3
 job_mask = Dictionary[ExtResource("1_bw24h"), int]({
 ExtResource("3_f3xp1"): 1
 })
+upper_mask = Array[ExtResource("1_bw24h")]([ExtResource("6_f3xp1")])
 button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

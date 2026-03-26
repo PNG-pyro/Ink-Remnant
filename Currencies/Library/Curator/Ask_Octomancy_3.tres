@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://covock5brqgi1"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_yatcf"]
+[ext_resource type="Resource" uid="uid://dy5on0jkseb5" path="res://Currencies/Library/Curator/Currencies/Curator_Octomancy.tres" id="2_t6ofv"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_4s7r7"]
+
+[resource]
+script = ExtResource("3_4s7r7")
+job_name = "...The Librarian"
+job_desc = "\"Ah, you must mean Librarian Poppy? Yes, a remarkable woman.\""
+job_story = "\"She is a practitioner as well, although of a different sort.\" "
+job_duration = 4
+job_reward = Dictionary[ExtResource("1_yatcf"), int]({
+ExtResource("2_t6ofv"): 1
+})
+job_mask = Dictionary[ExtResource("1_yatcf"), int]({
+ExtResource("2_t6ofv"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "\"Yes, I've employed Poppy for many years. Her work is exemplary, and...\" He trails off, looking into the distance. \"Really, I should talk to her more. We met years and years ago, you know.\" "
+button_text = "Listen intently "
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

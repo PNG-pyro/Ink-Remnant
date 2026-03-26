@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://ccjopatuefwma"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_aaked"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_fpkgp"]
+[ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Rules_Of_Cyanomancy.tres" id="2_vhcen"]
+[ext_resource type="Resource" uid="uid://dq5dcilkobnc1" path="res://Currencies/Library/Knowledge_Cyanomancy.tres" id="3_vbmd3"]
+[ext_resource type="Resource" uid="uid://eyav2ywl1wru" path="res://Currencies/Library/Librarian/Currencies/Librarian_cyanomancy.tres" id="5_p81m4"]
+
+[resource]
+script = ExtResource("2_fpkgp")
+job_name = "...a shared interest"
+job_desc = "\"Yes, I agree.\" She rolls up a cuff, showing the vivid blue lining inside. \"It can be a very cozy magic.\""
+job_story = "After an intense discussion, you leave energized and optimistic."
+job_reward = Dictionary[ExtResource("1_aaked"), int]({
+ExtResource("5_p81m4"): 1
+})
+job_cost = Dictionary[ExtResource("1_aaked"), int]({
+ExtResource("2_vhcen"): 1
+})
+job_mask = Dictionary[ExtResource("1_aaked"), int]({
+ExtResource("3_vbmd3"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "\"Of course the shade is important.\" The Librarian gives an offended snort. \"Cyan may be the most important blue, but the sky is always 'sky blue' no matter how dim or bright. At least, that's how I see it.\" "
+button_text = "Fascinating..."
+button_signal = null
+metadata/_custom_type_script = "uid://chnttjydh538r"

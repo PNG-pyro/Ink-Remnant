@@ -376,7 +376,7 @@ offset_left = 12.0
 offset_top = 11.9999695
 offset_right = 266.0
 offset_bottom = 67.99997
-text = "Ver. 0.5.7"
+text = "Ver. 0.5.7.1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -534,18 +534,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="StoryBox" type="RichTextLabel" parent="StoryBoxFrame/StoryBoxPanel" unique_id=838007467]
-clip_contents = false
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.008324662
-anchor_top = 0.041237112
-anchor_right = 0.9916753
-anchor_bottom = 0.9587629
-scroll_following = true
-script = ExtResource("7_xnqce")
-metadata/_edit_use_anchors_ = true
+mouse_filter = 2
 
 [node name="CurrencyStackFrame" type="NinePatchRect" parent="." unique_id=1379427192]
 material = SubResource("ShaderMaterial_jd06h")
