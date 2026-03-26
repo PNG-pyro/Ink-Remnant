@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://g2p5dicrk0mm"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_rwc4k"]
+[ext_resource type="Resource" uid="uid://drjg6sn7hxd4t" path="res://Currencies/Tower/Knowledge_of_tower4.tres" id="2_wyeox"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_ilhtw"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_yb22j"]
+
+[resource]
+script = ExtResource("4_yb22j")
+job_name = "Examine the walls"
+job_desc = "It's mirrors. They're all mirrors. "
+job_story = "What sort of lunatic did this?"
+job_reward = Dictionary[ExtResource("1_rwc4k"), int]({
+ExtResource("3_ilhtw"): 0
+})
+job_mask = Dictionary[ExtResource("1_rwc4k"), int]({
+ExtResource("2_wyeox"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You wander the tower interior, looking up and down. It's empty except for a stair winding up the inside. The central sunbeam spears through the hollow core with a scintillating brilliance, directed by a hundred hundred mirrors placed on every wall. What's going on here?"
+button_text = "Look about in wonder"
+metadata/_custom_type_script = "uid://chnttjydh538r"

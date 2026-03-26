@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dp1tv61ljl7kv"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_0fqlw"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="2_dgt7o"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_0fqlw"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_n7per"]
+
+[resource]
+script = ExtResource("5_n7per")
+job_name = "The chair needs time..."
+job_desc = "Something essential has been expended..."
+job_story = "Who built this place?"
+job_reward = Dictionary[ExtResource("1_0fqlw"), int]({
+ExtResource("3_0fqlw"): 0
+})
+job_mask = Dictionary[ExtResource("1_0fqlw"), int]({
+ExtResource("2_dgt7o"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "The chair no longer responds to your touch, nor the sunlight still streaming over it. Whatever it did has used up something essential. Perhaps it will recharge in time; it must, or how would it have worked for you?"
+button_text = "Whoever built it must have used it themselves"
+metadata/_custom_type_script = "uid://chnttjydh538r"

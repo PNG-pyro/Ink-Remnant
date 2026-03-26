@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c1pv7ikeqduk2"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_bm6qx"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_56e7f"]
+[ext_resource type="Resource" uid="uid://dwkbs0l5fjyrv" path="res://Currencies/Tower/Knowledge_of_tower3.tres" id="2_lpp0y"]
+[ext_resource type="Resource" uid="uid://drjg6sn7hxd4t" path="res://Currencies/Tower/Knowledge_of_tower4.tres" id="3_augty"]
+
+[resource]
+script = ExtResource("2_56e7f")
+job_name = "Look inside"
+job_desc = "You swing the door wide, letting in a slice of bright afternoon sun..."
+job_story = "What on earth is this place...?"
+job_reward = Dictionary[ExtResource("1_bm6qx"), int]({
+ExtResource("3_augty"): 1
+})
+job_mask = Dictionary[ExtResource("1_bm6qx"), int]({
+ExtResource("2_lpp0y"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "As the afternoon sun spills into the dark interior, it lights up with a sudden and eye-watering brightness. The entire inside of the tower is mirrored! Light spills in the top, concentrated and condensed inside into a brilliant sunbeam."
+button_text = "Look about in wonder"
+metadata/_custom_type_script = "uid://chnttjydh538r"

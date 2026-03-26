@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://kpx77a0heamu"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_11rw3"]
+
+[resource]
+script = ExtResource("1_11rw3")
+name = "Knowledge: Mirrormancy"
+max_amount = 1
+tick_types = null
+makes_label = false
+make_tooltip = true
+tooltip_says = "Knowledge of the magic of mirrors"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

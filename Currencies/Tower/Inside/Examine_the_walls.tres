@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://we8fecdnv0a7"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_yseof"]
+[ext_resource type="Resource" uid="uid://drjg6sn7hxd4t" path="res://Currencies/Tower/Knowledge_of_tower4.tres" id="2_0rud6"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_0ich4"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_0rud6"]
+
+[resource]
+script = ExtResource("3_0ich4")
+job_name = "Examine the roof"
+job_desc = "More and more mirrors..."
+job_story = "What sort of lunatic did this?"
+job_reward = Dictionary[ExtResource("1_yseof"), int]({
+ExtResource("3_0rud6"): 0
+})
+job_mask = Dictionary[ExtResource("1_yseof"), int]({
+ExtResource("2_0rud6"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You climb the staircase, looking over each stair before trusting it with your weight. The wrought-iron construction is rock-steady, however, and you reach the top easily. What looked like windows from the outside are actually monstrous glass and silver solar collectors, funnelling all the sunlight they can grasp into the hollow center of the tower."
+button_text = "Look about in wonder"
+metadata/_custom_type_script = "uid://chnttjydh538r"

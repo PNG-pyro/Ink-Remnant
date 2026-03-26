@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bcy4drwwoyivd"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_qx1ia"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_6ew3n"]
+[ext_resource type="Resource" uid="uid://dtcnndc7v3wxx" path="res://Currencies/Tower/Knowledge_of_tower2.tres" id="2_ey7p7"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_2u6eo"]
+
+[resource]
+script = ExtResource("2_6ew3n")
+job_name = "Look around the tower"
+job_desc = "You circle the outside slowly..."
+job_story = "There's a slim path between the base and the cliffs, and you walk all the way around."
+job_reward = Dictionary[ExtResource("1_qx1ia"), int]({
+ExtResource("3_2u6eo"): 0
+})
+job_mask = Dictionary[ExtResource("1_qx1ia"), int]({
+ExtResource("2_ey7p7"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You circle the tower, examining it curiously. It's weathered but sturdy, built from black basalt brought from who-knows-where. Swooping arches menace in style, while smoked glass windows let in light but not sight. "
+button_text = "Return to the door..."
+metadata/_custom_type_script = "uid://chnttjydh538r"

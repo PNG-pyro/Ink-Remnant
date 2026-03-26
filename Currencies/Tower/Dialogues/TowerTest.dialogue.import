@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bud13oiwcgfu7"
+path="res://.godot/imported/TowerTest.dialogue-af511fc0e6da572e966741ba34689ffc.tres"
+
+[deps]
+
+source_file="res://Currencies/Tower/Dialogues/TowerTest.dialogue"
+dest_files=["res://.godot/imported/TowerTest.dialogue-af511fc0e6da572e966741ba34689ffc.tres"]
+
+[params]
+
+defaults=true

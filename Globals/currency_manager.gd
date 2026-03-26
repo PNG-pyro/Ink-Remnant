@@ -35,6 +35,7 @@ extends Node
 	load("res://Currencies/Library/Knowledge_Lapidamancy.tres"),
 	load("res://Currencies/Library/Knowledge_Octomancy.tres"),
 	load("res://Currencies/Library/Knowledge_Oneiromancy.tres"),
+	load("res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres"),
 	
 	load("res://Currencies/Library/Knowledge_Curator.tres"),
 	load("res://Currencies/Library/Curator/Currencies/Curator_Octomancy.tres"),
@@ -46,6 +47,11 @@ extends Node
 	
 	load("res://Currencies/Tower/Knowledge_of_tower.tres"),
 	load("res://Currencies/Tower/Knowledge_of_tower2.tres"),
+	load("res://Currencies/Tower/Knowledge_of_tower3.tres"),
+	load("res://Currencies/Tower/Knowledge_of_tower4.tres"),
+	load("res://Currencies/Tower/Knowledge_of_tower5.tres"),
+	load("res://Currencies/Tower/Knowledge_of_tower6.tres"),
+	load("res://Currencies/Tower/Knowledge_of_tower7.tres"),
 	
 	load("res://Currencies/Research/Research.tres"),
 	load("res://Currencies/Research/Ticker/Clockwork_Dreamcatcher.tres"),

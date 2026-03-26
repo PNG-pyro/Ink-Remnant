@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c3algc42xe5jg"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_5e3xh"]
+[ext_resource type="Resource" uid="uid://uo2wtju46bpl" path="res://Currencies/Tower/Knowledge_of_tower5.tres" id="2_quy3r"]
+[ext_resource type="Resource" uid="uid://c4cj3eccy6n7r" path="res://Currencies/Tower/Knowledge_of_tower6.tres" id="3_quy3r"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_nolnp"]
+
+[resource]
+script = ExtResource("4_nolnp")
+job_name = "Uncover the object"
+job_desc = "You reach out gingerly..."
+job_story = "It's a... chair?"
+job_reward = Dictionary[ExtResource("1_5e3xh"), int]({
+ExtResource("3_quy3r"): 1
+})
+job_mask = Dictionary[ExtResource("1_5e3xh"), int]({
+ExtResource("2_quy3r"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You look over the object... it's a chair, with a sheet over it. What were you getting so anxious for? You reach out and pull the sheet away. It looks a bit like a recliner, and a bit like a medical device. There are tiny silver threads woven across the dark leather, and as the light hits it, they all light up and start to glow. Following them stich by stich you find a socket in the back. This looks like it needs a power source..."
+button_text = "Should you sit? Do you dare?"
+metadata/_custom_type_script = "uid://chnttjydh538r"

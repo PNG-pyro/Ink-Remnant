@@ -22,5 +22,4 @@ repeats = false
 make_popup = true
 popup_text = "\"Oneiromancy, the magic of dreams, has some of the strictest rules. Dreams, being extremely malleable, are difficult to restrict. Grasping this dichotomy is at the crux of effectively utilizing this magic...\""
 button_text = "Done reading"
-button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

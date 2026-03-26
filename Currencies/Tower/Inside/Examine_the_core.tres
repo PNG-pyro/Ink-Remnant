@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://drenwxb5xqtr5"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_l0l3n"]
+[ext_resource type="Resource" uid="uid://drjg6sn7hxd4t" path="res://Currencies/Tower/Knowledge_of_tower4.tres" id="2_0ta6t"]
+[ext_resource type="Resource" uid="uid://uo2wtju46bpl" path="res://Currencies/Tower/Knowledge_of_tower5.tres" id="3_l0l3n"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_c3fo0"]
+
+[resource]
+script = ExtResource("4_c3fo0")
+job_name = "Examine the core"
+job_desc = "A dazzling pillar of sunlight streams down before you"
+job_story = "Wait, maybe this is starting to make sense..."
+job_reward = Dictionary[ExtResource("1_l0l3n"), int]({
+ExtResource("3_l0l3n"): 1
+})
+job_mask = Dictionary[ExtResource("1_l0l3n"), int]({
+ExtResource("2_0ta6t"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "The dazzling pool of sunlight spilling into the center of the floor doesn't actually hurt your eyes. However, there's something large and white in the middle, and it's practically glowing with all the reflected light."
+button_text = "Give your eyes time to adjust..."
+metadata/_custom_type_script = "uid://chnttjydh538r"

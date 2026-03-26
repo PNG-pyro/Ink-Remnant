@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cilvxe1eydwt2"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_h1ato"]
+[ext_resource type="Resource" uid="uid://bjcavl1068g08" path="res://Currencies/Tower/Knowledge_of_tower7.tres" id="2_h1ato"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="3_h74bh"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_mlkfr"]
+
+[resource]
+script = ExtResource("4_mlkfr")
+job_name = "Discover Mirrormancy"
+job_desc = "You seat yourself in the chair..."
+job_story = "What a stimulating experience!"
+job_reward = Dictionary[ExtResource("1_h1ato"), int]({
+ExtResource("3_h74bh"): 1
+})
+job_mask = Dictionary[ExtResource("1_h1ato"), int]({
+ExtResource("2_h1ato"): 1
+})
+upper_mask = Array[ExtResource("1_h1ato")]([ExtResource("3_h74bh")])
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You gingerly sit n the chair, feeling the concentrated sunlight streaming down over and through you. As you lay back, you feel a golden radience begin to condense in your mind, a magic you've never seen or heard of before..."
+button_text = "Discern the knowledge"
+metadata/_custom_type_script = "uid://chnttjydh538r"

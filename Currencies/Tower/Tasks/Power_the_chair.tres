@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dc8bx5cnrr8ty"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_bmnpf"]
+[ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="2_t6q1c"]
+[ext_resource type="Resource" uid="uid://c4cj3eccy6n7r" path="res://Currencies/Tower/Knowledge_of_tower6.tres" id="3_na5eh"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_na5eh"]
+[ext_resource type="Resource" uid="uid://bjcavl1068g08" path="res://Currencies/Tower/Knowledge_of_tower7.tres" id="4_t6q1c"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="6_1v3bv"]
+
+[resource]
+script = ExtResource("4_na5eh")
+job_name = "The chair needs magic..."
+job_desc = "It's a sacrifice, but it's not as if you can't make another."
+job_story = "You place your Mage Locus in the socket"
+job_reward = Dictionary[ExtResource("1_bmnpf"), int]({
+ExtResource("4_t6q1c"): 1
+})
+job_cost = Dictionary[ExtResource("1_bmnpf"), int]({
+ExtResource("2_t6q1c"): 1
+})
+job_mask = Dictionary[ExtResource("1_bmnpf"), int]({
+ExtResource("3_na5eh"): 1
+})
+upper_mask = Array[ExtResource("1_bmnpf")]([ExtResource("6_1v3bv")])
+make_tooltip = false
+repeats = false
+popup_text = "You look over the object... it's a chair, with a sheet over it. What were you getting so anxious for? You reach out and pull the sheet away. It looks a bit like a recliner, and a bit like a medical device. There are tiny silver threads woven across the dark leather, and as the light hits it, they all light up and start to glow."
+button_text = "Should you sit? Do you dare?"
+metadata/_custom_type_script = "uid://chnttjydh538r"

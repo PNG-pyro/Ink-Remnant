@@ -18,7 +18,11 @@ class_name Job
 @export var make_popup: bool = false
 @export var popup_text: String = "Test"
 @export var button_text: String = "TestButton"
-@export var button_signal: Signal = SignalHub.make_visible
+
+@export var start_dialogue: bool = false
+@export var dialogue: DialogueResource
+
+#@export var button_signal: Signal = SignalHub.make_visible
 
 
 func pay_reward():

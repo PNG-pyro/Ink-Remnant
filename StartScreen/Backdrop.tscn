@@ -17,10 +17,8 @@
 [ext_resource type="Script" uid="uid://briafwutsdv85" path="res://SaveLoad/load_button_1.gd" id="12_ly71l"]
 [ext_resource type="Resource" uid="uid://i505ijbajoo8" path="res://Currencies/Houses/Make_Dimension_Rift.tres" id="13_x5hg1"]
 [ext_resource type="Script" uid="uid://dcqjqbyxbt48c" path="res://StartScreen/load_button_3.gd" id="14_7envs"]
-[ext_resource type="Resource" uid="uid://6n1tvkx4nxu7" path="res://Currencies/Tower/Walk_by_Tower.tres" id="14_suwb6"]
 [ext_resource type="PackedScene" uid="uid://cxse6vagl4302" path="res://StoryPopup/story_popup.tscn" id="16_a6fgy"]
 [ext_resource type="Texture2D" uid="uid://em2o1giqs2ap" path="res://Borders/Work_borders.png" id="16_ffxqw"]
-[ext_resource type="Resource" uid="uid://c0c1eet8xuybi" path="res://Currencies/Tower/Forge_Through.tres" id="16_phwaq"]
 [ext_resource type="Shader" uid="uid://b7ojvexq3o8o8" path="res://StartScreen/Frames_Shader.tres" id="17_eo2o8"]
 [ext_resource type="Script" uid="uid://yew3twuogt1b" path="res://StartScreen/Settings_button.gd" id="18_yp2c4"]
 [ext_resource type="Script" uid="uid://b4r2u7m0gndal" path="res://StartScreen/city_button.gd" id="19_4asdo"]
@@ -41,9 +39,6 @@
 shader = ExtResource("17_eo2o8")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_b6ncd"]
-shader = ExtResource("24_jd06h")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_yrt3q"]
 shader = ExtResource("24_jd06h")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_446pc"]
@@ -220,68 +215,6 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("13_x5hg1")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
-[node name="TowerTabFrame" type="NinePatchRect" parent="." unique_id=1066116598 groups=["TowerFrame"]]
-visible = false
-material = SubResource("ShaderMaterial_plbck")
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.21796875
-anchor_top = 0.3861111
-anchor_right = 0.85234374
-anchor_bottom = 0.98194444
-size_flags_horizontal = 3
-texture = ExtResource("6_do1qa")
-patch_margin_left = 16
-patch_margin_top = 16
-patch_margin_right = 16
-patch_margin_bottom = 16
-metadata/_edit_use_anchors_ = true
-
-[node name="TowerTab" type="VFlowContainer" parent="TowerTabFrame" unique_id=1591119967]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 10.0
-offset_top = 12.0
-offset_right = -11.0
-offset_bottom = -11.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-
-[node name="View_Tower" type="Button" parent="TowerTabFrame/TowerTab" unique_id=1072923820 groups=["BarButtons"]]
-custom_minimum_size = Vector2(250, 0)
-layout_mode = 2
-theme = ExtResource("7_qe2qs")
-toggle_mode = true
-text = "Testbutton"
-script = ExtResource("21_11t3j")
-job_run = ExtResource("14_suwb6")
-metadata/_custom_type_script = "uid://ddubjwaefbdws"
-
-[node name="View_Tower2" type="Button" parent="TowerTabFrame/TowerTab" unique_id=933180595 groups=["BarButtons"]]
-custom_minimum_size = Vector2(250, 0)
-layout_mode = 2
-theme = ExtResource("7_qe2qs")
-toggle_mode = true
-text = "Testbutton"
-script = ExtResource("21_11t3j")
-job_run = ExtResource("16_phwaq")
-metadata/_custom_type_script = "uid://ddubjwaefbdws"
-
-[node name="TowerTabPanel" type="Panel" parent="TowerTabFrame" unique_id=399982524 groups=["TowerFrame"]]
-z_index = -5
-material = SubResource("ShaderMaterial_yrt3q")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-mouse_filter = 2
-
 [node name="LibraryFrame" type="NinePatchRect" parent="." unique_id=493527598 groups=["LibraryFrame"]]
 visible = false
 material = SubResource("ShaderMaterial_plbck")
@@ -342,6 +275,77 @@ metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
 
 [node name="LibraryPanel" type="Panel" parent="LibraryFrame" unique_id=1924736668 groups=["LibraryFrame"]]
+z_index = -5
+material = SubResource("ShaderMaterial_446pc")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="TowerFrame" type="NinePatchRect" parent="." unique_id=498266093 groups=["TowerFrame"]]
+visible = false
+material = SubResource("ShaderMaterial_plbck")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21796875
+anchor_top = 0.3861111
+anchor_right = 0.85234374
+anchor_bottom = 0.98194444
+size_flags_horizontal = 3
+texture = ExtResource("6_do1qa")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonStackOutside" type="VBoxContainer" parent="TowerFrame" unique_id=572677541]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014778325
+anchor_top = 0.027972028
+anchor_right = 0.3226601
+anchor_bottom = 0.974359
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fenb")
+metadata/_custom_type_script = "uid://cq4t44bcucve"
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonStackInside" type="VBoxContainer" parent="TowerFrame" unique_id=1072055627]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33497536
+anchor_top = 0.027972028
+anchor_right = 0.65763545
+anchor_bottom = 0.974359
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fenb")
+metadata/_custom_type_script = "uid://cq4t44bcucve"
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonStackTasks" type="VBoxContainer" parent="TowerFrame" unique_id=849472884]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6711823
+anchor_top = 0.027972028
+anchor_right = 0.9864532
+anchor_bottom = 0.974359
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fenb")
+metadata/_custom_type_script = "uid://cq4t44bcucve"
+metadata/_edit_use_anchors_ = true
+
+[node name="TowerPanel" type="Panel" parent="TowerFrame" unique_id=775730230 groups=["TowerFrame"]]
 z_index = -5
 material = SubResource("ShaderMaterial_446pc")
 layout_mode = 1

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://n01uwujexap5"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_t4h8q"]
+[ext_resource type="Resource" uid="uid://dtcnndc7v3wxx" path="res://Currencies/Tower/Knowledge_of_tower2.tres" id="2_8bpmj"]
+[ext_resource type="Resource" uid="uid://dwkbs0l5fjyrv" path="res://Currencies/Tower/Knowledge_of_tower3.tres" id="3_kq144"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_mfxym"]
+
+[resource]
+script = ExtResource("4_mfxym")
+job_name = "Knock on the door"
+job_desc = "You raise a fist, giving the solid wood as imposing a thump as you can"
+job_story = "Oh..."
+job_duration = 3
+job_reward = Dictionary[ExtResource("1_t4h8q"), int]({
+ExtResource("3_kq144"): 1
+})
+job_mask = Dictionary[ExtResource("1_t4h8q"), int]({
+ExtResource("2_8bpmj"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "The door swings open at your touch. Turns out it wasn't locked. Probably after all those spells, a lock or bar wouldn't even matter. "
+button_text = "Enough, go inside!"
+metadata/_custom_type_script = "uid://chnttjydh538r"

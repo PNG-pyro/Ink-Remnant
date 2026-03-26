@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dipjigr6xufmf"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_xm7jg"]
+[ext_resource type="Resource" uid="uid://do4gsn3h018gy" path="res://Currencies/Tower/Knowledge_of_tower.tres" id="2_22wy4"]
+[ext_resource type="Resource" uid="uid://dtcnndc7v3wxx" path="res://Currencies/Tower/Knowledge_of_tower2.tres" id="2_tnxp7"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_tnxp7"]
+
+[resource]
+script = ExtResource("3_tnxp7")
+job_name = "Examine the door"
+job_desc = "You approach the foreboding portico..."
+job_story = "That wasn't so bad. "
+job_duration = 3
+job_reward = Dictionary[ExtResource("1_xm7jg"), int]({
+ExtResource("2_22wy4"): 1
+})
+job_mask = Dictionary[ExtResource("1_xm7jg"), int]({
+ExtResource("2_tnxp7"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "You examine the door. It's a sturdy oak slab bound in steel, rivet into an imposing slab. There's no forcing this thing. "
+button_text = "Maybe you should knock?"
+metadata/_custom_type_script = "uid://chnttjydh538r"

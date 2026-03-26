@@ -7,6 +7,10 @@ extends Node
 @onready var button_stack_curator = %"ButtonStackCurator"
 @onready var button_stack_librarian = %"ButtonStackLibrarian"
 @onready var button_stack_books = %"ButtonStackBooks"
+@onready var button_stack_inside = %"ButtonStackInside"
+@onready var button_stack_outside = %"ButtonStackOutside"
+@onready var button_stack_tasks = %"ButtonStackTasks"
+
 @onready var seen_eoc = false
 
 @export var background_color_dark: Color = Color(0.06, 0.06, 0.06, 0.063)
@@ -26,6 +30,9 @@ func _ready():
 	button_stack_curator.populate(JobManager.curator_jobs)
 	button_stack_librarian.populate(JobManager.librarian_jobs)
 	button_stack_books.populate(JobManager.research_book_jobs)
+	button_stack_outside.populate(JobManager.tower_outside_jobs)
+	button_stack_inside.populate(JobManager.tower_inside_jobs)
+	button_stack_tasks.populate(JobManager.tower_tasks_jobs)
 	
 	
 	if not SaveManager.load(SaveManager.save_name_3):

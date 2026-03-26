@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bapxrtvx1o0ia"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_wse0y"]
+[ext_resource type="Resource" uid="uid://dtcnndc7v3wxx" path="res://Currencies/Tower/Knowledge_of_tower2.tres" id="2_cee0u"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_womcp"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_glvte"]
+
+[resource]
+script = ExtResource("4_glvte")
+job_name = "Look at the city"
+job_desc = "The view from here is pretty good. Bet it's better from the top."
+job_story = "You return to your previous examinations."
+job_reward = Dictionary[ExtResource("1_wse0y"), int]({
+ExtResource("3_womcp"): 0
+})
+job_mask = Dictionary[ExtResource("1_wse0y"), int]({
+ExtResource("2_cee0u"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "The promontory rises high enough you can almost see over the city wall from here. The spires of the Nobles Quarter rise higher still - is that a dirigible leaving the Palace? Intriguing."
+button_text = "Return to the door..."
+metadata/_custom_type_script = "uid://chnttjydh538r"

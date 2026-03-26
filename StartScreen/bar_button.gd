@@ -168,6 +168,8 @@ func start_filling():
 		current_state = State.COMPLETE
 		if job_run.make_popup == true:
 			make_popup(job_run)
+		if job_run.start_dialogue:
+			DialogueManager.show_dialogue_balloon(job_run.dialogue, "start")
 		reset()
 
 
@@ -218,17 +220,20 @@ func update_tooltip():
 	
 	for price in job_run.job_reward:
 		if price.is_hidden:
+			line += "[color=white]		???[/color]"
 			continue
-		if price.is_full() and not price.name == "Floor Space":
+			
+		if price.is_full() and not price.name == "Floor Space" and not price.name == "Default":
 			line += "[color=dark_red]" + str(job_run.job_reward[price]) + " " + price.name + ",[/color]\n"
-		elif not price.is_full() and not price.name == "Floor Space":
+		elif not price.is_full() and not price.name == "Floor Space" and not price.name == "Default":
 			line += "[color=pale_green]" + str(job_run.job_reward[price]) + " " + price.name + ",[/color]\n"
-		
-		if price.name == "Floor Space":
+		elif price.name == "Floor Space":
 			if price.is_full():
 				line += "[color=dark_red]Floor Space: " + str(job_run.job_reward[price]) + "[/color]"# + "/" + str(price.max_amount)
 			else:
 				line += "[color=white]Floor Space: " + str(job_run.job_reward[price]) + "[/color]"# + "/" + str(price.max_amount)
+		else:
+			line += "[color=white]		???[/color]"
 	tooltip_text = line
 	
 

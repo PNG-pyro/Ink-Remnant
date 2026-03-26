@@ -8,5 +8,6 @@ name = "Knowledge: Lapidamancy"
 max_amount = 1
 tick_types = null
 makes_label = false
-is_hidden = true
+make_tooltip = true
+tooltip_says = "Knowledge of the magic of gemcutting"
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

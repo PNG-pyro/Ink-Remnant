@@ -94,9 +94,29 @@ var research_book_jobs: Array[Job] = [
 	load("res://Currencies/Library/Bookshelves/Research_Oneiromancy.tres"),
 ]
 
-var tower_jobs: Array[Job] = [
-	load("res://Currencies/Tower/Walk_by_Tower.tres"),
-	load("res://Currencies/Tower/Forge_Through.tres"),
+var tower_outside_jobs: Array[Job] = [
+	load("res://Currencies/Tower/Outside/Examine_Tower.tres"),
+	load("res://Currencies/Tower/Outside/Forge_Through.tres"),
+	load("res://Currencies/Tower/Outside/Look_around_tower.tres"),
+	load("res://Currencies/Tower/Outside/Examine_door.tres"),
+	load("res://Currencies/Tower/Outside/Open_door.tres"),
+	load("res://Currencies/Tower/Outside/Examine_City.tres"),
+]
+
+var tower_inside_jobs: Array[Job] = [
+	load("res://Currencies/Tower/Inside/Look_around.tres"),
+	load("res://Currencies/Tower/Inside/Examine_the_walls.tres"),
+	load("res://Currencies/Tower/Inside/Examine_the_peak.tres"),
+	load("res://Currencies/Tower/Inside/Examine_the_core.tres"),
+	
+]
+
+var tower_tasks_jobs: Array[Job] = [
+	load("res://Currencies/Tower/Tasks/Uncover_object.tres"),
+	load("res://Currencies/Tower/Tasks/Power_the_chair.tres"),
+	load("res://Currencies/Tower/Tasks/Discover_Mirrormancy.tres"),
+	load("res://Currencies/Tower/Tasks/Power_the_chair_2.tres")
+	
 ]
 
 var all_jobs: Array[Job] = (tickers + 
@@ -107,4 +127,7 @@ house_jobs +
 curator_jobs +
 librarian_jobs + 
 research_book_jobs +
-tower_jobs)
+tower_outside_jobs +
+tower_inside_jobs +
+tower_tasks_jobs
+)

@@ -8,7 +8,7 @@
 
 [resource]
 script = ExtResource("2_i44vy")
-job_name = "Research Lapidomancy"
+job_name = "Research Lapidamancy"
 job_desc = "The magic of gemcutting - not to be confused with Lepidomancy, the magic of butterflies."
 job_story = "The ancient city holds this magic close; many know of it, but few truly understand its workings."
 job_duration = 4
@@ -22,5 +22,4 @@ job_mask = Dictionary[ExtResource("1_1byq6"), int]({
 ExtResource("3_p5nfc"): 1
 })
 upper_mask = Array[ExtResource("1_1byq6")]([ExtResource("3_ahrsa")])
-button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"
