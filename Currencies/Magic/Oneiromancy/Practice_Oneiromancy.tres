@@ -7,7 +7,7 @@
 
 [resource]
 script = ExtResource("4_8wkpc")
-job_name = "Practice Oneiromancy"
+job_name = "Gather dream magic"
 job_desc = "It's meditation, not napping."
 job_story = "Yes, it looks like napping, and feels like napping, and it's even very restful, but it's a distinctly different process."
 job_reward = Dictionary[ExtResource("1_yds4l"), int]({
