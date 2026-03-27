@@ -287,7 +287,6 @@ size_flags_horizontal = 3
 mouse_filter = 2
 
 [node name="TowerFrame" type="NinePatchRect" parent="." unique_id=498266093 groups=["TowerFrame"]]
-visible = false
 material = SubResource("ShaderMaterial_plbck")
 layout_mode = 1
 anchors_preset = -1
