@@ -10,6 +10,9 @@ extends Node
 @onready var button_stack_inside = %"ButtonStackInside"
 @onready var button_stack_outside = %"ButtonStackOutside"
 @onready var button_stack_tasks = %"ButtonStackTasks"
+@onready var button_stack_streets = %"ButtonStackStreets"
+@onready var button_stack_stalls = %"ButtonStackStalls"
+@onready var button_stack_people = %"ButtonStackPeople"
 
 @onready var seen_eoc = false
 
@@ -33,6 +36,10 @@ func _ready():
 	button_stack_outside.populate(JobManager.tower_outside_jobs)
 	button_stack_inside.populate(JobManager.tower_inside_jobs)
 	button_stack_tasks.populate(JobManager.tower_tasks_jobs)
+	button_stack_streets.populate(JobManager.market_streets_jobs)
+	button_stack_stalls.populate(JobManager.market_stalls_jobs)
+	button_stack_people.populate(JobManager.market_people_jobs)
+	
 	
 	
 	if not SaveManager.load(SaveManager.save_name_3):

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://ce8xrn4nhj1g3"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_qqqa8"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_ffvjf"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_um3p5"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="3_0r2rr"]
+[ext_resource type="Resource" uid="uid://bsvwq306hcvpj" path="res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres" id="4_73l3b"]
+
+[resource]
+script = ExtResource("2_um3p5")
+job_name = "Research Mirrormancy"
+job_desc = "The magic of mirrors..."
+job_story = "And light, and reflections."
+job_reward = Dictionary[ExtResource("1_qqqa8"), int]({
+ExtResource("4_73l3b"): 7
+})
+job_cost = Dictionary[ExtResource("1_qqqa8"), int]({
+ExtResource("2_ffvjf"): 27
+})
+job_mask = Dictionary[ExtResource("1_qqqa8"), int]({
+ExtResource("3_0r2rr"): 1
+})
+upper_mask = Array[ExtResource("1_qqqa8")]([ExtResource("4_73l3b")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

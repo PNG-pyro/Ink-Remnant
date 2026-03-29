@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dk5xtedgpty5h"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_dnabv"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_nv1kr"]
+[ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="4_si2fw"]
+[ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="4_y1xk3"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_cst5q"]
+
+[resource]
+script = ExtResource("5_cst5q")
+job_name = "Buy a hand-mirror"
+job_desc = "There's got to be a use for these..."
+job_story = "It's only a few coins..."
+job_reward = Dictionary[ExtResource("1_dnabv"), int]({
+ExtResource("4_y1xk3"): 1
+})
+job_cost = Dictionary[ExtResource("1_dnabv"), int]({
+ExtResource("4_si2fw"): 30
+})
+job_mask = Dictionary[ExtResource("1_dnabv"), int]({
+ExtResource("3_nv1kr"): 999
+})
+button_appears_on = "appear_glazier"
+button_disappears_on = "disappear_people"
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://dlfkbwk4gh0xb"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_40g7w"]
+
+[resource]
+script = ExtResource("1_40g7w")
+name = "Fancy Shoes"
+max_amount = 2
+tick_types = null
+makes_label = false
+make_tooltip = true
+tooltip_says = "Put your best foot forwards"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

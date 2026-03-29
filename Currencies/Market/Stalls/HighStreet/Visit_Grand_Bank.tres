@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bxc4jp3py88rf"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_6f5yo"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_dav0w"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_bqmkm"]
+
+[resource]
+script = ExtResource("3_bqmkm")
+job_name = "Visit the Grand Bank"
+job_desc = "You could use a new look..."
+job_story = "It's practical and looks reasonable."
+job_reward = Dictionary[ExtResource("1_6f5yo"), int]({
+ExtResource("2_dav0w"): 0
+})
+job_mask = Dictionary[ExtResource("1_6f5yo"), int]({
+ExtResource("2_dav0w"): 999
+})
+repeats = false
+popup_text = "The Street of Clever Artifice is, truly, an entire arcade of craftsmen - watchmakers, leatherworkers, tailors in fine silks, goldsmiths... all of them skilled, none of them cheap."
+button_text = "But you can get nearly anything here."
+signal_name = "disappear_people"
+signal_name_2 = "appear_grand_bank"
+button_appears_on = "appear_high_street"
+button_disappears_on = "disappear_streets"
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -80,10 +80,22 @@ func _ready():
 	mouse_exited.connect(on_mouse_exit)
 	SignalHub.resource_updated.connect(func(_a, _b):check_affordable())
 	SignalHub.job_begun.connect(update_visuals)
+	if job_run.button_appears_on != "":
+		SignalHub.get(job_run.button_appears_on).connect(_appear)
+	if job_run.button_disappears_on != "":
+		SignalHub.get(job_run.button_disappears_on).connect(_disappear)
 	
 	check_affordable()
 	update_visuals()
 
+
+func _appear():
+	job_run.shows_up = true
+	visible = true
+
+func _disappear():
+	job_run.shows_up = false
+	visible = false
 
 func _on_pressed():
 	match current_state:
@@ -163,6 +175,10 @@ func start_filling():
 		SignalHub.job_complete.emit(job_run)
 
 	if self.button_pressed == false or JobManager.jobs_repeat == false:
+		if job_run.signal_name != "":
+			SignalHub.get(job_run.signal_name).emit()
+		if job_run.signal_name_2 != "":
+			SignalHub.get(job_run.signal_name_2).emit()
 		SignalHub.display.emit(job_run.job_story + "\n\n")
 		SignalHub.job_complete.emit(job_run)
 		current_state = State.COMPLETE

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cef8tgbtnkerb"
+path="res://.godot/imported/Bank_teller.dialogue-30c2d204331448e0186f9ed403e754c2.tres"
+
+[deps]
+
+source_file="res://Currencies/Market/People/Bank_people/Bank_teller.dialogue"
+dest_files=["res://.godot/imported/Bank_teller.dialogue-30c2d204331448e0186f9ed403e754c2.tres"]
+
+[params]
+
+defaults=true

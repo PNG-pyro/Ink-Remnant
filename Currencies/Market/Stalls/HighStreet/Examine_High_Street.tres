@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bkp5t15phv341"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_dmwxe"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_x02jo"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_t2bch"]
+
+[resource]
+script = ExtResource("3_t2bch")
+job_name = "Examine High Street"
+job_desc = "You wander along, gawking at the sights on display"
+job_story = "Then eventually remember your business."
+job_reward = Dictionary[ExtResource("1_dmwxe"), int]({
+ExtResource("2_x02jo"): 0
+})
+job_mask = Dictionary[ExtResource("1_dmwxe"), int]({
+ExtResource("2_x02jo"): 999
+})
+repeats = false
+make_popup = true
+popup_text = "High Street, so named because it's the highest you can go up the mountain before entering the nobles quarter, is a sight to behold. Fifteen strides wide, and faced with facades and columns of sunset-orange sandstone, shipped at runious expense by steam funicular from the deeper delvings to the north - and this isn't even the fanciest part of the city."
+button_text = "You feel slightly out of place."
+signal_name = "disappear_people"
+button_appears_on = "appear_high_street"
+button_disappears_on = "disappear_streets"
+metadata/_custom_type_script = "uid://chnttjydh538r"

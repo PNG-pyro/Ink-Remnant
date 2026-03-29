@@ -11,6 +11,7 @@ var simple_jobs: Array[Job] = [
 	load("res://Currencies/Magic/Practice_Lapidomancy.tres"),
 	load("res://Currencies/Magic/Practice_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Oneiromancy/Practice_Oneiromancy.tres"),
+	load("res://Currencies/Magic/Mirrormancy/Practice_Mirrormancy.tres"),
 
 
 
@@ -25,7 +26,8 @@ var trades: Array[Job] = [
 	load("res://Currencies/Books/CopyScrollsIntoBook.tres"),
 	load("res://Currencies/Magic/Create_Magic_Gem.tres"),
 	load("res://Currencies/Magic/Create_Kingly_Blue.tres"),
-	load("res://Currencies/Coins/Sell_Book.tres")
+	load("res://Currencies/Coins/Sell_Book.tres"),
+	load("res://Currencies/Mirror/Order_a_Mirror.tres")
 ]
 
 
@@ -45,6 +47,7 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Magic/Research_Lapidomancy.tres"),
 	load("res://Currencies/Magic/Research_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Oneiromancy/Research_Oneiromancy.tres"),
+	load("res://Currencies/Magic/Mirrormancy/Research_Mirrormancy.tres"),
 	
 	load("res://Currencies/Scrolls/Upgrades/Buy_Scroll_Case.tres"),
 	load("res://Currencies/Telescope/Construct_telescope.tres"),
@@ -54,7 +57,8 @@ var tickers: Array[Job] = [
 	load("res://Currencies/Clockwork/Tickers/Build_Clockwork_Arm.tres"),
 	load("res://Currencies/Herbs/Tickers/Build_Planter_Box.tres"),
 	load("res://Currencies/Scrolls/Ticker/Build_Auto_Quill.tres"),
-	load("res://Currencies/Research/Ticker/Craft_Clockwork_Dreamcatcher.tres")
+	load("res://Currencies/Research/Ticker/Craft_Clockwork_Dreamcatcher.tres"),
+	load("res://Currencies/Books/Ticker/Craft_Cogmind.tres")
 ]
 
 var house_jobs: Array[Job] = [
@@ -119,6 +123,31 @@ var tower_tasks_jobs: Array[Job] = [
 	
 ]
 
+var market_streets_jobs: Array[Job] = [
+	#load("res://Currencies/Market/Streets/Walk_the_streets.tres"),
+	load("res://Currencies/Market/Streets/Visit_Clever_Artificers.tres"),
+	load("res://Currencies/Market/Streets/Visit_High_Street.tres"),
+]
+
+var market_stalls_jobs: Array[Job] = [
+	load("res://Currencies/Market/Stalls/CleverArtificers/Examine_Clever_Artificers.tres"),
+	load("res://Currencies/Market/Stalls/CleverArtificers/Set_up_Stall.tres"),
+	load("res://Currencies/Market/Stalls/CleverArtificers/Visit_a_glazier.tres"),
+	load("res://Currencies/Market/Stalls/HighStreet/Visit_a_fancy_shop.tres"),
+	load("res://Currencies/Market/Stalls/HighStreet/Visit_Grand_Bank.tres"),
+]
+
+var market_people_jobs: Array[Job] = [
+	load("res://Currencies/Market/People/Clever_stall_people/Sell_Clockwork.tres"),
+	load("res://Currencies/Market/People/Clever_stall_people/Sell_Clocks.tres"),
+	load("res://Currencies/Market/People/Clever_stall_people/Sell_Typewriter.tres"),
+	load("res://Currencies/Market/People/Clever_stall_people/Sell_Telescope.tres"),
+	load("res://Currencies/Market/People/glazier people/Buy_Mirror.tres"),
+	load("res://Currencies/Market/People/Fancy_shop_people/Buy_Hat.tres"),
+	load("res://Currencies/Market/People/Fancy_shop_people/Buy_Shoes.tres"),
+	load("res://Currencies/Market/People/Bank_people/Speak_with_teller.tres"),
+]
+
 var all_jobs: Array[Job] = (tickers + 
 upgrades + 
 trades + 
@@ -129,5 +158,8 @@ librarian_jobs +
 research_book_jobs +
 tower_outside_jobs +
 tower_inside_jobs +
-tower_tasks_jobs
+tower_tasks_jobs + 
+market_streets_jobs +
+market_stalls_jobs +
+market_people_jobs
 )

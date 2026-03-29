@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://djrsi24gats3f"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_mi4s5"]
+[ext_resource type="Resource" uid="uid://buakd3dxh85m5" path="res://Currencies/Clockwork/Clockwork.tres" id="2_i7rnu"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_y7df8"]
+[ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="3_ga416"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_lxn56"]
+
+[resource]
+script = ExtResource("2_y7df8")
+job_name = "Sell clockwork"
+job_desc = "You've got extra, sorted from the trash"
+job_story = "It's worth a few coins..."
+job_reward = Dictionary[ExtResource("1_mi4s5"), int]({
+ExtResource("3_ga416"): 5
+})
+job_cost = Dictionary[ExtResource("1_mi4s5"), int]({
+ExtResource("2_i7rnu"): 10
+})
+job_mask = Dictionary[ExtResource("1_mi4s5"), int]({
+ExtResource("3_lxn56"): 999
+})
+button_appears_on = "appear_clever_stall"
+button_disappears_on = "disappear_people"
+metadata/_custom_type_script = "uid://chnttjydh538r"

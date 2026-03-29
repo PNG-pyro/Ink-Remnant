@@ -11,4 +11,5 @@ func _on_pressed() -> void:
 				currency.has_been_seen = false
 		for job in JobManager.all_jobs:
 			job.shows_up = false
+		SaveManager.market_visible = false
 	get_tree().reload_current_scene()

@@ -8,6 +8,7 @@ extends Node
 @onready var all_currencies: Array[Currency] = [
 	load("res://Currencies/Books/Books.tres"),
 	load("res://Currencies/Books/Upgrades/Bookshelf.tres"),
+	load("res://Currencies/Books/Ticker/Holographic_Cogmind.tres"),
 	load("res://Currencies/Coins/Coins.tres"),
 	load("res://Currencies/Coins/Upgrades/Lockbox.tres"),
 	load("res://Currencies/Coins/Upgrades/Purse.tres"),
@@ -45,6 +46,10 @@ extends Node
 	load("res://Currencies/Library/Knowledge_poppy_2.tres"),
 	load("res://Currencies/Library/Librarian/Currencies/Librarian_cyanomancy.tres"),
 	
+	load("res://Currencies/Market/People/Fancy_shop_people/hat.tres"),
+	load("res://Currencies/Market/People/Fancy_shop_people/shoes.tres"),
+	load("res://Currencies/Market/People/Bank_people/Bank_Card.tres"),
+	
 	load("res://Currencies/Tower/Knowledge_of_tower.tres"),
 	load("res://Currencies/Tower/Knowledge_of_tower2.tres"),
 	load("res://Currencies/Tower/Knowledge_of_tower3.tres"),
@@ -63,9 +68,11 @@ extends Node
 	load("res://Currencies/Magic/Rules_Of_Octomancy.tres"),
 	load("res://Currencies/Magic/Rules_Of_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Rules_of_Oneiromancy.tres"),
+	load("res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres"),
 	load("res://Currencies/Magic/Kingly_Blue.tres"),
 	load("res://Currencies/Magic/Octagon.tres"),
 	load("res://Currencies/Magic/Mage_Locus.tres"),
+	load("res://Currencies/Mirror/Mirrors.tres"),
 	load("res://Currencies/Telescope/Telescope.tres"),
 ]
 
@@ -78,5 +85,12 @@ func eoc_check() -> bool:
 		return obj.is_full()
 	)
 
-
+func get_currency(currency_name: String):
+	var results: Array[Currency] = all_currencies.filter(func(c): return c.name == currency_name)
+	return results[0] if results.size() > 0 else null
+	
+func add_currency(currency_name: String, amount: int):
+	var currency = get_currency(currency_name)
+	if currency:
+		currency.add(amount)
 	

@@ -22,4 +22,5 @@ repeats = false
 make_popup = true
 popup_text = "You gingerly sit n the chair, feeling the concentrated sunlight streaming down over and through you. As you lay back, you feel a golden radience begin to condense in your mind, a magic you've never seen or heard of before..."
 button_text = "Discern the knowledge"
+signal_name = "got_mirrormancy"
 metadata/_custom_type_script = "uid://chnttjydh538r"

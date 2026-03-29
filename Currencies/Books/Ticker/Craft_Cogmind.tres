@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cfpsxw0fjfrnh"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_jbtp0"]
+[ext_resource type="Resource" uid="uid://s7moftfa1cc4" path="res://Currencies/Clockwork/Tickers/Clockwork_Arm.tres" id="2_05koq"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_nmifi"]
+[ext_resource type="Resource" uid="uid://ce6unsyqvd1dn" path="res://Currencies/Books/Ticker/Holographic_Cogmind.tres" id="2_osehg"]
+[ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="3_lxfvf"]
+[ext_resource type="Resource" uid="uid://dj2di30qapb46" path="res://Currencies/Books/Books.tres" id="4_flecy"]
+
+[resource]
+script = ExtResource("2_nmifi")
+job_name = "Craft a Holographic Cogmind"
+job_desc = "You start with several mirrors and a very, very good saw..."
+job_story = "And end with a slightly smarter clockwork arm."
+job_reward = Dictionary[ExtResource("1_jbtp0"), int]({
+ExtResource("2_osehg"): 1
+})
+job_cost = Dictionary[ExtResource("1_jbtp0"), int]({
+ExtResource("2_05koq"): 1,
+ExtResource("3_lxfvf"): 5
+})
+job_mask = Dictionary[ExtResource("1_jbtp0"), int]({
+ExtResource("3_lxfvf"): 1,
+ExtResource("2_05koq"): 1,
+ExtResource("4_flecy"): 1
+})
+upper_mask = Array[ExtResource("1_jbtp0")]([ExtResource("2_osehg")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

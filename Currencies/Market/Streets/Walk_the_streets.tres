@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://1pbst5yeudna"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_x45aw"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_nfq3a"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_oiugd"]
+
+[resource]
+script = ExtResource("2_nfq3a")
+job_name = "Walk yourself home"
+job_desc = "You wander through the market streets..."
+job_story = "Eventually, you make it home."
+job_reward = Dictionary[ExtResource("1_x45aw"), int]({
+ExtResource("2_oiugd"): 0
+})
+repeats = false
+popup_text = "You wander through the streets, but few enough places will let a homelss waif in, much less serve you with a smile. Come back after you've proved yourself, maybe..."
+button_text = "Give up and leave... for now"
+signal_name = "disappear_streets"
+button_disappears_on = "got_mirrormancy"
+metadata/_custom_type_script = "uid://chnttjydh538r"

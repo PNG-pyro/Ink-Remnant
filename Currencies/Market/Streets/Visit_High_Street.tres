@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c5p85p5e2vbfe"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_l628d"]
+[ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="2_7ewcj"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_ley5u"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_oaebk"]
+
+[resource]
+script = ExtResource("4_oaebk")
+job_name = "Visit High Street"
+job_desc = "You hail a cab..."
+job_story = "And soon reach your destination."
+job_reward = Dictionary[ExtResource("1_l628d"), int]({
+ExtResource("3_ley5u"): 0
+})
+job_cost = Dictionary[ExtResource("1_l628d"), int]({
+ExtResource("2_7ewcj"): 10
+})
+repeats = false
+popup_text = "You wander through the streets, but few enough places will let a homelss waif in, much less serve them with a smile. Come back after you've proved yourself, maybe..."
+button_text = "Give up and leave... for now"
+signal_name = "disappear_streets"
+signal_name_2 = "appear_high_street"
+metadata/_custom_type_script = "uid://chnttjydh538r"

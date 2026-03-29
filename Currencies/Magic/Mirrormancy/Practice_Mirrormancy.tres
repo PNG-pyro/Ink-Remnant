@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://tgc5xnwcg0fs"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_505w3"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_18oi8"]
+[ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="2_x6tm0"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="3_rwcqu"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="4_4xand"]
+
+[resource]
+script = ExtResource("2_18oi8")
+job_name = "Gather mirror magic"
+job_desc = "The specters gather around you, wispy and indistinct. "
+job_story = "It's eerie, but harmless. As far as you can tell."
+job_reward = Dictionary[ExtResource("1_505w3"), int]({
+ExtResource("4_4xand"): 50
+})
+job_cost = Dictionary[ExtResource("1_505w3"), int]({
+ExtResource("2_x6tm0"): 1
+})
+job_mask = Dictionary[ExtResource("1_505w3"), int]({
+ExtResource("3_rwcqu"): 1
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

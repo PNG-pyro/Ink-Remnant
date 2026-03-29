@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://c0at01fbd2nwh"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_orb83"]
+
+[resource]
+script = ExtResource("1_orb83")
+name = "Mirrors"
+max_amount = 15
+tick_types = null
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

@@ -6,6 +6,7 @@ var save_name_1: String = "Slot 1"
 var save_name_2: String = "Slot 2"
 var save_name_3: String = "Autosave"
 var last_focus_time: float = 0
+var market_visible: bool = false
 
 var focus_gained_callback
 var focus_lost_callback
@@ -64,8 +65,12 @@ func save(savename: String) -> SaveState:
 	for job in JobManager.all_jobs:
 		save_state.all_jobs.append(job.duplicate())
 		
+	for button in get_tree().get_nodes_in_group("BarButtons"):
+		save_state.button_states[button.job_run.job_name] = button.visual_state
+		
 	save_state.mute = BackgroundMusicPlayer.stream_paused
 	save_state.volume = BackgroundMusicPlayer.volume_linear
+	save_state.market_visible = market_visible
 	
 	ResourceSaver.save(save_state, "user://" + savename + ".tres")
 	
@@ -87,28 +92,30 @@ func load(savename: String) -> bool:
 
 func load_save(save_to_load: SaveState):
 	SceneManager.set_scene(save_to_load.ui_state as SceneManager.Scene)
-	
+	market_visible = save_to_load.market_visible
+
 	for saved_currency in save_to_load.all_currencies:
 		for currency in CurrencyManager.all_currencies:
 			if saved_currency.name == currency.name:
 				currency.amount = saved_currency.amount
 				currency.has_been_seen = saved_currency.has_been_seen
 				SignalHub.resource_updated.emit(currency, currency.amount)
-				
+
 	for saved_job in save_to_load.all_jobs:
 		for job in JobManager.all_jobs:
 			if saved_job.job_name == job.job_name:
 				job.shows_up = saved_job.shows_up
-				
-	#BackgroundMusicPlayer.volume_db = save_state.volume
-	#BackgroundMusicPlayer.stream_paused = save_state.mute
 	
+	for button in get_tree().get_nodes_in_group("BarButtons"):
+		if button.job_run.job_name in save_to_load.button_states:
+			button.visual_state = save_to_load.button_states[button.job_run.job_name]
+			button.update_visuals()
+
 	SignalHub.volume_set.emit(save_to_load.volume, save_to_load.mute)
-	
+
 	for currency in CurrencyManager.all_currencies:
 		currency.get_max()
-		
-	
+
 	SceneManager.set_scene(SceneManager.Scene.CITY)
 
 
@@ -126,7 +133,8 @@ func _notification(what):
 				var elapsed = Time.get_unix_time_from_system() - last_focus_time
 				apply_catch_up(elapsed)
 				last_focus_time = 0.0
-				
+
+
 func apply_catch_up(seconds: float):
 	var ticks_missed = floor(seconds)
 	for i in ticks_missed:

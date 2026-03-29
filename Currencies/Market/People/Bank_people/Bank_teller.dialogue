@@ -1,0 +1,26 @@
+~ start
+Bank Greeter: [["Good morning|"Good evening|"Good afternoon]], Welcome to the 3rd Grand Central Bank."
+if CurrencyManager.get_currency("Fancy Hat").amount == 0 and CurrencyManager.get_currency("Fancy Shoes").amount == 0:
+	Bank Guard: "Sir, we have a dress code..." The security personel looks uncomfortably at your muddy shoes and lack of hat.
+	- Fine, I'll be back later. => END
+elif CurrencyManager.get_currency("Fancy Hat").amount > 0 and CurrencyManager.get_currency("Fancy Shoes").amount == 0:
+	Bank Guard: "Sir, we have a dress code..." The security personel nods appreciatively at your fancy hat, but looks uncomfortably at your muddy shoes.
+	- Fine, I'll be back later. => END
+elif CurrencyManager.get_currency("Fancy Hat").amount == 0 and CurrencyManager.get_currency("Fancy Shoes").amount > 0:
+	Bank Guard: "Sir, we have a dress code..." The security personel nods appreciatively at your fine shoes, but looks uncomfortably at your lack of hat.
+	- Fine, I'll be back later. => END
+else:
+	Bank Greeter: "Please, step this way."
+
+~ mid
+Bank Teller: "How can I help you today?"
+- Open an account [if CurrencyManager.get_currency("Bank Card").amount == 0]
+	Bank Teller: "That will be 150 coins, please."
+	- Leave awkwardly => END
+	- Pay 150 coins [if CurrencyManager.get_currency("Coins").amount >= 150]
+		do CurrencyManager.add_currency("Coins", -150)
+		do CurrencyManager.add_currency("Bank Card", 1)
+		do SaveManager.save(SaveManager.save_name_3)
+	Bank Teller: "Here is your bank card, sir." They politely present it with both hands.
+	=> mid
+- That will be all, thanks. => END

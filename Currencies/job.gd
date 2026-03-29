@@ -22,7 +22,10 @@ class_name Job
 @export var start_dialogue: bool = false
 @export var dialogue: DialogueResource
 
-#@export var button_signal: Signal = SignalHub.make_visible
+@export var signal_name: String
+@export var signal_name_2: String
+@export var button_appears_on: String
+@export var button_disappears_on: String
 
 
 func pay_reward():

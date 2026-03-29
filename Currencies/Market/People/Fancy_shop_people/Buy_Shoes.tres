@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c3xrxsitl5r86"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_fnp47"]
+[ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="2_calbe"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_gbxph"]
+[ext_resource type="Resource" uid="uid://dlfkbwk4gh0xb" path="res://Currencies/Market/People/Fancy_shop_people/shoes.tres" id="4_fnp47"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_x88xf"]
+
+[resource]
+script = ExtResource("5_x88xf")
+job_name = "Buy fancy shoes"
+job_desc = "You want to look better..."
+job_story = "Then start from the ground up."
+job_reward = Dictionary[ExtResource("1_fnp47"), int]({
+ExtResource("4_fnp47"): 2
+})
+job_cost = Dictionary[ExtResource("1_fnp47"), int]({
+ExtResource("2_calbe"): 100
+})
+job_mask = Dictionary[ExtResource("1_fnp47"), int]({
+ExtResource("3_gbxph"): 999
+})
+repeats = false
+button_appears_on = "appear_fancy_shop"
+button_disappears_on = "disappear_people"
+metadata/_custom_type_script = "uid://chnttjydh538r"
