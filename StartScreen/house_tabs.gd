@@ -1,4 +1,4 @@
-extends VFlowContainer
+extends HFlowContainer
 
 var visible_labels: Array[CurrencyLabel] = []
 

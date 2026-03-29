@@ -160,7 +160,6 @@ script = ExtResource("7_satxg")
 metadata/_edit_use_anchors_ = true
 
 [node name="HouseTabFrame" type="NinePatchRect" parent="." unique_id=2079112509 groups=["HouseTabFrame"]]
-visible = false
 material = SubResource("ShaderMaterial_plbck")
 layout_mode = 1
 anchors_preset = -1
@@ -188,21 +187,25 @@ grow_vertical = 2
 size_flags_horizontal = 3
 mouse_filter = 2
 
-[node name="HouseTabs" type="VFlowContainer" parent="HouseTabFrame" unique_id=688112613]
+[node name="ScrollContainer" type="ScrollContainer" parent="HouseTabFrame" unique_id=1995180736]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 10.0
+offset_left = 12.0
 offset_top = 12.0
-offset_right = -11.0
-offset_bottom = -11.0
+offset_right = -12.0
+offset_bottom = -12.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="HouseTabs" type="HFlowContainer" parent="HouseTabFrame/ScrollContainer" unique_id=1009027650]
+layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("20_4asdo")
 
-[node name="FindHouse" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=21447503 groups=["BarButtons"]]
+[node name="FindHouse" type="Button" parent="HouseTabFrame/ScrollContainer/HouseTabs" unique_id=21447503 groups=["BarButtons"]]
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 theme = ExtResource("7_qe2qs")
@@ -212,7 +215,7 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("10_ly71l")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
-[node name="GetBigHouse" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=927397340 groups=["BarButtons"]]
+[node name="GetBigHouse" type="Button" parent="HouseTabFrame/ScrollContainer/HouseTabs" unique_id=927397340 groups=["BarButtons"]]
 layout_mode = 2
 size_flags_vertical = 0
 theme = ExtResource("7_qe2qs")
@@ -222,7 +225,7 @@ script = ExtResource("21_11t3j")
 job_run = ExtResource("8_ffxqw")
 metadata/_custom_type_script = "uid://ddubjwaefbdws"
 
-[node name="DimensionalRoom" type="Button" parent="HouseTabFrame/HouseTabs" unique_id=1465726845 groups=["BarButtons"]]
+[node name="DimensionalRoom" type="Button" parent="HouseTabFrame/ScrollContainer/HouseTabs" unique_id=1465726845 groups=["BarButtons"]]
 layout_mode = 2
 script = ExtResource("21_11t3j")
 job_run = ExtResource("13_x5hg1")

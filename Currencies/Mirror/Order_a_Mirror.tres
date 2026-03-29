@@ -19,4 +19,5 @@ ExtResource("2_wsr1w"): 30
 job_mask = Dictionary[ExtResource("1_t7erw"), int]({
 ExtResource("3_a5lpj"): 1
 })
+button_appears_on = "got_mirrormancy"
 metadata/_custom_type_script = "uid://chnttjydh538r"
