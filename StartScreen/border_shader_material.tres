@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bl1kc1rd2834a"]
+
+[ext_resource type="Shader" uid="uid://b7ojvexq3o8o8" path="res://StartScreen/Frames_Shader.tres" id="1_vymk8"]
+
+[resource]
+shader = ExtResource("1_vymk8")

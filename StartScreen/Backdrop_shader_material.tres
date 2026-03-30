@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://d0uawxt77ieel"]
+
+[ext_resource type="Shader" uid="uid://dslgj8u3kyl7y" path="res://StartScreen/Backdrop_Shader.tres" id="1_5qr6h"]
+
+[resource]
+shader = ExtResource("1_5qr6h")

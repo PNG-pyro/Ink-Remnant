@@ -20,6 +20,10 @@ enum VisualState {
 
 var visual_state: int = VisualState.NORMAL
 var current_state = State.IDLE
+var shiny_material: ShaderMaterial = load("res://StartScreen/new_option_mat.tres")
+var rect = ColorRect.new()
+var firstrun: bool = true
+
 
 @export var job_run: Job
 @export var story_box: RichTextLabel
@@ -38,7 +42,11 @@ func _ready():
 	visible = job_run.is_unmasked()
 	text = job_run.job_name
 	toggle_mode = true
-	visual_state |= VisualState.NEW
+	
+	shiny_material.set_shader_parameter("Speed", .3)
+	shiny_material.set_shader_parameter("Rotation_deg", 6)
+	shiny_material.set_shader_parameter("Line_width", .2)
+	shiny_material.set_shader_parameter("Alpha", .10)
 	
 	progress.set_anchors_preset(Control.PRESET_FULL_RECT)
 	progress.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -51,6 +59,7 @@ func _ready():
 	border.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	#border.hide()
 	border.texture = load("res://Borders/Currencies_Border.png")
+	border.material = load("res://StartScreen/border_shader_material.tres")
 	border.patch_margin_left = 16
 	border.patch_margin_right = 16
 	border.patch_margin_top = 16
@@ -70,6 +79,7 @@ func _ready():
 	add_child(new_label)
 	
 	visual_state |= VisualState.AFFORDABLE
+	visual_state |= VisualState.NEW
 	update_visuals()
 	
 	pressed.connect(_on_pressed)
@@ -109,7 +119,7 @@ func _on_pressed():
 
 func on_mouse_entry():
 	visual_state |= VisualState.HOVERED
-	visual_state &= ~VisualState.NEW
+	#visual_state &= ~VisualState.NEW
 	update_visuals()
 
 func on_mouse_exit():
@@ -118,6 +128,7 @@ func on_mouse_exit():
 
 func update_visuals():
 	
+	#border.material
 	if visual_state & VisualState.DISABLED:
 		border.hide()
 	elif visual_state & VisualState.RUNNING:
@@ -127,10 +138,19 @@ func update_visuals():
 	else:
 		border.hide()
 	
+	
 	if visual_state & VisualState.NEW:
-		self.text = job_run.job_name + " -New!"
+		if firstrun == true:
+			rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+			rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			rect.material = shiny_material
+			add_child(rect)
+			firstrun = false
 	else:
-		self.text = job_run.job_name
+		if rect:
+			rect.queue_free()
+	
+		
 		
 	if visual_state & VisualState.AFFORDABLE:
 		ready_label.text = "[color=green]>[/color]"
@@ -152,6 +172,8 @@ func start_filling():
 		get_tree().call_group("BarButtons", "reset_others", self)
 		SignalHub.display.emit(job_run.job_desc + "\n")
 		startrun = false
+		visual_state &= ~VisualState.NEW
+		update_visuals()
 	visual_state |= VisualState.RUNNING
 	update_visuals()
 	
@@ -173,6 +195,7 @@ func start_filling():
 	if self.button_pressed == true and JobManager.jobs_repeat == true:
 		start_filling()
 		SignalHub.job_complete.emit(job_run)
+		update_tooltip()
 
 	if self.button_pressed == false or JobManager.jobs_repeat == false:
 		if job_run.signal_name != "":
@@ -181,7 +204,9 @@ func start_filling():
 			SignalHub.get(job_run.signal_name_2).emit()
 		SignalHub.display.emit(job_run.job_story + "\n\n")
 		SignalHub.job_complete.emit(job_run)
+		update_tooltip()
 		current_state = State.COMPLETE
+		
 		if job_run.make_popup == true:
 			make_popup(job_run)
 		if job_run.start_dialogue:
@@ -241,8 +266,22 @@ func update_tooltip():
 			
 		if price.is_full() and not price.name == "Floor Space" and not price.name == "Default":
 			line += "[color=dark_red]" + str(job_run.job_reward[price]) + " " + price.name + ",[/color]\n"
+			if price.is_upgrade:
+				for upgrade in price.upgrade_target:
+					line += "	- Adds " + str(price.upgrade_target[upgrade]) + " to " + upgrade.name + " max\n"
+			if price.is_ticker:
+				for tick in price.tick_types:
+					line += "	- Adds " + str(price.tick_types[tick]) + " per second"
+					
 		elif not price.is_full() and not price.name == "Floor Space" and not price.name == "Default":
 			line += "[color=pale_green]" + str(job_run.job_reward[price]) + " " + price.name + ",[/color]\n"
+			if price.is_upgrade:
+				for upgrade in price.upgrade_target:
+					line += "	- Adds " + str(price.upgrade_target[upgrade]) + " to " + upgrade.name + " max\n"
+			if price.is_ticker:
+				for tick in price.tick_types:
+					line += "	- Adds " + str(price.tick_types[tick]) + " " + tick.name + " per second\n"
+
 		elif price.name == "Floor Space":
 			if price.is_full():
 				line += "[color=dark_red]Floor Space: " + str(job_run.job_reward[price]) + "[/color]"# + "/" + str(price.max_amount)
@@ -250,6 +289,8 @@ func update_tooltip():
 				line += "[color=white]Floor Space: " + str(job_run.job_reward[price]) + "[/color]"# + "/" + str(price.max_amount)
 		else:
 			line += "[color=white]		???[/color]"
+			
+		
 	tooltip_text = line
 	
 

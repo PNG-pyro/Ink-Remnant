@@ -13,6 +13,7 @@ extends Node
 @onready var button_stack_streets = %"ButtonStackStreets"
 @onready var button_stack_stalls = %"ButtonStackStalls"
 @onready var button_stack_people = %"ButtonStackPeople"
+@onready var button_stack_house = %"ButtonStackHouse"
 
 @onready var seen_eoc = false
 
@@ -39,6 +40,7 @@ func _ready():
 	button_stack_streets.populate(JobManager.market_streets_jobs)
 	button_stack_stalls.populate(JobManager.market_stalls_jobs)
 	button_stack_people.populate(JobManager.market_people_jobs)
+	button_stack_house.populate(JobManager.house_jobs)
 	
 	
 	
@@ -98,12 +100,22 @@ func display_popup(popup):
 	popup.popup_centered()
 
 
+#func set_light():
+	#_on_light_mode_pressed()
+
+
 func _on_light_mode_pressed() -> void:
 	self.theme = load("res://theme_light.tres")
 	RenderingServer.global_shader_parameter_set("Background", background_color_light)
 	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_dark)
 	$"BackdropDark".visible = false
 	$"BackdropLight".visible = true
+	#SaveManager.theme_bool = false
+	#SaveManager.save(SaveManager.save_name_3)
+
+
+#func set_dark():
+	#_on_dark_mode_pressed()
 
 
 func _on_dark_mode_pressed() -> void:
@@ -112,6 +124,8 @@ func _on_dark_mode_pressed() -> void:
 	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_light)
 	$"BackdropDark".visible = true
 	$"BackdropLight".visible = false
+	#SaveManager.theme_bool = true
+	#SaveManager.save(SaveManager.save_name_3)
 
 
 func end_of_content(_a = null, _b = null):

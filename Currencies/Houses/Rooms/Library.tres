@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://c57i83evrtcho"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_vk8hx"]
+[ext_resource type="Resource" uid="uid://c6vradg6ggt2e" path="res://Currencies/Clockwork/Upgrades/Typewriter.tres" id="2_n6lex"]
+[ext_resource type="Resource" uid="uid://c34d4cs65o6hi" path="res://Currencies/Books/Upgrades/Bookshelf.tres" id="3_tjri0"]
+[ext_resource type="Resource" uid="uid://b8qu387i41c6i" path="res://Currencies/Scrolls/Upgrades/Scroll_Case.tres" id="4_tjri0"]
+
+[resource]
+script = ExtResource("1_vk8hx")
+name = "Library"
+max_amount = 1
+tick_types = null
+is_upgrade = true
+makes_label = false
+upgrade_target = Dictionary[ExtResource("1_vk8hx"), int]({
+ExtResource("2_n6lex"): 2,
+ExtResource("3_tjri0"): 3,
+ExtResource("4_tjri0"): 3
+})
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

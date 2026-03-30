@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://be6rbal25dir8"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_8tiq5"]
+[ext_resource type="Resource" uid="uid://cnr85jhkwgy18" path="res://Currencies/Coins/Upgrades/Lockbox.tres" id="2_jrenm"]
+[ext_resource type="Resource" uid="uid://bnolnvv6mp3qc" path="res://Currencies/Crystal/Upgrades/velvet_box.tres" id="3_mugc6"]
+
+[resource]
+script = ExtResource("1_8tiq5")
+max_amount = 1
+tick_types = null
+is_upgrade = true
+makes_label = false
+upgrade_target = Dictionary[ExtResource("1_8tiq5"), int]({
+ExtResource("2_jrenm"): 3,
+ExtResource("3_mugc6"): 3
+})
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

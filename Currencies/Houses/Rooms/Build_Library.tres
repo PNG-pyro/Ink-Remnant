@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://ckhbchr4xeh1l"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_hrnnw"]
+[ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="2_0rlsn"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_hpdeu"]
+[ext_resource type="Resource" uid="uid://dsty40uagrahn" path="res://Currencies/Houses/Dimensional_Rift.tres" id="3_a0mus"]
+[ext_resource type="Resource" uid="uid://c57i83evrtcho" path="res://Currencies/Houses/Rooms/Library.tres" id="4_qyg3f"]
+[ext_resource type="Resource" uid="uid://eynuhxro6yab" path="res://Currencies/Houses/Floor_Space.tres" id="5_ma83q"]
+
+[resource]
+script = ExtResource("2_hpdeu")
+job_name = "Build a Library"
+job_desc = "You have the extra room..."
+job_story = "Soon, the room is ready for new furniture."
+job_reward = Dictionary[ExtResource("1_hrnnw"), int]({
+ExtResource("4_qyg3f"): 1,
+ExtResource("5_ma83q"): 20
+})
+job_cost = Dictionary[ExtResource("1_hrnnw"), int]({
+ExtResource("2_0rlsn"): 600
+})
+job_mask = Dictionary[ExtResource("1_hrnnw"), int]({
+ExtResource("3_a0mus"): 1
+})
+upper_mask = Array[ExtResource("1_hrnnw")]([ExtResource("4_qyg3f")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://bx3vtk0wnb7nn"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_efjhy"]
+[ext_resource type="Resource" uid="uid://d782v8nugsdh" path="res://Currencies/Herbs/Upgrades/Herb_Cupboard.tres" id="2_tjjr3"]
+[ext_resource type="Resource" uid="uid://bj73kw43uigdi" path="res://Currencies/Telescope/Telescope.tres" id="3_tjlpp"]
+
+[resource]
+script = ExtResource("1_efjhy")
+name = "Garden Shed"
+max_amount = 1
+tick_types = null
+is_upgrade = true
+makes_label = false
+upgrade_target = Dictionary[ExtResource("1_efjhy"), int]({
+ExtResource("2_tjjr3"): 4,
+ExtResource("3_tjlpp"): 1
+})
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

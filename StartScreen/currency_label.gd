@@ -76,11 +76,11 @@ func update_tooltip(_a = null, _b = null):
 	
 	if label_type.is_ticker:
 		for type in label_type.tick_types: 
-				line += "Adds " + str(label_type.tick_types[type]) + " " + type.name + " per second each"
+				line += "Adds " + str(label_type.tick_types[type]) + " " + type.name + " per second each\n"
 	
 	if label_type.is_upgrade:
 		for upgrades in label_type.upgrade_target: 
-			line += "Raises " + str(upgrades.name) + " cap " + str(label_type.upgrade_target[upgrades]) + " each"
+			line += "Raises " + str(upgrades.name) + " cap " + str(label_type.upgrade_target[upgrades]) + " each\n"
 	
 	if label_type.make_tooltip:
 		line += label_type.tooltip_says

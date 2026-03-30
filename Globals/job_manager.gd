@@ -64,7 +64,10 @@ var tickers: Array[Job] = [
 var house_jobs: Array[Job] = [
 	load("res://Currencies/Houses/Acquire_hovel.tres"),
 	load("res://Currencies/Houses/Buy_big_house.tres"),
-	load("res://Currencies/Houses/Make_Dimension_Rift.tres")
+	load("res://Currencies/Houses/Make_Dimension_Rift.tres"),
+	load("res://Currencies/Houses/Rooms/Build_Library.tres"),
+	load("res://Currencies/Houses/Rooms/Build_Vault.tres"),
+	load("res://Currencies/Houses/Rooms/Build_Garden_Shed.tres")
 ]
 
 var curator_jobs: Array[Job] = [
