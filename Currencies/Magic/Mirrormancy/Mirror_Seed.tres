@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://vqyhymcdnsw2"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_rcj5f"]
+[ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="2_qm1ce"]
+
+[resource]
+script = ExtResource("1_rcj5f")
+name = "Mirror Seed"
+max_amount = 3
+is_ticker = true
+tick_types = Dictionary[Object, int]({
+ExtResource("2_qm1ce"): 1
+})
+tick_amount = 1
+makes_label = false
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

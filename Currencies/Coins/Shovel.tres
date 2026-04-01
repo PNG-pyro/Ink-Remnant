@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="1_8tvdg"]
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_xvdgt"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="2_qr6d5"]
-[ext_resource type="Resource" uid="uid://xdaxoyxe6ppf" path="res://Currencies/Magic/Octagon.tres" id="4_vort3"]
+[ext_resource type="Resource" uid="uid://xdaxoyxe6ppf" path="res://Currencies/Magic/Octomancy/Octagon.tres" id="4_vort3"]
 
 [resource]
 script = ExtResource("1_8tvdg")

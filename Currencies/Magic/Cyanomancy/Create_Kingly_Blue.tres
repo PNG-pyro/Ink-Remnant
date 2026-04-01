@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="Job" format=3 uid="uid://b6m6xicu2buyy"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_8aykw"]
-[ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Rules_Of_Cyanomancy.tres" id="2_b18cy"]
-[ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Kingly_Blue.tres" id="3_u52jo"]
+[ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Cyanomancy/Rules_Of_Cyanomancy.tres" id="2_b18cy"]
+[ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres" id="3_u52jo"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_24dpe"]
 
 [resource]

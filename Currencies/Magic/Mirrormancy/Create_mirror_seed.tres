@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://3edyaisy3qs0"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_lgprh"]
+[ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="2_gma64"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_qnxmw"]
+[ext_resource type="Resource" uid="uid://bsvwq306hcvpj" path="res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres" id="3_fqnb0"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="4_qmv53"]
+[ext_resource type="Resource" uid="uid://vqyhymcdnsw2" path="res://Currencies/Magic/Mirrormancy/Mirror_Seed.tres" id="5_kty5o"]
+
+[resource]
+script = ExtResource("2_qnxmw")
+job_name = "Create a Mirror Seed"
+job_desc = "It looks a bit like a snowflake and a bit a like a leaf."
+job_story = "Every so often, a new mirror flake falls free, perfectly rounded."
+job_reward = Dictionary[ExtResource("1_lgprh"), int]({
+ExtResource("5_kty5o"): 1
+})
+job_cost = Dictionary[ExtResource("1_lgprh"), int]({
+ExtResource("2_gma64"): 3,
+ExtResource("3_fqnb0"): 7
+})
+job_mask = Dictionary[ExtResource("1_lgprh"), int]({
+ExtResource("4_qmv53"): 1
+})
+upper_mask = Array[ExtResource("1_lgprh")]([ExtResource("5_kty5o")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

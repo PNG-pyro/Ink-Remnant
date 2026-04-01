@@ -87,13 +87,17 @@ func load(savename: String) -> bool:
 	if not ResourceLoader.exists("user://" + savename + ".tres"):
 		return false
 	var save_state: SaveState = ResourceLoader.load("user://" + savename + ".tres")
-	load_save(save_state)
-	SignalHub.display.emit("Game loaded: " + savename + "\n\n")
+	if load_save(save_state):
+		SignalHub.display.emit("Game loaded: " + savename + "\n\n")
+	else:
+		SignalHub.display.emit("Oops, something went wrong... New game begun!")
 	SignalHub.make_visible.emit()
 	return true
 	
 
-func load_save(save_to_load: SaveState):
+func load_save(save_to_load: SaveState) -> bool:
+	if not save_to_load:
+		return false
 	SceneManager.set_scene(save_to_load.ui_state as SceneManager.Scene)
 	market_visible = save_to_load.market_visible
 
@@ -126,6 +130,7 @@ func load_save(save_to_load: SaveState):
 		
 
 	SceneManager.set_scene(SceneManager.Scene.CITY)
+	return true
 
 
 #func _notification(what):

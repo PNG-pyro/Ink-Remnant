@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://bebl5rt6kb1cx"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_84um2"]
+[ext_resource type="Resource" uid="uid://s7moftfa1cc4" path="res://Currencies/Clockwork/Tickers/Clockwork_Arm.tres" id="2_nms6u"]
+[ext_resource type="Resource" uid="uid://blmi45f8gjetk" path="res://Currencies/Scrolls/Ticker/Auto_quill.tres" id="3_egkuu"]
+[ext_resource type="Resource" uid="uid://bx5m2afmme1pm" path="res://Currencies/Research/Ticker/Clockwork_Dreamcatcher.tres" id="4_1tfxt"]
+
+[resource]
+script = ExtResource("1_84um2")
+name = "Mechanic Room"
+max_amount = 1
+tick_types = null
+is_upgrade = true
+makes_label = false
+upgrade_target = Dictionary[ExtResource("1_84um2"), int]({
+ExtResource("2_nms6u"): 2,
+ExtResource("3_egkuu"): 2,
+ExtResource("4_1tfxt"): 2
+})
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

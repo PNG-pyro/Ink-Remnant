@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_0v0i6"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_3wpre"]
-[ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Kingly_Blue.tres" id="2_r8hhc"]
+[ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres" id="2_r8hhc"]
 [ext_resource type="Resource" uid="uid://bmswe4en7y1nj" path="res://Currencies/Library/Blue_card.tres" id="3_nvvhf"]
 [ext_resource type="Resource" uid="uid://dfi2tbiu1u2ob" path="res://Currencies/Library/Knowledge_Curator.tres" id="4_fn8qo"]
 

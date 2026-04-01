@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Job" format=3 uid="uid://i505ijbajoo8"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_kfwxs"]
-[ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Kingly_Blue.tres" id="2_1jf20"]
+[ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres" id="2_1jf20"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_glyey"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_3uyba"]
 [ext_resource type="Resource" uid="uid://c054evy8c0vsq" path="res://Currencies/Houses/Big_house.tres" id="4_073wo"]

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_n35ha"]
 [ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_bgff1"]
 [ext_resource type="Resource" uid="uid://dncrbwdwm20km" path="res://Currencies/Library/Knowledge_Oneiromancy.tres" id="3_n35ha"]
-[ext_resource type="Resource" uid="uid://d4b7t4yojnf5r" path="res://Currencies/Magic/Rules_of_Oneiromancy.tres" id="4_bgff1"]
+[ext_resource type="Resource" uid="uid://d4b7t4yojnf5r" path="res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres" id="4_bgff1"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_xj236"]
 
 [resource]

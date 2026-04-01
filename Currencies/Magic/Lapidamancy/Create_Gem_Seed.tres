@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="Job" format=3 uid="uid://dd41c6xrmvq5g"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_dymtn"]
-[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Magic_Crystal.tres" id="2_6iq2v"]
+[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Lapidamancy/Magic_Crystal.tres" id="2_6iq2v"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_odt1g"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_f5num"]
-[ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Rules_of_Lapidamancy.tres" id="4_0gms6"]
-[ext_resource type="Resource" uid="uid://dlqqv0bkfrvug" path="res://Currencies/Magic/Gem_Seed.tres" id="5_ei2h7"]
+[ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Lapidamancy/Rules_of_Lapidamancy.tres" id="4_0gms6"]
+[ext_resource type="Resource" uid="uid://dlqqv0bkfrvug" path="res://Currencies/Magic/Lapidamancy/Gem_Seed.tres" id="5_ei2h7"]
 
 [resource]
 script = ExtResource("2_odt1g")

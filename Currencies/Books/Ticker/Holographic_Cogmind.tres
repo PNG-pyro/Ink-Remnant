@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_7plut")
-name = "Holographic Cogmind"
+name = "Mirrored Cogmind"
 max_amount = 3
 is_ticker = true
 tick_types = Dictionary[Object, int]({

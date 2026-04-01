@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_oed45"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="2_wsr1w"]
 [ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="3_a5lpj"]
+[ext_resource type="Resource" uid="uid://vqyhymcdnsw2" path="res://Currencies/Magic/Mirrormancy/Mirror_Seed.tres" id="5_a5lpj"]
 
 [resource]
 script = ExtResource("2_oed45")
@@ -19,5 +20,6 @@ ExtResource("2_wsr1w"): 30
 job_mask = Dictionary[ExtResource("1_t7erw"), int]({
 ExtResource("3_a5lpj"): 1
 })
+upper_mask = Array[ExtResource("1_t7erw")]([ExtResource("5_a5lpj")])
 button_appears_on = "got_mirrormancy"
 metadata/_custom_type_script = "uid://chnttjydh538r"

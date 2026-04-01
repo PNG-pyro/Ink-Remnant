@@ -9,7 +9,7 @@
 
 [resource]
 script = ExtResource("2_nmifi")
-job_name = "Craft a Holographic Cogmind"
+job_name = "Craft a Mirrored Cogmind"
 job_desc = "You start with several mirrors and a very, very good saw..."
 job_story = "And end with a slightly smarter clockwork arm."
 job_reward = Dictionary[ExtResource("1_jbtp0"), int]({

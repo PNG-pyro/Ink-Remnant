@@ -284,9 +284,9 @@ func update_tooltip():
 
 		elif price.name == "Floor Space":
 			if price.is_full():
-				line += "[color=dark_red]Floor Space: " + str(job_run.job_reward[price]) + "[/color]"# + "/" + str(price.max_amount)
+				line += "[color=dark_red]Floor Space: " + str(job_run.job_reward[price]) + "[/color]\n"# + "/" + str(price.max_amount)
 			else:
-				line += "[color=white]Floor Space: " + str(job_run.job_reward[price]) + "[/color]"# + "/" + str(price.max_amount)
+				line += "[color=white]Floor Space: " + str(job_run.job_reward[price]) + "[/color]\n"# + "/" + str(price.max_amount)
 		else:
 			line += "[color=white]		???[/color]"
 			
