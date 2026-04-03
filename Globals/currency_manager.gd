@@ -18,6 +18,8 @@ extends Node
 	load("res://Currencies/Clockwork/Upgrades/Clock.tres"),
 	load("res://Currencies/Crystal/Crystal.tres"),
 	load("res://Currencies/Crystal/Upgrades/velvet_box.tres"),
+	load("res://Currencies/Deep_Water/Deep_Water.tres"),
+	load("res://Currencies/Deep_Water/Knowledge_deep_water.tres"),
 	load("res://Currencies/Herbs/Tickers/PlanterBox.tres"),
 	load("res://Currencies/Herbs/Upgrades/Herb_Cupboard.tres"),
 	load("res://Currencies/Herbs/Herbs.tres"),
@@ -37,11 +39,13 @@ extends Node
 	load("res://Currencies/Library/Library_Card.tres"),
 	load("res://Currencies/Library/LibraryLocation.tres"),
 	load("res://Currencies/Library/Blue_card.tres"),
-	load("res://Currencies/Library/Knowledge_Cyanomancy.tres"),
-	load("res://Currencies/Library/Knowledge_Lapidamancy.tres"),
-	load("res://Currencies/Library/Knowledge_Octomancy.tres"),
-	load("res://Currencies/Library/Knowledge_Oneiromancy.tres"),
+	
+	load("res://Currencies/Magic/Cyanomancy/Knowledge_Cyanomancy.tres"),
+	load("res://Currencies/Magic/Lapidamancy/Knowledge_Lapidamancy.tres"),
+	load("res://Currencies/Magic/Octomancy/Knowledge_Octomancy.tres"),
+	load("res://Currencies/Magic/Oneiromancy/Knowledge_Oneiromancy.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres"),
+	load("res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres"),
 	
 	load("res://Currencies/Library/Knowledge_Curator.tres"),
 	load("res://Currencies/Library/Curator/Currencies/Curator_Octomancy.tres"),
@@ -68,16 +72,25 @@ extends Node
 	load("res://Currencies/Research/Star_Chart.tres"),
 	
 	load("res://Currencies/Magic/Magic.tres"),
+	
 	load("res://Currencies/Magic/Lapidamancy/Rules_of_Lapidamancy.tres"),
 	load("res://Currencies/Magic/Lapidamancy/Magic_Crystal.tres"),
 	load("res://Currencies/Magic/Lapidamancy/Gem_Seed.tres"),
+	
 	load("res://Currencies/Magic/Octomancy/Rules_Of_Octomancy.tres"),
 	load("res://Currencies/Magic/Octomancy/Octagon.tres"),
+	
 	load("res://Currencies/Magic/Cyanomancy/Rules_Of_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres"),
+	
 	load("res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres"),
+	
+	load("res://Currencies/Magic/Thalassomancy/Rules_Thalassomancy.tres"),
+	
+	
 	load("res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Mirror_Seed.tres"),
+	
 	load("res://Currencies/Magic/Mage_Locus.tres"),
 	
 	load("res://Currencies/Mirror/Mirrors.tres"),

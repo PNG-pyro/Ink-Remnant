@@ -22,7 +22,6 @@ var visual_state: int = VisualState.NORMAL
 var current_state = State.IDLE
 var shiny_material: ShaderMaterial = load("res://StartScreen/new_option_mat.tres")
 var rect = ColorRect.new()
-var firstrun: bool = true
 
 
 @export var job_run: Job
@@ -43,10 +42,16 @@ func _ready():
 	text = job_run.job_name
 	toggle_mode = true
 	
+	
 	shiny_material.set_shader_parameter("Speed", .3)
 	shiny_material.set_shader_parameter("Rotation_deg", 6)
 	shiny_material.set_shader_parameter("Line_width", .2)
 	shiny_material.set_shader_parameter("Alpha", .10)
+	
+	rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	rect.material = shiny_material
+	add_child(rect)
 	
 	progress.set_anchors_preset(Control.PRESET_FULL_RECT)
 	progress.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -138,20 +143,10 @@ func update_visuals():
 	else:
 		border.hide()
 	
-	
-	if visual_state & VisualState.NEW:
-		if firstrun == true:
-			rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-			rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
-			rect.material = shiny_material
-			add_child(rect)
-			firstrun = false
-	else:
+	if not visual_state & VisualState.NEW:
 		if rect:
 			rect.queue_free()
 	
-		
-		
 	if visual_state & VisualState.AFFORDABLE:
 		ready_label.text = "[color=green]>[/color]"
 	elif visual_state & VisualState.UNAFFORDABLE:

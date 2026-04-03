@@ -1,11 +1,13 @@
 ~ start
 Local Mage: The man looks up at your approach. He's middle-aged, weathered and tough-looking like he's spent time at sea, even if he doesn't have the air of a sailor. He's just a shade too refined in his dress and posture. His eyes sparkle like emerald in the dim light.
 Local Mage: "Can I help you?"
-- "The Bartender said you make these?" \n *Show him the octagonal cup* => Cup
+- "The Bartender said you make these?" \n Show him the octagonal cup => Cup
+- "I've brought some deep water for you..." \n Offer him ten ounces [if CurrencyManager.get_currency("Deep Water").amount >= 10] => DeepWater
 - "Sorry, didn't mean to bother you." => END
 
 ~ Cup
 Local Mage: "Who's asking?" He returns testily. "Or rather, why would I care?" 
+- "...No-one special, I guess," \n Leave the surly man alone. => END
 - "Merely a local scholar..." \n Show some research [if CurrencyManager.get_currency("Research").amount > 150]
 	do CurrencyManager.get_currency("Research").subtract(150)
 	=> Research
@@ -26,5 +28,31 @@ Local Mage: "So, you've mastered three magics." He gives you a re-assessing glan
 - "Can you teach me magic?"
 Local Mage: "I should probably be asking you to teach me, but... have you heard of 'thalassomancy'?"
 - "Tell me more..." 
-Local Mage: "Thalassomancy is the magic of deep water. All the strange stories you hear from ships way out at sea? Mirages, monsters, and more? That's thalassomancy. I can teach you what I know, but you'll have to help me find deep water."
-- *Sorry, this is EOC for here for now...*
+Local Mage: "Thalassomancy is the magic of deep water. All the strange stories you hear from ships way out at sea? Mirages, monsters, and more? That's thalassomancy. I can teach you what I know, but not for free."
+Local Mage: "Well... you look capable. If you gather me ten ounces of deep water, I'll teach what I know about thalassomancy. Hell, I'll introduce you to some more mages, too. What d'ya think?"
+Local Mage: "Deep water is a required component for most thalassomantic preparations, which tend towards potions, salves, and tinctures instead of simple observances or complicated rituals. Here are a few simple ways to find deep water..."
+You write down what he tells you, then leave for now.
+do CurrencyManager.get_currency("Knowledge: Deep Water").amount = 1
+=> END
+
+~ DeepWater
+Local Mage: He weighs the ampoule in his hand thoughtfully, then nods in appreciation. "This is good stuff. Yeah, ask whatever you want about thalassomancy, I'll tell you what I know. Oh, and if you want to meet some more mages, look for a special cab with blue trim and octagonal windows. Show the driver your mage locus, they'll take you to the Butterfly Courtyard."
+do CurrencyManager.get_currency("Knowledge: Thalassomancy").amount = 1
+do CurrencyManager.get_currency("Deep Water").subtract(10)
+do SaveManager.save(SaveManager.save_name_3)
+
+~ Mid
+What will you ask? 
+- Ask about deep water
+	Local Mage: "Eh, it's water, same as any other, but it acts a bit different when used in spells." He takes a few minutes to go through the precautions. "...so if you don't want to grow tentacles, be careful of the phase of the moon!" You note the precautions down carefully.
+	=> Mid
+- Ask about thalassomancy 
+	Local Mage: "Ah, yes. Deep magic, some call it. I'm not sure myself if it's one of the nine great magics of the city, but it seems one of the older ones. There are ruins deep below the Priory of Waves which give the first clues to the practice..." He outlines several roads of inquiry, and you quickly deduce where to proceed from there. 
+	=> Mid
+- Ask about the Butterfly Courtyard
+	Local Mage: "Oh, you'll love it! Just don't take them too seriously, and you'll be fine. "
+	=> Mid
+- Make polite excuses and leave
+	Local Mage: "Well, it was nice seeing you as well." He smiles and sees you off.
+	=> END
+=> END

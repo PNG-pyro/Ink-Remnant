@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_sgpne"]
 [ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Octomancy/Rules_Of_Octomancy.tres" id="2_sgpne"]
 [ext_resource type="Resource" uid="uid://dfi2tbiu1u2ob" path="res://Currencies/Library/Knowledge_Curator.tres" id="3_70qds"]
-[ext_resource type="Resource" uid="uid://c1uth0w20e75b" path="res://Currencies/Library/Knowledge_Octomancy.tres" id="3_xp58g"]
+[ext_resource type="Resource" uid="uid://c1uth0w20e75b" path="res://Currencies/Magic/Octomancy/Knowledge_Octomancy.tres" id="3_xp58g"]
 [ext_resource type="Resource" uid="uid://dy5on0jkseb5" path="res://Currencies/Library/Curator/Currencies/Curator_Octomancy.tres" id="4_70qds"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_p2ooa"]
 

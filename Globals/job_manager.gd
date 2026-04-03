@@ -6,13 +6,14 @@ var simple_jobs: Array[Job] = [
 	load("res://Currencies/Herbs/Gather_Herbs.tres"),
 	load("res://Currencies/Coins/Shovel.tres"),
 	load("res://Currencies/Clockwork/Sort_Trash.tres"),
+	load("res://Currencies/Deep_Water/Gather_Deep_Water.tres"),
 	load("res://Currencies/Research/Read_A_Scroll.tres"),
 	load("res://Currencies/Magic/Octomancy/Practice_Octomancy.tres"),
 	load("res://Currencies/Magic/Lapidamancy/Practice_Lapidamancy.tres"),
 	load("res://Currencies/Magic/Cyanomancy/Practice_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Oneiromancy/Practice_Oneiromancy.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Practice_Mirrormancy.tres"),
-
+	
 
 
 	load("res://Currencies/Telescope/Chart_the_stars.tres"),
