@@ -248,9 +248,9 @@ func update_tooltip():
 	var line: String = "[color=white]Required:\n[/color]"
 	
 	for price in job_run.job_cost:
-		if price.is_affordable(job_run.job_cost[price]):
+		if price.is_affordable(job_run.job_cost[price]) and not price.name == "Floor Space":
 			line += " [color=pale_green]" + str(job_run.job_cost[price]) + " " + price.name + ",[/color]\n"
-		else: 
+		elif not price.is_affordable(job_run.job_cost[price]) and not price.name == "Floor Space":
 			line += " [color=dark_red]" + str(job_run.job_cost[price]) + " " + price.name + ",[/color]\n"
 	
 	if job_run.make_tooltip == true:

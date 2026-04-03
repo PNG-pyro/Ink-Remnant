@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_c330d"]
 [ext_resource type="Resource" uid="uid://dey0n8ex4ljnh" path="res://Currencies/Clockwork/Upgrades/Clock.tres" id="2_c330d"]
+[ext_resource type="Resource" uid="uid://eynuhxro6yab" path="res://Currencies/Houses/Floor_Space.tres" id="3_4he1l"]
 [ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_o0iva"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="4_kgn38"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_qiedx"]
@@ -15,7 +16,8 @@ job_reward = Dictionary[ExtResource("1_c330d"), int]({
 ExtResource("4_kgn38"): 30
 })
 job_cost = Dictionary[ExtResource("1_c330d"), int]({
-ExtResource("2_c330d"): 1
+ExtResource("2_c330d"): 1,
+ExtResource("3_4he1l"): 1
 })
 job_mask = Dictionary[ExtResource("1_c330d"), int]({
 ExtResource("3_o0iva"): 999

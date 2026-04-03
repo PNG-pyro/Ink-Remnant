@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_tfmtx"]
 [ext_resource type="Resource" uid="uid://bj73kw43uigdi" path="res://Currencies/Telescope/Telescope.tres" id="2_tfmtx"]
 [ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_uqdnr"]
+[ext_resource type="Resource" uid="uid://eynuhxro6yab" path="res://Currencies/Houses/Floor_Space.tres" id="3_x4jsu"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="4_uh31s"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_o6bcw"]
 
@@ -15,7 +16,8 @@ job_reward = Dictionary[ExtResource("1_tfmtx"), int]({
 ExtResource("4_uh31s"): 140
 })
 job_cost = Dictionary[ExtResource("1_tfmtx"), int]({
-ExtResource("2_tfmtx"): 1
+ExtResource("2_tfmtx"): 1,
+ExtResource("3_x4jsu"): 3
 })
 job_mask = Dictionary[ExtResource("1_tfmtx"), int]({
 ExtResource("3_uqdnr"): 999

@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://d4b7t4yojnf5r" path="res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres" id="3_xei1m"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="4_btoyk"]
 [ext_resource type="Resource" uid="uid://bx5m2afmme1pm" path="res://Currencies/Research/Ticker/Clockwork_Dreamcatcher.tres" id="5_jq7vv"]
+[ext_resource type="Resource" uid="uid://eynuhxro6yab" path="res://Currencies/Houses/Floor_Space.tres" id="6_xei1m"]
 
 [resource]
 script = ExtResource("2_88yrb")
@@ -14,7 +15,8 @@ job_desc = "You carefully assemble the half-real design out of shining brass..."
 job_story = "When it starts ticking, dragging gears through unreal space, you know you've succeeded."
 job_duration = 3
 job_reward = Dictionary[ExtResource("1_hi4g7"), int]({
-ExtResource("5_jq7vv"): 1
+ExtResource("5_jq7vv"): 1,
+ExtResource("6_xei1m"): 3
 })
 job_cost = Dictionary[ExtResource("1_hi4g7"), int]({
 ExtResource("2_noxgi"): 75,
@@ -25,5 +27,4 @@ job_mask = Dictionary[ExtResource("1_hi4g7"), int]({
 ExtResource("3_xei1m"): 1
 })
 upper_mask = Array[ExtResource("1_hi4g7")]([ExtResource("5_jq7vv")])
-button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"
