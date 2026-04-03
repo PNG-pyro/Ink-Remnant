@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dbbhjo1444qbt"
+path="res://.godot/imported/tipsy_tentacle_thalassomancer.dialogue-39dc4670f0b2538755fe14d0a9b8ab72.tres"
+
+[deps]
+
+source_file="res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_thalassomancer.dialogue"
+dest_files=["res://.godot/imported/tipsy_tentacle_thalassomancer.dialogue-39dc4670f0b2538755fe14d0a9b8ab72.tres"]
+
+[params]
+
+defaults=true

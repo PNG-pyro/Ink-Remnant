@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://conmk62q0cvr7"
+path="res://.godot/imported/tipsy_tentacle_bartender.dialogue-9b900eb8026686a642d3ee7bcdb04353.tres"
+
+[deps]
+
+source_file="res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_bartender.dialogue"
+dest_files=["res://.godot/imported/tipsy_tentacle_bartender.dialogue-9b900eb8026686a642d3ee7bcdb04353.tres"]
+
+[params]
+
+defaults=true

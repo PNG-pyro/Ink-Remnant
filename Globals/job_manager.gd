@@ -143,7 +143,8 @@ var market_stalls_jobs: Array[Job] = [
 	load("res://Currencies/Market/Stalls/CleverArtificers/Visit_a_glazier.tres"),
 	load("res://Currencies/Market/Stalls/HighStreet/Visit_a_fancy_shop.tres"),
 	load("res://Currencies/Market/Stalls/HighStreet/Visit_Grand_Bank.tres"),
-	load("res://Currencies/Market/Stalls/Docks/Examine_The_Harbor.tres")
+	load("res://Currencies/Market/Stalls/Docks/Examine_The_Harbor.tres"),
+	load("res://Currencies/Market/Stalls/Docks/Visit_A_Tavern.tres"),
 ]
 
 var market_people_jobs: Array[Job] = [
@@ -155,6 +156,8 @@ var market_people_jobs: Array[Job] = [
 	load("res://Currencies/Market/People/Fancy_shop_people/Buy_Hat.tres"),
 	load("res://Currencies/Market/People/Fancy_shop_people/Buy_Shoes.tres"),
 	load("res://Currencies/Market/People/Bank_people/Speak_with_teller.tres"),
+	load("res://Currencies/Market/People/TipsyTentacle/Speak_with_bartender.tres"),
+	load("res://Currencies/Market/People/TipsyTentacle/Speak_with_thalassomancer.tres"),
 ]
 
 var all_jobs: Array[Job] = (tickers + 

@@ -1,0 +1,35 @@
+~ start
+Bartender: "What can I get'cha?" He's a gaunt man with a scruffy beard, hunched over the bar. He picks up a glass and waves it towards the taps. "Beer? Wine?" He pauses. "...Water?"
+- Order a beer => Beer
+- Order a wine => Wine
+- Order a water => Water
+=> END
+
+~ Beer
+The bartender scoops up a metal stein from the 'clean' rack and steps over to the taps, drawing a frothing pint with practiced motions. He places it in front of you, then goes to help another customer.
+- Drink the beer
+	The beer is crisp and cold, with a deliciously bitter bite and a clean aftertaste. You smack your lips and nod appreciatively. 
+	- Leave => END
+	- Call for another => start
+
+
+~ Wine
+The bartender nods and grabs a wooden cup from the rack, drawing the wine from a small tun on the countertop. It's a deep, deep red, glinting in the dingy light of the tavern.
+- Drink the wine
+	The wine is floral and dry. Not bad, from what you know of wine. 
+	- leave => END
+	- Call for another => start
+
+~ Water
+The bartender gives you an unreadable look, then reaches under the counter and comes up with an octagonal stone cup, painted blue. He fills it with water from a spigot by the sink, then places it before you. 
+- Drink the water
+	The water is crisp and delicious, cool and refreshing. 
+	- leave => END
+	- Call for another => start
+- Ask about the cup. [if CurrencyManager.get_currency("Knowledge: Cyanomancy").amount == 1 and CurrencyManager.get_currency("Knowledge: Octomancy").amount == 1] => Cup
+
+	
+~ Cup
+"Noticed that, did you?" The bartender squints at you, then nods. "Yeah, if you're interested in magecraft, I guess you would. But I don't make these, you should ask him." He nods to a man sitting alone at a corner table.
+do SignalHub.appear_thalassomancer.emit()
+=> END

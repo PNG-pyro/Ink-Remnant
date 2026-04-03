@@ -1,0 +1,30 @@
+~ start
+Local Mage: The man looks up at your approach. He's middle-aged, weathered and tough-looking like he's spent time at sea, even if he doesn't have the air of a sailor. He's just a shade too refined in his dress and posture. His eyes sparkle like emerald in the dim light.
+Local Mage: "Can I help you?"
+- "The Bartender said you make these?" \n *Show him the octagonal cup* => Cup
+- "Sorry, didn't mean to bother you." => END
+
+~ Cup
+Local Mage: "Who's asking?" He returns testily. "Or rather, why would I care?" 
+- "Merely a local scholar..." \n Show some research [if CurrencyManager.get_currency("Research").amount > 150]
+	do CurrencyManager.get_currency("Research").subtract(150)
+	=> Research
+- "I know a thing or two myself..." \n Flash your mage locus [if CurrencyManager.get_currency("Mage Locus").amount >= 1]
+	=> Locus
+	
+~ Research
+Local Mage: "Huh." He leafs through the pages you proffer, pondering your research before nodding in agreement. "Well, I guess you know what you're talking about." He looks up. "Say, have you ever heard of 'lepidamancy'?"
+- "Lepidamancy? That's butterfly magic, right?"
+	Local Mage: "Yes, exactly. They use it in the lands to the east, far out in the archipelago. It's quite beautiful."
+- "No, I haven't. Tell me more."
+	Local Mage: "Lepidamancy is the magic of butterflies. It uses every part of the butterfly, from its image to its antenna, in spells and rituals. The colors are really quite beautiful!"
+Local Mage: "Well, I should be going..." => END
+
+~ Locus
+Local Mage: He hisses at you to hide the gem after he sees it glitter in your palm. "Careful with that!" he mutters, glancing around warily. 
+Local Mage: "So, you've mastered three magics." He gives you a re-assessing glance. "That's pretty impressive, especially considering your age." He frowns. "So, why did you need to get my attention like that?" 
+- "Can you teach me magic?"
+Local Mage: "I should probably be asking you to teach me, but... have you heard of 'thalassomancy'?"
+- "Tell me more..." 
+Local Mage: "Thalassomancy is the magic of deep water. All the strange stories you hear from ships way out at sea? Mirages, monsters, and more? That's thalassomancy. I can teach you what I know, but you'll have to help me find deep water."
+- *Sorry, this is EOC for here for now...*

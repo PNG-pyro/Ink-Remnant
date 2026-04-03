@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://brphcsbryfce1"]
+
+[ext_resource type="Resource" uid="uid://dbbhjo1444qbt" path="res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_thalassomancer.dialogue" id="1_lwmeo"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_ybgu8"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_q3ewo"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_ameu7"]
+
+[resource]
+script = ExtResource("4_ameu7")
+job_name = "Speak with a local mage"
+job_desc = "You have a question..."
+job_story = "That's... some sort of answer."
+job_reward = Dictionary[ExtResource("2_ybgu8"), int]({
+ExtResource("3_q3ewo"): 0
+})
+job_mask = Dictionary[ExtResource("2_ybgu8"), int]({
+ExtResource("3_q3ewo"): 999
+})
+repeats = false
+start_dialogue = true
+dialogue = ExtResource("1_lwmeo")
+button_appears_on = "appear_thalassomancer"
+button_disappears_on = "disappear_people"
+metadata/_custom_type_script = "uid://chnttjydh538r"

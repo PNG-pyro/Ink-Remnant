@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b6cohh1le0i1o"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_il78j"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_xtmq2"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_pnqxk"]
+
+[resource]
+script = ExtResource("3_pnqxk")
+job_name = "Visit a tavern"
+job_desc = "Where's a man to get a drink around here...?"
+job_story = "'The Tipsy Tentacle', huh? Sounds... appetizing."
+job_reward = Dictionary[ExtResource("1_il78j"), int]({
+ExtResource("2_xtmq2"): 0
+})
+job_mask = Dictionary[ExtResource("1_il78j"), int]({
+ExtResource("2_xtmq2"): 999
+})
+repeats = false
+popup_text = "The City curls agressively around a deep bay, full of ships. Steam engines billow and whistle, gulls caw, and sailors shout. Wagons loaded with cargo rattle past. The place bustles, reeks, and churns with humanity. "
+button_text = "You feel slightly out of place."
+signal_name = "disappear_people"
+signal_name_2 = "appear_tipsy_tentacle"
+button_appears_on = "appear_docks"
+button_disappears_on = "disappear_streets"
+metadata/_custom_type_script = "uid://chnttjydh538r"
