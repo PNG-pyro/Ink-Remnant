@@ -10,6 +10,7 @@ func _ready():
 
 
 func setup_floorspace():
+	CurrencyManager.all_currencies.sort_custom(func(a, b): return a.name < b.name)
 	for currency in CurrencyManager.all_currencies:
 		if currency.makes_label:
 			continue

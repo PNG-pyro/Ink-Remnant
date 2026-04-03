@@ -22,6 +22,7 @@ signal appear_glazier
 signal appear_high_street
 signal appear_fancy_shop
 signal appear_grand_bank
+signal appear_docks
 signal disappear_people
 
 func update_resources(res_type: String, res_amount: int):

@@ -134,6 +134,7 @@ var market_streets_jobs: Array[Job] = [
 	#load("res://Currencies/Market/Streets/Walk_the_streets.tres"),
 	load("res://Currencies/Market/Streets/Visit_Clever_Artificers.tres"),
 	load("res://Currencies/Market/Streets/Visit_High_Street.tres"),
+	load("res://Currencies/Market/Streets/Visit_the_docks.tres")
 ]
 
 var market_stalls_jobs: Array[Job] = [
@@ -142,6 +143,7 @@ var market_stalls_jobs: Array[Job] = [
 	load("res://Currencies/Market/Stalls/CleverArtificers/Visit_a_glazier.tres"),
 	load("res://Currencies/Market/Stalls/HighStreet/Visit_a_fancy_shop.tres"),
 	load("res://Currencies/Market/Stalls/HighStreet/Visit_Grand_Bank.tres"),
+	load("res://Currencies/Market/Stalls/Docks/Examine_The_Harbor.tres")
 ]
 
 var market_people_jobs: Array[Job] = [

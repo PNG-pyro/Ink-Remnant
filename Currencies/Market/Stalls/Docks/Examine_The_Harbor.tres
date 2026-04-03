@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://pa4grlknd3qx"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_l7giv"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_alut7"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_1t2s7"]
+
+[resource]
+script = ExtResource("3_1t2s7")
+job_name = "Examine the harbor"
+job_desc = "You wander along, gawking at the sights on display"
+job_story = "Then eventually remember your business."
+job_reward = Dictionary[ExtResource("1_l7giv"), int]({
+ExtResource("2_alut7"): 0
+})
+job_mask = Dictionary[ExtResource("1_l7giv"), int]({
+ExtResource("2_alut7"): 999
+})
+repeats = false
+make_popup = true
+popup_text = "The City curls agressively around a deep bay, full of ships. Steam engines billow and whistle, gulls caw, and sailors shout. Wagons loaded with cargo rattle past. The place bustles, reeks, and churns with humanity. "
+button_text = "You feel slightly out of place."
+signal_name = "disappear_people"
+button_appears_on = "appear_docks"
+button_disappears_on = "disappear_streets"
+metadata/_custom_type_script = "uid://chnttjydh538r"

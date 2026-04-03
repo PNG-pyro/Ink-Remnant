@@ -5,6 +5,7 @@ var visible_labels: Array[CurrencyLabel] = []
 
 
 func _ready():
+	CurrencyManager.all_currencies.sort_custom(func(a, b): return a.name < b.name)
 	update_list()
 	SignalHub.resource_updated.connect(re_update)	
 	#SignalHub.job_complete.connect(re_upgrade)

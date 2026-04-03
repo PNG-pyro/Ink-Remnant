@@ -12,7 +12,7 @@ job_desc = "Cyanomancy is only harmless if you're a skilled hand..."
 job_story = "Thankfully, you're deft. Upon completing the ritual, you have Chroma Rex, the Kingly Blue."
 job_duration = 3
 job_reward = Dictionary[ExtResource("1_8aykw"), int]({
-ExtResource("3_u52jo"): 1
+ExtResource("3_u52jo"): 3
 })
 job_cost = Dictionary[ExtResource("1_8aykw"), int]({
 ExtResource("2_b18cy"): 4
@@ -20,5 +20,4 @@ ExtResource("2_b18cy"): 4
 job_mask = Dictionary[ExtResource("1_8aykw"), int]({
 ExtResource("2_b18cy"): 1
 })
-button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"
