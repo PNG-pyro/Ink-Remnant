@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://2skop1ibpayk"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_ubt86"]
+[ext_resource type="Resource" uid="uid://copigimsthy1y" path="res://Currencies/Deep_Water/Deep_Water.tres" id="2_038od"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_wa8mj"]
+[ext_resource type="Resource" uid="uid://dtm7164jktg6a" path="res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres" id="3_sr4fi"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="4_gvlhn"]
+
+[resource]
+script = ExtResource("2_wa8mj")
+job_name = "Gather deep magic"
+job_desc = "You ignore the uniquely slimy feel of deep water on your skin..."
+job_story = "The effects are worth it, as you feel your power swell. "
+job_reward = Dictionary[ExtResource("1_ubt86"), int]({
+ExtResource("4_gvlhn"): 12
+})
+job_cost = Dictionary[ExtResource("1_ubt86"), int]({
+ExtResource("2_038od"): 1
+})
+job_mask = Dictionary[ExtResource("1_ubt86"), int]({
+ExtResource("3_sr4fi"): 1
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

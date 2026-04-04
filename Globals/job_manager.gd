@@ -13,6 +13,7 @@ var simple_jobs: Array[Job] = [
 	load("res://Currencies/Magic/Cyanomancy/Practice_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Oneiromancy/Practice_Oneiromancy.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Practice_Mirrormancy.tres"),
+	load("res://Currencies/Magic/Thalassomancy/Practice_Thalassomancy.tres"),
 	
 
 
@@ -43,14 +44,21 @@ var upgrades: Array[Job] = [
 	
 	load("res://Currencies/Magic/Craft_Mage_Locus.tres"),
 	
-	load("res://Currencies/Magic/Octomancy/Create_Octagon.tres"),
 	load("res://Currencies/Magic/Octomancy/Research_Octomancy.tres"),
-	load("res://Currencies/Magic/Lapidamancy/Create_Gem_Seed.tres"),
+	load("res://Currencies/Magic/Octomancy/Create_Octagon.tres"),
+	
 	load("res://Currencies/Magic/Lapidamancy/Research_Lapidomancy.tres"),
+	load("res://Currencies/Magic/Lapidamancy/Create_Gem_Seed.tres"),
+	
 	load("res://Currencies/Magic/Cyanomancy/Research_Cyanomancy.tres"),
+	
 	load("res://Currencies/Magic/Oneiromancy/Research_Oneiromancy.tres"),
-	load("res://Currencies/Magic/Mirrormancy/Create_mirror_seed.tres"),
+	
 	load("res://Currencies/Magic/Mirrormancy/Research_Mirrormancy.tres"),
+	load("res://Currencies/Magic/Mirrormancy/Create_mirror_seed.tres"),
+	
+	load("res://Currencies/Magic/Thalassomancy/Research_Thalassomancy.tres"),
+	
 	
 	load("res://Currencies/Scrolls/Upgrades/Buy_Scroll_Case.tres"),
 	load("res://Currencies/Telescope/Construct_telescope.tres"),

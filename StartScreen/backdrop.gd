@@ -62,7 +62,7 @@ func _ready():
 
 func _process(delta: float) -> void:
 	timer += delta
-	if timer >= 1.0:
+	if timer >= 2.0:
 		timer = 0.0
 		increment_currencies()
 

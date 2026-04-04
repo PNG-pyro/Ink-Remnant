@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b7iymey8flhvc"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_0k7jc"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_kjgy5"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_q0bbo"]
+[ext_resource type="Resource" uid="uid://dtm7164jktg6a" path="res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres" id="3_jajow"]
+[ext_resource type="Resource" uid="uid://cvuob7ccx631h" path="res://Currencies/Magic/Thalassomancy/Rules_Thalassomancy.tres" id="4_c3tqt"]
+
+[resource]
+script = ExtResource("2_kjgy5")
+job_name = "Research Thalassomancy"
+job_desc = "Researching Deep Magic often leaves you with a headache due to its obscure and eerie nature. "
+job_story = "Its not commonly encountered, but when it does show up, it's grotesque and horrifying."
+job_reward = Dictionary[ExtResource("1_0k7jc"), int]({
+ExtResource("4_c3tqt"): 12
+})
+job_cost = Dictionary[ExtResource("1_0k7jc"), int]({
+ExtResource("2_q0bbo"): 9
+})
+job_mask = Dictionary[ExtResource("1_0k7jc"), int]({
+ExtResource("3_jajow"): 1
+})
+upper_mask = Array[ExtResource("1_0k7jc")]([ExtResource("4_c3tqt")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

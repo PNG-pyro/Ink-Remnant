@@ -32,7 +32,8 @@ func is_full() -> bool:
 func add(reward: int):
 	amount += reward
 	amount = clamp(amount, 0, max_amount)
-	SignalHub.resource_updated.emit(self, amount)
+	if amount != 0:
+		SignalHub.resource_updated.emit(self, amount)
 
 
 func subtract(price: int):
@@ -49,7 +50,8 @@ func update_seen() -> bool:
 
 func tick(multiplier: int):
 	for currency in tick_types:
-		currency.add(tick_types[currency] * multiplier)
+		if not currency.is_full():
+			currency.add(tick_types[currency] * multiplier)
 
 
 func get_max() -> int:
