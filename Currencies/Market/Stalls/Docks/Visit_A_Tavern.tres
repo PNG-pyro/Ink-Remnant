@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("3_pnqxk")
 job_name = "Visit a tavern"
-job_desc = "Where's a man to get a drink around here...?"
+job_desc = "Where's a body to get a drink around here...?"
 job_story = "'The Tipsy Tentacle', huh? Sounds... appetizing."
 job_reward = Dictionary[ExtResource("1_il78j"), int]({
 ExtResource("2_xtmq2"): 0

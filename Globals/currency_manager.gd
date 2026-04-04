@@ -89,11 +89,13 @@ extends Node
 	
 	
 	load("res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres"),
-	load("res://Currencies/Magic/Mirrormancy/Mirror_Seed.tres"),
 	
 	load("res://Currencies/Magic/Mage_Locus.tres"),
 	
 	load("res://Currencies/Mirror/Mirrors.tres"),
+	load("res://Currencies/Mirror/Upgrades/Kaleidoscope_Box.tres"),
+	load("res://Currencies/Mirror/Ticker/Mirror_Seed.tres"),
+	
 	load("res://Currencies/Telescope/Telescope.tres"),
 ]
 

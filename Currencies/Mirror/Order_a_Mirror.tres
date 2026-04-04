@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_oed45"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="2_wsr1w"]
 [ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="3_a5lpj"]
-[ext_resource type="Resource" uid="uid://vqyhymcdnsw2" path="res://Currencies/Magic/Mirrormancy/Mirror_Seed.tres" id="5_a5lpj"]
+[ext_resource type="Resource" uid="uid://vqyhymcdnsw2" path="res://Currencies/Mirror/Ticker/Mirror_Seed.tres" id="5_a5lpj"]
 
 [resource]
 script = ExtResource("2_oed45")

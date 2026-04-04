@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://duwwjlbb2snn1"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_lrysi"]
+[ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="2_oax60"]
+[ext_resource type="Resource" uid="uid://dtm7164jktg6a" path="res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres" id="3_rrnlg"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_vr4so"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_rrnlg"]
+
+[resource]
+script = ExtResource("4_rrnlg")
+job_name = "Hail a Butterfly Cab"
+job_desc = "You raise your Mage Locus..."
+job_story = "And a beautiful brass cab skitters out of traffic."
+job_reward = Dictionary[ExtResource("1_lrysi"), int]({
+ExtResource("3_vr4so"): 0
+})
+job_mask = Dictionary[ExtResource("1_lrysi"), int]({
+ExtResource("2_oax60"): 1,
+ExtResource("3_rrnlg"): 1
+})
+repeats = false
+popup_text = "You raise your Mage Locus, and as soon as it glints in the air, a six-legged cab glides out of traffic to stop before you. It's shiny-new, shaped like a giant brass beetle, with a near-silent clockwork mainspring. The driver gets down, nods at your Mage Locus, then opens the door for you."
+button_text = "Take a seat."
+signal_name = "disappear_streets"
+signal_name_2 = "appear_butterfly_cab"
+metadata/_custom_type_script = "uid://chnttjydh538r"

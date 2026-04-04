@@ -55,11 +55,11 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Magic/Oneiromancy/Research_Oneiromancy.tres"),
 	
 	load("res://Currencies/Magic/Mirrormancy/Research_Mirrormancy.tres"),
-	load("res://Currencies/Magic/Mirrormancy/Create_mirror_seed.tres"),
+	load("res://Currencies/Mirror/Ticker/Create_mirror_seed.tres"),
 	
 	load("res://Currencies/Magic/Thalassomancy/Research_Thalassomancy.tres"),
 	
-	
+	load("res://Currencies/Mirror/Upgrades/Build_Kaleidoscope_box.tres"),
 	load("res://Currencies/Scrolls/Upgrades/Buy_Scroll_Case.tres"),
 	load("res://Currencies/Telescope/Construct_telescope.tres"),
 ]
@@ -143,7 +143,9 @@ var market_streets_jobs: Array[Job] = [
 	#load("res://Currencies/Market/Streets/Walk_the_streets.tres"),
 	load("res://Currencies/Market/Streets/Visit_Clever_Artificers.tres"),
 	load("res://Currencies/Market/Streets/Visit_High_Street.tres"),
-	load("res://Currencies/Market/Streets/Visit_the_docks.tres")
+	load("res://Currencies/Market/Streets/Visit_the_docks.tres"),
+	load("res://Currencies/Market/Streets/Hail_Butterfly_Cab.tres"),
+	
 ]
 
 var market_stalls_jobs: Array[Job] = [
@@ -154,6 +156,8 @@ var market_stalls_jobs: Array[Job] = [
 	load("res://Currencies/Market/Stalls/HighStreet/Visit_Grand_Bank.tres"),
 	load("res://Currencies/Market/Stalls/Docks/Examine_The_Harbor.tres"),
 	load("res://Currencies/Market/Stalls/Docks/Visit_A_Tavern.tres"),
+	load("res://Currencies/Market/Stalls/ButterflyCab/Examine_Butterfly_Cab.tres"),
+	load("res://Currencies/Market/Stalls/ButterflyCab/Visit_Butterfly_Courtyard.tres"),
 ]
 
 var market_people_jobs: Array[Job] = [

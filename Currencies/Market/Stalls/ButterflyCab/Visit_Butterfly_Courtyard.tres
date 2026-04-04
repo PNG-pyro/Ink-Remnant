@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://tumu0eeqtom8"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_2ol6o"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_mx2be"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_tovxn"]
+
+[resource]
+script = ExtResource("3_tovxn")
+job_name = "Visit the Butterfly Courtyard"
+job_desc = "The Butterfly Cab stalks silently through traffic..."
+job_story = "You barely notice the time in the comfortable interior."
+job_reward = Dictionary[ExtResource("1_2ol6o"), int]({
+ExtResource("2_mx2be"): 0
+})
+job_mask = Dictionary[ExtResource("1_2ol6o"), int]({
+ExtResource("2_mx2be"): 999
+})
+repeats = false
+popup_text = "The Butterfly Cab is newer and fancier than any ride you've taken before. It moves with a bare whisper of metal-on-metal, the plush interior nearly silent. The velvet and brocade seats are soft enough to sleep in, and given the driver sits up top, it's entirely private."
+button_text = "Sit back and enjoy the ride."
+signal_name = "disappear_people"
+signal_name_2 = "appear_butterfly_courtyard"
+button_appears_on = "appear_butterfly_cab"
+button_disappears_on = "disappear_streets"
+metadata/_custom_type_script = "uid://chnttjydh538r"

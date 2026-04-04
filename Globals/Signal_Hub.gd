@@ -23,6 +23,8 @@ signal appear_high_street
 signal appear_fancy_shop
 signal appear_grand_bank
 signal appear_docks
+signal appear_butterfly_courtyard
+signal appear_butterfly_cab
 signal appear_tipsy_tentacle
 signal appear_thalassomancer
 signal disappear_people
