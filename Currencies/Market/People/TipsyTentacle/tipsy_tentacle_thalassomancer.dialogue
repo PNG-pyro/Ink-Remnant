@@ -32,7 +32,8 @@ Local Mage: "Thalassomancy is the magic of deep water. All the strange stories y
 Local Mage: "Well... you look capable. If you gather me ten ounces of deep water, I'll teach what I know about thalassomancy. Hell, I'll introduce you to some more mages, too. What d'ya think?"
 Local Mage: "Deep water is a required component for most thalassomantic preparations, which tend towards potions, salves, and tinctures instead of simple observances or complicated rituals. Here are a few simple ways to find deep water..."
 You write down what he tells you, then leave for now.
-do CurrencyManager.get_currency("Knowledge: Deep Water").amount = 1
+do CurrencyManager.get_currency("Knowledge: Deep Water").add(1)
+do SaveManager.save(SaveManager.save_name_3)
 => END
 
 ~ DeepWater

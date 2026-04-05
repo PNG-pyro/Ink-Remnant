@@ -15,8 +15,6 @@ var simple_jobs: Array[Job] = [
 	load("res://Currencies/Magic/Mirrormancy/Practice_Mirrormancy.tres"),
 	load("res://Currencies/Magic/Thalassomancy/Practice_Thalassomancy.tres"),
 	
-
-
 	load("res://Currencies/Telescope/Chart_the_stars.tres"),
 ]
 
@@ -26,10 +24,12 @@ var trades: Array[Job] = [
 	load("res://Currencies/Herbs/Sell_Herbs.tres"),
 	load("res://Currencies/Clockwork/Upgrades/Sell_clock.tres"),
 	load("res://Currencies/Books/CopyScrollsIntoBook.tres"),
-	load("res://Currencies/Magic/Lapidamancy/Create_Magic_Gem.tres"),
+	load("res://Currencies/Magic/Lapidamancy/Create_Enchanted_Gem.tres"),
 	load("res://Currencies/Magic/Cyanomancy/Create_Kingly_Blue.tres"),
 	load("res://Currencies/Coins/Sell_Book.tres"),
-	load("res://Currencies/Mirror/Order_a_Mirror.tres")
+	load("res://Currencies/Mirror/Order_a_Mirror.tres"),
+	load("res://Currencies/Magic/Mirrormancy/Create_Runescribed_Mirror.tres"),
+	load("res://Currencies/Magic/Oneiromancy/Spin_Dreamsilver.tres"),
 ]
 
 
@@ -43,12 +43,12 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Herbs/Upgrades/Buy_Herb_Cupboard.tres"),
 	
 	load("res://Currencies/Magic/Craft_Mage_Locus.tres"),
+	load("res://Currencies/Magic/Bottle_Dream_Locus.tres"),
 	
 	load("res://Currencies/Magic/Octomancy/Research_Octomancy.tres"),
 	load("res://Currencies/Magic/Octomancy/Create_Octagon.tres"),
 	
 	load("res://Currencies/Magic/Lapidamancy/Research_Lapidomancy.tres"),
-	load("res://Currencies/Magic/Lapidamancy/Create_Gem_Seed.tres"),
 	
 	load("res://Currencies/Magic/Cyanomancy/Research_Cyanomancy.tres"),
 	
@@ -66,10 +66,11 @@ var upgrades: Array[Job] = [
 
 var tickers: Array[Job] = [
 	load("res://Currencies/Clockwork/Tickers/Build_Clockwork_Arm.tres"),
+	load("res://Currencies/Crystal/Ticker/Create_Gem_Seed.tres"),
 	load("res://Currencies/Herbs/Tickers/Build_Planter_Box.tres"),
 	load("res://Currencies/Scrolls/Ticker/Build_Auto_Quill.tres"),
 	load("res://Currencies/Research/Ticker/Craft_Clockwork_Dreamcatcher.tres"),
-	load("res://Currencies/Books/Ticker/Craft_Cogmind.tres")
+	load("res://Currencies/Books/Ticker/Craft_Cogmind.tres"),
 ]
 
 var house_jobs: Array[Job] = [
@@ -171,6 +172,10 @@ var market_people_jobs: Array[Job] = [
 	load("res://Currencies/Market/People/Bank_people/Speak_with_teller.tres"),
 	load("res://Currencies/Market/People/TipsyTentacle/Speak_with_bartender.tres"),
 	load("res://Currencies/Market/People/TipsyTentacle/Speak_with_thalassomancer.tres"),
+	load("res://Currencies/Market/People/Butterfly_Courtyard/Thank_your_driver.tres"),
+	load("res://Currencies/Market/People/Butterfly_Courtyard/Enter_the_courtyard.tres"),
+	load("res://Currencies/Market/People/Butterfly_Courtyard/Approach_a_Waiter.tres"),
+	load("res://Currencies/Market/People/Butterfly_Courtyard/Green_eyed_mage.tres"),
 ]
 
 var all_jobs: Array[Job] = (tickers + 

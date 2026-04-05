@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://b1wnud1xbpvpd"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_pfs20"]
+[ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Cyanomancy/Rules_Of_Cyanomancy.tres" id="2_8vpa2"]
+[ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Lapidamancy/Rules_of_Lapidamancy.tres" id="3_huooh"]
+[ext_resource type="Resource" uid="uid://bsvwq306hcvpj" path="res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres" id="4_575vy"]
+[ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Octomancy/Rules_Of_Octomancy.tres" id="5_ix02l"]
+[ext_resource type="Resource" uid="uid://d4b7t4yojnf5r" path="res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres" id="6_2rvs8"]
+[ext_resource type="Resource" uid="uid://cvuob7ccx631h" path="res://Currencies/Magic/Thalassomancy/Rules_Thalassomancy.tres" id="7_2hehw"]
+
+[resource]
+script = ExtResource("1_pfs20")
+name = "Dream Locus"
+max_amount = 1
+is_ticker = true
+tick_types = Dictionary[Object, int]({
+ExtResource("2_8vpa2"): 1,
+ExtResource("3_huooh"): 1,
+ExtResource("4_575vy"): 1,
+ExtResource("5_ix02l"): 1,
+ExtResource("6_2rvs8"): 1,
+ExtResource("7_2hehw"): 1
+})
+tick_amount = 1
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

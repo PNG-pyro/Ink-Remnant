@@ -7,7 +7,7 @@
 [ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Octomancy/Rules_Of_Octomancy.tres" id="4_6137h"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="5_plwgl"]
 [ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres" id="6_wnqpu"]
-[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Lapidamancy/Magic_Crystal.tres" id="7_e30po"]
+[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Lapidamancy/Enchanted_Gem.tres" id="7_e30po"]
 [ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="8_wtqrm"]
 
 [resource]

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cjtrfpl0yumm4"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_u4o81"]
+[ext_resource type="Resource" uid="uid://d4b7t4yojnf5r" path="res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres" id="2_6oxwq"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_smqk3"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_mqvag"]
+[ext_resource type="Resource" uid="uid://dncrbwdwm20km" path="res://Currencies/Magic/Oneiromancy/Knowledge_Oneiromancy.tres" id="4_8fext"]
+[ext_resource type="Resource" uid="uid://tkfohwf1kv8v" path="res://Currencies/Magic/Oneiromancy/Dream_Silver.tres" id="5_ukvk8"]
+
+[resource]
+script = ExtResource("2_smqk3")
+job_name = "Spin Dreamsilver"
+job_desc = "Spinning straw into gold is for fairytales..."
+job_story = "But silver can be spun from dreams, if you have a deft hand - and the right dreamcatcher."
+job_reward = Dictionary[ExtResource("1_u4o81"), int]({
+ExtResource("5_ukvk8"): 2
+})
+job_cost = Dictionary[ExtResource("1_u4o81"), int]({
+ExtResource("2_6oxwq"): 1,
+ExtResource("3_mqvag"): 30
+})
+job_mask = Dictionary[ExtResource("1_u4o81"), int]({
+ExtResource("4_8fext"): 1
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

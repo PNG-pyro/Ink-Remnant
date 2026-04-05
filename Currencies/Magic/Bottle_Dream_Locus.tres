@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dyujtsdosrsjr"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_xubtq"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_g1vax"]
+[ext_resource type="Resource" uid="uid://copigimsthy1y" path="res://Currencies/Deep_Water/Deep_Water.tres" id="2_wylpn"]
+[ext_resource type="Resource" uid="uid://tkfohwf1kv8v" path="res://Currencies/Magic/Oneiromancy/Dream_Silver.tres" id="3_ncf0r"]
+[ext_resource type="Resource" uid="uid://c0fxtfd8v10g6" path="res://Currencies/Magic/Mirrormancy/Runescribed_Mirror.tres" id="4_qx3b4"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="5_fstvx"]
+[ext_resource type="Resource" uid="uid://bsvwq306hcvpj" path="res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres" id="5_smjq4"]
+[ext_resource type="Resource" uid="uid://d4b7t4yojnf5r" path="res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres" id="6_rneoo"]
+[ext_resource type="Resource" uid="uid://dncrbwdwm20km" path="res://Currencies/Magic/Oneiromancy/Knowledge_Oneiromancy.tres" id="6_smjq4"]
+[ext_resource type="Resource" uid="uid://cvuob7ccx631h" path="res://Currencies/Magic/Thalassomancy/Rules_Thalassomancy.tres" id="7_8df16"]
+[ext_resource type="Resource" uid="uid://dtm7164jktg6a" path="res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres" id="7_rneoo"]
+[ext_resource type="Resource" uid="uid://b1wnud1xbpvpd" path="res://Currencies/Magic/Dream_Locus.tres" id="8_8df16"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="8_smjq4"]
+
+[resource]
+script = ExtResource("2_g1vax")
+job_name = "Bottle a Dream Locus"
+job_desc = "The effort is not trivial..."
+job_story = "...But when you hold the final product and feel its power, you know it was worth it."
+job_reward = Dictionary[ExtResource("1_xubtq"), int]({
+ExtResource("8_8df16"): 1
+})
+job_cost = Dictionary[ExtResource("1_xubtq"), int]({
+ExtResource("2_wylpn"): 13,
+ExtResource("3_ncf0r"): 7,
+ExtResource("4_qx3b4"): 3,
+ExtResource("5_smjq4"): 70,
+ExtResource("6_rneoo"): 9,
+ExtResource("7_8df16"): 33,
+ExtResource("8_smjq4"): 300
+})
+job_mask = Dictionary[ExtResource("1_xubtq"), int]({
+ExtResource("5_fstvx"): 1,
+ExtResource("6_smjq4"): 1,
+ExtResource("7_rneoo"): 1
+})
+upper_mask = Array[ExtResource("1_xubtq")]([ExtResource("8_8df16")])
+make_popup = true
+popup_text = "The Dream Locus glitters in your palm, half concrete, half imaginary - though no less real, in its own way. Its mirrored shape slowly morphs, not fully solid in this form. it whispers to you, and you listen..."
+button_text = "And write them down"
+metadata/_custom_type_script = "uid://chnttjydh538r"

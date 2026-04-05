@@ -74,8 +74,8 @@ extends Node
 	load("res://Currencies/Magic/Magic.tres"),
 	
 	load("res://Currencies/Magic/Lapidamancy/Rules_of_Lapidamancy.tres"),
-	load("res://Currencies/Magic/Lapidamancy/Magic_Crystal.tres"),
-	load("res://Currencies/Magic/Lapidamancy/Gem_Seed.tres"),
+	load("res://Currencies/Magic/Lapidamancy/Enchanted_Gem.tres"),
+	load("res://Currencies/Crystal/Ticker/Gem_Seed.tres"),
 	
 	load("res://Currencies/Magic/Octomancy/Rules_Of_Octomancy.tres"),
 	load("res://Currencies/Magic/Octomancy/Octagon.tres"),
@@ -84,13 +84,16 @@ extends Node
 	load("res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres"),
 	
 	load("res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres"),
+	load("res://Currencies/Magic/Oneiromancy/Dream_Silver.tres"),
 	
 	load("res://Currencies/Magic/Thalassomancy/Rules_Thalassomancy.tres"),
 	
 	
 	load("res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres"),
+	load("res://Currencies/Magic/Mirrormancy/Runescribed_Mirror.tres"),
 	
 	load("res://Currencies/Magic/Mage_Locus.tres"),
+	load("res://Currencies/Magic/Dream_Locus.tres"),
 	
 	load("res://Currencies/Mirror/Mirrors.tres"),
 	load("res://Currencies/Mirror/Upgrades/Kaleidoscope_Box.tres"),

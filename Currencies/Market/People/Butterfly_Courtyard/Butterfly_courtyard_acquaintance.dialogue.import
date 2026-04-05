@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cjyf61tpbj4fe"
+path="res://.godot/imported/Butterfly_courtyard_acquaintance.dialogue-4e61f7add7433b84bc5455de0ee55644.tres"
+
+[deps]
+
+source_file="res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_courtyard_acquaintance.dialogue"
+dest_files=["res://.godot/imported/Butterfly_courtyard_acquaintance.dialogue-4e61f7add7433b84bc5455de0ee55644.tres"]
+
+[params]
+
+defaults=true

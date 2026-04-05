@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b01em6yvhgslv"]
+
+[ext_resource type="Resource" uid="uid://conmk62q0cvr7" path="res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_bartender.dialogue" id="1_xjat7"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_tr1ae"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_4aiqx"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_esls6"]
+
+[resource]
+script = ExtResource("4_esls6")
+job_name = "Enter the courtyard"
+job_desc = "You step through the arch..."
+job_story = "And take a moment to look around. "
+job_reward = Dictionary[ExtResource("2_tr1ae"), int]({
+ExtResource("3_4aiqx"): 0
+})
+job_mask = Dictionary[ExtResource("2_tr1ae"), int]({
+ExtResource("3_4aiqx"): 999
+})
+repeats = false
+make_popup = true
+popup_text = "The cab whispers away behind you as you step through the arch and look around. The Butterfly Courtyard is wide, wrapping around a central gazebo. Boardwalk paths meander through a profusion of pots and raised beds, each overflowing with flowers. Glass sculptures of butterflies are held aloft by cunningly placed wires, seeming to float on a breeze all their own. "
+button_text = "What a pleasant place"
+dialogue = ExtResource("1_xjat7")
+button_appears_on = "appear_butterfly_courtyard"
+button_disappears_on = "disappear_people"
+metadata/_custom_type_script = "uid://chnttjydh538r"

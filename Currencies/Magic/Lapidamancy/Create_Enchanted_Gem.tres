@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_vq1mf"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_jfqmu"]
 [ext_resource type="Resource" uid="uid://b5ftjaguk3cim" path="res://Currencies/Magic/Lapidamancy/Knowledge_Lapidamancy.tres" id="4_jfqmu"]
-[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Lapidamancy/Magic_Crystal.tres" id="4_t0syn"]
+[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Lapidamancy/Enchanted_Gem.tres" id="4_t0syn"]
 
 [resource]
 script = ExtResource("2_vq1mf")

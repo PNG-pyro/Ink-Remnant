@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://csgsi7jvhew50"]
+
+[ext_resource type="Resource" uid="uid://conmk62q0cvr7" path="res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_bartender.dialogue" id="1_2aken"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_pdbri"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_etqcl"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_eal2n"]
+
+[resource]
+script = ExtResource("4_eal2n")
+job_name = "Thank your driver"
+job_desc = "You pause and say a quick thank-you to the driver.... "
+job_story = "And take a moment to look around. "
+job_reward = Dictionary[ExtResource("2_pdbri"), int]({
+ExtResource("3_etqcl"): 0
+})
+job_mask = Dictionary[ExtResource("2_pdbri"), int]({
+ExtResource("3_etqcl"): 999
+})
+repeats = false
+make_popup = true
+popup_text = "The cab clicks to a stop in front of a brilliantly lit arch leading to a wide courtyard, filled with flowering plants and decorated with ethereal glass sculptures of butterflies. You alight, taking a moment to thank your driver as you look around. "
+button_text = "Walk on in"
+dialogue = ExtResource("1_2aken")
+button_appears_on = "appear_butterfly_courtyard"
+button_disappears_on = "disappear_people"
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,17 @@
+~ start
+You: You spot someone you know! It's the green-eyed local mage you met in the bar, who taught you how to hail the Butterfly Cab.
+- Greet him => Greet
+- Avoid him => END
+
+~ Greet
+Jeremiah: "Oh, hey!" He looks up from the low table he's sitting at, nestled between two rosebushes. "Good to see you here." He grins and waves you over. "Come, take a seat." 
+~ Mid
+You: You sit and talk with him for a while...
+- "This place is crazy, huh?" 
+	Jeremiah: "I know, right? I had no idea places like this existed until someone told me. You can buy ingredients for magic and stuff here too, sometimes." He points to an inconspicuous stall, off towards the edge of the courtyard. => Mid
+- "What sort of magic do they use here?" 
+	Jeremiah: "Lepidomancy, of course! It's one of the four minor magics of the city - according to the Butterfly Courtyard, at least! They won't teach you, though, not unless you're a two-locus mage." => Mid
+- "What's your name again? I don't think I got it..." 
+	Jeremiah: "Jeremiah... you can call me Jerry, if you like." He gives a disarming grin. => Mid
+- "Alright, I'm going to look around more." \n Get up.
+	Jeremiah: "See you around!" He gives you a cheery wave. => END
