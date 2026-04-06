@@ -17,7 +17,9 @@
 [ext_resource type="Script" uid="uid://dcqjqbyxbt48c" path="res://StartScreen/load_button_3.gd" id="14_7envs"]
 [ext_resource type="PackedScene" uid="uid://cxse6vagl4302" path="res://StoryPopup/story_popup.tscn" id="16_a6fgy"]
 [ext_resource type="Texture2D" uid="uid://em2o1giqs2ap" path="res://Borders/Work_borders.png" id="16_ffxqw"]
+[ext_resource type="Script" uid="uid://covbfmgih46wi" path="res://StartScreen/dark_mode.gd" id="17_17tle"]
 [ext_resource type="Shader" uid="uid://b7ojvexq3o8o8" path="res://StartScreen/Frames_Shader.tres" id="17_eo2o8"]
+[ext_resource type="Script" uid="uid://dc78vbyg4givi" path="res://StartScreen/light_mode.gd" id="18_satxg"]
 [ext_resource type="Script" uid="uid://yew3twuogt1b" path="res://StartScreen/Settings_button.gd" id="18_yp2c4"]
 [ext_resource type="Script" uid="uid://b4r2u7m0gndal" path="res://StartScreen/city_button.gd" id="19_4asdo"]
 [ext_resource type="Texture2D" uid="uid://c5k5dxieu4r5w" path="res://Borders/Currencies_Border.png" id="19_ptm2y"]
@@ -422,7 +424,7 @@ offset_left = 12.0
 offset_top = 11.9999695
 offset_right = 266.0
 offset_bottom = 67.99997
-text = "Ver. 0.7.1"
+text = "Ver. 0.7.2"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -516,6 +518,7 @@ anchor_top = 0.1168223
 anchor_right = 0.8969957
 anchor_bottom = 0.43925226
 text = "Dark Mode"
+script = ExtResource("17_17tle")
 metadata/_edit_use_anchors_ = true
 
 [node name="LightMode" type="Button" parent="ThemeControlFrame" unique_id=2117188712]
@@ -526,6 +529,7 @@ anchor_top = 0.5560747
 anchor_right = 0.8969957
 anchor_bottom = 0.87850463
 text = "Light Mode"
+script = ExtResource("18_satxg")
 metadata/_edit_use_anchors_ = true
 
 [node name="ThemeControlPanel" type="Panel" parent="ThemeControlFrame" unique_id=993674031 groups=["SaveTabFrame"]]
@@ -936,8 +940,8 @@ visible = false
 [connection signal="pressed" from="SaveTabFrame/LoadButton" to="SaveTabFrame/LoadButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/ImportSave" to="LoadPopup" method="_on_import_save_pressed"]
 [connection signal="pressed" from="SaveTabFrame/NewGame" to="SaveTabFrame/NewGame" method="_on_pressed"]
-[connection signal="pressed" from="ThemeControlFrame/DarkMode" to="." method="_on_dark_mode_pressed"]
-[connection signal="pressed" from="ThemeControlFrame/LightMode" to="." method="_on_light_mode_pressed"]
+[connection signal="pressed" from="ThemeControlFrame/DarkMode" to="ThemeControlFrame/DarkMode" method="_on_pressed"]
+[connection signal="pressed" from="ThemeControlFrame/LightMode" to="ThemeControlFrame/LightMode" method="_on_pressed"]
 [connection signal="pressed" from="SettingsButton" to="SettingsButton" method="_on_pressed"]
 [connection signal="pressed" from="CityButton" to="CityButton" method="_on_pressed"]
 [connection signal="value_changed" from="MusicCreditsFrame/VolumeSlider" to="MusicCreditsFrame/VolumeSlider" method="_on_value_changed"]

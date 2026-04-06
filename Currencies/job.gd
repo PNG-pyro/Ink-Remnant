@@ -44,6 +44,7 @@ func has_room() -> bool:
 		#return room_left
 	for reward in job_reward:
 		if reward.is_full():
+			SignalHub.flash_currency.emit(reward.name)
 			room_left = false
 	return room_left
 

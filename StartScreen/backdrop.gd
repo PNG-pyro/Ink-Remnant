@@ -26,7 +26,7 @@ var timer: float = 0.0
 
 
 func _ready():
-	_on_dark_mode_pressed()
+	set_dark()
 	
 	button_stack_jobs.populate(JobManager.simple_jobs)
 	button_stack_trades.populate(JobManager.trades)
@@ -56,6 +56,8 @@ func _ready():
 	SignalHub.job_complete.connect(check_maxes)
 	SignalHub.job_complete.connect(autosave)
 	SignalHub.resource_updated.connect(end_of_content)
+	SignalHub.set_theme_dark.connect(set_dark)
+	SignalHub.set_theme_light.connect(set_light)
 	
 	
 
@@ -100,31 +102,23 @@ func display_popup(popup):
 	popup.popup_centered()
 
 
-#func set_light():
-	#_on_light_mode_pressed()
-
-
-func _on_light_mode_pressed() -> void:
+func set_light():
 	self.theme = load("res://theme_light.tres")
 	RenderingServer.global_shader_parameter_set("Background", background_color_light)
 	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_dark)
 	$"BackdropDark".visible = false
 	$"BackdropLight".visible = true
-	#SaveManager.theme_bool = false
+	SaveManager.theme_string = "Light"
 	#SaveManager.save(SaveManager.save_name_3)
 
 
-#func set_dark():
-	#_on_dark_mode_pressed()
-
-
-func _on_dark_mode_pressed() -> void:
+func set_dark():
 	self.theme = load("res://theme_dark.tres")
 	RenderingServer.global_shader_parameter_set("Background", background_color_dark)
 	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_light)
 	$"BackdropDark".visible = true
 	$"BackdropLight".visible = false
-	#SaveManager.theme_bool = true
+	SaveManager.theme_string = "Dark"
 	#SaveManager.save(SaveManager.save_name_3)
 
 

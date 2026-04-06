@@ -176,6 +176,7 @@ var market_people_jobs: Array[Job] = [
 	load("res://Currencies/Market/People/Butterfly_Courtyard/Enter_the_courtyard.tres"),
 	load("res://Currencies/Market/People/Butterfly_Courtyard/Approach_a_Waiter.tres"),
 	load("res://Currencies/Market/People/Butterfly_Courtyard/Green_eyed_mage.tres"),
+	load("res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Butcher.tres"),
 ]
 
 var all_jobs: Array[Job] = (tickers + 

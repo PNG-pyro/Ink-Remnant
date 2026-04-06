@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bjnwy5ude84db"
+path="res://.godot/imported/Butterfly_Butcher.dialogue-801047280cdcfd5a4ce065302b8acbd2.tres"
+
+[deps]
+
+source_file="res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Butcher.dialogue"
+dest_files=["res://.godot/imported/Butterfly_Butcher.dialogue-801047280cdcfd5a4ce065302b8acbd2.tres"]
+
+[params]
+
+defaults=true

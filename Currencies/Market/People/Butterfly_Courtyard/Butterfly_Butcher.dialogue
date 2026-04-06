@@ -1,0 +1,15 @@
+~ start
+You: You step out of the surrounding flowers and bushes and find yourself at the edge of the Butterfly Courtyard. Ahead, a strange stall has been set up. Made from rough wood, it is covered in glass rhomboids, each holding a perfectly preserved butterfly, wings spread wide for display. They vary in size from smaller than a coin to larger than your spread palms, and the whole collection is a riot of colors, a vertiable rainbow of insects.
+~ Mid
+Butterfly Butcher: "Do you need butterfly parts?" The stall owner is a burly man with an easy smile. He's carrying a miniature cleaver the size of a finger, and he's got a butcher's block barely nine inches wide set up in front of him.
+- "Are your butterflies fresh?" 
+	Butterfly Butcher: "Fresh as can be," he insists. "Or so well preserved you'd never know the difference." He takes down one of the glass cases, holding a brilliant Blue Morpho, and offers it to you. "Would you like to inspect them?" => Mid
+- Inspect the butterflies
+	You: Each butterfly has been carefully preserved, fixed into a tiny glass box that holds them in place but allows direct inspection. You can see the colors of the wings perfectly, and every feature, down to the antenna and compound eyes, looks pristine. => Mid
+- "What varieties do you have?" 
+	Butterfly Butcher: "Oh, all sorts!" He reaches into the stall and comes up with a handful of samples. "Here's a Viceroy - they can be difficult to distinguish without practice. Here's a common cabbage butterfly; I can get you these in bulk." He reaches into the back and pulls out a wide and flat specimen box, the butterfly inside positively huge. "I even have a birdwing-butterfly, from the distant Spice Islands." The specimen is beautiful, with brilliant emerald wings, and startlingly large. => Mid
+- Ask for a demonstration. 
+	"Oh, sure. I was just about to prepare one of these beauties." He pulls out a brown butterfly, and angles it to show the purple flash of the wings. Popping it gently out of its case, he lays it on the butchers block in front of him and goes to work. With a few precise strokes of the cleaver, he's removed its legs, eyes, antenna and wings. With a few more, he's cut it down into component parts so small you have trouble tracking them. He separates everything into smaller vials, named 'feet' or 'extra scales'. It's an impressive display. => Mid
+- Go back to wandering the garden
+	Butterfly Butcher: "Thanks for stopping by!" He waves you off cheerily with a flip of his cleaver. => END
+=> END

@@ -7,12 +7,11 @@ var save_name_2: String = "Slot 2"
 var save_name_3: String = "Autosave"
 var last_focus_time: float = 0
 var market_visible: bool = false
-var theme_bool: bool
+var theme_string: String
 
 
 var focus_gained_callback
 var focus_lost_callback
-
 
 
 func load_autosave():
@@ -27,15 +26,13 @@ func save(savename: String) -> SaveState:
 	for currency in CurrencyManager.all_currencies:
 		save_state.all_currencies.append(currency.duplicate())
 	
-	save_state.all_jobs = []
 	for job in JobManager.all_jobs:
-		#save_state.all_jobs.append(job.duplicate())
 		save_state.jobs_dict[job.job_name] = job.shows_up
 		
 	for button in get_tree().get_nodes_in_group("BarButtons"):
 		save_state.button_states[button.job_run.job_name] = button.visual_state
 	
-	#save_state.theme = self.theme_bool
+	save_state.theme_string = theme_string
 	save_state.mute = BackgroundMusicPlayer.stream_paused
 	save_state.volume = BackgroundMusicPlayer.volume_linear
 	save_state.market_visible = market_visible
@@ -58,7 +55,7 @@ func load(savename: String) -> bool:
 		SignalHub.display.emit("Oops, something went wrong... New game begun!")
 	SignalHub.make_visible.emit()
 	return true
-	
+
 
 func load_save(save_to_load: SaveState) -> bool:
 	if not save_to_load:
@@ -82,13 +79,18 @@ func load_save(save_to_load: SaveState) -> bool:
 		if button.job_run.job_name in save_to_load.button_states:
 			button.visual_state = save_to_load.button_states[button.job_run.job_name]
 			button.update_visuals()
+			
 
 	SignalHub.volume_set.emit(save_to_load.volume, save_to_load.mute)
 
 	for currency in CurrencyManager.all_currencies:
 		currency.get_max()
-	
-		
 
 	SceneManager.set_scene(SceneManager.Scene.CITY)
+	
+	if save_to_load.theme_string == "Light":
+		SignalHub.set_theme_light.emit()
+
+	SignalHub.set_theme_dark.emit()
+		
 	return true

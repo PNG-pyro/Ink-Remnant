@@ -14,6 +14,9 @@ signal job_begun()
 signal res_max_got(res_type: Currency, max: int)
 signal volume_set(new_vol: float, mute: bool)
 signal got_mirrormancy
+signal flash_currency
+signal set_theme_dark
+signal set_theme_light
 
 signal disappear_streets
 signal appear_clever_artificers

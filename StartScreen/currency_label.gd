@@ -12,6 +12,7 @@ func _ready() -> void:
 	#if not label_type.makes_label:
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	SignalHub.resource_updated.connect(update_tooltip)
+	SignalHub.flash_currency.connect(flash)
 
 
 func text_set(currency: Currency):
@@ -43,10 +44,22 @@ func upgrade(res_type: Currency, new_amount: int):
 		#spawn_neg_popup(dif)
 
 
-#func flash():
-	#var tween = create_tween()
-	#tween.tween_property(self, "scale", Vector2(1.3, 1.0), 0.1)
-	#tween.tween_property(self, "scale", Vector2(1.0, 1.0), 0.1)
+func flash(name):
+	if name == label_type.name:
+		
+		#tween.tween_property(self, "scale", Vector2(1.3, 1.0), 0.1)
+		#tween.tween_property(self, "scale", Vector2(1.0, 1.0), 0.1)
+		
+		
+		pivot_offset = get_minimum_size()/2
+		var pivot_tween = create_tween()
+		pivot_tween.tween_property(self, "rotation", 0.1, 0.05)
+		pivot_tween.tween_property(self, "rotation", -0.1, 0.1)
+		pivot_tween.tween_property(self, "rotation", 0.0, 0.05)
+		
+		var color_tween = create_tween()
+		color_tween.tween_property(self, "modulate", Color.YELLOW, 0.5)
+		color_tween.tween_property(self, "modulate", Color.WHITE, 0.1)
 
 
 func spawn_popup(txt_amount: int):
