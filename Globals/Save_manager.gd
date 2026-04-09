@@ -7,7 +7,7 @@ var save_name_2: String = "Slot 2"
 var save_name_3: String = "Autosave"
 var last_focus_time: float = 0
 var market_visible: bool = false
-var theme_string: String
+var theme_int: int
 
 
 var focus_gained_callback
@@ -32,7 +32,7 @@ func save(savename: String) -> SaveState:
 	for button in get_tree().get_nodes_in_group("BarButtons"):
 		save_state.button_states[button.job_run.job_name] = button.visual_state
 	
-	save_state.theme_string = theme_string
+	save_state.theme_int = theme_int
 	save_state.mute = BackgroundMusicPlayer.stream_paused
 	save_state.volume = BackgroundMusicPlayer.volume_linear
 	save_state.market_visible = market_visible
@@ -62,6 +62,12 @@ func load_save(save_to_load: SaveState) -> bool:
 		return false
 	SceneManager.set_scene(save_to_load.ui_state as SceneManager.Scene)
 	market_visible = save_to_load.market_visible
+	
+	theme_int = save_to_load.theme_int
+	if theme_int == 1:
+		SignalHub.set_theme_light.emit()
+	if theme_int == 2:
+		SignalHub.set_theme_dark.emit()
 
 	for saved_currency in save_to_load.all_currencies:
 		for currency in CurrencyManager.all_currencies:
@@ -88,9 +94,6 @@ func load_save(save_to_load: SaveState) -> bool:
 
 	SceneManager.set_scene(SceneManager.Scene.CITY)
 	
-	if save_to_load.theme_string == "Light":
-		SignalHub.set_theme_light.emit()
 
-	SignalHub.set_theme_dark.emit()
 		
 	return true

@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_thqke")
-name = "Rules of Thalassomancy"
+name = "Rules - Thalassomancy"
 max_amount = 63
 tick_types = null
 is_upgrade = true

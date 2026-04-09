@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_1fgnm")
-name = "Rules of Oneiromancy"
+name = "Rules - Oneiromancy"
 max_amount = 12
 tick_types = null
 is_upgrade = true

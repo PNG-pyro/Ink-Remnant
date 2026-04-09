@@ -77,52 +77,57 @@ visible = false
 label_text = "You are a homeless waif alone in a magical city. The only place to go from here is up!"
 button_text = "Search the city"
 
-[node name="HouseButton" type="Button" parent="." unique_id=333215365]
+[node name="NavButtons" type="ScrollContainer" parent="." unique_id=290461904]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.8671875
-anchor_top = 0.47361112
+anchor_top = 0.3861111
 anchor_right = 0.984375
-anchor_bottom = 0.5375
-offset_bottom = -3.0517578e-05
-text = "Home"
-script = ExtResource("19_yp2c4")
+anchor_bottom = 0.88472223
 metadata/_edit_use_anchors_ = true
 
-[node name="LibraryButton" type="Button" parent="." unique_id=1546172386]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.8671875
-anchor_top = 0.55972224
-anchor_right = 0.984375
-anchor_bottom = 0.62361115
-offset_bottom = -3.0517578e-05
+[node name="VBoxContainer" type="VBoxContainer" parent="NavButtons" unique_id=138049414]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="WorkButton" type="Button" parent="NavButtons/VBoxContainer" unique_id=1065092866]
+layout_mode = 2
+text = "Work"
+script = ExtResource("19_4asdo")
+
+[node name="HomeButton" type="Button" parent="NavButtons/VBoxContainer" unique_id=333215365]
+layout_mode = 2
+text = "Home"
+script = ExtResource("19_yp2c4")
+
+[node name="LibraryButton" type="Button" parent="NavButtons/VBoxContainer" unique_id=1546172386]
+layout_mode = 2
 text = "The Library"
 script = ExtResource("5_plbck")
 metadata/_edit_use_anchors_ = true
 
-[node name="TowerButton" type="Button" parent="." unique_id=259335983]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.8671875
-anchor_top = 0.6458333
-anchor_right = 0.984375
-anchor_bottom = 0.7097223
-offset_bottom = -3.0517578e-05
+[node name="TowerButton" type="Button" parent="NavButtons/VBoxContainer" unique_id=259335983]
+layout_mode = 2
 text = "Tower of Magic"
 script = ExtResource("6_58m4n")
 metadata/_edit_use_anchors_ = true
 
-[node name="MarketButton" type="Button" parent="." unique_id=1803508455]
+[node name="MarketButton" type="Button" parent="NavButtons/VBoxContainer" unique_id=1803508455]
+layout_mode = 2
+text = "The Markets"
+script = ExtResource("7_satxg")
+metadata/_edit_use_anchors_ = true
+
+[node name="SettingsButton" type="Button" parent="." unique_id=1193410101]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.8671875
-anchor_top = 0.73333335
+anchor_top = 0.9236111
 anchor_right = 0.984375
-anchor_bottom = 0.7972222
-offset_bottom = -3.0517578e-05
-text = "The Markets"
-script = ExtResource("7_satxg")
+anchor_bottom = 0.9722222
+text = "Settings"
+script = ExtResource("18_yp2c4")
 metadata/_edit_use_anchors_ = true
 
 [node name="HouseTabFrame" type="NinePatchRect" parent="." unique_id=2079112509 groups=["HouseTabFrame"]]
@@ -588,7 +593,6 @@ mouse_filter = 2
 
 [node name="CurrencyStackFrame" type="NinePatchRect" parent="." unique_id=1379427192]
 material = SubResource("ShaderMaterial_jd06h")
-clip_contents = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.009375
@@ -605,17 +609,21 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
-[node name="CurrencyStack" type="VBoxContainer" parent="CurrencyStackFrame" unique_id=1997743868 groups=["ButtonStacks"]]
+[node name="ScrollContainer" type="ScrollContainer" parent="CurrencyStackFrame" unique_id=439841179]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.037037037
-anchor_top = 0.0121951215
-anchor_right = 0.962963
-anchor_bottom = 0.9878049
+anchor_left = 0.044176705
+anchor_top = 0.0144300135
+anchor_right = 0.9558233
+anchor_bottom = 0.98557
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="CurrencyStack" type="VBoxContainer" parent="CurrencyStackFrame/ScrollContainer" unique_id=1997743868 groups=["ButtonStacks"]]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
 script = ExtResource("2_2fenb")
 metadata/_edit_use_anchors_ = true
 
@@ -785,28 +793,6 @@ grow_vertical = 2
 size_flags_vertical = 3
 mouse_filter = 2
 
-[node name="SettingsButton" type="Button" parent="." unique_id=1193410101]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.8671875
-anchor_top = 0.91805553
-anchor_right = 0.984375
-anchor_bottom = 0.9791667
-text = "Settings"
-script = ExtResource("18_yp2c4")
-metadata/_edit_use_anchors_ = true
-
-[node name="CityButton" type="Button" parent="." unique_id=1065092866]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.8671875
-anchor_top = 0.3861111
-anchor_right = 0.984375
-anchor_bottom = 0.4486111
-text = "Work"
-script = ExtResource("19_4asdo")
-metadata/_edit_use_anchors_ = true
-
 [node name="BackdropDark" type="TextureRect" parent="." unique_id=1565207643]
 visible = false
 z_index = -10
@@ -931,10 +917,12 @@ visible = false
 [node name="LoadPopup" parent="." unique_id=642060012 instance=ExtResource("49_tium7")]
 visible = false
 
-[connection signal="pressed" from="HouseButton" to="HouseButton" method="_on_pressed"]
-[connection signal="pressed" from="LibraryButton" to="LibraryButton" method="_on_pressed"]
-[connection signal="pressed" from="TowerButton" to="TowerButton" method="_on_pressed"]
-[connection signal="pressed" from="MarketButton" to="MarketButton" method="_on_pressed"]
+[connection signal="pressed" from="NavButtons/VBoxContainer/WorkButton" to="NavButtons/VBoxContainer/WorkButton" method="_on_pressed"]
+[connection signal="pressed" from="NavButtons/VBoxContainer/HomeButton" to="NavButtons/VBoxContainer/HomeButton" method="_on_pressed"]
+[connection signal="pressed" from="NavButtons/VBoxContainer/LibraryButton" to="NavButtons/VBoxContainer/LibraryButton" method="_on_pressed"]
+[connection signal="pressed" from="NavButtons/VBoxContainer/TowerButton" to="NavButtons/VBoxContainer/TowerButton" method="_on_pressed"]
+[connection signal="pressed" from="NavButtons/VBoxContainer/MarketButton" to="NavButtons/VBoxContainer/MarketButton" method="_on_pressed"]
+[connection signal="pressed" from="SettingsButton" to="SettingsButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/SaveButton" to="SaveTabFrame/SaveButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/ExportSave" to="SavePopup" method="_on_export_save_pressed"]
 [connection signal="pressed" from="SaveTabFrame/LoadButton" to="SaveTabFrame/LoadButton" method="_on_pressed"]
@@ -942,8 +930,6 @@ visible = false
 [connection signal="pressed" from="SaveTabFrame/NewGame" to="SaveTabFrame/NewGame" method="_on_pressed"]
 [connection signal="pressed" from="ThemeControlFrame/DarkMode" to="ThemeControlFrame/DarkMode" method="_on_pressed"]
 [connection signal="pressed" from="ThemeControlFrame/LightMode" to="ThemeControlFrame/LightMode" method="_on_pressed"]
-[connection signal="pressed" from="SettingsButton" to="SettingsButton" method="_on_pressed"]
-[connection signal="pressed" from="CityButton" to="CityButton" method="_on_pressed"]
 [connection signal="value_changed" from="MusicCreditsFrame/VolumeSlider" to="MusicCreditsFrame/VolumeSlider" method="_on_value_changed"]
 [connection signal="toggled" from="MiscSettingsFrame/MuteButton" to="MiscSettingsFrame/MuteButton" method="_on_toggled"]
 [connection signal="toggled" from="MiscSettingsFrame/JobsAutorun" to="MiscSettingsFrame/JobsAutorun" method="_on_toggled"]

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cb4w4hmprx6lq"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_biay4"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="2_biay4"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_qogch"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_flqi0"]
+
+[resource]
+script = ExtResource("4_flqi0")
+job_name = "Re-read Mirrormancy"
+job_desc = "You decide to refresh your memory..."
+job_story = "Yes, these books are familiar. "
+job_duration = 2
+job_reward = Dictionary[ExtResource("1_biay4"), int]({
+ExtResource("3_qogch"): 0
+})
+job_mask = Dictionary[ExtResource("1_biay4"), int]({
+ExtResource("2_biay4"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "\"Mirrormancy is the magic of mirrors and reflections and, to some extent, light. Magic to twist orientation and even position, or displace and replace an object, all can be found under this archetype. One common effect is 'mirror space', where sympathetic magic uses the reflection as a replica...\""
+button_text = "Done reading"
+metadata/_custom_type_script = "uid://chnttjydh538r"

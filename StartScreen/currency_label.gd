@@ -25,7 +25,7 @@ func update(res_type: Currency, new_amount: int):
 	if dif == 0:
 		return
 	amount = new_amount
-	text = res_type.name.capitalize() + ": " + str(amount) + "/" + str(res_type.max_amount)
+	text = res_type.name + ": " + str(amount) + "/" + str(res_type.max_amount)
 	if dif > 0:
 		spawn_popup(dif)
 	if dif < 0:
@@ -44,12 +44,12 @@ func upgrade(res_type: Currency, new_amount: int):
 		#spawn_neg_popup(dif)
 
 
-func flash(name):
-	if name == label_type.name:
+func flash(name_to_flash):
+	if name_to_flash == label_type.name:
 		
-		#tween.tween_property(self, "scale", Vector2(1.3, 1.0), 0.1)
-		#tween.tween_property(self, "scale", Vector2(1.0, 1.0), 0.1)
-		
+		var scale_tween = create_tween()
+		scale_tween.tween_property(self, "scale", Vector2(1.3, 1.0), 0.1)
+		scale_tween.tween_property(self, "scale", Vector2(1.0, 1.0), 0.1)
 		
 		pivot_offset = get_minimum_size()/2
 		var pivot_tween = create_tween()

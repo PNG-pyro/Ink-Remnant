@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_pfsi6")
-name = "Rules of Lapidamancy"
+name = "Rules - Lapidamancy"
 max_amount = 21
 tick_types = null
 is_upgrade = true

@@ -113,6 +113,12 @@ var research_book_jobs: Array[Job] = [
 	load("res://Currencies/Library/Bookshelves/Research_Lapidamancy.tres"),
 	load("res://Currencies/Library/Bookshelves/Research_Cyanomancy.tres"),
 	load("res://Currencies/Library/Bookshelves/Research_Oneiromancy.tres"),
+	load("res://Currencies/Library/Bookshelves/Re-Read_Cyanomancy.tres"),
+	load("res://Currencies/Library/Bookshelves/Re-Read_Lapidamancy.tres"),
+	load("res://Currencies/Library/Bookshelves/Re-Read_Octomancy.tres"),
+	load("res://Currencies/Library/Bookshelves/Re-Read_Oneiromancy.tres"),
+	load("res://Currencies/Library/Bookshelves/Re-Read_Mirrormancy.tres"),
+	load("res://Currencies/Library/Bookshelves/Re-Read_Thalassomancy.tres"),
 ]
 
 var tower_outside_jobs: Array[Job] = [

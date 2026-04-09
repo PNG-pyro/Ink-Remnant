@@ -8,5 +8,5 @@ class_name SaveState
 @export var mute: bool = false
 @export var volume: float = 0.0
 @export var market_visible: bool = false
-@export var theme_string: String
+@export var theme_int: int
 @export var button_states: Dictionary = {}

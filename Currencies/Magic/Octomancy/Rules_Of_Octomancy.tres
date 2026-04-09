@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_tbwg5")
-name = "Rules of Octomancy"
+name = "Rules - Octomancy"
 max_amount = 8
 tick_types = null
 is_upgrade = true
