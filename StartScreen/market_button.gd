@@ -2,7 +2,7 @@ extends Button
 
 
 #func _ready() -> void:
-	#if SaveManager.market_visible != true:
+	#if SaveManager.university_visible != true:
 		#visible = false
 		#
 	#SignalHub.got_mirrormancy.connect(_set_visible)
@@ -16,8 +16,8 @@ func _on_pressed() -> void:
 
 
 #func _make_visible(_a = null, _b = null):
-		#visible = SaveManager.market_visible
+		#visible = SaveManager.university_visible
 		#
 #func _set_visible():
 	#SaveManager.market_visible = true
-	#visible = SaveManager.market_visible
+	#visible = SaveManager.university_visible

@@ -100,15 +100,16 @@ extends Node
 	load("res://Currencies/Mirror/Ticker/Mirror_Seed.tres"),
 	
 	load("res://Currencies/Telescope/Telescope.tres"),
+	
+	load("res://Currencies/University/University_Access.tres")
 ]
 
 func eoc_check() -> bool:
 	var visible_currencies = all_currencies.filter(func(obj: Currency): 
-
 		return not obj.is_hidden and not obj.name == "Floor Space" and not obj.name == "Magic" and not obj.name == "Research"
 	)
 	return visible_currencies.all(func(obj: Currency): 
-		return obj.is_full()
+		return obj.has_been_seen == true
 	)
 
 func get_currency(currency_name: String):

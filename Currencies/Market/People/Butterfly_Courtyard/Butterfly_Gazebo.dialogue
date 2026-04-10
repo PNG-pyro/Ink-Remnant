@@ -1,0 +1,37 @@
+~ start
+Approaching the center of the Butterfly Courtyard, you inspect the gazebo. It's built from wrought iron, shaped in ponderous worls and curls that mimic the flow of water and growth of plants. It is covered in flowers and plants, the lush blooms breathing heady scents into the air.
+- Step inside
+The interior keeps to the theme, with shade plants climbinbing the walls, letting in glimpses of the outside through their leaves. Sitting on a small bench on the other side is a young woman with black hair and purple robes, smoking a pipe and humming. There is a Monarch butterfly on her hair-clip, opening and closing its wings.
+- Approach and talk to her
+She looks up at your approach, and gives a nod. "Welcome to my garden," she offers, waving her pipe with a circling motion. 
+~ Mid
+- Ask her name
+	Gelee: "Call me Gelee," she replies cheerfully. "My full name isn't easily pronounced." => Mid
+- Ask about the butterfly. 
+	Gelee: "Oh, this?" She smiles and points to the insect, perched on her temple. "It's my Mage Locus, actually." The wings slowly open and close, their colors shimmering and iridescent. => Mid
+- Ask about the garden
+	Gelee: "Yes, it's mine to manage." She nods. "By order of the Queen, actually. Her Majesty wants mages to meet and talk peacefully, so she set up the Butterfly Cabs." => Mid
+- Ask about learning Lepidomancy
+	Gelee: "Learning..." She takes a long drag on her pipe, but slowly shakes her head. "I can't teach you myself, but I can give you the chance to learn... if you've got the aptitude. You must have made a Mage Locus to get here, but have you made a second?" => Test
+- Give a polite farewell. 
+	Gelee: "It was nice to meet you," she offers as you leave. => END
+
+~ Test
+- Tell her you're still researching.
+	Gelee: "Totally understandable." => Mid
+- Show off your Mage Locus. [if CurrencyManager.get_currency("Mage Locus").amount >= 1]
+	Gelee: "Your Mage Locus is wonderfully grounded," she praises, seeing the gem. "You would be surprised by how creative people can get - to their own detriment." => Test
+
+- Show off your Dream Locus [if CurrencyManager.get_currency("Dream Locus").amount >= 1]
+	Gelee: She looks at the half-real Dream Locus, its form shifting in response to her observation. "This is something wholly unique." She considers for a second, then nods. 
+	Gelee: "If you want to learn more magic, I can give you access to the University, in the Noble Quarter... If you're willing to share where you drew the inspiration for this." She points to the Dream Locus. "Consider it an exchange of research." 
+	do SignalHub.appear_university.emit()
+	do SaveManager.save(SaveManager.save_name_3)
+	=> Endish
+	
+~ Endish
+- - It can't hurt to visit, at least... 
+	do CurrencyManager.add_currency("University Access", 1)
+	do SaveManager.save(SaveManager.save_name_3)
+	=> Mid
+=> END

@@ -32,5 +32,12 @@ signal appear_tipsy_tentacle
 signal appear_thalassomancer
 signal disappear_people
 
+signal appear_university
+
+
 func update_resources(res_type: String, res_amount: int):
 	resource_updated.emit(res_type, res_amount)
+
+
+func emit_appear_university():
+	appear_university.emit()

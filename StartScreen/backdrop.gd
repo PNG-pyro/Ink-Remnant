@@ -14,6 +14,9 @@ extends Node
 @onready var button_stack_stalls = %"ButtonStackStalls"
 @onready var button_stack_people = %"ButtonStackPeople"
 @onready var button_stack_house = %"ButtonStackHouse"
+@onready var button_stack_univ1 = %"UniversityOutside"
+@onready var button_stack_univ2 = %"UniversityInside"
+@onready var button_stack_univ3 = %"UniversityOffices"
 
 @onready var seen_eoc = false
 
@@ -45,6 +48,9 @@ func _ready():
 	button_stack_stalls.populate(JobManager.market_stalls_jobs)
 	button_stack_people.populate(JobManager.market_people_jobs)
 	button_stack_house.populate(JobManager.house_jobs)
+	button_stack_univ1.populate(JobManager.university_outside)
+	button_stack_univ2.populate(JobManager.university_inside)
+	button_stack_univ3.populate(JobManager.university_offices)
 	
 	
 	
@@ -127,12 +133,11 @@ func set_dark():
 
 
 func end_of_content(_a = null, _b = null):
-	
 	if CurrencyManager.eoc_check() and seen_eoc == false:
 		seen_eoc = true
 		var eoc_popup = preload("uid://cxse6vagl4302").instantiate()
 		eoc_popup.label_text = "If you're seeing this, you've reached the end of the current content. Thanks for playing, I hope you had fun! Check back in a few weeks, I'll probably have added more."
-		eoc_popup.button_text = "One more click..."
+		eoc_popup.button_text = "You may still have gagues to fill..."
 		eoc_popup.borderless = true
 		get_tree().current_scene.display_popup(eoc_popup)
 	

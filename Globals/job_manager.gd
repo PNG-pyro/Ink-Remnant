@@ -183,6 +183,19 @@ var market_people_jobs: Array[Job] = [
 	load("res://Currencies/Market/People/Butterfly_Courtyard/Approach_a_Waiter.tres"),
 	load("res://Currencies/Market/People/Butterfly_Courtyard/Green_eyed_mage.tres"),
 	load("res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Butcher.tres"),
+	load("res://Currencies/Market/People/Butterfly_Courtyard/Visit_Gazebo.tres"),
+]
+
+var university_inside: Array[Job] = [
+	
+]
+
+var university_outside: Array[Job] = [
+	
+]
+
+var university_offices: Array[Job] = [
+	
 ]
 
 var all_jobs: Array[Job] = (tickers + 
@@ -198,5 +211,8 @@ tower_inside_jobs +
 tower_tasks_jobs + 
 market_streets_jobs +
 market_stalls_jobs +
-market_people_jobs
+market_people_jobs +
+university_outside +
+university_inside +
+university_offices
 )

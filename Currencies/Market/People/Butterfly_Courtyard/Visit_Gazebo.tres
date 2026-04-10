@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Job" format=3 uid="uid://df1urgb7ayqmj"]
 
-[ext_resource type="Resource" uid="uid://bjnwy5ude84db" path="res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Butcher.dialogue" id="1_bqbg8"]
+[ext_resource type="Resource" uid="uid://bek623ci6o5gu" path="res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Gazebo.dialogue" id="1_bqbg8"]
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_dj3g8"]
 [ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_ny262"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_ltqiv"]
@@ -8,8 +8,8 @@
 [resource]
 script = ExtResource("4_ltqiv")
 job_name = "Visit the gazebo"
-job_desc = "Off towards the edge of the Courtyard is a stand..."
-job_story = "You stop and talk to the man running it. "
+job_desc = "You meander towards the center of the courtyard..."
+job_story = "To the gazebo there, full of flowering plants. "
 job_reward = Dictionary[ExtResource("2_dj3g8"), int]({
 ExtResource("3_ny262"): 0
 })

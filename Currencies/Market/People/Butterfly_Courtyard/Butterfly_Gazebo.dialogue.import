@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bek623ci6o5gu"
+path="res://.godot/imported/Butterfly_Gazebo.dialogue-8803503fb59a6d6a588049336ff63095.tres"
+
+[deps]
+
+source_file="res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Gazebo.dialogue"
+dest_files=["res://.godot/imported/Butterfly_Gazebo.dialogue-8803503fb59a6d6a588049336ff63095.tres"]
+
+[params]
+
+defaults=true

@@ -6,7 +6,7 @@ var save_name_1: String = "Slot 1"
 var save_name_2: String = "Slot 2"
 var save_name_3: String = "Autosave"
 var last_focus_time: float = 0
-var market_visible: bool = false
+var university_visible: bool = false
 var theme_int: int
 
 
@@ -35,7 +35,7 @@ func save(savename: String) -> SaveState:
 	save_state.theme_int = theme_int
 	save_state.mute = BackgroundMusicPlayer.stream_paused
 	save_state.volume = BackgroundMusicPlayer.volume_linear
-	save_state.market_visible = market_visible
+	save_state.university_visible = university_visible
 	
 	ResourceSaver.save(save_state, "user://" + savename + ".tres")
 	
@@ -61,7 +61,7 @@ func load_save(save_to_load: SaveState) -> bool:
 	if not save_to_load:
 		return false
 	SceneManager.set_scene(save_to_load.ui_state as SceneManager.Scene)
-	market_visible = save_to_load.market_visible
+	university_visible = save_to_load.university_visible
 	
 	theme_int = save_to_load.theme_int
 	if theme_int == 1:
