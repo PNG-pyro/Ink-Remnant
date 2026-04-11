@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://dd8mdc0asdxfw"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_oqfqs"]
+[ext_resource type="Resource" uid="uid://copigimsthy1y" path="res://Currencies/Deep_Water/Deep_Water.tres" id="2_8tmjt"]
+
+[resource]
+script = ExtResource("1_oqfqs")
+name = "Mirrored Jug"
+max_amount = 3
+tick_types = null
+is_upgrade = true
+makes_label = false
+upgrade_target = Dictionary[ExtResource("1_oqfqs"), int]({
+ExtResource("2_8tmjt"): 13
+})
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

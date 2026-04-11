@@ -32,6 +32,7 @@ DialogueManager="*uid://c3rodes2l3gxb"
 [dialogue_manager]
 
 runtime/state_autoload_shortcuts=["JobManager", "CurrencyManager"]
+runtime/balloon_path="res://DialogueBaloon/balloon.tscn"
 
 [display]
 

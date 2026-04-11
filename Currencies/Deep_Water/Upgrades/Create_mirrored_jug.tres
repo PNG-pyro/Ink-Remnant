@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://s1va3ayutwty"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_v4412"]
+[ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="2_m4lsf"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_wii3y"]
+[ext_resource type="Resource" uid="uid://bsvwq306hcvpj" path="res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres" id="3_lk37m"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="4_mmg6d"]
+[ext_resource type="Resource" uid="uid://dquxoj7fl2seo" path="res://Currencies/Deep_Water/Knowledge_deep_water.tres" id="5_23tw8"]
+[ext_resource type="Resource" uid="uid://dd8mdc0asdxfw" path="res://Currencies/Deep_Water/Upgrades/Mirrored_Jug.tres" id="6_bu418"]
+
+[resource]
+script = ExtResource("2_wii3y")
+job_name = "Create a mirrored jug"
+job_desc = "Gathering and perfecting materials..."
+job_story = "Using mirrors, the mystical properties of Deep Water can be preserved."
+job_reward = Dictionary[ExtResource("1_v4412"), int]({
+ExtResource("6_bu418"): 1
+})
+job_cost = Dictionary[ExtResource("1_v4412"), int]({
+ExtResource("2_m4lsf"): 3,
+ExtResource("3_lk37m"): 3
+})
+job_mask = Dictionary[ExtResource("1_v4412"), int]({
+ExtResource("4_mmg6d"): 1,
+ExtResource("5_23tw8"): 1
+})
+upper_mask = Array[ExtResource("1_v4412")]([ExtResource("6_bu418")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

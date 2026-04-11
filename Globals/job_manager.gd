@@ -40,6 +40,7 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Clockwork/Upgrades/build_clock.tres"),
 	load("res://Currencies/Clockwork/Upgrades/Build_typewriter.tres"),
 	load("res://Currencies/Crystal/Upgrades/buy_velvet_box.tres"),
+	load("res://Currencies/Deep_Water/Upgrades/Create_mirrored_jug.tres"),
 	load("res://Currencies/Herbs/Upgrades/Buy_Herb_Cupboard.tres"),
 	
 	load("res://Currencies/Magic/Craft_Mage_Locus.tres"),

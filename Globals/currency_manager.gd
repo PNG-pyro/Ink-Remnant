@@ -20,6 +20,7 @@ extends Node
 	load("res://Currencies/Crystal/Upgrades/velvet_box.tres"),
 	load("res://Currencies/Deep_Water/Deep_Water.tres"),
 	load("res://Currencies/Deep_Water/Knowledge_deep_water.tres"),
+	load("res://Currencies/Deep_Water/Upgrades/Mirrored_Jug.tres"),
 	load("res://Currencies/Herbs/Tickers/PlanterBox.tres"),
 	load("res://Currencies/Herbs/Upgrades/Herb_Cupboard.tres"),
 	load("res://Currencies/Herbs/Herbs.tres"),
