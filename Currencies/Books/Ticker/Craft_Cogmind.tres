@@ -5,8 +5,8 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_nmifi"]
 [ext_resource type="Resource" uid="uid://ce6unsyqvd1dn" path="res://Currencies/Books/Ticker/Holographic_Cogmind.tres" id="2_osehg"]
 [ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="3_lxfvf"]
-[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="4_05koq"]
 [ext_resource type="Resource" uid="uid://eynuhxro6yab" path="res://Currencies/Houses/Floor_Space.tres" id="4_lxfvf"]
+[ext_resource type="Resource" uid="uid://dj2di30qapb46" path="res://Currencies/Books/Books.tres" id="5_lxfvf"]
 
 [resource]
 script = ExtResource("2_nmifi")
@@ -23,7 +23,8 @@ ExtResource("3_lxfvf"): 5,
 ExtResource("4_lxfvf"): 2
 })
 job_mask = Dictionary[ExtResource("1_jbtp0"), int]({
-ExtResource("4_05koq"): 1
+ExtResource("3_lxfvf"): 1,
+ExtResource("5_lxfvf"): 1
 })
 upper_mask = Array[ExtResource("1_jbtp0")]([ExtResource("2_osehg")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

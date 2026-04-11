@@ -24,7 +24,7 @@ The bartender nods and grabs a wooden cup from the rack, drawing the wine from a
 The bartender gives you an unreadable look, then reaches under the counter and comes up with an octagonal stone cup, painted blue. He fills it with water from a spigot by the sink, then places it before you. 
 - Drink the water
 	The water is crisp and delicious, cool and refreshing. 
-	- leave => END
+	- Leave => END
 	- Call for another => start
 - Ask about the cup. [if CurrencyManager.get_currency("Knowledge: Cyanomancy").amount == 1 and CurrencyManager.get_currency("Knowledge: Octomancy").amount == 1] => Cup
 

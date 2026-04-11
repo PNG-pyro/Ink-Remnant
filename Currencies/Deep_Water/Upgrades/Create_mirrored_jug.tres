@@ -21,8 +21,8 @@ ExtResource("2_m4lsf"): 3,
 ExtResource("3_lk37m"): 3
 })
 job_mask = Dictionary[ExtResource("1_v4412"), int]({
-ExtResource("4_mmg6d"): 1,
-ExtResource("5_23tw8"): 1
+ExtResource("5_23tw8"): 1,
+ExtResource("4_mmg6d"): 1
 })
 upper_mask = Array[ExtResource("1_v4412")]([ExtResource("6_bu418")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

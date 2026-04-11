@@ -29,6 +29,8 @@ var timer: float = 0.0
 
 
 func _ready():
+	seen_eoc = false
+	
 	self.theme = load("res://theme_dark.tres")
 	RenderingServer.global_shader_parameter_set("Background", background_color_dark)
 	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_light)
