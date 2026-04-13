@@ -1,7 +1,7 @@
 ~ start
 Local Mage: The man looks up at your approach. He's middle-aged, weathered and tough-looking like he's spent time at sea, even if he doesn't have the air of a sailor. He's just a shade too refined in his dress and posture. His eyes sparkle like emerald in the dim light.
 Local Mage: "Can I help you?"
-- "The Bartender said you make these?" \n Show him the octagonal cup => Cup
+- "The Bartender said you make these?" \n Show him the octagonal cup [if CurrencyManager.get_currency("Octagonal Cup").amount >= 1] => Cup
 - "I've brought some deep water for you..." \n Offer him ten ounces [if CurrencyManager.get_currency("Deep Water").amount >= 10] => DeepWater
 - "Sorry, didn't mean to bother you." => END
 

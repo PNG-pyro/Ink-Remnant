@@ -19,6 +19,6 @@ ExtResource("3_q3ewo"): 999
 repeats = false
 start_dialogue = true
 dialogue = ExtResource("1_lwmeo")
-button_appears_on = "appear_thalassomancer"
+button_appears_on = "appear_tipsy_tentacle"
 button_disappears_on = "disappear_people"
 metadata/_custom_type_script = "uid://chnttjydh538r"

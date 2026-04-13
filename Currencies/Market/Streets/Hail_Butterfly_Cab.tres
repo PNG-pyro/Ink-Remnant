@@ -23,4 +23,5 @@ popup_text = "You raise your Mage Locus, and as soon as it glints in the air, a 
 button_text = "Take a seat."
 signal_name = "disappear_streets"
 signal_name_2 = "appear_butterfly_cab"
+signal_name_3 = "disappear_people"
 metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://blxhc1yhjt0wf"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_otqde"]
+
+[resource]
+script = ExtResource("1_otqde")
+tick_types = null
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

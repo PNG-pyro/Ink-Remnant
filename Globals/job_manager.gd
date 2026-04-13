@@ -29,7 +29,7 @@ var trades: Array[Job] = [
 	load("res://Currencies/Coins/Sell_Book.tres"),
 	load("res://Currencies/Mirror/Order_a_Mirror.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Create_Runescribed_Mirror.tres"),
-	load("res://Currencies/Magic/Oneiromancy/Spin_Dreamsilver.tres"),
+	load("res://Currencies/Dreamsilver/Spin_Dreamsilver.tres"),
 ]
 
 
@@ -41,6 +41,7 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Clockwork/Upgrades/Build_typewriter.tres"),
 	load("res://Currencies/Crystal/Upgrades/buy_velvet_box.tres"),
 	load("res://Currencies/Deep_Water/Upgrades/Create_mirrored_jug.tres"),
+	load("res://Currencies/Dreamsilver/Upgrade/Create_Dreamspindle.tres"),
 	load("res://Currencies/Herbs/Upgrades/Buy_Herb_Cupboard.tres"),
 	
 	load("res://Currencies/Magic/Craft_Mage_Locus.tres"),
@@ -56,10 +57,10 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Magic/Oneiromancy/Research_Oneiromancy.tres"),
 	
 	load("res://Currencies/Magic/Mirrormancy/Research_Mirrormancy.tres"),
-	load("res://Currencies/Mirror/Ticker/Create_mirror_seed.tres"),
 	
 	load("res://Currencies/Magic/Thalassomancy/Research_Thalassomancy.tres"),
 	
+	load("res://Currencies/Mirror/Ticker/Create_mirror_seed.tres"),
 	load("res://Currencies/Mirror/Upgrades/Build_Kaleidoscope_box.tres"),
 	load("res://Currencies/Scrolls/Upgrades/Buy_Scroll_Case.tres"),
 	load("res://Currencies/Telescope/Construct_telescope.tres"),

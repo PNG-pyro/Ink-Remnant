@@ -24,6 +24,7 @@ class_name Job
 
 @export var signal_name: String
 @export var signal_name_2: String
+@export var signal_name_3: String
 @export var button_appears_on: String
 @export var button_disappears_on: String
 

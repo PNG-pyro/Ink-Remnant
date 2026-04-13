@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_v061f"]
 [ext_resource type="Resource" uid="uid://bgdqsv5fi4k3a" path="res://Currencies/Coins/Coins.tres" id="2_d1pri"]
-[ext_resource type="Resource" uid="uid://dsty40uagrahn" path="res://Currencies/Houses/Dimensional_Rift.tres" id="3_diqkq"]
+[ext_resource type="Resource" uid="uid://c054evy8c0vsq" path="res://Currencies/Houses/Big_house.tres" id="3_v061f"]
 [ext_resource type="Resource" uid="uid://eynuhxro6yab" path="res://Currencies/Houses/Floor_Space.tres" id="5_meihi"]
 [ext_resource type="Resource" uid="uid://bx3vtk0wnb7nn" path="res://Currencies/Houses/Rooms/GardenShed.tres" id="5_v061f"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="6_jx0m2"]
@@ -13,14 +13,14 @@ job_name = "Build a Garden Shed"
 job_desc = "You have the extra room..."
 job_story = "Soon, the room is ready for new furniture."
 job_reward = Dictionary[ExtResource("1_v061f"), int]({
-ExtResource("5_meihi"): 20,
-ExtResource("5_v061f"): 1
+ExtResource("5_v061f"): 1,
+ExtResource("5_meihi"): 20
 })
 job_cost = Dictionary[ExtResource("1_v061f"), int]({
-ExtResource("2_d1pri"): 400
+ExtResource("2_d1pri"): 200
 })
 job_mask = Dictionary[ExtResource("1_v061f"), int]({
-ExtResource("3_diqkq"): 1
+ExtResource("3_v061f"): 1
 })
 upper_mask = Array[ExtResource("1_v061f")]([ExtResource("5_v061f")])
 metadata/_custom_type_script = "uid://chnttjydh538r"

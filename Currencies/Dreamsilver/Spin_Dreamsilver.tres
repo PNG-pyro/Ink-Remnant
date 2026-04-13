@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_smqk3"]
 [ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_mqvag"]
 [ext_resource type="Resource" uid="uid://dncrbwdwm20km" path="res://Currencies/Magic/Oneiromancy/Knowledge_Oneiromancy.tres" id="4_8fext"]
-[ext_resource type="Resource" uid="uid://tkfohwf1kv8v" path="res://Currencies/Magic/Oneiromancy/Dream_Silver.tres" id="5_ukvk8"]
+[ext_resource type="Resource" uid="uid://tkfohwf1kv8v" path="res://Currencies/Dreamsilver/Dream_Silver.tres" id="5_ukvk8"]
 
 [resource]
 script = ExtResource("2_smqk3")

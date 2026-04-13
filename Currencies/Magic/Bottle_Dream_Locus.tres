@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_xubtq"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_g1vax"]
 [ext_resource type="Resource" uid="uid://copigimsthy1y" path="res://Currencies/Deep_Water/Deep_Water.tres" id="2_wylpn"]
-[ext_resource type="Resource" uid="uid://tkfohwf1kv8v" path="res://Currencies/Magic/Oneiromancy/Dream_Silver.tres" id="3_ncf0r"]
+[ext_resource type="Resource" uid="uid://tkfohwf1kv8v" path="res://Currencies/Dreamsilver/Dream_Silver.tres" id="3_ncf0r"]
 [ext_resource type="Resource" uid="uid://c0fxtfd8v10g6" path="res://Currencies/Magic/Mirrormancy/Runescribed_Mirror.tres" id="4_qx3b4"]
 [ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="5_fstvx"]
 [ext_resource type="Resource" uid="uid://bsvwq306hcvpj" path="res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres" id="5_smjq4"]

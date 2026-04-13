@@ -16,5 +16,6 @@ repeats = false
 popup_text = "You wander through the streets, but few enough places will let a homelss waif in, much less serve you with a smile. Come back after you've proved yourself, maybe..."
 button_text = "Give up and leave... for now"
 signal_name = "disappear_streets"
+signal_name_2 = "disappear_people"
 button_disappears_on = "got_mirrormancy"
 metadata/_custom_type_script = "uid://chnttjydh538r"

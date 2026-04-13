@@ -197,6 +197,8 @@ func start_filling():
 			SignalHub.get(job_run.signal_name).emit()
 		if job_run.signal_name_2 != "":
 			SignalHub.get(job_run.signal_name_2).emit()
+		if job_run.signal_name_3 != "":
+			SignalHub.get(job_run.signal_name_3).emit()
 		SignalHub.display.emit(job_run.job_story + "\n\n")
 		SignalHub.job_complete.emit(job_run)
 		update_tooltip()

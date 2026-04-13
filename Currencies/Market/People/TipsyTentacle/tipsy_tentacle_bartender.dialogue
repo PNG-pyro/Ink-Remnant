@@ -31,5 +31,5 @@ The bartender gives you an unreadable look, then reaches under the counter and c
 	
 ~ Cup
 "Noticed that, did you?" The bartender squints at you, then nods. "Yeah, if you're interested in magecraft, I guess you would. But I don't make these, you should ask him." He nods to a man sitting alone at a corner table.
-do SignalHub.appear_thalassomancer.emit()
+do CurrencyManager.add_currency("Octagonal Cup",1)
 => END

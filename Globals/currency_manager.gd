@@ -21,6 +21,8 @@ extends Node
 	load("res://Currencies/Deep_Water/Deep_Water.tres"),
 	load("res://Currencies/Deep_Water/Knowledge_deep_water.tres"),
 	load("res://Currencies/Deep_Water/Upgrades/Mirrored_Jug.tres"),
+	load("res://Currencies/Dreamsilver/Dream_Silver.tres"),
+	load("res://Currencies/Dreamsilver/Upgrade/dream_spindle.tres"),
 	load("res://Currencies/Herbs/Tickers/PlanterBox.tres"),
 	load("res://Currencies/Herbs/Upgrades/Herb_Cupboard.tres"),
 	load("res://Currencies/Herbs/Herbs.tres"),
@@ -58,6 +60,7 @@ extends Node
 	
 	load("res://Currencies/Market/People/Fancy_shop_people/hat.tres"),
 	load("res://Currencies/Market/People/Fancy_shop_people/shoes.tres"),
+	load("res://Currencies/Market/People/TipsyTentacle/Octagonal_cup.tres"),
 	load("res://Currencies/Market/People/Bank_people/Bank_Card.tres"),
 	
 	load("res://Currencies/Tower/Knowledge_of_tower.tres"),
@@ -85,7 +88,6 @@ extends Node
 	load("res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres"),
 	
 	load("res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres"),
-	load("res://Currencies/Magic/Oneiromancy/Dream_Silver.tres"),
 	
 	load("res://Currencies/Magic/Thalassomancy/Rules_Thalassomancy.tres"),
 	
