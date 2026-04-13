@@ -17,7 +17,7 @@ The bartender scoops up a metal stein from the 'clean' rack and steps over to th
 The bartender nods and grabs a wooden cup from the rack, drawing the wine from a small tun on the countertop. It's a deep, deep red, glinting in the dingy light of the tavern.
 - Drink the wine
 	The wine is floral and dry. Not bad, from what you know of wine. 
-	- leave => END
+	- Leave => END
 	- Call for another => start
 
 ~ Water

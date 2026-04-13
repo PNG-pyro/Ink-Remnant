@@ -79,6 +79,11 @@ func _ready() -> void:
 	balloon.hide()
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 	
+	%ResponsesMenu.response_selected.connect(func(response): 
+		ResponseManager.mark_visited(response.id)
+)
+	
+	
 	_background_style = StyleBoxFlat.new()
 	_background_style.bg_color = Color.BLACK  # your default
 	

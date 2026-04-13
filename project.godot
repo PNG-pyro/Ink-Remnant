@@ -28,6 +28,7 @@ SaveManager="*uid://bj06yuj6u2e2d"
 SceneManager="*uid://daygfib68x7pe"
 BackgroundMusicPlayer="*uid://bdgnjag6q58qk"
 DialogueManager="*uid://c3rodes2l3gxb"
+ResponseManager="*uid://re0786ytp7q7"
 
 [dialogue_manager]
 
