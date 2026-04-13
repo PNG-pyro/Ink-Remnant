@@ -4,5 +4,9 @@
 
 [resource]
 script = ExtResource("1_otqde")
+name = "Knowledge: Outside"
+max_amount = 10
 tick_types = null
+makes_label = false
+is_hidden = true
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

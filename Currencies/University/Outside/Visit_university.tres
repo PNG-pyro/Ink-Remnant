@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://8wi4ivswfvhc"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_2iwy8"]
+[ext_resource type="Resource" uid="uid://blxhc1yhjt0wf" path="res://Currencies/University/Outside/Knowledge_outside.tres" id="2_8wkf2"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_wwyld"]
+
+[resource]
+script = ExtResource("2_wwyld")
+job_name = "Visit the University"
+job_desc = "You take a Butterfly Cab to the Noble Quarter..."
+job_story = "And are instantly admitted to the University."
+job_reward = Dictionary[ExtResource("1_2iwy8"), int]({
+ExtResource("2_8wkf2"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "The Butterfly Cab takes you straight past the guardpost at the University, without even a pause. That's direct entry to the Noble Quarter, where you've never been before.  "
+button_text = "Who exactly is the Butterfly Maiden...?"
+metadata/_custom_type_script = "uid://chnttjydh538r"

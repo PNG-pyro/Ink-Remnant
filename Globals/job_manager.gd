@@ -188,11 +188,11 @@ var market_people_jobs: Array[Job] = [
 	load("res://Currencies/Market/People/Butterfly_Courtyard/Visit_Gazebo.tres"),
 ]
 
-var university_inside: Array[Job] = [
-	
+var university_outside: Array[Job] = [
+	load("res://Currencies/University/Outside/Visit_university.tres"),
 ]
 
-var university_outside: Array[Job] = [
+var university_inside: Array[Job] = [
 	
 ]
 

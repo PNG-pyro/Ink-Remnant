@@ -104,16 +104,18 @@ extends Node
 	
 	load("res://Currencies/Telescope/Telescope.tres"),
 	
-	load("res://Currencies/University/University_Access.tres")
+	load("res://Currencies/University/University_Access.tres"),
+	load("res://Currencies/University/Outside/Knowledge_outside.tres"),
 ]
 
 func eoc_check() -> bool:
-	var visible_currencies = all_currencies.filter(func(obj: Currency): 
+	var _visible_currencies = all_currencies.filter(func(obj: Currency): 
 		return not obj.is_hidden and not obj.name == "Floor Space" and not obj.name == "Magic" and not obj.name == "Research"
 	)
-	return visible_currencies.all(func(obj: Currency): 
-		return obj.has_been_seen == true
-	)
+	#return visible_currencies.all(func(obj: Currency): 
+		#return obj.is_full()
+	#)
+	return CurrencyManager.get_currency("Knowledge: Outside").amount >= 1
 
 func get_currency(currency_name: String):
 	var results: Array[Currency] = all_currencies.filter(func(c): return c.name == currency_name)
