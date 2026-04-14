@@ -101,6 +101,8 @@ func update_tooltip(_a = null, _b = null):
 				continue
 			if not item.tick_types.has(label_type):
 				continue
+			if item.amount == 0:
+				continue
 			line += "Plus " + str(item.tick_types[label_type] * item.amount) + " per second from " + str(item.amount) + " " + item.name + "\n"
 	tooltip_text = line
 	
