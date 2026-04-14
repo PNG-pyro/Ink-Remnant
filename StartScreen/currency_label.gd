@@ -90,14 +90,18 @@ func update_tooltip(_a = null, _b = null):
 	if label_type.is_ticker:
 		for type in label_type.tick_types: 
 				line += "Adds " + str(label_type.tick_types[type]) + " " + type.name + " per second each\n"
-	
-	if label_type.is_upgrade:
+	elif label_type.is_upgrade:
 		for upgrades in label_type.upgrade_target: 
 			line += "Raises " + str(upgrades.name) + " cap " + str(label_type.upgrade_target[upgrades]) + " each\n"
-	
-	if label_type.make_tooltip:
+	elif label_type.make_tooltip:
 		line += label_type.tooltip_says
-	
+	elif not label_type.is_hidden:
+		for item in CurrencyManager.all_currencies:
+			if not item.is_ticker:
+				continue
+			if not item.tick_types.has(label_type):
+				continue
+			line += "Plus " + str(item.tick_types[label_type] * item.amount) + " per second from " + str(item.amount) + " " + item.name + "\n"
 	tooltip_text = line
 	
 func _make_custom_tooltip(for_text):
