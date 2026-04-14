@@ -105,7 +105,10 @@ extends Node
 	load("res://Currencies/Telescope/Telescope.tres"),
 	
 	load("res://Currencies/University/University_Access.tres"),
+	load("res://Currencies/University/Contributions.tres"),
 	load("res://Currencies/University/Outside/Knowledge_outside.tres"),
+	load("res://Currencies/University/Inside/Knowledge_inside.tres"),
+	load("res://Currencies/University/Offices/Knowledge_offices.tres"),
 ]
 
 func eoc_check() -> bool:

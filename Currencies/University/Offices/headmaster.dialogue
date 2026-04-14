@@ -1,0 +1,12 @@
+~ start
+You: You're let into the Headmaster's office by a prim secretary. The Headmaster waves you to a seat and gives you a long look and a slow nod. The office is all warm wood and dark velvet, luxuriously appointed from the chandelier to the carpet. The Headmaster is younger than you expected - his hair is merely graying, not white. He's trimly dressed in a comfortable-looking suit.
+Headmaster: "You must be the one Gelee talked about." He waves to the desk, where a pile of your research sits. "I had a look through the papers you sent over. They're clever and insightful." He rubs his chin. "But you want to learn more magic." It's not really a question, and you both know it.
+~ Mid
+- "Who is Gelee anyways?" \n Ask about the Butterfly Maiden. 
+	Headmaster: "Gelee is one of the Queen's... handmaidens. Or that's what they call themselves; they're more like a secret police. But different from the King's secret police." He snorts. "Politics is a fools game, y'hear?" He shakes his head firmly. "You can trust her to keep her word, but don't go making her mad." => Mid
+- "Can I learn magic here?" \n It's why you came.
+	Headmaster: "I'm honestly not sure if we have anyone qualified to teach you - but if you've demonstrated one thing," he nods to your research, "it's your ability to learn on your own. If you're interested in abstruse magic, we have examples you can study. We just need to work out payment..." => Mid
+- "Gelee mentioned a trade..." \n Of course it's not free.
+	Headmaster: "That's right. Your research on mirrors... Mirrormancy, you called it? Absolutely faascinating. If you'd be willing to teach a class on that, or even just deliver a few lectures, I'm sure we could find you some interesting spells to study. Oneiromancy and thalassomancy as well, they're exotic enough." => Mid
+- "Alright, I'll be around, then." \n You'll think it over.
+=> END

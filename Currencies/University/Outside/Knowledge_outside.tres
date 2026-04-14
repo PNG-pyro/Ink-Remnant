@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_otqde")
 name = "Knowledge: Outside"
-max_amount = 10
+max_amount = 999
 tick_types = null
 makes_label = false
 is_hidden = true

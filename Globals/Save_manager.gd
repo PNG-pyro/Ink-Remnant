@@ -36,6 +36,7 @@ func save(savename: String) -> SaveState:
 	save_state.mute = BackgroundMusicPlayer.stream_paused
 	save_state.volume = BackgroundMusicPlayer.volume_linear
 	save_state.university_visible = university_visible
+	save_state.response_dict = ResponseManager.visited_responses
 	
 	ResourceSaver.save(save_state, "user://" + savename + ".tres")
 	
@@ -88,7 +89,8 @@ func load_save(save_to_load: SaveState) -> bool:
 			
 
 	SignalHub.volume_set.emit(save_to_load.volume, save_to_load.mute)
-
+	ResponseManager.visited_responses = save_to_load.response_dict
+	
 	for currency in CurrencyManager.all_currencies:
 		currency.get_max()
 

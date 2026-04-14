@@ -5,6 +5,7 @@ class_name SaveState
 @export var ui_state: int = 1 #Stores the enum from SceneManager.Scene
 #@export var all_jobs: Array[Job] = JobManager.all_jobs
 @export var jobs_dict: Dictionary = {}
+@export var response_dict: Dictionary = {}
 @export var mute: bool = false
 @export var volume: float = 0.0
 @export var university_visible: bool = false
