@@ -269,7 +269,7 @@ func update_tooltip():
 			continue
 			
 		if price.is_full() and not price.name == "Floor Space" and not price.name == "Default":
-			line += "[color=yellow]" + str(job_run.job_reward[price]) + " " + price.name + ",[/color]\n"
+			line += "[color=yellow]" + str(job_run.job_reward[price]) + " " + price.name + " - Full,[/color]\n"
 			if price.is_upgrade:
 				for upgrade in price.upgrade_target:
 					line += "	- Adds " + str(price.upgrade_target[upgrade]) + " to " + upgrade.name + " max\n"
@@ -288,7 +288,7 @@ func update_tooltip():
 
 		elif price.name == "Floor Space":
 			if price.is_full():
-				line += "[color=dark_red]Floor Space: " + str(job_run.job_reward[price]) + "[/color]\n"# + "/" + str(price.max_amount)
+				line += "[color=yellow]Floor Space: " + str(job_run.job_reward[price]) + " -Full![/color]\n"# + "/" + str(price.max_amount)
 			else:
 				line += "[color=white]Floor Space: " + str(job_run.job_reward[price]) + "[/color]\n"# + "/" + str(price.max_amount)
 		else:
