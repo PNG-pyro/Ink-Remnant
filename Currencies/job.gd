@@ -39,13 +39,14 @@ func pay_costs():
 		price.subtract(job_cost[price])
 
 
-func has_room() -> bool:
+func has_room(flash: bool) -> bool:
 	var room_left: bool = true 
 	#if is_upgrade:
 		#return room_left
 	for reward in job_reward:
 		if reward.is_full():
-			SignalHub.flash_currency.emit(reward.name)
+			if flash == true:
+				SignalHub.flash_currency.emit(reward.name)
 			room_left = false
 	return room_left
 

@@ -16,6 +16,7 @@ enum VisualState {
 	AFFORDABLE = 8,
 	RUNNING = 16,
 	NEW = 32,
+	FULL = 64,
 }
 
 var visual_state: int = VisualState.NORMAL
@@ -147,17 +148,23 @@ func update_visuals():
 		if rect:
 			rect.queue_free()
 	
-	if visual_state & VisualState.AFFORDABLE:
+	if (visual_state & VisualState.FULL) and (visual_state & VisualState.AFFORDABLE):
+		ready_label.text = "[color=yellow]o[/color]"
+	elif (visual_state & VisualState.FULL) and (visual_state & VisualState.UNAFFORDABLE):
+		ready_label.text = "[color=red]×[/color]"
+	elif visual_state & VisualState.AFFORDABLE:
 		ready_label.text = "[color=green]>[/color]"
 	elif visual_state & VisualState.UNAFFORDABLE:
 		ready_label.text = "[color=red]×[/color]"
 
 
 func start_filling():
+	var flash = true
 	if not job_run.can_afford():
 		reset()
 		return
-	if not job_run.has_room():
+	if not job_run.has_room(flash):
+		visual_state |= ~VisualState.FULL
 		reset()
 		return
 	if job_run.check_upper_mask():
@@ -262,7 +269,7 @@ func update_tooltip():
 			continue
 			
 		if price.is_full() and not price.name == "Floor Space" and not price.name == "Default":
-			line += "[color=dark_red]" + str(job_run.job_reward[price]) + " " + price.name + ",[/color]\n"
+			line += "[color=yellow]" + str(job_run.job_reward[price]) + " " + price.name + ",[/color]\n"
 			if price.is_upgrade:
 				for upgrade in price.upgrade_target:
 					line += "	- Adds " + str(price.upgrade_target[upgrade]) + " to " + upgrade.name + " max\n"
@@ -315,6 +322,13 @@ func check_affordable():
 	else: 
 		visual_state |= VisualState.UNAFFORDABLE
 		visual_state &= ~VisualState.AFFORDABLE
+	
+	var flash: bool = false
+	if not job_run.has_room(flash):
+		visual_state |= VisualState.FULL
+	else: 
+		visual_state &= ~VisualState.FULL
+		
 	update_visuals()
 
 func make_popup(popup_job: Job):

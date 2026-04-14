@@ -137,10 +137,6 @@ func _apply_responses() -> void:
 				item.text = response.text
 
 			item.set_meta("response", response)
-			
-			if not ResponseManager.is_visited(response.id):
-				item.get_node("ShineLayer").visible = true
-				#item.text += " New!"
 
 			add_child(item)
 

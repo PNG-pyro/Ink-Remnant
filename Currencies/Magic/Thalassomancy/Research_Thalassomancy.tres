@@ -9,7 +9,7 @@
 [resource]
 script = ExtResource("2_kjgy5")
 job_name = "Research Thalassomancy"
-job_desc = "Researching Deep Magic often leaves you with a headache due to its obscure and eerie nature. "
+job_desc = "Researching deep magic often leaves you with a headache due to its obscure and eerie nature. "
 job_story = "Its not commonly encountered, but when it does show up, it's grotesque and horrifying."
 job_reward = Dictionary[ExtResource("1_0k7jc"), int]({
 ExtResource("4_c3tqt"): 12

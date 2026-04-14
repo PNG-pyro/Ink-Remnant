@@ -13,7 +13,7 @@ job_name = "Spin Dreamsilver"
 job_desc = "Spinning straw into gold is for fairytales..."
 job_story = "But silver can be spun from dreams, if you have a deft hand - and the right dreamcatcher."
 job_reward = Dictionary[ExtResource("1_u4o81"), int]({
-ExtResource("5_ukvk8"): 2
+ExtResource("5_ukvk8"): 5
 })
 job_cost = Dictionary[ExtResource("1_u4o81"), int]({
 ExtResource("2_6oxwq"): 1,
