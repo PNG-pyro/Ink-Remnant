@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b3jngwvg38o2x"]
+
+[ext_resource type="Resource" uid="uid://cpvn5iv1r8ysn" path="res://Currencies/University/Offices/headmaster.dialogue" id="1_omohy"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_uscty"]
+[ext_resource type="Resource" uid="uid://ctxfk8nv362ko" path="res://Currencies/University/Contributions.tres" id="3_jgeu8"]
+[ext_resource type="Resource" uid="uid://hbkelbhtb2e4" path="res://Currencies/University/Offices/Knowledge_offices.tres" id="5_bae8t"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="6_e88ih"]
+
+[resource]
+script = ExtResource("6_e88ih")
+job_name = "Ask to study a magic relic"
+job_desc = "It's why you're here..."
+job_story = "Well... that's worth thinking over."
+job_reward = Dictionary[ExtResource("2_uscty"), int]({
+ExtResource("5_bae8t"): 1
+})
+job_mask = Dictionary[ExtResource("2_uscty"), int]({
+ExtResource("3_jgeu8"): 15
+})
+repeats = false
+popup_text = "The Headmaster is more than a little surprised by the amount of paper you bring to the meeting, but by the end you've convinced him of your rigor and thoroughness as a researcher. "
+button_text = "He gives you a faculty badge"
+start_dialogue = true
+dialogue = ExtResource("1_omohy")
+metadata/_custom_type_script = "uid://chnttjydh538r"

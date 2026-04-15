@@ -1,0 +1,29 @@
+~ start
+The Headmaster waves you in and towards a chair, motioning for you to sit. "Let me tell you about the magic we have here to study. We have three relics, each from a different field of magic. If you're interested in studying them, we can make that happen... as long as you've got enough credit with the University."
+~ Mid
+Headmaster: "Which one are you interested in?"
+- Learn about the Clockwork Isle
+	Headmaster: "The Clockwork Isle is actually an airship." He pauses for a sip of tea. " We keep it down at the mechanics lab, where advanced students are allowed to examine it. We haven't managed to reverse engineer it, since we're unwilling to take it apart; any examinations you do will have to follow the same rules."
+	- Get permission to study the Clockwork Isle [if CurrencyManager.get_currency("University Credits").amount >= 1]
+		do CurrencyManager.add_currency("Access: Clockwork Isle", 1)
+		do CurrencyManager.subtract_currency("University Credits", 30)
+		=> Mid
+	- Ask about a different relic
+	=> Mid
+- Learn about the Skybound Alembic
+	Headmaster: "The Skybound Alembic is a very interesting construction. It's entire purpose is efficient calcination... you really have to see it for yourself. We keep it in the Alchemy Lab, where it's used for large batch procedures most days. You're welcome to examine it and even use it, but we can't let you disassemlbe it." 
+	- Get permission to study the Skybound Alembic [if CurrencyManager.get_currency("University Credits").amount >= 1]
+		do CurrencyManager.add_currency("Access: Skybound Alembic", 1)
+		do CurrencyManager.subtract_currency("University Credits", 1)
+		=> Mid
+	- Ask about a different relic
+	=> Mid
+- Learn about the Malachite Hive
+	Headmaster: "The Malachite Hive is one of the oldest relics we have, and the oldest one we're sure is magical. It doesn't look like much - a floating lump of hexagonal crystal. We keep it in an empty classroom. You're welcome to study it thoroughly, as long as you don't damage it."
+	- Get permission to study the Malachite Hive [if CurrencyManager.get_currency("University Credits").amount >= 1]
+		do CurrencyManager.add_currency("Access: Malachite Hive", 1)
+		do CurrencyManager.subtract_currency("University Credits", 1)
+	- Ask about a different relic
+	=> Mid
+- Leave for now
+=> END

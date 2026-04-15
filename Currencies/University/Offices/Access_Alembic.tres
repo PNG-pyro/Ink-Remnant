@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://gjr4sdxx5sv3"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_2sc64"]
+
+[resource]
+script = ExtResource("1_2sc64")
+name = "Access: Skybound Alembic"
+max_amount = 1
+tick_types = null
+makes_label = false
+make_tooltip = true
+tooltip_says = "Permission to study the Skybound Alembic"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

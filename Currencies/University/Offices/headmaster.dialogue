@@ -6,6 +6,11 @@ Headmaster: "You must be the one Gelee talked about." He waves to the desk, wher
 	Headmaster: "Gelee is one of the Queen's... handmaidens. Or that's what they call themselves; they're more like a secret police. But different from the King's secret police." He snorts. "Politics is a fools game, y'hear?" He shakes his head firmly. "You can trust her to keep her word, but don't go making her mad." => Mid
 - "Can I learn magic here?" \n It's why you came.
 	Headmaster: "I'm honestly not sure if we have anyone qualified to teach you - but if you've demonstrated one thing," he nods to your research, "it's your ability to learn on your own. If you're interested in abstruse magic, we have examples you can study. We just need to work out payment..." => Mid
+	Headmaster: "We have several relics, left behind by mages of yore. We can give you access to study them, for university credits."
+- "What magic can you teach?" \n Hopefully a new one...
+	Headmaster: "Ah, types, right... Well. There's the Malachite Hive, which we believe might be a relic of an Apimancer, a mage who worked with bees."
+	Headmaster: "There's the Clockwork Isle, which we believe belonged to an Ergomancer, a mage who studied energies at work."
+	Headmaster: "And there's the Skybound Alembic, which we know belonged to a Calcimancer, a famous alchemist who's estate donated it to us." => Mid
 - "Gelee mentioned a trade..." \n Of course it's not free.
 	Headmaster: "That's right. Your research on mirrors... Mirrormancy, you called it? Absolutely faascinating. If you'd be willing to teach a class on that, or even just deliver a few lectures, I'm sure we could find you some interesting spells to study. Oneiromancy and thalassomancy as well, they're exotic enough." => Mid
 - "Alright, I'll be around, then." \n You'll think it over.

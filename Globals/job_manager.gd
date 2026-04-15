@@ -199,7 +199,8 @@ var university_inside: Array[Job] = [
 ]
 
 var university_offices: Array[Job] = [
-	load("res://Currencies/University/Offices/Prove_yourself.tres")
+	load("res://Currencies/University/Offices/Prove_yourself.tres"),
+	load("res://Currencies/University/Offices/Spend_Credits.tres"),
 ]
 
 var all_jobs: Array[Job] = (tickers + 

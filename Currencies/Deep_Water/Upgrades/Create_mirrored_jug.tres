@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://c0at01fbd2nwh" path="res://Currencies/Mirror/Mirrors.tres" id="2_m4lsf"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_wii3y"]
 [ext_resource type="Resource" uid="uid://bsvwq306hcvpj" path="res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres" id="3_lk37m"]
+[ext_resource type="Resource" uid="uid://copigimsthy1y" path="res://Currencies/Deep_Water/Deep_Water.tres" id="4_lk37m"]
 [ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="4_mmg6d"]
 [ext_resource type="Resource" uid="uid://dquxoj7fl2seo" path="res://Currencies/Deep_Water/Knowledge_deep_water.tres" id="5_23tw8"]
 [ext_resource type="Resource" uid="uid://dd8mdc0asdxfw" path="res://Currencies/Deep_Water/Upgrades/Mirrored_Jug.tres" id="6_bu418"]
@@ -18,7 +19,8 @@ ExtResource("6_bu418"): 1
 })
 job_cost = Dictionary[ExtResource("1_v4412"), int]({
 ExtResource("2_m4lsf"): 3,
-ExtResource("3_lk37m"): 3
+ExtResource("3_lk37m"): 3,
+ExtResource("4_lk37m"): 1
 })
 job_mask = Dictionary[ExtResource("1_v4412"), int]({
 ExtResource("5_23tw8"): 1,

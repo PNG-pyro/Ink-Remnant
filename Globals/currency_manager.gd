@@ -109,6 +109,9 @@ extends Node
 	load("res://Currencies/University/Outside/Knowledge_outside.tres"),
 	load("res://Currencies/University/Inside/Knowledge_inside.tres"),
 	load("res://Currencies/University/Offices/Knowledge_offices.tres"),
+	load("res://Currencies/University/Offices/Airship_access.tres"),
+	load("res://Currencies/University/Offices/Access_Alembic.tres"),
+	load("res://Currencies/University/Offices/Access_hive.tres"),
 ]
 
 func eoc_check() -> bool:
@@ -128,4 +131,9 @@ func add_currency(currency_name: String, amount: int):
 	var currency = get_currency(currency_name)
 	if currency:
 		currency.add(amount)
+
+func subtract_currency(currency_name: String, amount: int):
+	var currency = get_currency(currency_name)
+	if currency: 
+		currency.subtract(amount)
 	

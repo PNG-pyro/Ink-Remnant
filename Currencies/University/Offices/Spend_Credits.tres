@@ -1,25 +1,21 @@
 [gd_resource type="Resource" script_class="Job" format=3 uid="uid://mbrv5l3r07io"]
 
-[ext_resource type="Resource" uid="uid://cpvn5iv1r8ysn" path="res://Currencies/University/Offices/headmaster.dialogue" id="1_1wsre"]
+[ext_resource type="Resource" uid="uid://cij1aoy7li4dn" path="res://Currencies/University/Offices/headmaster_2.dialogue" id="1_1wsre"]
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_u0tbc"]
-[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="3_7ukke"]
-[ext_resource type="Resource" uid="uid://blxhc1yhjt0wf" path="res://Currencies/University/Outside/Knowledge_outside.tres" id="4_htuyl"]
-[ext_resource type="Resource" uid="uid://hbkelbhtb2e4" path="res://Currencies/University/Offices/Knowledge_offices.tres" id="5_lafok"]
+[ext_resource type="Resource" uid="uid://cd0gctv318sxw" path="res://Currencies/University/Inside/Knowledge_inside.tres" id="3_7e6vr"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="4_7e6vr"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="6_hwvrl"]
 
 [resource]
 script = ExtResource("6_hwvrl")
-job_name = "Ask for a favor"
+job_name = "Ask about relics"
 job_desc = "The Headmaster said there were spells to learn from..."
 job_story = "Time to see if he can follow through on that."
 job_reward = Dictionary[ExtResource("2_u0tbc"), int]({
-ExtResource("5_lafok"): 1
-})
-job_cost = Dictionary[ExtResource("2_u0tbc"), int]({
-ExtResource("3_7ukke"): 800
+ExtResource("4_7e6vr"): 0
 })
 job_mask = Dictionary[ExtResource("2_u0tbc"), int]({
-ExtResource("4_htuyl"): 1
+ExtResource("3_7e6vr"): 1
 })
 repeats = false
 popup_text = "The Headmaster is more than a little surprised by the amount of paper you bring to the meeting, but by the end you've convinced him of your rigor and thoroughness as a researcher. "

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_5m4hh")
-name = "University Access"
+name = "Access: University"
 max_amount = 1
 tick_types = null
 makes_label = false

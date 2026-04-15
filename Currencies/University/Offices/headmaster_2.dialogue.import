@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cij1aoy7li4dn"
+path="res://.godot/imported/headmaster_2.dialogue-601fd475d86804f45fb29427c27b714b.tres"
+
+[deps]
+
+source_file="res://Currencies/University/Offices/headmaster_2.dialogue"
+dest_files=["res://.godot/imported/headmaster_2.dialogue-601fd475d86804f45fb29427c27b714b.tres"]
+
+[params]
+
+defaults=true

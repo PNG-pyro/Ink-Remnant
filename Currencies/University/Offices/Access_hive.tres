@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://cedsksse8w150"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_24fvl"]
+
+[resource]
+script = ExtResource("1_24fvl")
+name = "Access: Malachite Hive"
+max_amount = 1
+tick_types = null
+makes_label = false
+make_tooltip = true
+tooltip_says = "Permission to study the Malachite Hive"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

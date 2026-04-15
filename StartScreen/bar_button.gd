@@ -24,7 +24,6 @@ var current_state = State.IDLE
 var shiny_material: ShaderMaterial = load("res://StartScreen/new_option_mat.tres")
 var rect = ColorRect.new()
 
-
 @export var job_run: Job
 @export var story_box: RichTextLabel
 
@@ -42,7 +41,6 @@ func _ready():
 	visible = job_run.is_unmasked()
 	text = job_run.job_name
 	toggle_mode = true
-	
 	
 	shiny_material.set_shader_parameter("Speed", .3)
 	shiny_material.set_shader_parameter("Rotation_deg", 6)
@@ -109,9 +107,11 @@ func _appear():
 	job_run.shows_up = true
 	visible = true
 
+
 func _disappear():
 	job_run.shows_up = false
 	visible = false
+
 
 func _on_pressed():
 	match current_state:
@@ -123,21 +123,19 @@ func _on_pressed():
 		State.COMPLETE:
 			reset()
 
+
 func on_mouse_entry():
 	visual_state |= VisualState.HOVERED
-	#visual_state &= ~VisualState.NEW
 	update_visuals()
+
 
 func on_mouse_exit():
 	visual_state &= ~VisualState.HOVERED
 	update_visuals()
 
+
 func update_visuals():
-	
-	#border.material
-	if visual_state & VisualState.DISABLED:
-		border.hide()
-	elif visual_state & VisualState.RUNNING:
+	if visual_state & VisualState.RUNNING:
 		border.show()
 	elif visual_state & VisualState.HOVERED:
 		border.show()
@@ -149,7 +147,7 @@ func update_visuals():
 			rect.queue_free()
 	
 	if (visual_state & VisualState.FULL) and (visual_state & VisualState.AFFORDABLE):
-		ready_label.text = "[color=yellow]o[/color]"
+		ready_label.text = "[color=yellow]-[/color]"
 	elif (visual_state & VisualState.FULL) and (visual_state & VisualState.UNAFFORDABLE):
 		ready_label.text = "[color=red]×[/color]"
 	elif visual_state & VisualState.AFFORDABLE:
@@ -164,7 +162,7 @@ func start_filling():
 		reset()
 		return
 	if not job_run.has_room(flash):
-		visual_state |= ~VisualState.FULL
+		visual_state |= VisualState.FULL
 		reset()
 		return
 	if job_run.check_upper_mask():
@@ -294,15 +292,15 @@ func update_tooltip():
 		else:
 			line += "[color=white]		???[/color]"
 			
-		
 	tooltip_text = line
-	
+
 
 func enable_self():
 	disabled = false
 	visual_state &= ~VisualState.DISABLED
 	visual_state |= VisualState.NORMAL
 	update_visuals()
+
 
 func _make_custom_tooltip(for_text):
 	var label = RichTextLabel.new()
@@ -331,13 +329,15 @@ func check_affordable():
 		
 	update_visuals()
 
+
 func make_popup(popup_job: Job):
 	var job_popup = preload("uid://cxse6vagl4302").instantiate()
 	job_popup.label_text = popup_job.popup_text
 	job_popup.button_text = popup_job.button_text
 	job_popup.borderless = true
 	get_tree().current_scene.display_popup(job_popup)
-	
+
+
 func calc_duration() -> float:
 	var reward_currency: Currency = job_run.job_reward.keys()[0]
 	var reward_max: int = reward_currency.get_max()

@@ -30,8 +30,9 @@ She looks up at your approach, and gives a nod. "Welcome to my garden," she offe
 	=> Endish
 	
 ~ Endish
-- - It can't hurt to visit, at least... 
-	do CurrencyManager.add_currency("University Access", 1)
+You: You write down the directions she gives you; the Butterfly Cab can take you there.
+- It can't hurt to visit, at least... 
+	do CurrencyManager.add_currency("Access: University", 1)
 	do SaveManager.save(SaveManager.save_name_3)
 	=> Mid
 => END
