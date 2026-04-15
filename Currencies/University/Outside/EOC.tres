@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bb4vg1dbt1a3v"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_0jjps"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_56f3h"]
+[ext_resource type="Resource" uid="uid://b8el2iheshgh6" path="res://Currencies/University/Offices/Airship_access.tres" id="2_n43bu"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_n43bu"]
+
+[resource]
+script = ExtResource("3_n43bu")
+job_name = "The end... for now!"
+job_desc = "This is the current end of the game. "
+job_story = "I'll probably be adding more, though..."
+job_reward = Dictionary[ExtResource("1_0jjps"), int]({
+ExtResource("2_56f3h"): 0
+})
+job_mask = Dictionary[ExtResource("1_0jjps"), int]({
+ExtResource("2_n43bu"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "Apologies, but you've reached the end of the game for now. "
+button_text = "You may still have gagues to fill, though."
+metadata/_custom_type_script = "uid://chnttjydh538r"

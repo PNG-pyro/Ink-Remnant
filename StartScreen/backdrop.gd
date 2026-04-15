@@ -138,8 +138,8 @@ func end_of_content(_a = null, _b = null):
 	if CurrencyManager.eoc_check() and seen_eoc == false:
 		seen_eoc = true
 		var eoc_popup = preload("uid://cxse6vagl4302").instantiate()
-		eoc_popup.label_text = "If you're seeing this, you've reached the end of the current content. Thanks for playing, I hope you had fun! Check back in a few weeks, I'll probably have added more."
-		eoc_popup.button_text = "You may still have gagues to fill..."
+		eoc_popup.label_text = "If you're seeing this, you've filled all the gagues all the way. Thanks for playing, I hope you had fun! Check back in a few weeks, I'll probably have added more."
+		eoc_popup.button_text = "Just one more click..."
 		eoc_popup.borderless = true
 		get_tree().current_scene.display_popup(eoc_popup)
 	

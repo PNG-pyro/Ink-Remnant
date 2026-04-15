@@ -190,6 +190,7 @@ var market_people_jobs: Array[Job] = [
 
 var university_outside: Array[Job] = [
 	load("res://Currencies/University/Outside/Visit_university.tres"),
+	load("res://Currencies/University/Outside/EOC.tres"),
 ]
 
 var university_inside: Array[Job] = [
