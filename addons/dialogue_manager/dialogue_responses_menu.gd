@@ -137,7 +137,10 @@ func _apply_responses() -> void:
 				item.text = response.text
 
 			item.set_meta("response", response)
-
+			
+			if ResponseManager.is_visited(response.id):
+				item.get_node("ShineLayer").visible = false
+				
 			add_child(item)
 
 		if auto_configure_focus:

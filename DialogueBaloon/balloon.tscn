@@ -207,7 +207,6 @@ text = "Response example"
 
 [node name="ShineLayer" type="ColorRect" parent="Balloon/ResponsesMenu/ResponseExample" unique_id=493625136]
 unique_name_in_owner = true
-visible = false
 material = ExtResource("6_xccjr")
 layout_mode = 1
 anchors_preset = 15
