@@ -28,7 +28,7 @@ Local Mage: "So, you've mastered three magics." He gives you a re-assessing glan
 - "Can you teach me your magic?"
 Local Mage: "I should probably be asking you to teach me, but... maybe you can help me research. Have you heard of 'thalassomancy'?"
 Local Mage: "Thalassomancy is the magic of deep water. All the strange stories you hear from ships way out at sea? Mirages, monsters, and more? That's thalassomancy. I can teach you what I know, but not for free."
-Local Mage: "Well... you look capable. If you gather me ten ounces of deep water, I'll teach what I know about thalassomancy. Hell, I'll introduce you to some more mages, too. What d'ya think?"
+Local Mage: "Well... you look capable. If you gather ten ounces of deep water for me, I'll teach what I know about thalassomancy. I'll even introduce you to some more mages. What d'ya think?"
 Local Mage: "Deep water is a required component for most thalassomantic preparations, which tend towards potions, salves, and tinctures instead of simple observances or complicated rituals. Here are a few simple ways to find deep water..."
 - You write down what he tells you, then leave for now.
 do CurrencyManager.get_currency("Knowledge: Deep Water").add(1)

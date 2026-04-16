@@ -9,7 +9,7 @@
 [resource]
 script = ExtResource("5_x88xf")
 job_name = "Buy fancy shoes"
-job_desc = "You want to look better..."
+job_desc = "You want to look nicer..."
 job_story = "Then start from the ground up."
 job_reward = Dictionary[ExtResource("1_fnp47"), int]({
 ExtResource("4_fnp47"): 2

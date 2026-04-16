@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dy70oupmswhug"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_lxbs3"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_34q3x"]
+[ext_resource type="Resource" uid="uid://c26syl0sp43iv" path="res://Currencies/Magic/Mage_Locus.tres" id="4_lwisy"]
+[ext_resource type="Resource" uid="uid://buurg46i4jlfw" path="res://Currencies/Journal/locks/Open_lock_1.tres" id="5_qix2y"]
+
+[resource]
+script = ExtResource("3_34q3x")
+job_name = "     Unlock the first magic lock"
+job_desc = "You press your Mage Locus against the spell lock..."
+job_story = "And the band cleanly dissolves, leaving nothing behind."
+job_reward = Dictionary[ExtResource("1_lxbs3"), int]({
+ExtResource("5_qix2y"): 1
+})
+job_mask = Dictionary[ExtResource("1_lxbs3"), int]({
+ExtResource("4_lwisy"): 1
+})
+upper_mask = Array[ExtResource("1_lxbs3")]([ExtResource("5_qix2y")])
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "As you bring your Mage Locus into contact with the spell-lock, the blue metal band holding the journal shut dissolves into powder, the evaporates into nothing. "
+button_text = "Still, this isn't enough to open the journal yet."
+metadata/_custom_type_script = "uid://chnttjydh538r"

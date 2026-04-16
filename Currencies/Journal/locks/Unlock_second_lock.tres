@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://pjggry8n03r6"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_advxr"]
+[ext_resource type="Resource" uid="uid://b1wnud1xbpvpd" path="res://Currencies/Magic/Dream_Locus.tres" id="2_advxr"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_sl735"]
+[ext_resource type="Resource" uid="uid://dm5xqn3gk208d" path="res://Currencies/Journal/locks/Open_lock_2.tres" id="4_advxr"]
+
+[resource]
+script = ExtResource("3_sl735")
+job_name = "     Unlock the second magic lock"
+job_desc = "You press your Dream Locus against the spell lock..."
+job_story = "And the band cleanly dissolves, leaving nothing behind."
+job_reward = Dictionary[ExtResource("1_advxr"), int]({
+ExtResource("4_advxr"): 1
+})
+job_mask = Dictionary[ExtResource("1_advxr"), int]({
+ExtResource("2_advxr"): 1
+})
+upper_mask = Array[ExtResource("1_advxr")]([ExtResource("4_advxr")])
+repeats = false
+make_popup = true
+popup_text = "As you bring your Dream Locus into contact with the second spell-lock, the metal wavers like mist, then snaps out of reality, gone just like that."
+button_text = "This still isn't enough to open the journal yet..."
+metadata/_custom_type_script = "uid://chnttjydh538r"

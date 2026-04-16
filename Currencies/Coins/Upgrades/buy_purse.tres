@@ -7,7 +7,7 @@
 
 [resource]
 script = ExtResource("1_5ncfg")
-job_name = "Buy a new purse"
+job_name = "     Buy a new purse"
 job_desc = "Shopping in stores and stalls..."
 job_story = "Scraping together your modest earnings, you invest them in a larger purse."
 job_duration = 3

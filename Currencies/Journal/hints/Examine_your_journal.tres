@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://42w35pst0ciw"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_i5y43"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_hfvuw"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_7xrvh"]
+
+[resource]
+script = ExtResource("4_7xrvh")
+job_name = "Examine your journal"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_i5y43"), int]({
+ExtResource("3_hfvuw"): 0
+})
+repeats = false
+make_popup = true
+popup_text = "This is your only keepsake - a book locked with three magical locks. It's helpfully labeled 'journal', though there's no name. It's bound in dark leather and banded in blue metal. If you want to learn more about your heritage, you'll have to learn magic to get at it."
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"

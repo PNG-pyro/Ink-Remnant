@@ -35,6 +35,11 @@ extends Node
 	load("res://Currencies/Houses/Rooms/Vault.tres"),
 	load("res://Currencies/Houses/Dimensional_Fold.tres"),
 	load("res://Currencies/Houses/Rooms/Mechanics_room.tres"),
+	load("res://Currencies/Journal/locks/Open_lock_1.tres"),
+	load("res://Currencies/Journal/locks/Open_lock_2.tres"),
+	load("res://Currencies/Journal/locks/Open_lock_3.tres"),
+	load("res://Currencies/Journal/Knowledge_journal.tres"),
+	
 	load("res://Currencies/Scrolls/Scrolls.tres"),
 	load("res://Currencies/Scrolls/Ticker/Auto_quill.tres"),
 	load("res://Currencies/Scrolls/Upgrades/Scroll_Case.tres"),

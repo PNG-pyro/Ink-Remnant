@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://bma6kdk2rnhdd" path="res://StartScreen/library_button.gd" id="5_plbck"]
 [ext_resource type="Script" uid="uid://d338r1lm7h675" path="res://StartScreen/tower_button.gd" id="6_58m4n"]
 [ext_resource type="Texture2D" uid="uid://bif7i0a14c2g3" path="res://Borders/Home_border.png" id="6_do1qa"]
+[ext_resource type="Script" uid="uid://bdajoxlnfhitx" path="res://StartScreen/journal_button.gd" id="6_ghnkm"]
 [ext_resource type="Script" uid="uid://beitnck5cfir6" path="res://StartScreen/market_button.gd" id="7_satxg"]
 [ext_resource type="Script" uid="uid://bsyeifs8bjboy" path="res://StartScreen/story_box.gd" id="7_xnqce"]
 [ext_resource type="Script" uid="uid://b8qmxvxkpvqnu" path="res://StartScreen/university_button.gd" id="9_satxg"]
@@ -101,6 +102,11 @@ script = ExtResource("19_4asdo")
 layout_mode = 2
 text = "Home"
 script = ExtResource("19_yp2c4")
+
+[node name="JournalButton" type="Button" parent="NavButtons/VBoxContainer" unique_id=1561047541]
+layout_mode = 2
+text = "Journal"
+script = ExtResource("6_ghnkm")
 
 [node name="LibraryButton" type="Button" parent="NavButtons/VBoxContainer" unique_id=1546172386]
 layout_mode = 2
@@ -260,6 +266,77 @@ metadata/_custom_type_script = "uid://cq4t44bcucve"
 metadata/_edit_use_anchors_ = true
 
 [node name="LibraryPanel" type="Panel" parent="LibraryFrame" unique_id=1924736668 groups=["LibraryFrame"]]
+z_index = -5
+material = ExtResource("12_68wlb")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="JournalFrame" type="NinePatchRect" parent="." unique_id=2147138169 groups=["JournalFrame"]]
+visible = false
+material = SubResource("ShaderMaterial_plbck")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21796875
+anchor_top = 0.3861111
+anchor_right = 0.85234374
+anchor_bottom = 0.98194444
+size_flags_horizontal = 3
+texture = ExtResource("6_do1qa")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="JournalHints" type="VBoxContainer" parent="JournalFrame" unique_id=1989423558]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014778325
+anchor_top = 0.027972028
+anchor_right = 0.3226601
+anchor_bottom = 0.974359
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fenb")
+metadata/_custom_type_script = "uid://cq4t44bcucve"
+metadata/_edit_use_anchors_ = true
+
+[node name="JournalLocks" type="VBoxContainer" parent="JournalFrame" unique_id=539733741]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6711823
+anchor_top = 0.027972028
+anchor_right = 0.9864532
+anchor_bottom = 0.974359
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fenb")
+metadata/_custom_type_script = "uid://cq4t44bcucve"
+metadata/_edit_use_anchors_ = true
+
+[node name="JournalNotes" type="VBoxContainer" parent="JournalFrame" unique_id=1590709907]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33497536
+anchor_top = 0.027972028
+anchor_right = 0.65763545
+anchor_bottom = 0.974359
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fenb")
+metadata/_custom_type_script = "uid://cq4t44bcucve"
+metadata/_edit_use_anchors_ = true
+
+[node name="JournalPanel" type="Panel" parent="JournalFrame" unique_id=1774404315 groups=["JournalFrame"]]
 z_index = -5
 material = ExtResource("12_68wlb")
 layout_mode = 1
@@ -997,6 +1074,7 @@ visible = false
 
 [connection signal="pressed" from="NavButtons/VBoxContainer/WorkButton" to="NavButtons/VBoxContainer/WorkButton" method="_on_pressed"]
 [connection signal="pressed" from="NavButtons/VBoxContainer/HomeButton" to="NavButtons/VBoxContainer/HomeButton" method="_on_pressed"]
+[connection signal="pressed" from="NavButtons/VBoxContainer/JournalButton" to="NavButtons/VBoxContainer/JournalButton" method="_on_pressed"]
 [connection signal="pressed" from="NavButtons/VBoxContainer/LibraryButton" to="NavButtons/VBoxContainer/LibraryButton" method="_on_pressed"]
 [connection signal="pressed" from="NavButtons/VBoxContainer/TowerButton" to="NavButtons/VBoxContainer/TowerButton" method="_on_pressed"]
 [connection signal="pressed" from="NavButtons/VBoxContainer/MarketButton" to="NavButtons/VBoxContainer/MarketButton" method="_on_pressed"]

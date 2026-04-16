@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://fujfurglxad"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_1koaw"]
+[ext_resource type="Resource" uid="uid://dtm7164jktg6a" path="res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres" id="2_x8ar5"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="5_8uvgp"]
+[ext_resource type="Resource" uid="uid://d35186en37eyi" path="res://Currencies/University/University_Access.tres" id="5_vi7de"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="6_qtrp4"]
+
+[resource]
+script = ExtResource("6_qtrp4")
+job_name = "Ride the Butterfly Cab"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_1koaw"), int]({
+ExtResource("5_8uvgp"): 0
+})
+job_mask = Dictionary[ExtResource("1_1koaw"), int]({
+ExtResource("2_x8ar5"): 1
+})
+upper_mask = Array[ExtResource("1_1koaw")]([ExtResource("5_vi7de")])
+repeats = false
+make_popup = true
+popup_text = "You learned how to summon a Butterfly Cab from the markets; you should see where it takes you. Even if you can't learn a new magic, there might be someone who can point you in the right direction..."
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"

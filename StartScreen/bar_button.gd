@@ -135,7 +135,9 @@ func on_mouse_exit():
 
 
 func update_visuals():
-	if visual_state & VisualState.RUNNING:
+	if visual_state & VisualState.DISABLED:
+		border.hide()
+	elif visual_state & VisualState.RUNNING:
 		border.show()
 	elif visual_state & VisualState.HOVERED:
 		border.show()

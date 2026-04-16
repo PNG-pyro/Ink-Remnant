@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dawm82vyyi460"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_afc8a"]
+[ext_resource type="Resource" uid="uid://dq5dcilkobnc1" path="res://Currencies/Magic/Cyanomancy/Knowledge_Cyanomancy.tres" id="2_gjodo"]
+[ext_resource type="Resource" uid="uid://b5ftjaguk3cim" path="res://Currencies/Magic/Lapidamancy/Knowledge_Lapidamancy.tres" id="3_3vcod"]
+[ext_resource type="Resource" uid="uid://c1uth0w20e75b" path="res://Currencies/Magic/Octomancy/Knowledge_Octomancy.tres" id="4_icam6"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="5_s3ir6"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="6_6ikqi"]
+[ext_resource type="Resource" uid="uid://kpx77a0heamu" path="res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres" id="7_afc8a"]
+
+[resource]
+script = ExtResource("6_6ikqi")
+job_name = "Visit the old Mage Tower"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_afc8a"), int]({
+ExtResource("5_s3ir6"): 0
+})
+job_mask = Dictionary[ExtResource("1_afc8a"), int]({
+ExtResource("2_gjodo"): 1,
+ExtResource("3_3vcod"): 1,
+ExtResource("4_icam6"): 1
+})
+upper_mask = Array[ExtResource("1_afc8a")]([ExtResource("7_afc8a")])
+repeats = false
+make_popup = true
+popup_text = "You should visit the old mage tower out along the coast... it's been there for years, who knows what sort of secrets are left behind. You'll need to have mastered three magics to break through the barriers, though..."
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"

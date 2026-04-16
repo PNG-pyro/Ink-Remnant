@@ -115,12 +115,6 @@ var research_book_jobs: Array[Job] = [
 	load("res://Currencies/Library/Bookshelves/Research_Lapidamancy.tres"),
 	load("res://Currencies/Library/Bookshelves/Research_Cyanomancy.tres"),
 	load("res://Currencies/Library/Bookshelves/Research_Oneiromancy.tres"),
-	load("res://Currencies/Library/Bookshelves/Re-Read_Cyanomancy.tres"),
-	load("res://Currencies/Library/Bookshelves/Re-Read_Lapidamancy.tres"),
-	load("res://Currencies/Library/Bookshelves/Re-Read_Octomancy.tres"),
-	load("res://Currencies/Library/Bookshelves/Re-Read_Oneiromancy.tres"),
-	load("res://Currencies/Library/Bookshelves/Re-Read_Mirrormancy.tres"),
-	load("res://Currencies/Library/Bookshelves/Re-Read_Thalassomancy.tres"),
 ]
 
 var tower_outside_jobs: Array[Job] = [
@@ -202,6 +196,33 @@ var university_inside: Array[Job] = [
 var university_offices: Array[Job] = [
 	load("res://Currencies/University/Offices/Prove_yourself.tres"),
 	load("res://Currencies/University/Offices/Spend_Credits.tres"),
+]
+
+var journal_hints: Array[Job] = [
+	load("res://Currencies/Journal/hints/Examine_your_journal.tres"),
+	load("res://Currencies/Journal/hints/What_to_do.tres"),
+	load("res://Currencies/Journal/hints/Talk_with_Curator.tres"),
+	load("res://Currencies/Journal/hints/Visit_the_tower.tres"),
+	load("res://Currencies/Journal/hints/Visit_the_docks.tres"),
+	load("res://Currencies/Journal/hints/Ride_the_Butterfly_Cab.tres"),
+	load("res://Currencies/Journal/hints/Visit_the_university.tres"),
+]
+
+var journal_notes: Array[Job] = [
+	load("res://Currencies/Journal/Notes/Re-Read_Cyanomancy.tres"),
+	load("res://Currencies/Journal/Notes/Re-Read_Lapidamancy.tres"),
+	load("res://Currencies/Journal/Notes/Re-Read_Octomancy.tres"),
+	load("res://Currencies/Journal/Notes/Re-Read_Oneiromancy.tres"),
+	load("res://Currencies/Journal/Notes/Re-Read_Mirrormancy.tres"),
+	load("res://Currencies/Journal/Notes/Re-Read_Thalassomancy.tres"),
+]
+
+var journal_locks: Array[Job] = [
+	load("res://Currencies/Journal/locks/Examine_first_lock.tres"),
+	load("res://Currencies/Journal/locks/Unlock_first_lock.tres"),
+	load("res://Currencies/Journal/locks/Examine_second_lock.tres"),
+	load("res://Currencies/Journal/locks/Unlock_second_lock.tres"),
+	load("res://Currencies/Journal/locks/Examine_third_lock.tres"),
 ]
 
 var all_jobs: Array[Job] = (tickers + 

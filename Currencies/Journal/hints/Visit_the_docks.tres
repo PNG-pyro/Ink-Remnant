@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b8bmftyw0glv7"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_4k6b7"]
+[ext_resource type="Resource" uid="uid://dq5dcilkobnc1" path="res://Currencies/Magic/Cyanomancy/Knowledge_Cyanomancy.tres" id="2_44uxu"]
+[ext_resource type="Resource" uid="uid://b5ftjaguk3cim" path="res://Currencies/Magic/Lapidamancy/Knowledge_Lapidamancy.tres" id="3_m25st"]
+[ext_resource type="Resource" uid="uid://c1uth0w20e75b" path="res://Currencies/Magic/Octomancy/Knowledge_Octomancy.tres" id="4_uh706"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="5_amegh"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="6_ogdyb"]
+[ext_resource type="Resource" uid="uid://dtm7164jktg6a" path="res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres" id="7_4k6b7"]
+
+[resource]
+script = ExtResource("6_ogdyb")
+job_name = "Visit the markets"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_4k6b7"), int]({
+ExtResource("5_amegh"): 0
+})
+job_mask = Dictionary[ExtResource("1_4k6b7"), int]({
+ExtResource("2_44uxu"): 1,
+ExtResource("3_m25st"): 1,
+ExtResource("4_uh706"): 1
+})
+upper_mask = Array[ExtResource("1_4k6b7")]([ExtResource("7_4k6b7")])
+repeats = false
+make_popup = true
+popup_text = "You've heard rumors about mages that like to frequent the dockside taverns. You should visit and see if the bartender can point you to any. "
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"

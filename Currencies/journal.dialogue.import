@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://kukv4hbacomd"
+path="res://.godot/imported/journal.dialogue-7f5c7a8ddf4829fd905172d25b3f5abe.tres"
+
+[deps]
+
+source_file="res://Currencies/journal.dialogue"
+dest_files=["res://.godot/imported/journal.dialogue-7f5c7a8ddf4829fd905172d25b3f5abe.tres"]
+
+[params]
+
+defaults=true

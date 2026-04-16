@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://dm5xqn3gk208d"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_tw7ue"]
+
+[resource]
+script = ExtResource("1_tw7ue")
+name = "Open lock 1"
+max_amount = 1
+tick_types = null
+makes_label = false
+is_hidden = true
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

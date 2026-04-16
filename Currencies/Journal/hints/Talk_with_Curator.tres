@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://d257evy17twj8"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_t0hct"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_x7u6h"]
+[ext_resource type="Resource" uid="uid://b5ftjaguk3cim" path="res://Currencies/Magic/Lapidamancy/Knowledge_Lapidamancy.tres" id="3_6vydo"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_ljhv6"]
+[ext_resource type="Resource" uid="uid://dq5dcilkobnc1" path="res://Currencies/Magic/Cyanomancy/Knowledge_Cyanomancy.tres" id="4_6vydo"]
+[ext_resource type="Resource" uid="uid://c1uth0w20e75b" path="res://Currencies/Magic/Octomancy/Knowledge_Octomancy.tres" id="4_fk8on"]
+[ext_resource type="Resource" uid="uid://dncrbwdwm20km" path="res://Currencies/Magic/Oneiromancy/Knowledge_Oneiromancy.tres" id="7_ujvqu"]
+
+[resource]
+script = ExtResource("3_ljhv6")
+job_name = "Speak with Curator"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_t0hct"), int]({
+ExtResource("2_x7u6h"): 0
+})
+job_mask = Dictionary[ExtResource("1_t0hct"), int]({
+ExtResource("4_6vydo"): 1,
+ExtResource("3_6vydo"): 1,
+ExtResource("4_fk8on"): 1
+})
+upper_mask = Array[ExtResource("1_t0hct")]([ExtResource("7_ujvqu")])
+repeats = false
+make_popup = true
+popup_text = "You should ask Curator if there's more magic in the library besides the three basic ones. Perhaps there's something you can offer him for the secret..."
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"

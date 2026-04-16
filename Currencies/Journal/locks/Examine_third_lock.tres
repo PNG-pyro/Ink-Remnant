@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://ddee1bbd133iu"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_o4f10"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_jxlx7"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_wa0cs"]
+
+[resource]
+script = ExtResource("3_wa0cs")
+job_name = "     Examine the third magic lock"
+job_desc = "You carefully ponder the journal's intricate mechanisms..."
+job_story = "But nothing new is revealed."
+job_reward = Dictionary[ExtResource("1_o4f10"), int]({
+ExtResource("2_jxlx7"): 0
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "The third metal band is clasped with a lock, but there's no keyhole - instead, a hexagonal indent is pressed into the metal, the edges curiously gear-toothed."
+button_text = "You give up for now..."
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -17,6 +17,9 @@ extends Node
 @onready var button_stack_univ1 = %"UniversityOutside"
 @onready var button_stack_univ2 = %"UniversityInside"
 @onready var button_stack_univ3 = %"UniversityOffices"
+@onready var button_stack_journal1 = %"JournalHints"
+@onready var button_stack_journal2 = %"JournalNotes"
+@onready var button_stack_journal3 = %"JournalLocks"
 
 @onready var seen_eoc = false
 
@@ -53,12 +56,15 @@ func _ready():
 	button_stack_univ1.populate(JobManager.university_outside)
 	button_stack_univ2.populate(JobManager.university_inside)
 	button_stack_univ3.populate(JobManager.university_offices)
+	button_stack_journal1.populate(JobManager.journal_hints)
+	button_stack_journal2.populate(JobManager.journal_notes)
+	button_stack_journal3.populate(JobManager.journal_locks)
 	
 	
 	
 	if not SaveManager.load(SaveManager.save_name_3):
 		var starting_popup = story_popup.instantiate()
-		starting_popup.label_text = "You're a homeless waif in a magical city. The only way to go from here is up!"
+		starting_popup.label_text = "You're a homeless waif in a magical city. Your only keepsake is a spell-locked journal found with you at birth. The only way to go from here is up!"
 		starting_popup.button_text = "Search the city"
 		starting_popup.borderless = true
 		display_popup(starting_popup)
