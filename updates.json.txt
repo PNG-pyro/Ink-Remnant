@@ -1,0 +1,14 @@
+{
+  "updates": [
+    {
+      "version": "0.7.9",
+      "title": "University",
+      "content": "Added the university area"
+    },
+    {
+      "version": "0.7.10",
+      "title": "Bugfix",
+      "content": "Tweaked indicators and tooltips"
+    }
+  ]
+}

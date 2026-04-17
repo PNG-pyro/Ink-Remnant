@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("3_n43bu")
 job_name = "The end... for now!"
-job_desc = "This is the current end of the game. "
+job_desc = "This is the current end of the story. "
 job_story = "I'll probably be adding more, though..."
 job_reward = Dictionary[ExtResource("1_0jjps"), int]({
 ExtResource("2_56f3h"): 0
@@ -18,6 +18,6 @@ ExtResource("2_n43bu"): 1
 })
 repeats = false
 make_popup = true
-popup_text = "Apologies, but you've reached the end of the game for now. "
-button_text = "You may still have gagues to fill, though."
+popup_text = "Apologies, but you've reached the end of the current story. There may still be upgrades to buy, though. "
+button_text = "And gagues to fill..."
 metadata/_custom_type_script = "uid://chnttjydh538r"

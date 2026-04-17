@@ -18,6 +18,7 @@ job_mask = Dictionary[ExtResource("1_1koaw"), int]({
 ExtResource("2_x8ar5"): 1
 })
 upper_mask = Array[ExtResource("1_1koaw")]([ExtResource("5_vi7de")])
+make_tooltip = false
 repeats = false
 make_popup = true
 popup_text = "You learned how to summon a Butterfly Cab from the markets; you should see where it takes you. Even if you can't learn a new magic, there might be someone who can point you in the right direction..."

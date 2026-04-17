@@ -184,7 +184,6 @@ var market_people_jobs: Array[Job] = [
 
 var university_outside: Array[Job] = [
 	load("res://Currencies/University/Outside/Visit_university.tres"),
-	load("res://Currencies/University/Outside/EOC.tres"),
 ]
 
 var university_inside: Array[Job] = [
@@ -205,7 +204,9 @@ var journal_hints: Array[Job] = [
 	load("res://Currencies/Journal/hints/Visit_the_tower.tres"),
 	load("res://Currencies/Journal/hints/Visit_the_docks.tres"),
 	load("res://Currencies/Journal/hints/Ride_the_Butterfly_Cab.tres"),
-	load("res://Currencies/Journal/hints/Visit_the_university.tres"),
+	load("res://Currencies/Journal/hints/Talk_with_headmaster.tres"),
+	load("res://Currencies/Journal/hints/Visit_the_bank.tres"),
+	load("res://Currencies/Journal/hints/EOC.tres"),
 ]
 
 var journal_notes: Array[Job] = [

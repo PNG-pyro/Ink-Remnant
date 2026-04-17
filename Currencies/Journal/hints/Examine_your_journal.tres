@@ -12,8 +12,9 @@ job_story = "And come up with something."
 job_reward = Dictionary[ExtResource("1_i5y43"), int]({
 ExtResource("3_hfvuw"): 0
 })
+make_tooltip = false
 repeats = false
 make_popup = true
-popup_text = "This is your only keepsake - a book locked with three magical locks. It's helpfully labeled 'journal', though there's no name. It's bound in dark leather and banded in blue metal. If you want to learn more about your heritage, you'll have to learn magic to get at it."
+popup_text = "This is your only keepsake - a book locked with three magical locks. It's helpfully labeled 'journal', though there's no name. It's bound in dark leather and banded in blue metal; if you want to learn more about your heritage, you'll have to learn magic to get at it."
 button_text = "OK"
 metadata/_custom_type_script = "uid://chnttjydh538r"

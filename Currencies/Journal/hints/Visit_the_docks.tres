@@ -22,6 +22,7 @@ ExtResource("3_m25st"): 1,
 ExtResource("4_uh706"): 1
 })
 upper_mask = Array[ExtResource("1_4k6b7")]([ExtResource("7_4k6b7")])
+make_tooltip = false
 repeats = false
 make_popup = true
 popup_text = "You've heard rumors about mages that like to frequent the dockside taverns. You should visit and see if the bartender can point you to any. "

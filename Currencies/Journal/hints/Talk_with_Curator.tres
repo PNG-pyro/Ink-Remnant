@@ -22,6 +22,7 @@ ExtResource("3_6vydo"): 1,
 ExtResource("4_fk8on"): 1
 })
 upper_mask = Array[ExtResource("1_t0hct")]([ExtResource("7_ujvqu")])
+make_tooltip = false
 repeats = false
 make_popup = true
 popup_text = "You should ask Curator if there's more magic in the library besides the three basic ones. Perhaps there's something you can offer him for the secret..."

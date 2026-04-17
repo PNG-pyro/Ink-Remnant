@@ -10,7 +10,7 @@
 
 [resource]
 script = ExtResource("6_6ikqi")
-job_name = "Visit the old Mage Tower"
+job_name = "Visit the old Tower of Magic"
 job_desc = "You ponder your next avenue of progress..."
 job_story = "And come up with something."
 job_reward = Dictionary[ExtResource("1_afc8a"), int]({
@@ -22,8 +22,9 @@ ExtResource("3_3vcod"): 1,
 ExtResource("4_icam6"): 1
 })
 upper_mask = Array[ExtResource("1_afc8a")]([ExtResource("7_afc8a")])
+make_tooltip = false
 repeats = false
 make_popup = true
-popup_text = "You should visit the old mage tower out along the coast... it's been there for years, who knows what sort of secrets are left behind. You'll need to have mastered three magics to break through the barriers, though..."
+popup_text = "You should visit the old mage tower out along the coast. It's been there for years, who knows what sort of secrets are left behind? You'll need to master three magics to break through the barriers, though..."
 button_text = "OK"
 metadata/_custom_type_script = "uid://chnttjydh538r"

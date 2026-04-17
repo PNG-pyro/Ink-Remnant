@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dm16fevakos6i"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_an5es"]
+[ext_resource type="Resource" uid="uid://d35186en37eyi" path="res://Currencies/University/University_Access.tres" id="2_hvmwk"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_5ifom"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_12vus"]
+[ext_resource type="Resource" uid="uid://b8el2iheshgh6" path="res://Currencies/University/Offices/Airship_access.tres" id="5_0m8mn"]
+
+[resource]
+script = ExtResource("4_12vus")
+job_name = "Visit the Headmaster"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_an5es"), int]({
+ExtResource("3_5ifom"): 0
+})
+job_mask = Dictionary[ExtResource("1_an5es"), int]({
+ExtResource("2_hvmwk"): 1
+})
+upper_mask = Array[ExtResource("1_an5es")]([ExtResource("5_0m8mn")])
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You should speak with the Headmaster of the University; he'll be able to tell you if they have magic you can learn."
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"

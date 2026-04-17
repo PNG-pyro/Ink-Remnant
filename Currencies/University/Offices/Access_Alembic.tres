@@ -8,6 +8,7 @@ name = "Access: Skybound Alembic"
 max_amount = 1
 tick_types = null
 makes_label = false
+is_hidden = true
 make_tooltip = true
 tooltip_says = "Permission to study the Skybound Alembic"
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

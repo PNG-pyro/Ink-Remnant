@@ -14,6 +14,7 @@ job_reward = Dictionary[ExtResource("1_ywx8u"), int]({
 ExtResource("2_rf3mu"): 0
 })
 upper_mask = Array[ExtResource("1_ywx8u")]([ExtResource("4_rf3mu")])
+make_tooltip = false
 repeats = false
 make_popup = true
 popup_text = "You recall something about a library - that might be a good place to look for information on magic."
