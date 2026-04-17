@@ -13,4 +13,5 @@ func _on_pressed() -> void:
 			job.shows_up = false
 		SaveManager.university_visible = false
 		ResponseManager.visited_responses = {}
+		SaveManager.visible_buttons = {}
 	get_tree().reload_current_scene()

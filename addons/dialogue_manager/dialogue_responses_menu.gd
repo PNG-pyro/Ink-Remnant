@@ -138,10 +138,7 @@ func _apply_responses() -> void:
 
 			item.set_meta("response", response)
 			
-			if ResponseManager.is_visited(response.id):
-				item.get_node("ShineLayer").visible = false
-			
-			if "Hide" in response.tags and not response.is_allowed:
+			if item.disabled == true and response.tags.has("Hide"):
 				item.visible = false
 				
 			add_child(item)

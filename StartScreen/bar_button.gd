@@ -68,6 +68,7 @@ func _ready():
 	border.patch_margin_right = 16
 	border.patch_margin_top = 16
 	border.patch_margin_bottom = 16
+	border.hide()
 	add_child(border)
 	
 	ready_label.bbcode_enabled = true
@@ -82,10 +83,6 @@ func _ready():
 	new_label.position = Vector2(150, 6)
 	add_child(new_label)
 	
-	visual_state |= VisualState.AFFORDABLE
-	visual_state |= VisualState.NEW
-	update_visuals()
-	
 	pressed.connect(_on_pressed)
 	SignalHub.resource_updated.connect(check_visible)
 	SignalHub.resource_updated.connect(func(_a, _b): update_tooltip())
@@ -99,8 +96,9 @@ func _ready():
 	if job_run.button_disappears_on != "":
 		SignalHub.get(job_run.button_disappears_on).connect(_disappear)
 	
+	visual_state |= VisualState.AFFORDABLE
+	visual_state |= VisualState.NEW
 	check_affordable()
-	update_visuals()
 
 
 func _appear():
@@ -149,17 +147,18 @@ func update_visuals():
 			rect.queue_free()
 	
 	if (visual_state & VisualState.FULL) and (visual_state & VisualState.AFFORDABLE):
-		ready_label.text = "[color=yellow]-[/color]"
+		ready_label.text = "[color=yellow]- [/color]"
 	elif (visual_state & VisualState.FULL) and (visual_state & VisualState.UNAFFORDABLE):
-		ready_label.text = "[color=red]×[/color]"
+		ready_label.text = "[color=red]× [/color]"
 	elif visual_state & VisualState.AFFORDABLE:
-		ready_label.text = "[color=green]>[/color]"
+		ready_label.text = "[color=green]> [/color]"
 	elif visual_state & VisualState.UNAFFORDABLE:
 		ready_label.text = "[color=red]×[/color]"
 
 
 func start_filling():
 	var flash = true
+	
 	if not job_run.can_afford():
 		reset()
 		return
@@ -175,7 +174,7 @@ func start_filling():
 		SignalHub.display.emit(job_run.job_desc + "\n")
 		startrun = false
 		visual_state &= ~VisualState.NEW
-		update_visuals()
+
 	visual_state |= VisualState.RUNNING
 	update_visuals()
 	
@@ -248,7 +247,6 @@ func check_visible(_resource, _amount):
 
 
 func update_tooltip():
-	
 	var line: String = "[color=white]Required:\n[/color]"
 	
 	for price in job_run.job_cost:
@@ -268,7 +266,7 @@ func update_tooltip():
 			line += "[color=white]		???[/color]"
 			continue
 			
-		if price.is_full() and not price.name == "Floor Space" and not price.name == "Default":
+		if price.is_full() and not price.name == "Floor Space" and not price.name == "Default Currency":
 			line += "[color=yellow]" + str(job_run.job_reward[price]) + " " + price.name + " - Full,[/color]\n"
 			if price.is_upgrade:
 				for upgrade in price.upgrade_target:

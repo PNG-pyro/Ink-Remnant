@@ -21,6 +21,7 @@ extends Node
 	load("res://Currencies/Deep_Water/Deep_Water.tres"),
 	load("res://Currencies/Deep_Water/Knowledge_deep_water.tres"),
 	load("res://Currencies/Deep_Water/Upgrades/Mirrored_Jug.tres"),
+	load("res://Currencies/Default_currency.tres"),
 	load("res://Currencies/Dreamsilver/Dream_Silver.tres"),
 	load("res://Currencies/Dreamsilver/Upgrade/dream_spindle.tres"),
 	load("res://Currencies/Herbs/Tickers/PlanterBox.tres"),

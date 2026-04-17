@@ -30,6 +30,9 @@ signal appear_butterfly_courtyard
 signal appear_butterfly_cab
 signal appear_tipsy_tentacle
 signal appear_thalassomancer
+signal appear_market
+signal appear_library
+signal appear_tower
 signal disappear_people
 
 signal appear_university

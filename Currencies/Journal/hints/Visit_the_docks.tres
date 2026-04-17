@@ -27,4 +27,5 @@ repeats = false
 make_popup = true
 popup_text = "You've heard rumors about mages that like to frequent the dockside taverns. You should visit and see if the bartender can point you to any. "
 button_text = "OK"
+signal_name = "appear_market"
 metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -7,7 +7,9 @@ var save_name_2: String = "Slot 2"
 var save_name_3: String = "Autosave"
 var last_focus_time: float = 0
 var university_visible: bool = false
+var visible_buttons: Dictionary[String, bool]
 var theme_int: int
+
 
 
 var focus_gained_callback
@@ -28,6 +30,10 @@ func save(savename: String) -> SaveState:
 	
 	for job in JobManager.all_jobs:
 		save_state.jobs_dict[job.job_name] = job.shows_up
+		
+	for button in visible_buttons:
+		if button: 
+			save_state.visible_buttons[button] = visible_buttons[button]
 		
 	for button in get_tree().get_nodes_in_group("BarButtons"):
 		save_state.button_states[button.job_run.job_name] = button.visual_state
@@ -81,6 +87,10 @@ func load_save(save_to_load: SaveState) -> bool:
 		for job in JobManager.all_jobs:
 			if saved_job == job.job_name:
 				job.shows_up = save_to_load.jobs_dict[saved_job]
+	
+	for saved_button in save_to_load.visible_buttons:
+		visible_buttons[saved_button] = save_to_load.visible_buttons[saved_button]
+		
 	
 	for button in get_tree().get_nodes_in_group("BarButtons"):
 		if button.job_run.job_name in save_to_load.button_states:

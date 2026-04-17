@@ -27,4 +27,5 @@ repeats = false
 make_popup = true
 popup_text = "You should visit the old mage tower out along the coast. It's been there for years, who knows what sort of secrets are left behind? You'll need to master three magics to break through the barriers, though..."
 button_text = "OK"
+signal_name = "appear_tower"
 metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -4,7 +4,8 @@
 
 [resource]
 script = ExtResource("1_yju5n")
-name = "Default"
+name = "Default Currency"
 max_amount = 999
-make_counter = false
+tick_types = null
+is_hidden = true
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

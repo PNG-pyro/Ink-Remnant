@@ -77,6 +77,8 @@ func _ready():
 	SignalHub.set_theme_dark.connect(set_dark)
 	SignalHub.set_theme_light.connect(set_light)
 	
+	SignalHub.resource_updated.emit(CurrencyManager.get_currency("Default Currency"), 0)
+	
 	
 
 

@@ -8,7 +8,7 @@
 
 [resource]
 script = ExtResource("5_xj236")
-job_name = "Research Oneiromancy"
+job_name = " Research Oneiromancy"
 job_desc = "Researching dream magic looks a lot like napping. It's not, though. "
 job_story = "It's also restful. But it's still not actually sleep, so you have to do that separately."
 job_duration = 4
@@ -22,5 +22,4 @@ job_mask = Dictionary[ExtResource("1_n35ha"), int]({
 ExtResource("3_n35ha"): 1
 })
 upper_mask = Array[ExtResource("1_n35ha")]([ExtResource("4_bgff1")])
-button_signal = null
 metadata/_custom_type_script = "uid://chnttjydh538r"

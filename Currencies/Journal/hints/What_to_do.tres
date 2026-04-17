@@ -19,4 +19,5 @@ repeats = false
 make_popup = true
 popup_text = "You recall something about a library - that might be a good place to look for information on magic."
 button_text = "OK"
+signal_name = "appear_library"
 metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -6,12 +6,15 @@ var label_type: Currency = CurrencyManager.default_curency
 var amount: int = 0
 var max_amount: int = 0
 var currency_name: String = "None"
+var text_color
+var theme_color
 
 
 func _ready() -> void:
 	#if not label_type.makes_label:
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	SignalHub.resource_updated.connect(update_tooltip)
+	SignalHub.resource_updated.connect(is_full)
 	SignalHub.flash_currency.connect(flash)
 
 
@@ -47,6 +50,8 @@ func upgrade(res_type: Currency, new_amount: int):
 func flash(name_to_flash):
 	if name_to_flash == label_type.name:
 		
+		color_text()
+		
 		var scale_tween = create_tween()
 		scale_tween.tween_property(self, "scale", Vector2(1.3, 1.0), 0.1)
 		scale_tween.tween_property(self, "scale", Vector2(1.0, 1.0), 0.1)
@@ -58,7 +63,7 @@ func flash(name_to_flash):
 		pivot_tween.tween_property(self, "rotation", 0.0, 0.05)
 		
 		var color_tween = create_tween()
-		color_tween.tween_property(self, "modulate", Color.YELLOW, 0.5)
+		color_tween.tween_property(self, "modulate", text_color, 0.5)
 		color_tween.tween_property(self, "modulate", Color.WHITE, 0.1)
 
 
@@ -115,3 +120,23 @@ func _make_custom_tooltip(for_text):
 	label.autowrap_mode = TextServer.AUTOWRAP_OFF
 	label.fit_content = true
 	return label
+	
+func is_full(_a = null, _b = null):
+	if color_text():
+		
+		if label_type.is_full():
+			self.add_theme_color_override("font_color", text_color)
+		else:
+			self.remove_theme_color_override("font_color")
+		
+func color_text() -> bool:
+	if not label_type.makes_label:
+		return false
+	
+	if get_tree().current_scene.theme == load("res://theme_dark.tres"):
+		text_color = Color.YELLOW
+		theme_color = Color.WHITE
+	else:
+		text_color = Color.BLUE
+		theme_color = Color.BLACK
+	return true
