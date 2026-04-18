@@ -102,7 +102,7 @@ func load_save(save_to_load: SaveState) -> bool:
 			button.update_visuals()
 			
 
-	SignalHub.volume_set.emit(save_to_load.volume, save_to_load.mute)
+	SignalHub.volume_set.emit.call_deferred(save_to_load.volume, save_to_load.mute)
 	ResponseManager.visited_responses = save_to_load.response_dict
 	
 	for currency in CurrencyManager.all_currencies:
