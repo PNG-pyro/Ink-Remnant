@@ -8,7 +8,7 @@ var save_name_3: String = "Autosave"
 var last_focus_time: float = 0
 var university_visible: bool = false
 var visible_buttons: Dictionary[String, bool]
-var theme_int: int
+var theme: String
 
 
 
@@ -38,7 +38,7 @@ func save(savename: String) -> SaveState:
 	for button in get_tree().get_nodes_in_group("BarButtons"):
 		save_state.button_states[button.job_run.job_name] = button.visual_state
 	
-	save_state.theme_int = theme_int
+	save_state.theme = theme
 	save_state.mute = BackgroundMusicPlayer.stream_paused
 	save_state.volume = BackgroundMusicPlayer.volume_linear
 	save_state.university_visible = university_visible
@@ -58,6 +58,13 @@ func load(savename: String) -> bool:
 	var save_state: SaveState = ResourceLoader.load("user://" + savename + ".tres")
 	if load_save(save_state):
 		SignalHub.display.emit("Game loaded: " + savename + "\n\n")
+		
+		if theme == "Light":
+			SignalHub.set_theme_light.emit.call_deferred()
+		elif theme == "Dark":
+			SignalHub.set_theme_dark.emit.call_deferred()
+		
+		SignalHub.resource_updated.emit.call_deferred(CurrencyManager.get_currency("Default Currency"), 0)		
 	else:
 		SignalHub.display.emit("Oops, something went wrong... New game begun!")
 	SignalHub.make_visible.emit()
@@ -70,11 +77,8 @@ func load_save(save_to_load: SaveState) -> bool:
 	SceneManager.set_scene(save_to_load.ui_state as SceneManager.Scene)
 	university_visible = save_to_load.university_visible
 	
-	theme_int = save_to_load.theme_int
-	if theme_int == 1:
-		SignalHub.set_theme_light.emit()
-	if theme_int == 2:
-		SignalHub.set_theme_dark.emit()
+	theme = save_to_load.theme
+
 
 	for saved_currency in save_to_load.all_currencies:
 		for currency in CurrencyManager.all_currencies:
@@ -105,7 +109,5 @@ func load_save(save_to_load: SaveState) -> bool:
 		currency.get_max()
 
 	SceneManager.set_scene(SceneManager.Scene.CITY)
-	
-
-		
+			
 	return true

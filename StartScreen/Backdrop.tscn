@@ -73,6 +73,10 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_ptm2y")
 script = ExtResource("1_1vt0a")
+background_color_dark = null
+background_color_light = null
+frames_color_dark = null
+frames_color_light = null
 
 [node name="StoryPopup" parent="." unique_id=329997860 instance=ExtResource("16_a6fgy")]
 visible = false
@@ -584,7 +588,7 @@ offset_left = 12.0
 offset_top = 11.9999695
 offset_right = 266.0
 offset_bottom = 67.99997
-text = "Ver. 0.7.12"
+text = "Ver. 0.8.1"
 horizontal_alignment = 1
 vertical_alignment = 1
 

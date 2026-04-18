@@ -32,13 +32,11 @@ var timer: float = 0.0
 
 
 func _ready():
-	seen_eoc = false
 	
-	self.theme = load("res://theme_dark.tres")
-	RenderingServer.global_shader_parameter_set("Background", background_color_dark)
-	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_light)
-	$"BackdropDark".visible = true
-	$"BackdropLight".visible = false
+	if SaveManager.theme == "Light":
+		set_light()
+	else:
+		set_dark()
 		
 	button_stack_jobs.populate(JobManager.simple_jobs)
 	button_stack_trades.populate(JobManager.trades)
@@ -128,8 +126,8 @@ func set_light():
 	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_dark)
 	$"BackdropDark".visible = false
 	$"BackdropLight".visible = true
-	SaveManager.theme_int = 1
-	SaveManager.save(SaveManager.save_name_3)
+	SaveManager.theme = "Light"
+	#SaveManager.save(SaveManager.save_name_3)
 
 
 func set_dark():
@@ -138,8 +136,8 @@ func set_dark():
 	RenderingServer.global_shader_parameter_set("FrameColors", frames_color_light)
 	$"BackdropDark".visible = true
 	$"BackdropLight".visible = false
-	SaveManager.theme_int = 2
-	SaveManager.save(SaveManager.save_name_3)
+	SaveManager.theme = "Dark"
+	#SaveManager.save(SaveManager.save_name_3)
 
 
 func end_of_content(_a = null, _b = null):
