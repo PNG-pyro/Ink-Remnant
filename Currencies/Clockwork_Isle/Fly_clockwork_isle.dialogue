@@ -1,0 +1,17 @@
+~ start
+You grasp the control armillary, the brass cool under your fingers. The leather of the captains chair creaks under you as you prepare for take-off. The Headmaster did give his okay, even if he wasn't interested in riding along. You reassured him it was perfectly safe...
+~ Mid
+Where to next?
+- Lift her off the ground
+	With the barest tilt of your palm, the multi-ton behemoth of brass, steel and glass wafts off the floor, lifting as light as a butterfly's wingbeat. The Clockwork Isle moves with the smooth unstoppable grace of a hydraulic press. You let her hang above the floor for several seconds. => Mid
+- Take her out of the hangar
+	Or workshop, or whatever they call the collection of metal sheds and knocked-together buildings keeping the Isle out of the rain. You rolled the door wide before starting her up, and the Isle skims lightly out into the open air, the wake of her passing rustling grass and trees. You twist your wrist and she darts skywards, the giant mainspring hefting you easily into the morning air. => Mid
+- Go for a spin around campus
+	You lift the brass monstrosity high enough into the air its shadow won't suprise anyone, and send your craft swishing towards the edge of the campus. You can cruise along the treeline there, not quite outside of the university - that should be enough to keep any of the police dirigibles from bothering you. Though the Isle is distinctive enough, they'll know who to complain to if they just ask around a bit. => Mid
+- Head straight up
+	There's only question when it comes to airships, after all - how high? By the time you realize the Clockwork Isle's cyanomantic tourbillons will happily boost you to the moons, given enough throttle, you also realize there's no air supply on board and turn back before the atmosphere gets too thin. For a long moment though, you simply stare up into the almost-black sky, wondering what else is out there. => Mid
+- Take her back down
+	You settle the Clockwork Isle back into her berth, whisper-soft and quiet as a feather. For being a metal behemoth, she flies like a dream. You decide you'll have to make or acquire an airship someday. => Mid
+- Leave her here for now.
+	You lock the armillary and stow the controls, swinging yourself out of the pilot seat. You'll fly again another day. => END
+=> END

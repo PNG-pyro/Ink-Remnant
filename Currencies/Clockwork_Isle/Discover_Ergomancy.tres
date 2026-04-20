@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://ieg70qymsbj3"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_cag3j"]
+[ext_resource type="Resource" uid="uid://cb5rwgmdtf7al" path="res://Currencies/Magic/Ergomancy/Knowledge_Ergomancy.tres" id="2_60ip4"]
+[ext_resource type="Resource" uid="uid://cb7f0g5xa4jr2" path="res://Currencies/Clockwork_Isle/Cabochon_Tractors.tres" id="2_mxdvl"]
+[ext_resource type="Resource" uid="uid://b02ief73c1fls" path="res://Currencies/Clockwork_Isle/Cyanometric_Tourbillon.tres" id="3_0q1po"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_x7kuy"]
+[ext_resource type="Resource" uid="uid://cpggvjtcmm57w" path="res://Currencies/Clockwork_Isle/Dreamsilver_Barometer.tres" id="4_moaha"]
+[ext_resource type="Resource" uid="uid://bw13bt8dnqx17" path="res://Currencies/Clockwork_Isle/Eightfold_Escapement.tres" id="5_0ky7l"]
+[ext_resource type="Resource" uid="uid://dsf5v411h4e61" path="res://Currencies/Clockwork_Isle/Hadean_Chronometer.tres" id="6_hlmdy"]
+[ext_resource type="Resource" uid="uid://nr418y7847cy" path="res://Currencies/Clockwork_Isle/Specular_armillary.tres" id="7_3krc8"]
+
+[resource]
+script = ExtResource("3_x7kuy")
+job_name = "Discover Ergomancy"
+job_desc = "In a whirl of gears and a flash of insight, it comes to you."
+job_story = "You quickly scribble down what you've realized for later study. "
+job_reward = Dictionary[ExtResource("1_cag3j"), int]({
+ExtResource("2_60ip4"): 1
+})
+job_mask = Dictionary[ExtResource("1_cag3j"), int]({
+ExtResource("2_mxdvl"): 4,
+ExtResource("3_0q1po"): 7,
+ExtResource("4_moaha"): 2,
+ExtResource("5_0ky7l"): 8,
+ExtResource("6_hlmdy"): 3,
+ExtResource("7_3krc8"): 1
+})
+upper_mask = Array[ExtResource("1_cag3j")]([ExtResource("2_60ip4")])
+make_popup = true
+popup_text = "Ergomancy is the magic of a well-built watch or a pitch-perfect music box. Some would say it's not magic at all, and they'd be mostly right... But there is a small spark there, if you know how to see it."
+button_text = "Write this down for later"
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dxh8ssgi0h6tb"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_rrcob"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_641ki"]
+[ext_resource type="Resource" uid="uid://cb5rwgmdtf7al" path="res://Currencies/Magic/Ergomancy/Knowledge_Ergomancy.tres" id="3_v7xdd"]
+[ext_resource type="Resource" uid="uid://bcgrkywtu7n43" path="res://Currencies/Magic/Ergomancy/Rules_of_Ergomancy.tres" id="4_wlqmy"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_tqyp3"]
+
+[resource]
+script = ExtResource("5_tqyp3")
+job_name = "Research Ergomancy"
+job_desc = "Ergomancy is both similar and different from ordinary gaslamp steam-power or brasswork..."
+job_story = "The aesthetics are superficially similar, though. Plenty of whistles and hisses, crackling arcs of power and glowing lights."
+job_duration = 4
+job_reward = Dictionary[ExtResource("1_rrcob"), int]({
+ExtResource("4_wlqmy"): 4
+})
+job_cost = Dictionary[ExtResource("1_rrcob"), int]({
+ExtResource("2_641ki"): 18
+})
+job_mask = Dictionary[ExtResource("1_rrcob"), int]({
+ExtResource("3_v7xdd"): 1
+})
+upper_mask = Array[ExtResource("1_rrcob")]([ExtResource("4_wlqmy")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

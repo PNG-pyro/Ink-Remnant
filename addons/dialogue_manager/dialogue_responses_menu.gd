@@ -141,6 +141,9 @@ func _apply_responses() -> void:
 			if item.disabled == true and response.tags.has("Hide"):
 				item.visible = false
 				
+			if ResponseManager.visited_responses.has(response.id):
+				item.get_node("ShineLayer").queue_free()
+				
 			add_child(item)
 
 		if auto_configure_focus:

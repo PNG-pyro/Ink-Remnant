@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://owi37qihj6c3"
+path="res://.godot/imported/Fly_clockwork_isle.dialogue-94625d5c2119a75270c209ca760b7267.tres"
+
+[deps]
+
+source_file="res://Currencies/Clockwork_Isle/Fly_clockwork_isle.dialogue"
+dest_files=["res://.godot/imported/Fly_clockwork_isle.dialogue-94625d5c2119a75270c209ca760b7267.tres"]
+
+[params]
+
+defaults=true

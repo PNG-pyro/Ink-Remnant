@@ -61,6 +61,7 @@ extends Node
 	load("res://Currencies/Magic/Oneiromancy/Knowledge_Oneiromancy.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres"),
 	load("res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres"),
+	load("res://Currencies/Magic/Ergomancy/Knowledge_Ergomancy.tres"),
 	
 	load("res://Currencies/Library/Knowledge_Curator.tres"),
 	load("res://Currencies/Library/Curator/Currencies/Curator_Octomancy.tres"),

@@ -232,7 +232,7 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
-[node name="ButtonStackAirship2" type="ScrollContainer" parent="AirshipFrame" unique_id=379162868]
+[node name="ScrollFrame" type="ScrollContainer" parent="AirshipFrame" unique_id=379162868]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.67487687
@@ -242,7 +242,7 @@ anchor_bottom = 0.974359
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ButtonStackAirship" type="VBoxContainer" parent="AirshipFrame/ButtonStackAirship2" unique_id=511166780]
+[node name="ButtonStackAirship" type="VBoxContainer" parent="AirshipFrame/ScrollFrame" unique_id=511166780]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -661,7 +661,7 @@ offset_left = 12.0
 offset_top = 11.9999695
 offset_right = 266.0
 offset_bottom = 67.99997
-text = "Ver. 0.8.2"
+text = "Ver. 0.8.3"
 horizontal_alignment = 1
 vertical_alignment = 1
 

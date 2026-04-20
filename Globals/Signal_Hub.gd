@@ -34,6 +34,7 @@ signal appear_market
 signal appear_library
 signal appear_tower
 signal appear_airship
+signal appear_ergomancy
 signal appear_mechanics
 signal disappear_people
 

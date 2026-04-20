@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cepd2pflvvwek"]
+
+[ext_resource type="Resource" uid="uid://owi37qihj6c3" path="res://Currencies/Clockwork_Isle/Fly_clockwork_isle.dialogue" id="1_yi36m"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_4txwx"]
+[ext_resource type="Resource" uid="uid://cb7f0g5xa4jr2" path="res://Currencies/Clockwork_Isle/Cabochon_Tractors.tres" id="3_b0vak"]
+[ext_resource type="Resource" uid="uid://b02ief73c1fls" path="res://Currencies/Clockwork_Isle/Cyanometric_Tourbillon.tres" id="4_2qk1d"]
+[ext_resource type="Resource" uid="uid://cpggvjtcmm57w" path="res://Currencies/Clockwork_Isle/Dreamsilver_Barometer.tres" id="5_t0ccm"]
+[ext_resource type="Resource" uid="uid://bw13bt8dnqx17" path="res://Currencies/Clockwork_Isle/Eightfold_Escapement.tres" id="6_odbyc"]
+[ext_resource type="Resource" uid="uid://dsf5v411h4e61" path="res://Currencies/Clockwork_Isle/Hadean_Chronometer.tres" id="7_8cjan"]
+[ext_resource type="Resource" uid="uid://nr418y7847cy" path="res://Currencies/Clockwork_Isle/Specular_armillary.tres" id="8_2v41g"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="9_bqnj8"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="10_053ok"]
+
+[resource]
+script = ExtResource("10_053ok")
+job_name = "Fly the Clockwork Isle?"
+job_desc = "If you take off quick, surely no-one will notice..."
+job_story = "At least until it's too late!"
+job_reward = Dictionary[ExtResource("2_4txwx"), int]({
+ExtResource("9_bqnj8"): 0
+})
+job_mask = Dictionary[ExtResource("2_4txwx"), int]({
+ExtResource("3_b0vak"): 4,
+ExtResource("4_2qk1d"): 7,
+ExtResource("5_t0ccm"): 2,
+ExtResource("6_odbyc"): 8,
+ExtResource("7_8cjan"): 3,
+ExtResource("8_2v41g"): 1
+})
+repeats = false
+start_dialogue = true
+dialogue = ExtResource("1_yi36m")
+signal_name = "appear_ergomancy"
+metadata/_custom_type_script = "uid://chnttjydh538r"

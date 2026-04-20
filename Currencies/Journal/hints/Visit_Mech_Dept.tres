@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://b8el2iheshgh6" path="res://Currencies/University/Offices/Airship_access.tres" id="2_6i5ip"]
 [ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_0dnwd"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_0ehpw"]
+[ext_resource type="Resource" uid="uid://cb5rwgmdtf7al" path="res://Currencies/Magic/Ergomancy/Knowledge_Ergomancy.tres" id="5_jo10d"]
 
 [resource]
 script = ExtResource("4_0ehpw")
@@ -16,6 +17,7 @@ ExtResource("3_0dnwd"): 0
 job_mask = Dictionary[ExtResource("1_jo10d"), int]({
 ExtResource("2_6i5ip"): 1
 })
+upper_mask = Array[ExtResource("1_jo10d")]([ExtResource("5_jo10d")])
 make_tooltip = false
 repeats = false
 make_popup = true

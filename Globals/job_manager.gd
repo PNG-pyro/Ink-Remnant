@@ -14,6 +14,7 @@ var simple_jobs: Array[Job] = [
 	load("res://Currencies/Magic/Oneiromancy/Practice_Oneiromancy.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Practice_Mirrormancy.tres"),
 	load("res://Currencies/Magic/Thalassomancy/Practice_Thalassomancy.tres"),
+	load("res://Currencies/Magic/Ergomancy/Practice_Ergomancy.tres"),
 	
 	load("res://Currencies/Telescope/Chart_the_stars.tres"),
 ]
@@ -59,6 +60,8 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Magic/Mirrormancy/Research_Mirrormancy.tres"),
 	
 	load("res://Currencies/Magic/Thalassomancy/Research_Thalassomancy.tres"),
+	
+	load("res://Currencies/Magic/Ergomancy/Research_Ergomancy.tres"),
 	
 	load("res://Currencies/Mirror/Ticker/Create_mirror_seed.tres"),
 	load("res://Currencies/Mirror/Upgrades/Build_Kaleidoscope_box.tres"),
@@ -220,6 +223,7 @@ var journal_notes: Array[Job] = [
 	load("res://Currencies/Journal/Notes/Re-Read_Oneiromancy.tres"),
 	load("res://Currencies/Journal/Notes/Re-Read_Mirrormancy.tres"),
 	load("res://Currencies/Journal/Notes/Re-Read_Thalassomancy.tres"),
+	load("res://Currencies/Journal/Notes/Re-Read_Ergomancy.tres"),
 ]
 
 var journal_locks: Array[Job] = [
@@ -240,6 +244,8 @@ var airship_jobs: Array[Job] = [
 	load("res://Currencies/Clockwork_Isle/Relink_Eightfold_escapement.tres"),
 	load("res://Currencies/Clockwork_Isle/Refill_hadean_chronometer.tres"),
 	load("res://Currencies/Clockwork_Isle/Calibrate_specular_armillary.tres"),
+	load("res://Currencies/Clockwork_Isle/Fly_clockwork_isle.tres"),
+	load("res://Currencies/Clockwork_Isle/Discover_Ergomancy.tres"),
 	load("res://Currencies/Journal/hints/EOC.tres"),
 ]
 var all_jobs: Array[Job] = (tickers + 
