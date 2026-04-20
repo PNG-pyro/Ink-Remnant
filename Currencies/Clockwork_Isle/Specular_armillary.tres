@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://nr418y7847cy"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_f6q4a"]
+
+[resource]
+script = ExtResource("1_f6q4a")
+name = "Specular Armillary"
+max_amount = 1
+tick_types = null
+makes_label = false
+airship_part = true
+has_been_seen = true
+stays_visible = true
+is_hidden = true
+make_tooltip = true
+tooltip_says = "Predictive mechanims assist navigation"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

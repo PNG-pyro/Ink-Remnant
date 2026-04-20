@@ -16,6 +16,12 @@ extends Node
 	load("res://Currencies/Clockwork/Tickers/Clockwork_Arm.tres"),
 	load("res://Currencies/Clockwork/Upgrades/Typewriter.tres"),
 	load("res://Currencies/Clockwork/Upgrades/Clock.tres"),
+	load("res://Currencies/Clockwork_Isle/Cabochon_Tractors.tres"),
+	load("res://Currencies/Clockwork_Isle/Cyanometric_Tourbillon.tres"),
+	load("res://Currencies/Clockwork_Isle/Dreamsilver_Barometer.tres"),
+	load("res://Currencies/Clockwork_Isle/Eightfold_Escapement.tres"),
+	load("res://Currencies/Clockwork_Isle/Hadean_Chronometer.tres"),
+	load("res://Currencies/Clockwork_Isle/Specular_armillary.tres"),
 	load("res://Currencies/Crystal/Crystal.tres"),
 	load("res://Currencies/Crystal/Upgrades/velvet_box.tres"),
 	load("res://Currencies/Deep_Water/Deep_Water.tres"),
@@ -92,6 +98,8 @@ extends Node
 	
 	load("res://Currencies/Magic/Cyanomancy/Rules_Of_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres"),
+	
+	load("res://Currencies/Magic/Ergomancy/Rules_of_Ergomancy.tres"),
 	
 	load("res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres"),
 	

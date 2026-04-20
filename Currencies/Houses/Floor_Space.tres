@@ -8,4 +8,5 @@ name = "Floor Space"
 max_amount = 2
 tick_types = null
 has_been_seen = true
+stays_visible = true
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

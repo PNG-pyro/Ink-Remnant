@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://wyj1aysbnphn"
+path="res://.godot/imported/Jeremiah_University.dialogue-2d9edc3d86bea7c824a86ea5351fc98e.tres"
+
+[deps]
+
+source_file="res://Currencies/University/Outside/Jeremiah_University.dialogue"
+dest_files=["res://.godot/imported/Jeremiah_University.dialogue-2d9edc3d86bea7c824a86ea5351fc98e.tres"]
+
+[params]
+
+defaults=true

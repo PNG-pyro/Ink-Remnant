@@ -184,7 +184,10 @@ var market_people_jobs: Array[Job] = [
 
 var university_outside: Array[Job] = [
 	load("res://Currencies/University/Outside/Visit_university.tres"),
-	load("res://Currencies/Journal/hints/EOC.tres"),
+	load("res://Currencies/University/Outside/Head_to_Mechanics_Department.tres"),
+	load("res://Currencies/University/Outside/Speak_with_Mechanic_Student.tres"),
+	load("res://Currencies/University/Outside/Speak_with_Jeremiah.tres"),
+	
 ]
 
 var university_inside: Array[Job] = [
@@ -207,6 +210,7 @@ var journal_hints: Array[Job] = [
 	load("res://Currencies/Journal/hints/Ride_the_Butterfly_Cab.tres"),
 	load("res://Currencies/Journal/hints/Talk_with_headmaster.tres"),
 	load("res://Currencies/Journal/hints/Visit_the_bank.tres"),
+	load("res://Currencies/Journal/hints/Visit_Mech_Dept.tres"),
 ]
 
 var journal_notes: Array[Job] = [
@@ -226,6 +230,18 @@ var journal_locks: Array[Job] = [
 	load("res://Currencies/Journal/locks/Examine_third_lock.tres"),
 ]
 
+var airship_jobs: Array[Job] = [
+	load("res://Currencies/Clockwork_Isle/Examine_airship.tres"),
+	load("res://Currencies/Clockwork_Isle/Study_Airship.tres"),
+	load("res://Currencies/Clockwork_Isle/Derive_ergomancy.tres"),
+	load("res://Currencies/Clockwork_Isle/Create_Cabochon_Tractors.tres"),
+	load("res://Currencies/Clockwork_Isle/Balance_Cyanometric_Tourbillon.tres"),
+	load("res://Currencies/Clockwork_Isle/Weave_Barometer.tres"),
+	load("res://Currencies/Clockwork_Isle/Relink_Eightfold_escapement.tres"),
+	load("res://Currencies/Clockwork_Isle/Refill_hadean_chronometer.tres"),
+	load("res://Currencies/Clockwork_Isle/Calibrate_specular_armillary.tres"),
+	load("res://Currencies/Journal/hints/EOC.tres"),
+]
 var all_jobs: Array[Job] = (tickers + 
 upgrades + 
 trades + 
@@ -245,5 +261,6 @@ university_inside +
 university_offices +
 journal_hints +
 journal_notes +
-journal_locks
+journal_locks +
+airship_jobs
 )

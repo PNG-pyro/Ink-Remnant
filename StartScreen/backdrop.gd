@@ -20,6 +20,7 @@ extends Node
 @onready var button_stack_journal1 = %"JournalHints"
 @onready var button_stack_journal2 = %"JournalNotes"
 @onready var button_stack_journal3 = %"JournalLocks"
+@onready var button_stack_airship = %"ButtonStackAirship"
 
 @onready var seen_eoc = false
 
@@ -57,12 +58,12 @@ func _ready():
 	button_stack_journal1.populate(JobManager.journal_hints)
 	button_stack_journal2.populate(JobManager.journal_notes)
 	button_stack_journal3.populate(JobManager.journal_locks)
-	
+	button_stack_airship.populate(JobManager.airship_jobs)
 	
 	
 	if not SaveManager.load(SaveManager.save_name_3):
 		var starting_popup = story_popup.instantiate()
-		starting_popup.label_text = "You're a homeless waif in a magical city. Your only keepsake is a spell-locked journal found with you at birth. The only way to go from here is up!"
+		starting_popup.label_text = "You're a homeless waif in a magical city. Your only keepsake is a spell-locked journal found with you as a baby. The only way to go from here is up!"
 		starting_popup.button_text = "Search the city"
 		starting_popup.borderless = true
 		display_popup(starting_popup)
@@ -77,6 +78,7 @@ func _ready():
 	
 	SignalHub.resource_updated.emit(CurrencyManager.get_currency("Default Currency"), 0)
 	
+	SceneManager.set_scene(SceneManager.Scene.CITY)
 	
 
 

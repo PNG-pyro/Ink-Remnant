@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cvgih2w513uul"
+path="res://.godot/imported/Mech_student_university.dialogue-969e32d4e1b97163792fc8819887f1ee.tres"
+
+[deps]
+
+source_file="res://Currencies/University/Outside/Mech_student_university.dialogue"
+dest_files=["res://.godot/imported/Mech_student_university.dialogue-969e32d4e1b97163792fc8819887f1ee.tres"]
+
+[params]
+
+defaults=true

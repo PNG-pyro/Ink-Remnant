@@ -23,4 +23,7 @@ repeats = false
 make_popup = true
 popup_text = "You learned how to summon a Butterfly Cab from the markets; you should see where it takes you. Even if you can't learn a new magic, there might be someone who can point you in the right direction..."
 button_text = "OK"
+signal_name = "appear_market"
+signal_name_2 = "appear_library"
+signal_name_3 = "appear_tower"
 metadata/_custom_type_script = "uid://chnttjydh538r"

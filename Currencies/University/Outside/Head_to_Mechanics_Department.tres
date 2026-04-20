@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://ba00xq4nkgx5q"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_mb3um"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_od4mm"]
+[ext_resource type="Resource" uid="uid://b8el2iheshgh6" path="res://Currencies/University/Offices/Airship_access.tres" id="2_t2mi8"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_3tdpf"]
+
+[resource]
+script = ExtResource("2_od4mm")
+job_name = "   Head to the Mechanics Department"
+job_desc = "You head for the where the Clockwork Isle is being stored..."
+job_story = "It's a bit of a walk. "
+job_reward = Dictionary[ExtResource("1_mb3um"), int]({
+ExtResource("3_3tdpf"): 0
+})
+job_mask = Dictionary[ExtResource("1_mb3um"), int]({
+ExtResource("2_t2mi8"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "Recalling the Headmaster's directions, you head through the University campus towards the back. It's a pleasant walk, but the closer you get, the more your destination starts to look... strange. It's almost like someone built an impromptu sheet-metal shelter over a huge clockwork mechanism. "
+button_text = "You approach..."
+signal_name = "appear_mechanics"
+signal_name_2 = "appear_airship"
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cyifxlfgkbt4l"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_4v1e6"]
+[ext_resource type="Resource" uid="uid://buakd3dxh85m5" path="res://Currencies/Clockwork/Clockwork.tres" id="2_hy0gg"]
+[ext_resource type="Resource" uid="uid://bcgrkywtu7n43" path="res://Currencies/Magic/Ergomancy/Rules_of_Ergomancy.tres" id="3_ypdef"]
+[ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Octomancy/Rules_Of_Octomancy.tres" id="4_3145p"]
+[ext_resource type="Resource" uid="uid://bw13bt8dnqx17" path="res://Currencies/Clockwork_Isle/Eightfold_Escapement.tres" id="4_cf27l"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="7_o4dij"]
+
+[resource]
+script = ExtResource("7_o4dij")
+job_name = "Re-link the eightfold escapement"
+job_desc = "Octomancy is, as ever, straightforwards..."
+job_story = "But frustrating in its own special way."
+job_reward = Dictionary[ExtResource("1_4v1e6"), int]({
+ExtResource("4_cf27l"): 1
+})
+job_cost = Dictionary[ExtResource("1_4v1e6"), int]({
+ExtResource("2_hy0gg"): 11,
+ExtResource("3_ypdef"): 4,
+ExtResource("4_3145p"): 1
+})
+job_mask = Dictionary[ExtResource("1_4v1e6"), int]({
+ExtResource("3_ypdef"): 12
+})
+upper_mask = Array[ExtResource("1_4v1e6")]([ExtResource("4_cf27l")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

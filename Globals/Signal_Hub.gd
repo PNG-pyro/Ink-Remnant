@@ -33,6 +33,8 @@ signal appear_thalassomancer
 signal appear_market
 signal appear_library
 signal appear_tower
+signal appear_airship
+signal appear_mechanics
 signal disappear_people
 
 signal appear_university

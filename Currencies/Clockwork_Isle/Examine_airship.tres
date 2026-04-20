@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bspnhk8mbcuko"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_5jbl5"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_d3wx1"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_hxeq8"]
+
+[resource]
+script = ExtResource("2_d3wx1")
+job_name = "   Examine the Clockwork Isle"
+job_desc = "You wander around the sheet-metal hangar, inspecting the beast."
+job_story = "Finally, you return to work, curiosity satisfied."
+job_reward = Dictionary[ExtResource("1_5jbl5"), int]({
+ExtResource("2_hxeq8"): 0
+})
+repeats = false
+make_popup = true
+popup_text = "You take a while to examine the airship, such as it is. It looks like nothing so much as the world's largest skeleton clock, with speheres and tubes bolted on for humans to ride in. The whole thing is absolutely massive, taking up easily three times the space a normal dirigible would."
+button_text = "A dirigible has nothing on this."
+metadata/_custom_type_script = "uid://chnttjydh538r"

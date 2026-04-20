@@ -9,7 +9,9 @@ class_name Currency
 @export var tick_amount: int = 0
 @export var is_upgrade: bool = false
 @export var makes_label: bool = true
+@export var airship_part: bool = false
 @export var has_been_seen: bool = false
+@export var stays_visible: bool = false
 @export var upgrade_target: Dictionary[Currency,int]
 @export var is_hidden: bool = false
 @export var make_tooltip: bool = false
@@ -43,7 +45,7 @@ func subtract(price: int):
 
 
 func update_seen() -> bool:
-	if amount > 0:
+	if amount > 0 or stays_visible:
 		has_been_seen = true
 	return has_been_seen
 	

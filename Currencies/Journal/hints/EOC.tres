@@ -1,9 +1,14 @@
 [gd_resource type="Resource" script_class="Job" format=3 uid="uid://bb4vg1dbt1a3v"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_0jjps"]
+[ext_resource type="Resource" uid="uid://cb7f0g5xa4jr2" path="res://Currencies/Clockwork_Isle/Cabochon_Tractors.tres" id="2_4qtv0"]
 [ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_56f3h"]
-[ext_resource type="Resource" uid="uid://b8el2iheshgh6" path="res://Currencies/University/Offices/Airship_access.tres" id="2_n43bu"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_n43bu"]
+[ext_resource type="Resource" uid="uid://b02ief73c1fls" path="res://Currencies/Clockwork_Isle/Cyanometric_Tourbillon.tres" id="3_tvve7"]
+[ext_resource type="Resource" uid="uid://cpggvjtcmm57w" path="res://Currencies/Clockwork_Isle/Dreamsilver_Barometer.tres" id="4_lybtc"]
+[ext_resource type="Resource" uid="uid://bw13bt8dnqx17" path="res://Currencies/Clockwork_Isle/Eightfold_Escapement.tres" id="5_efify"]
+[ext_resource type="Resource" uid="uid://dsf5v411h4e61" path="res://Currencies/Clockwork_Isle/Hadean_Chronometer.tres" id="6_f5o5f"]
+[ext_resource type="Resource" uid="uid://nr418y7847cy" path="res://Currencies/Clockwork_Isle/Specular_armillary.tres" id="7_yfqpx"]
 
 [resource]
 script = ExtResource("3_n43bu")
@@ -14,7 +19,12 @@ job_reward = Dictionary[ExtResource("1_0jjps"), int]({
 ExtResource("2_56f3h"): 0
 })
 job_mask = Dictionary[ExtResource("1_0jjps"), int]({
-ExtResource("2_n43bu"): 1
+ExtResource("2_4qtv0"): 4,
+ExtResource("3_tvve7"): 7,
+ExtResource("4_lybtc"): 2,
+ExtResource("5_efify"): 8,
+ExtResource("6_f5o5f"): 3,
+ExtResource("7_yfqpx"): 1
 })
 repeats = false
 make_popup = true

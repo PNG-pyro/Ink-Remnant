@@ -7,7 +7,7 @@ func _on_pressed() -> void:
 		DirAccess.remove_absolute(path)
 		for currency in CurrencyManager.all_currencies:
 			currency.amount = 0
-			if currency.name != "Floor Space":
+			if not currency.stays_visible:
 				currency.has_been_seen = false
 		for job in JobManager.all_jobs:
 			job.shows_up = false

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dgkpxwc76vird"]
+
+[ext_resource type="Resource" uid="uid://wyj1aysbnphn" path="res://Currencies/University/Outside/Jeremiah_University.dialogue" id="1_065qq"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_mbfh3"]
+[ext_resource type="Resource" uid="uid://b8el2iheshgh6" path="res://Currencies/University/Offices/Airship_access.tres" id="2_065qq"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_fy53w"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_rw6ga"]
+
+[resource]
+script = ExtResource("4_rw6ga")
+job_name = "   Speak with Jeremiah"
+job_desc = "You notice the local mage who taught you thalassomancy...."
+job_story = "So he was a student here. No wonder - he seemed systematically taught."
+job_reward = Dictionary[ExtResource("1_mbfh3"), int]({
+ExtResource("3_fy53w"): 0
+})
+job_mask = Dictionary[ExtResource("1_mbfh3"), int]({
+ExtResource("2_065qq"): 1
+})
+repeats = false
+start_dialogue = true
+dialogue = ExtResource("1_065qq")
+button_appears_on = "appear_mechanics"
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,18 @@
+~ start
+You: You notice an affable-looking young woman carefully rolling an oversized toolbox across the campus, and stop her for a moment. 
+~ Mid
+- "Are you maybe from the Mechanics Department?" 
+	Mechanic: "Sure, and?" => Mid
+- "Want a hand with that?" 
+	Mechanic: "Hey, if you're offering." She motions for you to grab the handle on the other side, and you join her in maneuvering the metal contraption. => Mid
+- "Know anything about the Clockwork Isle?" 
+	Mechanic: "Practically inside and out!" She laughs. "I've been studying the Isle since I was a freshie. It's a right beastie of a machine, I'll tell you!" => Mid
+- "Does the department do anything with the Isle?"
+	Mechanic: "Well, what we can." She shrugs, and the toolbox jolts. "We calibrate and study it according to what we can figure out, but we just don't have the supplies or magics to do much more." She looks into the distance. "Someday, maybe..." => Mid
+- "What is the Isle like?" 
+	Mechanic: "You'll see it yourself, in a moment," she says, and sure enough, as you round a curve, you can see straight through the sheet-metal structure errected in a field, covering a very, very large clockwork contraption. It's a watchmaker's nightmare, with ten-foot flywheels and a mainspring the size of a house. This is an 'airship' in function only - there's nothing shiplike or airy about this hunk of bronze and steel. It's almost ferocious, as if it will leap up and devour the sky. => Mid
+- "Bet I can get it flying."
+	Mechanic: "That would be amazing!" Her whole face lights up with a smile. "And the Univeristy would be all over you if you did; bet they'd even let you cruise it around a bit." Her smile turns mischevious. "Not that they could neccesarily stop you..."
+- "Oh, here we are." 
+	The toolbox rattles through one last door, only denting the frame slightly, and you're in the Mechanics Department. => END
+=> END

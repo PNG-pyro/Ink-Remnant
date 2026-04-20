@@ -6,8 +6,8 @@ var label_type: Currency = CurrencyManager.default_curency
 var amount: int = 0
 var max_amount: int = 0
 var currency_name: String = "None"
-var text_color
-var theme_color
+var text_color = Color.YELLOW
+var theme_color = Color.WHITE
 
 
 func _ready() -> void:
@@ -90,7 +90,7 @@ func spawn_neg_popup(txt_amount: int):
 	
 
 func update_tooltip(_a = null, _b = null):
-	var line: String = ""
+	var line: String = "[color=white] "
 	
 	if label_type.is_ticker:
 		for type in label_type.tick_types: 
@@ -109,6 +109,7 @@ func update_tooltip(_a = null, _b = null):
 			if item.amount == 0:
 				continue
 			line += "Plus " + str(item.tick_types[label_type] * item.amount) + " per second from " + str(item.amount) + " " + item.name + "\n"
+	line += "[/color]"
 	tooltip_text = line
 	
 func _make_custom_tooltip(for_text):

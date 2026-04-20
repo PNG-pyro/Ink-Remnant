@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://canleebqnd42k"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_76drl"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_5kx66"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_7fyc3"]
+
+[resource]
+script = ExtResource("2_5kx66")
+job_name = "   Research the Clockwork Isle"
+job_desc = "You clamber up and down the outsides..."
+job_story = "And meticulously document the insides."
+job_reward = Dictionary[ExtResource("1_76drl"), int]({
+ExtResource("2_7fyc3"): 88
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://cpggvjtcmm57w"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_jwtnt"]
+
+[resource]
+script = ExtResource("1_jwtnt")
+name = "Dreamsilver Barometer"
+max_amount = 2
+tick_types = null
+makes_label = false
+airship_part = true
+has_been_seen = true
+stays_visible = true
+is_hidden = true
+make_tooltip = true
+tooltip_says = "Accurate to one-half a daydream"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

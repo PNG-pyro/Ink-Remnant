@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bly5mdkvqr574"]
+
+[ext_resource type="Resource" uid="uid://cvgih2w513uul" path="res://Currencies/University/Outside/Mech_student_university.dialogue" id="1_kark1"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_wq0u7"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_ejkku"]
+[ext_resource type="Resource" uid="uid://b8el2iheshgh6" path="res://Currencies/University/Offices/Airship_access.tres" id="2_kark1"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_xuxeb"]
+
+[resource]
+script = ExtResource("2_ejkku")
+job_name = "   Speak with a student on the way to the Mechanics Department"
+job_desc = "You spot a passing student and take an opportunity to ask some questions..."
+job_story = "Well, that was interesting."
+job_reward = Dictionary[ExtResource("1_wq0u7"), int]({
+ExtResource("2_xuxeb"): 0
+})
+job_mask = Dictionary[ExtResource("1_wq0u7"), int]({
+ExtResource("2_kark1"): 1
+})
+repeats = false
+start_dialogue = true
+dialogue = ExtResource("1_kark1")
+button_appears_on = "appear_mechanics"
+metadata/_custom_type_script = "uid://chnttjydh538r"

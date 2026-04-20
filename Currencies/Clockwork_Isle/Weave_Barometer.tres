@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dmgek4p0if1i8"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_a2bju"]
+[ext_resource type="Resource" uid="uid://buakd3dxh85m5" path="res://Currencies/Clockwork/Clockwork.tres" id="4_cro4p"]
+[ext_resource type="Resource" uid="uid://d4b7t4yojnf5r" path="res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres" id="4_k8rv2"]
+[ext_resource type="Resource" uid="uid://tkfohwf1kv8v" path="res://Currencies/Dreamsilver/Dream_Silver.tres" id="5_6bu4p"]
+[ext_resource type="Resource" uid="uid://cpggvjtcmm57w" path="res://Currencies/Clockwork_Isle/Dreamsilver_Barometer.tres" id="5_a2bju"]
+[ext_resource type="Resource" uid="uid://bcgrkywtu7n43" path="res://Currencies/Magic/Ergomancy/Rules_of_Ergomancy.tres" id="5_nyke1"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="7_6gp0y"]
+
+[resource]
+script = ExtResource("7_6gp0y")
+job_name = "   Weave a dreamsilver barometer"
+job_desc = "You need a comb made from starlight..."
+job_story = "Which is easy enough to dream up."
+job_reward = Dictionary[ExtResource("1_a2bju"), int]({
+ExtResource("5_a2bju"): 1
+})
+job_cost = Dictionary[ExtResource("1_a2bju"), int]({
+ExtResource("4_cro4p"): 66,
+ExtResource("5_nyke1"): 20,
+ExtResource("4_k8rv2"): 6,
+ExtResource("5_6bu4p"): 22
+})
+job_mask = Dictionary[ExtResource("1_a2bju"), int]({
+ExtResource("5_nyke1"): 9
+})
+upper_mask = Array[ExtResource("1_a2bju")]([ExtResource("5_a2bju")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

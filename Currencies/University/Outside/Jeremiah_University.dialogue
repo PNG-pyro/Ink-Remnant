@@ -1,0 +1,14 @@
+~ start
+On the way to the Mechanics Department, you notice the mage who taught you thalassomancy, Jeremiah. You haven't seen him since the Butterfly Courtyard, and decide to go say hello. 
+~ Mid
+- "You were a student here?"
+	"Yeah, for the past year. Tuition isn't easy, but it's a lot less trouble than trying to research on your own." He shakes his head. => Mid
+- "What's with... that?" \n You wave to the Mechanics Department ahead. 
+	"Ah?" He looks back and forth between you and the strange aglommeration of shapes looming ahead. "Did you get access to the Clockwork Isle?" He sounds mildly amazed. 
+	- "That doesn't look much like an airship..."
+		"Oh, the Clockwork Isle is only an airship in that it flies, really." He considers for a moment. "Honestly, you'd likely understand it better than me. You've built clocks and stuff." => Mid
+- "Want to buy some deep water?" 
+	"Nah, but thanks for the offer." He waves a hand. "It's suprising how few places you can find it in the city, to be honest." => Mid
+- "Good talk, catch you later." 
+	"See you around." 
+=> END

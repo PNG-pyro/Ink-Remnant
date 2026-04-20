@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://svqsqc4q771b"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_jo10d"]
+[ext_resource type="Resource" uid="uid://b8el2iheshgh6" path="res://Currencies/University/Offices/Airship_access.tres" id="2_6i5ip"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_0dnwd"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_0ehpw"]
+
+[resource]
+script = ExtResource("4_0ehpw")
+job_name = "   Visit the Mechanics Department"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_jo10d"), int]({
+ExtResource("3_0dnwd"): 0
+})
+job_mask = Dictionary[ExtResource("1_jo10d"), int]({
+ExtResource("2_6i5ip"): 1
+})
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You've gotten access to the Clockwork Isle from the Headmaster; you should head to the University and look for the Mechanics Department."
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"
