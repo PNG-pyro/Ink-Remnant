@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b80jfv617vkab"]
+
+[ext_resource type="Resource" uid="uid://b6m7bvk8jnoe8" path="res://Currencies/University/Inside/Directions_to_alembic.dialogue" id="1_gg1b0"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_vhlke"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_w7edh"]
+[ext_resource type="Resource" uid="uid://gjr4sdxx5sv3" path="res://Currencies/University/Offices/Access_Alembic.tres" id="3_od62g"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="4_oo8wo"]
+
+[resource]
+script = ExtResource("2_w7edh")
+job_name = "Get directions to the alembic"
+job_desc = "You ask around, wondering where they keep the relic."
+job_story = "You're a bit surprised when you find it. "
+job_reward = Dictionary[ExtResource("1_vhlke"), int]({
+ExtResource("4_oo8wo"): 0
+})
+job_mask = Dictionary[ExtResource("1_vhlke"), int]({
+ExtResource("3_od62g"): 1
+})
+repeats = false
+start_dialogue = true
+dialogue = ExtResource("1_gg1b0")
+metadata/_custom_type_script = "uid://chnttjydh538r"

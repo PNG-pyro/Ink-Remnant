@@ -7,8 +7,8 @@
 [resource]
 script = ExtResource("3_bqmkm")
 job_name = "Visit the Grand Bank"
-job_desc = "You could use a new look..."
-job_story = "It's practical and looks reasonable."
+job_desc = "Your net worth is quite considerable..."
+job_story = "No need to carry all that money around personally. "
 job_reward = Dictionary[ExtResource("1_6f5yo"), int]({
 ExtResource("2_dav0w"): 0
 })

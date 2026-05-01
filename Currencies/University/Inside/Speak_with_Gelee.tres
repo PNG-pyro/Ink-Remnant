@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cjni6fmh25wnt"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_2qnph"]
+[ext_resource type="Resource" uid="uid://btdfhw0bb0vob" path="res://Currencies/University/Inside/Speak_With_Gelee.dialogue" id="1_iwwdm"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_p31w2"]
+[ext_resource type="Resource" uid="uid://gjr4sdxx5sv3" path="res://Currencies/University/Offices/Access_Alembic.tres" id="3_yjkum"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="4_nciy3"]
+
+[resource]
+script = ExtResource("2_p31w2")
+job_name = "Speak with Gelee"
+job_desc = "You spot the Butterfly Maiden at the Alchemy Department."
+job_story = "Maybe she teaches here too? Or maybe she's even a student."
+job_reward = Dictionary[ExtResource("1_2qnph"), int]({
+ExtResource("4_nciy3"): 0
+})
+job_mask = Dictionary[ExtResource("1_2qnph"), int]({
+ExtResource("3_yjkum"): 1
+})
+repeats = false
+start_dialogue = true
+dialogue = ExtResource("1_iwwdm")
+metadata/_custom_type_script = "uid://chnttjydh538r"

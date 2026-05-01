@@ -55,6 +55,7 @@ extends Node
 	load("res://Currencies/Library/LibraryLocation.tres"),
 	load("res://Currencies/Library/Blue_card.tres"),
 	
+	load("res://Currencies/Magic/Calcimancy/Knowledge_Calcimancy.tres"),
 	load("res://Currencies/Magic/Cyanomancy/Knowledge_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Lapidamancy/Knowledge_Lapidamancy.tres"),
 	load("res://Currencies/Magic/Octomancy/Knowledge_Octomancy.tres"),
@@ -97,6 +98,8 @@ extends Node
 	load("res://Currencies/Magic/Octomancy/Rules_Of_Octomancy.tres"),
 	load("res://Currencies/Magic/Octomancy/Octagon.tres"),
 	
+	load("res://Currencies/Magic/Calcimancy/Rules_of_Calcimancy.tres"),
+	
 	load("res://Currencies/Magic/Cyanomancy/Rules_Of_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres"),
 	
@@ -116,6 +119,16 @@ extends Node
 	load("res://Currencies/Mirror/Mirrors.tres"),
 	load("res://Currencies/Mirror/Upgrades/Kaleidoscope_Box.tres"),
 	load("res://Currencies/Mirror/Ticker/Mirror_Seed.tres"),
+	
+	load("res://Currencies/Skybound_Alembic/Counters/Azurine_Burner.tres"),
+	load("res://Currencies/Skybound_Alembic/Counters/Condensing_Coils.tres"),
+	load("res://Currencies/Skybound_Alembic/Counters/Crystalizing_dish.tres"),
+	load("res://Currencies/Skybound_Alembic/Counters/Cyanotic_Retort.tres"),
+	load("res://Currencies/Skybound_Alembic/Counters/Filtration_Gems.tres"),
+	load("res://Currencies/Skybound_Alembic/Counters/Graduated_Funnel.tres"),
+	load("res://Currencies/Skybound_Alembic/Counters/Octave_manifold.tres"),
+	load("res://Currencies/Skybound_Alembic/Counters/Oneiromantic_Aludel.tres"),
+	load("res://Currencies/Skybound_Alembic/Counters/Settling_Columns.tres"),
 	
 	load("res://Currencies/Telescope/Telescope.tres"),
 	

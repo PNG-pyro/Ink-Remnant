@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bve2ojskkbtqk"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_l25r6"]
+[ext_resource type="Resource" uid="uid://b481l10tmoxct" path="res://Currencies/Crystal/Crystal.tres" id="2_1hqaa"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_riy00"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_nbfuv"]
+[ext_resource type="Resource" uid="uid://bgk58kkborrcp" path="res://Currencies/Magic/Lapidamancy/Rules_of_Lapidamancy.tres" id="4_fpqea"]
+[ext_resource type="Resource" uid="uid://o5r7rdjeav42" path="res://Currencies/Magic/Calcimancy/Rules_of_Calcimancy.tres" id="5_fpqea"]
+[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Lapidamancy/Enchanted_Gem.tres" id="5_v7skp"]
+[ext_resource type="Resource" uid="uid://cspc6uffpqge2" path="res://Currencies/Skybound_Alembic/Counters/Filtration_Gems.tres" id="6_v7skp"]
+
+[resource]
+script = ExtResource("2_riy00")
+job_name = "Refacet the filtration gems"
+job_desc = "Lapidary is usually exacting work..."
+job_story = "But here, 'refacet' basically just means 'crush'. Still, it takes a while. "
+job_reward = Dictionary[ExtResource("1_l25r6"), int]({
+ExtResource("6_v7skp"): 3
+})
+job_cost = Dictionary[ExtResource("1_l25r6"), int]({
+ExtResource("2_1hqaa"): 6,
+ExtResource("3_nbfuv"): 10,
+ExtResource("4_fpqea"): 2,
+ExtResource("5_v7skp"): 1,
+ExtResource("5_fpqea"): 1
+})
+job_mask = Dictionary[ExtResource("1_l25r6"), int]({
+ExtResource("5_fpqea"): 3
+})
+upper_mask = Array[ExtResource("1_l25r6")]([ExtResource("6_v7skp")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

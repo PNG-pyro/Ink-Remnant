@@ -10,3 +10,4 @@ func set_vol(volume: float, _mute: bool):
 
 func _on_value_changed(new_value: float) -> void:
 	BackgroundMusicPlayer.volume_linear = new_value
+	SaveManager.save(SaveManager.save_name_3)

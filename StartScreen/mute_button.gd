@@ -6,6 +6,8 @@ func _ready() -> void:
 
 func _on_toggled(toggled_on: bool) -> void:
 	BackgroundMusicPlayer.stream_paused = toggled_on
+	SaveManager.save(SaveManager.save_name_3)
+
 
 
 func set_mute(_volume: float, mute: bool):

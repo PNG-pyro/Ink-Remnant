@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://chx1a8h6yiecq"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_76mve"]
+[ext_resource type="Resource" uid="uid://gjr4sdxx5sv3" path="res://Currencies/University/Offices/Access_Alembic.tres" id="2_76mve"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_khanw"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_iiyx3"]
+[ext_resource type="Resource" uid="uid://d4ibhxjofpnm2" path="res://Currencies/Magic/Calcimancy/Knowledge_Calcimancy.tres" id="5_d5qaw"]
+
+[resource]
+script = ExtResource("4_iiyx3")
+job_name = "   Visit the Alchemy Department"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_76mve"), int]({
+ExtResource("3_khanw"): 0
+})
+job_mask = Dictionary[ExtResource("1_76mve"), int]({
+ExtResource("2_76mve"): 1
+})
+upper_mask = Array[ExtResource("1_76mve")]([ExtResource("5_d5qaw")])
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You've gotten access to the Skybound Alembic from the Headmaster; you should head to the University and look for the Alchemy Department."
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"

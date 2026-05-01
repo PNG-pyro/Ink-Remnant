@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://3m7lwoeh2amq"]
+
+[ext_resource type="Resource" uid="uid://bgyhgvbuqpfod" path="res://Currencies/Skybound_Alembic/watch_alkahest.dialogue" id="1_8cnuc"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_ld6qc"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_38rfs"]
+[ext_resource type="Resource" uid="uid://dcwwn4y8e4ce2" path="res://Currencies/Skybound_Alembic/Counters/Azurine_Burner.tres" id="3_ec1k7"]
+[ext_resource type="Resource" uid="uid://1fx01o0adpq" path="res://Currencies/Skybound_Alembic/Counters/Condensing_Coils.tres" id="4_8ljq2"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_lqp7p"]
+[ext_resource type="Resource" uid="uid://drfec847qmu8j" path="res://Currencies/Skybound_Alembic/Counters/Crystalizing_dish.tres" id="5_awaom"]
+[ext_resource type="Resource" uid="uid://xjqlrq1q23w6" path="res://Currencies/Skybound_Alembic/Counters/Cyanotic_Retort.tres" id="6_5y4ee"]
+[ext_resource type="Resource" uid="uid://cspc6uffpqge2" path="res://Currencies/Skybound_Alembic/Counters/Filtration_Gems.tres" id="7_yg8lq"]
+[ext_resource type="Resource" uid="uid://dkbmdfvy7rcle" path="res://Currencies/Skybound_Alembic/Counters/Graduated_Funnel.tres" id="8_6saa2"]
+[ext_resource type="Resource" uid="uid://dnpnfbv3xgfur" path="res://Currencies/Skybound_Alembic/Counters/Octave_manifold.tres" id="9_g2sxm"]
+[ext_resource type="Resource" uid="uid://dpdq3udvqksqf" path="res://Currencies/Skybound_Alembic/Counters/Oneiromantic_Aludel.tres" id="10_uj7aw"]
+[ext_resource type="Resource" uid="uid://y2lwibteexs4" path="res://Currencies/Skybound_Alembic/Counters/Settling_Columns.tres" id="11_2nuar"]
+
+[resource]
+script = ExtResource("4_lqp7p")
+job_name = "Watch the production of alkahest"
+job_desc = "The alchemists are setting up for an extra-long production run..."
+job_story = "Now the relic has been tuned up, they plan to produce a batch of uinversal solvent."
+job_reward = Dictionary[ExtResource("2_ld6qc"), int]({
+ExtResource("3_38rfs"): 0
+})
+job_mask = Dictionary[ExtResource("2_ld6qc"), int]({
+ExtResource("3_ec1k7"): 16,
+ExtResource("4_8ljq2"): 3,
+ExtResource("5_awaom"): 9,
+ExtResource("6_5y4ee"): 4,
+ExtResource("7_yg8lq"): 30,
+ExtResource("8_6saa2"): 1,
+ExtResource("9_g2sxm"): 8,
+ExtResource("10_uj7aw"): 5,
+ExtResource("11_2nuar"): 11
+})
+repeats = false
+popup_text = "They Skybound Alembic is more than just a poetic name; the actual mechanism looks like a constellation of glass shards floating midair over a brass pedestal. As you watch, it swirls gently, each shard cupping a drop of liquid."
+button_text = "It's quite pretty"
+start_dialogue = true
+dialogue = ExtResource("1_8cnuc")
+metadata/_custom_type_script = "uid://chnttjydh538r"

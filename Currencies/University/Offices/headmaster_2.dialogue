@@ -7,6 +7,7 @@ Headmaster: "Which one are you interested in?"
 	- Get permission to study the Clockwork Isle - 15 Credits [if CurrencyManager.get_currency("University Credits").amount >= 15 and CurrencyManager.get_currency("Access: Clockwork Isle").amount == 0]
 		do CurrencyManager.add_currency("Access: Clockwork Isle", 1)
 		do CurrencyManager.subtract_currency("University Credits", 15)
+		Headmaster: "Of course, I'll notify the Mechanics Department immediately." He makes a note and nods. "You can head there whenever."
 		=> Mid
 	- Ask about a different relic
 	=> Mid
@@ -15,6 +16,7 @@ Headmaster: "Which one are you interested in?"
 	- Get permission to study the Skybound Alembic - 30 Credits [if CurrencyManager.get_currency("University Credits").amount >= 30 and CurrencyManager.get_currency("Access: Skybound Alembic").amount == 0]
 		do CurrencyManager.add_currency("Access: Skybound Alembic", 1)
 		do CurrencyManager.subtract_currency("University Credits", 30)
+		Headmaster: "Of course, I'll notify the Alchemy Department immediately." He makes a note and nods. "You can head there whenever."
 		=> Mid
 	- Ask about a different relic
 	=> Mid
@@ -23,6 +25,7 @@ Headmaster: "Which one are you interested in?"
 	- Get permission to study the Malachite Hive - 45 Credits [if CurrencyManager.get_currency("University Credits").amount >= 45 and CurrencyManager.get_currency("Access: Malachite Hive").amount == 0]
 		do CurrencyManager.add_currency("Access: Malachite Hive", 1)
 		do CurrencyManager.subtract_currency("University Credits", 45)
+		Headmaster: "Of course. The Malachite Hive isn't being studied by anyone recently." He makes a note and nods. "You can head there whenever."
 	- Ask about a different relic
 	=> Mid
 - Leave for now

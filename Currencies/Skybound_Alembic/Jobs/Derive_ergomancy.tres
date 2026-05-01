@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b58s87x4n74fp"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_5ph76"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_kt221"]
+[ext_resource type="Resource" uid="uid://o5r7rdjeav42" path="res://Currencies/Magic/Calcimancy/Rules_of_Calcimancy.tres" id="3_5ph76"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_601uy"]
+
+[resource]
+script = ExtResource("4_601uy")
+job_name = "Derive Calcimantic Rules"
+job_desc = "From your study of the Skybound Alembic..."
+job_story = "There are a few conclusions that can be reached."
+job_reward = Dictionary[ExtResource("1_5ph76"), int]({
+ExtResource("3_5ph76"): 2
+})
+job_cost = Dictionary[ExtResource("1_5ph76"), int]({
+ExtResource("2_kt221"): 94
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

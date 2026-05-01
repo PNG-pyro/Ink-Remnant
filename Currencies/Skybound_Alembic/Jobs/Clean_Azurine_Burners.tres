@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://35r1rviowqot"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_eblsn"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_15nwx"]
+[ext_resource type="Resource" uid="uid://x2slrv3bnrxg" path="res://Currencies/Magic/Cyanomancy/Rules_Of_Cyanomancy.tres" id="3_sul57"]
+[ext_resource type="Resource" uid="uid://cqnwbg1usieqd" path="res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres" id="4_15nwx"]
+[ext_resource type="Resource" uid="uid://o5r7rdjeav42" path="res://Currencies/Magic/Calcimancy/Rules_of_Calcimancy.tres" id="5_tmnkh"]
+[ext_resource type="Resource" uid="uid://dcwwn4y8e4ce2" path="res://Currencies/Skybound_Alembic/Counters/Azurine_Burner.tres" id="6_7car0"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="7_ruewa"]
+
+[resource]
+script = ExtResource("7_ruewa")
+job_name = "Clean the azurine burners"
+job_desc = "You get out the wirebrush and set to work..."
+job_story = "Then carefully re-color where the bluing has flaked off."
+job_reward = Dictionary[ExtResource("1_eblsn"), int]({
+ExtResource("6_7car0"): 2
+})
+job_cost = Dictionary[ExtResource("1_eblsn"), int]({
+ExtResource("3_15nwx"): 11,
+ExtResource("3_sul57"): 4,
+ExtResource("4_15nwx"): 1,
+ExtResource("5_tmnkh"): 1
+})
+job_mask = Dictionary[ExtResource("1_eblsn"), int]({
+ExtResource("5_tmnkh"): 9
+})
+upper_mask = Array[ExtResource("1_eblsn")]([ExtResource("6_7car0")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

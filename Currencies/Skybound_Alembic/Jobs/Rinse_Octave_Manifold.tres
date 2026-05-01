@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://hxgpoclvdgdn"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_cfj4x"]
+[ext_resource type="Resource" uid="uid://bslnw57acrori" path="res://Currencies/Magic/Octomancy/Rules_Of_Octomancy.tres" id="3_cfj4x"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_n3q65"]
+[ext_resource type="Resource" uid="uid://copigimsthy1y" path="res://Currencies/Deep_Water/Deep_Water.tres" id="4_wwf7e"]
+[ext_resource type="Resource" uid="uid://o5r7rdjeav42" path="res://Currencies/Magic/Calcimancy/Rules_of_Calcimancy.tres" id="5_7fraf"]
+[ext_resource type="Resource" uid="uid://dnpnfbv3xgfur" path="res://Currencies/Skybound_Alembic/Counters/Octave_manifold.tres" id="6_wwf7e"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="7_rnlek"]
+
+[resource]
+script = ExtResource("7_rnlek")
+job_name = "Rinse the octave manifold"
+job_desc = "If it was non-magical, you would rinse it three times..."
+job_story = "But since it's magic, you use a magic number."
+job_reward = Dictionary[ExtResource("1_cfj4x"), int]({
+ExtResource("6_wwf7e"): 1
+})
+job_cost = Dictionary[ExtResource("1_cfj4x"), int]({
+ExtResource("3_n3q65"): 10,
+ExtResource("3_cfj4x"): 4,
+ExtResource("4_wwf7e"): 1,
+ExtResource("5_7fraf"): 1
+})
+job_mask = Dictionary[ExtResource("1_cfj4x"), int]({
+ExtResource("5_7fraf"): 20
+})
+upper_mask = Array[ExtResource("1_cfj4x")]([ExtResource("6_wwf7e")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

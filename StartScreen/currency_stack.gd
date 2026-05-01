@@ -38,7 +38,7 @@ func re_update(res_type: Currency, amount: int):
 
 func re_upgrade(res_type: Currency, amount: int):
 	for label in visible_labels:
-		label.visible = label.label_type.update_seen()
 		if label.label_type.name != res_type.name:
 			continue
+		label.visible = label.label_type.update_seen()
 		label.upgrade(res_type, amount)

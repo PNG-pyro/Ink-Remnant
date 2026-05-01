@@ -21,6 +21,7 @@ extends Node
 @onready var button_stack_journal2 = %"JournalNotes"
 @onready var button_stack_journal3 = %"JournalLocks"
 @onready var button_stack_airship = %"ButtonStackAirship"
+@onready var button_stack_alembic = %"ButtonStackAlembic"
 
 @onready var seen_eoc = false
 
@@ -59,6 +60,7 @@ func _ready():
 	button_stack_journal2.populate(JobManager.journal_notes)
 	button_stack_journal3.populate(JobManager.journal_locks)
 	button_stack_airship.populate(JobManager.airship_jobs)
+	button_stack_alembic.populate(JobManager.alembic_jobs)
 	
 	
 	if not SaveManager.load(SaveManager.save_name_3):
@@ -107,10 +109,13 @@ func second_popup_open_recieved():
 	newpop.popup_centered()
 
 
-func check_maxes(_a = null):
-	for currency in CurrencyManager.all_currencies:
-		if currency.has_been_seen:
-			currency.get_max()
+func check_maxes(completed_job: Job):
+	for rewards in completed_job.job_reward:
+		rewards.get_max()
+		
+	#for currency in CurrencyManager.all_currencies:
+		#if currency.has_been_seen:
+			#currency.get_max()
 
 
 func autosave(_a = null):

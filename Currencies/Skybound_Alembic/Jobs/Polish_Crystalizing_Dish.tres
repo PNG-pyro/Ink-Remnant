@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://k5ujaxqnftou"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_nbmro"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_h5ywg"]
+[ext_resource type="Resource" uid="uid://c0fxtfd8v10g6" path="res://Currencies/Magic/Mirrormancy/Runescribed_Mirror.tres" id="3_nbmro"]
+[ext_resource type="Resource" uid="uid://bsvwq306hcvpj" path="res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres" id="4_a10t7"]
+[ext_resource type="Resource" uid="uid://o5r7rdjeav42" path="res://Currencies/Magic/Calcimancy/Rules_of_Calcimancy.tres" id="5_c03sw"]
+[ext_resource type="Resource" uid="uid://drfec847qmu8j" path="res://Currencies/Skybound_Alembic/Counters/Crystalizing_dish.tres" id="6_h5ywg"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="7_3ho0w"]
+
+[resource]
+script = ExtResource("7_3ho0w")
+job_name = "Polish the crystalizing dish"
+job_desc = "Alchemical residue usually comes off easily..."
+job_story = "But when it sticks, it sticks with magical persistence. "
+job_reward = Dictionary[ExtResource("1_nbmro"), int]({
+ExtResource("6_h5ywg"): 1
+})
+job_cost = Dictionary[ExtResource("1_nbmro"), int]({
+ExtResource("3_h5ywg"): 10,
+ExtResource("3_nbmro"): 1,
+ExtResource("4_a10t7"): 4,
+ExtResource("5_c03sw"): 1
+})
+job_mask = Dictionary[ExtResource("1_nbmro"), int]({
+ExtResource("5_c03sw"): 18
+})
+upper_mask = Array[ExtResource("1_nbmro")]([ExtResource("6_h5ywg")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

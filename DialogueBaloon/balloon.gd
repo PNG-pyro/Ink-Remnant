@@ -214,8 +214,8 @@ func _on_mutated(mutation: Dictionary) -> void:
 	if not mutation.is_inline:
 		is_waiting_for_input = false
 		will_hide_balloon = true
-		mutation_cooldown.autostart = true
 		mutation_cooldown.start(0.1)
+		mutation_cooldown.autostart = true
 
 
 func _on_balloon_gui_input(event: InputEvent) -> void:

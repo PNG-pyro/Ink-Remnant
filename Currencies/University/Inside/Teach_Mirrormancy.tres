@@ -12,7 +12,7 @@ job_name = "Teach Mirrormancy"
 job_desc = "You teach a guest class..."
 job_story = "The students are left with a deep impression."
 job_reward = Dictionary[ExtResource("1_8l50g"), int]({
-ExtResource("3_uqy05"): 1
+ExtResource("3_uqy05"): 2
 })
 job_cost = Dictionary[ExtResource("1_8l50g"), int]({
 ExtResource("2_gnip1"): 11

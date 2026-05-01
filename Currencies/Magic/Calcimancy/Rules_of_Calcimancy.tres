@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://o5r7rdjeav42"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_p16i2"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="2_ke6p1"]
+
+[resource]
+script = ExtResource("1_p16i2")
+name = "Rules - Calcimancy"
+max_amount = 26
+tick_types = null
+is_upgrade = true
+upgrade_target = Dictionary[ExtResource("1_p16i2"), int]({
+ExtResource("2_ke6p1"): 9
+})
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

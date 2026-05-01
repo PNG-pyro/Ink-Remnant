@@ -11,7 +11,7 @@
 script = ExtResource("2_vq1mf")
 job_name = "Enchant a gem"
 job_desc = "Most crystals have natural magic..."
-job_story = "If they're carefully cut, this can be accented or shaped."
+job_story = "If they are carefully cut, this can be accented or shaped."
 job_duration = 2
 job_reward = Dictionary[ExtResource("1_q0pfs"), int]({
 ExtResource("4_t0syn"): 1

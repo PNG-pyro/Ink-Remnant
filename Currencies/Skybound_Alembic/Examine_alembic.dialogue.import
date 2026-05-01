@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ckos20a64rn6r"
+path="res://.godot/imported/Examine_alembic.dialogue-acb43a2656e1dce80ec40071c7360e48.tres"
+
+[deps]
+
+source_file="res://Currencies/Skybound_Alembic/Examine_alembic.dialogue"
+dest_files=["res://.godot/imported/Examine_alembic.dialogue-acb43a2656e1dce80ec40071c7360e48.tres"]
+
+[params]
+
+defaults=true

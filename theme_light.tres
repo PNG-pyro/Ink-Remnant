@@ -2,6 +2,12 @@
 
 [ext_resource type="FontFile" uid="uid://ds46j10o17d8f" path="res://Font/NotoSansSymbols2-Regular.ttf" id="1_48p35"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eqpce"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bsdoq"]
 content_margin_left = 8.0
 content_margin_top = 4.0
@@ -31,6 +37,7 @@ Button/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 Button/colors/icon_normal_color = Color(1, 1, 1, 0)
 Button/colors/icon_pressed_color = Color(0, 0, 0, 1)
 Button/fonts/font = ExtResource("1_48p35")
+Button/styles/hover = SubResource("StyleBoxFlat_eqpce")
 Button/styles/normal = SubResource("StyleBoxFlat_bsdoq")
 CheckButton/styles/normal = SubResource("StyleBoxEmpty_bsdoq")
 Label/colors/font_color = Color(0, 0, 0, 1)

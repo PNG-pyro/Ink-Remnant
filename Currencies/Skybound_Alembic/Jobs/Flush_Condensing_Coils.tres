@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://dwvltrqsktr16"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_yfw3j"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_327tp"]
+[ext_resource type="Resource" uid="uid://copigimsthy1y" path="res://Currencies/Deep_Water/Deep_Water.tres" id="3_yfw3j"]
+[ext_resource type="Resource" uid="uid://cvuob7ccx631h" path="res://Currencies/Magic/Thalassomancy/Rules_Thalassomancy.tres" id="4_q3ooj"]
+[ext_resource type="Resource" uid="uid://o5r7rdjeav42" path="res://Currencies/Magic/Calcimancy/Rules_of_Calcimancy.tres" id="5_cn4pf"]
+[ext_resource type="Resource" uid="uid://1fx01o0adpq" path="res://Currencies/Skybound_Alembic/Counters/Condensing_Coils.tres" id="6_327tp"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="7_hmxt7"]
+
+[resource]
+script = ExtResource("7_hmxt7")
+job_name = "Flush the condensing coils"
+job_desc = "They just need a quick rinse in the right reagent..."
+job_story = "And all the gunk just wipes right out. "
+job_reward = Dictionary[ExtResource("1_yfw3j"), int]({
+ExtResource("6_327tp"): 1
+})
+job_cost = Dictionary[ExtResource("1_yfw3j"), int]({
+ExtResource("3_327tp"): 24,
+ExtResource("3_yfw3j"): 12,
+ExtResource("4_q3ooj"): 12,
+ExtResource("5_cn4pf"): 1
+})
+job_mask = Dictionary[ExtResource("1_yfw3j"), int]({
+ExtResource("5_cn4pf"): 15
+})
+upper_mask = Array[ExtResource("1_yfw3j")]([ExtResource("6_327tp")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

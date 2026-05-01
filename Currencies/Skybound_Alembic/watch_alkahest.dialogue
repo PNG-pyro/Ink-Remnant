@@ -1,0 +1,27 @@
+~ start
+You finish your last maintainance task and step back. As you do, the alchemists standing nearby each approach a different station, readying the Skybound Alembic for a long process. 
+~ Mid
+- Ask about alkahest
+	Alchemist: "Alkahest is often called a universal solvent." They sniff distainfully. "That is absolutely incorrect. While alkahest can dissolve anything, it can only do so to one concept or idea at a time. It would be better call it the ultimate specific solvent. Theoretically, all steps of alchemy can be reduced to 'apply alkahest', but the expense would be enourmous."
+	=> Mid
+- Observe Dissolution
+	You watch carefully as the prime reactant, a white crystalline salt, is dissolved into a clear liquid.
+	=> Mid
+- Observe Congelation
+	You observe the alchemist at the second station, carefully measuring a spell-binding powder of some sort. It smells oneiromantic, but you're not certain. 
+	=> Mid
+- Observe Cibation
+	You watch as the third alchemist accepts the congealed mass from the alembic, drawing it carefully into a settling pan before adding... are those butterfly scales? Curious. 
+	=> Mid
+- Observe Fixation
+	You watch the sparkly, thick liquid ooze through the tubes of the alembic, making its way through the fourth process. By pushing the reactants through specific patterns in the piping, the magical effects are stabilized. 
+	=> Mid
+- Observe Distillation
+	The penultimate step - before calcining the mixture, it's filtered through fine quartz sand, a stabilized representation of Earth, leaving behind a purer and more flamable product. 
+	=> Mid
+- Observe Calcination
+	The final step - the distillate is decanted into the alembic's central cavity. Then the azurine flame starts to heat up, compressed by special retorts until it rushes, flaring blue, across the whole mixture, which quickly starts to bubble. Within minutes, all that's left is a fine powder, the specific alkahest required. 
+	=> Mid
+- Ponder the procedure as a whole.
+	You run the steps through your mind again and again, until it stats making sense to you. Or is that the fumes? Better duck out - you don't need to help with cleanup anyways.
+=> END

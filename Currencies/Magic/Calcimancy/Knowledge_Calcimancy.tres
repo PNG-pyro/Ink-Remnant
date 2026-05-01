@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://d4ibhxjofpnm2"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_xeyik"]
+
+[resource]
+script = ExtResource("1_xeyik")
+name = "Knowledge: Calcimancy"
+max_amount = 1
+tick_types = null
+makes_label = false
+make_tooltip = true
+tooltip_says = "Knowledge of the magic of calcining"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

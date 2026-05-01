@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://wch7g82i6m13"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_oc7h6"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_pl330"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_f4wh1"]
+
+[resource]
+script = ExtResource("3_f4wh1")
+job_name = "   Research the Skybound Alembic"
+job_desc = "You circle the alembic's pedestal, examining the emergent patterns of the swirling glass shards as it reshapes and morphs from one configuration to another. "
+job_story = "You take notes and draw sketches."
+job_reward = Dictionary[ExtResource("1_oc7h6"), int]({
+ExtResource("2_pl330"): 93
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -89,7 +89,10 @@ func spawn_neg_popup(txt_amount: int):
 	tween.tween_callback(popup.queue_free)
 	
 
-func update_tooltip(_a = null, _b = null):
+func update_tooltip(resource_type: Currency, _amount: int):
+	if label_type.name != resource_type.name:
+		return 
+		
 	var line: String = "[color=white] "
 	
 	if label_type.is_ticker:
@@ -111,7 +114,8 @@ func update_tooltip(_a = null, _b = null):
 			line += "Plus " + str(item.tick_types[label_type] * item.amount) + " per second from " + str(item.amount) + " " + item.name + "\n"
 	line += "[/color]"
 	tooltip_text = line
-	
+
+
 func _make_custom_tooltip(for_text):
 	var label = RichTextLabel.new()
 	label.bbcode_enabled = true
@@ -121,15 +125,18 @@ func _make_custom_tooltip(for_text):
 	label.autowrap_mode = TextServer.AUTOWRAP_OFF
 	label.fit_content = true
 	return label
-	
-func is_full(_a = null, _b = null):
-	if color_text():
+
+
+func is_full(_resource_type: Currency, _amount: int):
+	#if label_type.name != resource_type.name:
+		#return
 		
-		if label_type.is_full():
-			self.add_theme_color_override("font_color", text_color)
-		else:
-			self.remove_theme_color_override("font_color")
-		
+	if color_text() and label_type.is_full():
+		self.add_theme_color_override("font_color", text_color)
+	else:
+		self.remove_theme_color_override("font_color")
+
+
 func color_text() -> bool:
 	if not label_type.makes_label:
 		return false
@@ -137,7 +144,7 @@ func color_text() -> bool:
 	if get_tree().current_scene.theme == load("res://theme_dark.tres"):
 		text_color = Color.YELLOW
 		theme_color = Color.WHITE
-	else:
+	elif get_tree().current_scene.theme == load("res://theme_light.tres"):
 		text_color = Color.BLUE
 		theme_color = Color.BLACK
 	return true

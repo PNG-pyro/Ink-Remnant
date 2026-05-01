@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://btdfhw0bb0vob"
+path="res://.godot/imported/Speak_With_Gelee.dialogue-39de635a790049cd9f534cd166366041.tres"
+
+[deps]
+
+source_file="res://Currencies/University/Inside/Speak_With_Gelee.dialogue"
+dest_files=["res://.godot/imported/Speak_With_Gelee.dialogue-39de635a790049cd9f534cd166366041.tres"]
+
+[params]
+
+defaults=true

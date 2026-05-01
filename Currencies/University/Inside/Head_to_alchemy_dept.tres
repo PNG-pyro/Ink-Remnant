@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cu3v1s34t11er"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_pt510"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_85ssr"]
+[ext_resource type="Resource" uid="uid://gjr4sdxx5sv3" path="res://Currencies/University/Offices/Access_Alembic.tres" id="2_llygm"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_ndgbf"]
+
+[resource]
+script = ExtResource("2_85ssr")
+job_name = "    Head to the Alchemy Department"
+job_desc = "Now that you have permission, you set out to find the Skybound Alembic."
+job_story = "It's probably very noticeable - once you know what you're looking for."
+job_reward = Dictionary[ExtResource("1_pt510"), int]({
+ExtResource("3_ndgbf"): 0
+})
+job_mask = Dictionary[ExtResource("1_pt510"), int]({
+ExtResource("2_llygm"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "The alchemy department isn't noticeably different from the rest; maybe the walls are a bit thicker and the ceiling thinner, but nothing is exploding - for now."
+button_text = "Head on in"
+signal_name = "appear_alembic"
+metadata/_custom_type_script = "uid://chnttjydh538r"

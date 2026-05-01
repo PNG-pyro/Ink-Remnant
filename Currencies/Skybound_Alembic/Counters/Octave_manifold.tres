@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://dnpnfbv3xgfur"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_l7p6u"]
+
+[resource]
+script = ExtResource("1_l7p6u")
+name = "Octave Manifold"
+max_amount = 8
+tick_types = null
+makes_label = false
+alembic_part = true
+has_been_seen = true
+stays_visible = true
+is_hidden = true
+make_tooltip = true
+tooltip_says = "For the redirection of gas or fluid."
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

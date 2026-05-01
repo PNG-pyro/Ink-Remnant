@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://p5rchnc3wcf0"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_d0kwo"]
+[ext_resource type="Resource" uid="uid://dcwwn4y8e4ce2" path="res://Currencies/Skybound_Alembic/Counters/Azurine_Burner.tres" id="3_pfot5"]
+[ext_resource type="Resource" uid="uid://1fx01o0adpq" path="res://Currencies/Skybound_Alembic/Counters/Condensing_Coils.tres" id="4_wqljj"]
+[ext_resource type="Resource" uid="uid://drfec847qmu8j" path="res://Currencies/Skybound_Alembic/Counters/Crystalizing_dish.tres" id="5_rslay"]
+[ext_resource type="Resource" uid="uid://xjqlrq1q23w6" path="res://Currencies/Skybound_Alembic/Counters/Cyanotic_Retort.tres" id="6_7kl5y"]
+[ext_resource type="Resource" uid="uid://cspc6uffpqge2" path="res://Currencies/Skybound_Alembic/Counters/Filtration_Gems.tres" id="7_2lrx2"]
+[ext_resource type="Resource" uid="uid://dkbmdfvy7rcle" path="res://Currencies/Skybound_Alembic/Counters/Graduated_Funnel.tres" id="8_v35e4"]
+[ext_resource type="Resource" uid="uid://dnpnfbv3xgfur" path="res://Currencies/Skybound_Alembic/Counters/Octave_manifold.tres" id="9_gl47u"]
+[ext_resource type="Resource" uid="uid://dpdq3udvqksqf" path="res://Currencies/Skybound_Alembic/Counters/Oneiromantic_Aludel.tres" id="10_hhtat"]
+[ext_resource type="Resource" uid="uid://d4ibhxjofpnm2" path="res://Currencies/Magic/Calcimancy/Knowledge_Calcimancy.tres" id="11_0akcv"]
+[ext_resource type="Resource" uid="uid://y2lwibteexs4" path="res://Currencies/Skybound_Alembic/Counters/Settling_Columns.tres" id="11_dcli5"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="13_jhenk"]
+
+[resource]
+script = ExtResource("13_jhenk")
+job_name = "Discover Calcimancy"
+job_desc = "It comes to you in a puff of steam and the slow swirl of the settling columns."
+job_story = "You quickly scribble down what you've realized for later study. "
+job_reward = Dictionary[ExtResource("2_d0kwo"), int]({
+ExtResource("11_0akcv"): 1
+})
+job_mask = Dictionary[ExtResource("2_d0kwo"), int]({
+ExtResource("3_pfot5"): 16,
+ExtResource("4_wqljj"): 3,
+ExtResource("5_rslay"): 9,
+ExtResource("6_7kl5y"): 4,
+ExtResource("7_2lrx2"): 30,
+ExtResource("8_v35e4"): 1,
+ExtResource("9_gl47u"): 8,
+ExtResource("10_hhtat"): 5,
+ExtResource("11_dcli5"): 11
+})
+upper_mask = Array[ExtResource("2_d0kwo")]([ExtResource("11_0akcv")])
+repeats = false
+make_popup = true
+popup_text = "Calcimancy - the final step in alchemy, reducing all the impurities to ash and driving them off, leaving behind only the purest products. "
+button_text = "Write this in your journal for later"
+metadata/_custom_type_script = "uid://chnttjydh538r"

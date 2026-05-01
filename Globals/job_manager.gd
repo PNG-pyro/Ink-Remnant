@@ -10,6 +10,7 @@ var simple_jobs: Array[Job] = [
 	load("res://Currencies/Research/Read_A_Scroll.tres"),
 	load("res://Currencies/Magic/Octomancy/Practice_Octomancy.tres"),
 	load("res://Currencies/Magic/Lapidamancy/Practice_Lapidamancy.tres"),
+	load("res://Currencies/Magic/Calcimancy/Practice_Calcimancy.tres"),
 	load("res://Currencies/Magic/Cyanomancy/Practice_Cyanomancy.tres"),
 	load("res://Currencies/Magic/Oneiromancy/Practice_Oneiromancy.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Practice_Mirrormancy.tres"),
@@ -54,6 +55,8 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Magic/Lapidamancy/Research_Lapidomancy.tres"),
 	
 	load("res://Currencies/Magic/Cyanomancy/Research_Cyanomancy.tres"),
+	
+	load("res://Currencies/Magic/Calcimancy/Research_Calcimancy.tres"),
 	
 	load("res://Currencies/Magic/Oneiromancy/Research_Oneiromancy.tres"),
 	
@@ -197,6 +200,9 @@ var university_inside: Array[Job] = [
 	load("res://Currencies/University/Inside/Teach_Mirrormancy.tres"),
 	load("res://Currencies/University/Inside/Teach_Oneiromancy.tres"),
 	load("res://Currencies/University/Inside/Teach_Thalassomancy.tres"),
+	load("res://Currencies/University/Inside/Head_to_alchemy_dept.tres"),
+	#load("res://Currencies/University/Inside/Directions_to_alembic.tres"),
+	load("res://Currencies/University/Inside/Speak_with_Gelee.tres"),
 ]
 
 var university_offices: Array[Job] = [
@@ -214,6 +220,7 @@ var journal_hints: Array[Job] = [
 	load("res://Currencies/Journal/hints/Talk_with_headmaster.tres"),
 	load("res://Currencies/Journal/hints/Visit_the_bank.tres"),
 	load("res://Currencies/Journal/hints/Visit_Mech_Dept.tres"),
+	load("res://Currencies/Journal/hints/Visit_Alchemy_Dept.tres"),
 ]
 
 var journal_notes: Array[Job] = [
@@ -246,8 +253,29 @@ var airship_jobs: Array[Job] = [
 	load("res://Currencies/Clockwork_Isle/Calibrate_specular_armillary.tres"),
 	load("res://Currencies/Clockwork_Isle/Fly_clockwork_isle.tres"),
 	load("res://Currencies/Clockwork_Isle/Discover_Ergomancy.tres"),
+]
+
+var alembic_jobs: Array[Job] = [
+	load("res://Currencies/Skybound_Alembic/Examine_Alembic.tres"),
+	load("res://Currencies/Skybound_Alembic/Study_Alembic.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Derive_ergomancy.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Assemble_Oneiromantic_Aludel.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Clean_Azurine_Burners.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Etch_Settling_Columns.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Flush_Condensing_Coils.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Mirror_Graduated_Funnel.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Polish_Crystalizing_Dish.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Test_Cyanotic_Retort.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Refacet_Filtration_Gems.tres"),
+	load("res://Currencies/Skybound_Alembic/Jobs/Rinse_Octave_Manifold.tres"),
+	load("res://Currencies/Skybound_Alembic/Watch_Alkahest.tres"),
+	load("res://Currencies/Skybound_Alembic/Discover_calcimancy.tres"),
 	load("res://Currencies/Journal/hints/EOC.tres"),
 ]
+
+
+
+
 var all_jobs: Array[Job] = (tickers + 
 upgrades + 
 trades + 

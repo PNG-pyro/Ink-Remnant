@@ -1,0 +1,18 @@
+~ start
+The Skybound Alembic is kept in a purpose-built lab a bit apart from the rest. Reactants are kept in cupboards along the walls; the Alembic itself is in the center of the room, looking like nothing so much as a slow-moving whirlwind of liquid glass, swirling and reshaping itself continually into whatever shapes an alchemist can imagine. 
+~ Mid
+- Grab a passing alchemist and ask about the Alembic. 
+	"Oh, you're here to research the alembic itself?" The alchemist you caught blinks owlishly under your scrutiny, but agrees. "The mechanism is very simple to use. The alembic can take all sorts of shapes, you simply need to move to the correct part of the room for them to appear." 
+	=> Mid
+- Watch the alchemists work. 
+	You stand by as the alchemists perform a reaction. The alembic grows various tools and facilities as needed, extruding glass from the central nebulous mass with smooth and silent efficiency. First a distilling flask and a condenser, then a separating column and a graduated funnel for precise dispensing. 
+	=> Mid
+- Test the alembic yourself.
+	You step forwards and watch the whirlwind of magic glass react to your presence with an extra swirl and quirk. It smoothly shapes itself into equipment as you bring a reactant near, dissolving the apparatus back into glass motes when you retract your hand. The Skybound Alembic is basically the perfect piece of lab equipment. 
+	=> Mid
+- Ask about calcining.
+	"Calcining, right." The alchemist you grabbed rubs his head. "Yes, that's what the alembic is designed for." They point to a flickering blue flame near the bottom of the shifting whorls of glass that make up the alembic. "See that? That's azurine fire, hellishly hot stuff. It tends to leave soot everywhere, so we don't use it often. But an important client ordered a batch of alkahest; if you help us clean up the relic, we'll let you stay and watch when we make it."
+	=> Mid
+- Return to your studies. 
+	You can divine the magics driving the mechanisms much more cleanly when the alembic is under operation, but it's not like there are no clues when it's still either.
+=> END

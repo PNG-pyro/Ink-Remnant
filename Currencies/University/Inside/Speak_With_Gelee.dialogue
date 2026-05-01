@@ -1,0 +1,19 @@
+~ start
+You spot Gelee, who normally spends her time at the Butterfly Courtyard. She's sitting in a hallway alcove, reading in the sun. Her butterfly Locus is perched on her headband, occasionally flapping its wings. 
+~ Mid
+- Head over to talk.
+	Gelee: She looks up as you approach, showing a sunny smile. "Hello! I see you've capitalized on being introduced to the Headmaster." She puts a bookmark in her book and gives you her full attention. "Did you have something to ask me?"
+	=> Mid
+- Ask about the relics.
+	Gelee: She absently fiddles with a wisp of her lush brown hair. "They come from Archmages, mostly." She frowns absently. "They hit a point where learning more magic doesn't help much, and often start building these... artifacts as a result. The more magics they know, the more arcane the resulting objects tend to be." 
+	=> Mid
+- Ask about Archmages.
+	Gelee: "It's interesting, sometimes I forget you're self-taught." She tilts her head slightly. "There's a saying you might have heard: 'There are nine great magics in the City'. Most mages find it difficult or impossible to learn more than nine different disciplines." 
+	Gelee: "Of course, there are more than nine magics, so it's often followed by the qualificaiton 'and some number of minor magics', or 'no-one knows which'. But traditionally, anyone who's mastered nine magics is considered an Archmage." 
+	=> Mid
+- Ask why she's here
+	Gelee: "Oh, I'm here to pick up some alkahest." She waves towards the Alchemy Department. "My mistress enjoys alchemy on occasion, but some reactants are just beyond the reach of a hobbyist."
+	=> Mid
+- Go back to what you were doing. 
+	Gelee gives you a wave, then goes back to her reading.
+=> END

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://dcwwn4y8e4ce2"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_hmewc"]
+
+[resource]
+script = ExtResource("1_hmewc")
+name = "Azurine Burners"
+max_amount = 16
+tick_types = null
+makes_label = false
+alembic_part = true
+has_been_seen = true
+stays_visible = true
+is_hidden = true
+make_tooltip = true
+tooltip_says = "The specific shade of blue is not just to look cool."
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

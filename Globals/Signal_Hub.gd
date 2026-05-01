@@ -36,6 +36,7 @@ signal appear_tower
 signal appear_airship
 signal appear_ergomancy
 signal appear_mechanics
+signal appear_alembic
 signal disappear_people
 
 signal appear_university

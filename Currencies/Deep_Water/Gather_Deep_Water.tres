@@ -11,7 +11,7 @@ job_name = "Collect deep water"
 job_desc = "From deep wells or sunless caverns, the brains of certain fish or even just drawn from a full fathom five..."
 job_story = "Deep water looks very similar to natural water. Very similar. "
 job_reward = Dictionary[ExtResource("1_homl3"), int]({
-ExtResource("3_8kdgn"): 1
+ExtResource("3_8kdgn"): 3
 })
 job_mask = Dictionary[ExtResource("1_homl3"), int]({
 ExtResource("2_2qaix"): 1

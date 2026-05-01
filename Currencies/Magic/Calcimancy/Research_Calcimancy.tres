@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c4t3ksp634ku1"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_7x0po"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_nhadj"]
+[ext_resource type="Resource" uid="uid://d4ibhxjofpnm2" path="res://Currencies/Magic/Calcimancy/Knowledge_Calcimancy.tres" id="3_00cf0"]
+[ext_resource type="Resource" uid="uid://o5r7rdjeav42" path="res://Currencies/Magic/Calcimancy/Rules_of_Calcimancy.tres" id="4_eeegu"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_qepp6"]
+
+[resource]
+script = ExtResource("5_qepp6")
+job_name = "Research Calcimancy"
+job_desc = "Yes, you appear to be ritually igniting small bundles of reagents on an altar..."
+job_story = "But this is science! You take notes and everything."
+job_duration = 4
+job_reward = Dictionary[ExtResource("1_7x0po"), int]({
+ExtResource("4_eeegu"): 3
+})
+job_cost = Dictionary[ExtResource("1_7x0po"), int]({
+ExtResource("2_nhadj"): 45
+})
+job_mask = Dictionary[ExtResource("1_7x0po"), int]({
+ExtResource("3_00cf0"): 1
+})
+upper_mask = Array[ExtResource("1_7x0po")]([ExtResource("4_eeegu")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -59,10 +59,11 @@ UniversityFrame=""
 JournalFrame=""
 AirshipFrame=""
 CreditsFrame=""
+AlembicFrame=""
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Currencies/Tower/Dialogues/TowerTest.dialogue", "res://Currencies/Market/People/Bank_people/Bank_teller.dialogue", "res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_bartender.dialogue", "res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_thalassomancer.dialogue", "res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_courtyard_waiter.dialogue", "res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_courtyard_acquaintance.dialogue", "res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Butcher.dialogue", "res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Gazebo.dialogue", "res://Currencies/University/Offices/headmaster.dialogue", "res://Currencies/University/Offices/headmaster_2.dialogue", "res://Currencies/journal.dialogue", "res://Currencies/University/Outside/Jeremiah_University.dialogue", "res://Currencies/University/Outside/Mech_student_university.dialogue", "res://Currencies/Clockwork_Isle/Fly_clockwork_isle.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Currencies/Tower/Dialogues/TowerTest.dialogue", "res://Currencies/Market/People/Bank_people/Bank_teller.dialogue", "res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_bartender.dialogue", "res://Currencies/Market/People/TipsyTentacle/tipsy_tentacle_thalassomancer.dialogue", "res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_courtyard_waiter.dialogue", "res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_courtyard_acquaintance.dialogue", "res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Butcher.dialogue", "res://Currencies/Market/People/Butterfly_Courtyard/Butterfly_Gazebo.dialogue", "res://Currencies/University/Offices/headmaster.dialogue", "res://Currencies/University/Offices/headmaster_2.dialogue", "res://Currencies/journal.dialogue", "res://Currencies/University/Outside/Jeremiah_University.dialogue", "res://Currencies/University/Outside/Mech_student_university.dialogue", "res://Currencies/Clockwork_Isle/Fly_clockwork_isle.dialogue", "res://Currencies/University/Inside/Directions_to_alembic.dialogue", "res://Currencies/University/Inside/Speak_With_Gelee.dialogue", "res://Currencies/Skybound_Alembic/Examine_alembic.dialogue", "res://Currencies/Skybound_Alembic/watch_alkahest.dialogue")
 
 [physics]
 

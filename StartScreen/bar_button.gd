@@ -35,6 +35,8 @@ var rect = ColorRect.new()
 @onready var parent: Node = $".."
 @onready var tween: Tween
 @onready var tween_duration: float = 0.5
+@onready var reward_currency: Currency = job_run.job_reward.keys()[0]
+@onready var reward_max: int = reward_currency.get_max()
 
 
 func _ready():
@@ -263,7 +265,7 @@ func update_tooltip():
 	
 	for price in job_run.job_reward:
 		if price.is_hidden:
-			line += "[color=white]		???[/color]"
+			line += "[color=white][/color]" #used to be ??? 
 			continue
 			
 		if price.is_full() and not price.name == "Floor Space" and not price.name == "Default Currency":
@@ -290,7 +292,7 @@ func update_tooltip():
 			else:
 				line += "[color=white]Floor Space: " + str(job_run.job_reward[price]) + "[/color]\n"# + "/" + str(price.max_amount)
 		else:
-			line += "[color=white]		???[/color]"
+			line += "[color=white][/color]" #???
 			
 	tooltip_text = line
 
@@ -339,8 +341,7 @@ func make_popup(popup_job: Job):
 
 
 func calc_duration() -> float:
-	var reward_currency: Currency = job_run.job_reward.keys()[0]
-	var reward_max: int = reward_currency.get_max()
+
 	var run_time: float = 1.0
 	
 	if reward_max >= 200:

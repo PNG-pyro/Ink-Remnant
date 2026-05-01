@@ -13,7 +13,7 @@
 
 [resource]
 script = ExtResource("10_053ok")
-job_name = "Fly the Clockwork Isle?"
+job_name = "Fly the Clockwork Isle"
 job_desc = "If you take off quick, surely no-one will notice..."
 job_story = "At least until it's too late!"
 job_reward = Dictionary[ExtResource("2_4txwx"), int]({

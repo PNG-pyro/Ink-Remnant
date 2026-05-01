@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://ctposxewygxuk"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_s0ffd"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_s0ffd"]
+[ext_resource type="Resource" uid="uid://d4ibhxjofpnm2" path="res://Currencies/Magic/Calcimancy/Knowledge_Calcimancy.tres" id="3_wbryp"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="4_vompu"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_7xsos"]
+
+[resource]
+script = ExtResource("5_7xsos")
+job_name = "    Gather magic from calcining your research"
+job_desc = "Calcining is basically burning..."
+job_story = "But takes considerably more attention to detail. "
+job_duration = 2
+job_reward = Dictionary[ExtResource("1_s0ffd"), int]({
+ExtResource("4_vompu"): 100
+})
+job_cost = Dictionary[ExtResource("1_s0ffd"), int]({
+ExtResource("2_s0ffd"): 100
+})
+job_mask = Dictionary[ExtResource("1_s0ffd"), int]({
+ExtResource("3_wbryp"): 1
+})
+make_tooltip = false
+metadata/_custom_type_script = "uid://chnttjydh538r"

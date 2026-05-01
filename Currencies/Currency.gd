@@ -10,6 +10,7 @@ class_name Currency
 @export var is_upgrade: bool = false
 @export var makes_label: bool = true
 @export var airship_part: bool = false
+@export var alembic_part: bool = false
 @export var has_been_seen: bool = false
 @export var stays_visible: bool = false
 @export var upgrade_target: Dictionary[Currency,int]
@@ -63,7 +64,7 @@ func get_max() -> int:
 			continue			
 		if currency.upgrade_target.has(self):
 			base += currency.upgrade_target[self] * currency.amount
-			SignalHub.res_max_got.emit.call_deferred(self, base)
+	SignalHub.res_max_got.emit.call_deferred(self, base)
 	return base
 
 func get_amount() -> int:

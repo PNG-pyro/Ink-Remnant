@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bgyhgvbuqpfod"
+path="res://.godot/imported/watch_alkahest.dialogue-0d07dbdaa7988eab8107911ae447615a.tres"
+
+[deps]
+
+source_file="res://Currencies/Skybound_Alembic/watch_alkahest.dialogue"
+dest_files=["res://.godot/imported/watch_alkahest.dialogue-0d07dbdaa7988eab8107911ae447615a.tres"]
+
+[params]
+
+defaults=true

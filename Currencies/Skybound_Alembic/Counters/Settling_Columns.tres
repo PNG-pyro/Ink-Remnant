@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://y2lwibteexs4"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_isfu6"]
+
+[resource]
+script = ExtResource("1_isfu6")
+name = "Settling Columns"
+max_amount = 11
+tick_types = null
+makes_label = false
+alembic_part = true
+has_been_seen = true
+stays_visible = true
+is_hidden = true
+make_tooltip = true
+tooltip_says = "It's hard to rank chemicals magically - just let them float it out."
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

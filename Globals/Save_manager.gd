@@ -101,8 +101,10 @@ func load_save(save_to_load: SaveState) -> bool:
 			button.visual_state = save_to_load.button_states[button.job_run.job_name]
 			button.update_visuals()
 			
-
+	BackgroundMusicPlayer.volume_linear = save_to_load.volume
+	BackgroundMusicPlayer.stream_paused = save_to_load.mute
 	SignalHub.volume_set.emit.call_deferred(save_to_load.volume, save_to_load.mute)
+
 	ResponseManager.visited_responses = save_to_load.response_dict
 	
 	for currency in CurrencyManager.all_currencies:

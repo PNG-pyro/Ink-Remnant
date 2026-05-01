@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://dkbmdfvy7rcle"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_ko6wg"]
+
+[resource]
+script = ExtResource("1_ko6wg")
+name = "Graduated Funnel"
+max_amount = 1
+tick_types = null
+makes_label = false
+alembic_part = true
+has_been_seen = true
+stays_visible = true
+is_hidden = true
+make_tooltip = true
+tooltip_says = "An excellent measuring device."
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

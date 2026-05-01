@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cbifv0ow7fiq5"]
+
+[ext_resource type="Resource" uid="uid://ckos20a64rn6r" path="res://Currencies/Skybound_Alembic/Examine_alembic.dialogue" id="1_5ywdd"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_ps8n8"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="2_5ywdd"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_r7phm"]
+
+[resource]
+script = ExtResource("3_r7phm")
+job_name = "   Examine the Skybound Alembic"
+job_desc = "You wander around the open-plan lab, examining the crystalline mechanism."
+job_story = "Finally, you return to work, curiosity satisfied."
+job_reward = Dictionary[ExtResource("1_ps8n8"), int]({
+ExtResource("2_5ywdd"): 0
+})
+repeats = false
+popup_text = "They Skybound Alembic is more than just a poetic name; the actual mechanism looks like a constellation of glass shards floating midair over a brass pedestal. As you watch, it swirls gently, each shard cupping a drop of liquid."
+button_text = "It's quite pretty"
+start_dialogue = true
+dialogue = ExtResource("1_5ywdd")
+metadata/_custom_type_script = "uid://chnttjydh538r"

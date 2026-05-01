@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b6m7bvk8jnoe8"
+path="res://.godot/imported/Directions_to_alembic.dialogue-2e4bdc10780f69c77b2cf4c5f57e5308.tres"
+
+[deps]
+
+source_file="res://Currencies/University/Inside/Directions_to_alembic.dialogue"
+dest_files=["res://.godot/imported/Directions_to_alembic.dialogue-2e4bdc10780f69c77b2cf4c5f57e5308.tres"]
+
+[params]
+
+defaults=true
