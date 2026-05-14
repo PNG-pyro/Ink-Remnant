@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b52lo3rul3rb8"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_se2y0"]
+[ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="2_4l26w"]
+[ext_resource type="Resource" uid="uid://c05veql0qmy75" path="res://Currencies/Malachite_Hive/currencies/Bee_worker.tres" id="2_se2y0"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_pkwk4"]
+
+[resource]
+script = ExtResource("3_pkwk4")
+job_name = "Repair worker bees"
+job_desc = "Working on delicate mechanisms..."
+job_story = "It takes a while, but the work is more repetitive than difficult."
+job_reward = Dictionary[ExtResource("1_se2y0"), int]({
+ExtResource("2_se2y0"): 10
+})
+job_mask = Dictionary[ExtResource("1_se2y0"), int]({
+ExtResource("2_4l26w"): 6
+})
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cijiupympqngq"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_3hr8g"]
+[ext_resource type="Resource" uid="uid://cedsksse8w150" path="res://Currencies/University/Offices/Access_hive.tres" id="2_5hp6m"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_y4eid"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_5hp6m"]
+
+[resource]
+script = ExtResource("2_y4eid")
+job_name = "Head to the Malachite Hive"
+job_desc = "You wander deeper into the back rooms of the University..."
+job_story = "Until you reach the area they're keeping the relic."
+job_reward = Dictionary[ExtResource("1_3hr8g"), int]({
+ExtResource("3_5hp6m"): 0
+})
+job_mask = Dictionary[ExtResource("1_3hr8g"), int]({
+ExtResource("2_5hp6m"): 1
+})
+repeats = false
+make_popup = true
+popup_text = "The Malachite Hive isn't being studied by anyone else right now; it simply floats ignored in an empty classroom in the back of the University."
+button_text = "It's not hard to find"
+signal_name = "appear_hive"
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -22,6 +22,7 @@ extends Node
 @onready var button_stack_journal3 = %"JournalLocks"
 @onready var button_stack_airship = %"ButtonStackAirship"
 @onready var button_stack_alembic = %"ButtonStackAlembic"
+@onready var button_stack_hive = %ButtonStackHive
 
 @onready var seen_eoc = false
 
@@ -39,6 +40,8 @@ func _ready():
 		set_light()
 	else:
 		set_dark()
+		
+	%SteamButton.visible = false
 		
 	button_stack_jobs.populate(JobManager.simple_jobs)
 	button_stack_trades.populate(JobManager.trades)
@@ -61,6 +64,7 @@ func _ready():
 	button_stack_journal3.populate(JobManager.journal_locks)
 	button_stack_airship.populate(JobManager.airship_jobs)
 	button_stack_alembic.populate(JobManager.alembic_jobs)
+	button_stack_hive.populate(JobManager.hive_jobs)
 	
 	
 	if not SaveManager.load(SaveManager.save_name_3):

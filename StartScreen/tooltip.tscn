@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bg7ev4q01n1lv"]
+
+[node name="Tooltip" type="Node2D" unique_id=172762972]
+
+[node name="TooltipLabel" type="RichTextLabel" parent="." unique_id=2070197181]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 40.0
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0

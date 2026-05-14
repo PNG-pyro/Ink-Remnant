@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://c1rrockdob1rl"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_7dn8a"]
+[ext_resource type="Resource" uid="uid://c05veql0qmy75" path="res://Currencies/Malachite_Hive/currencies/Bee_worker.tres" id="2_vk8dd"]
+
+[resource]
+script = ExtResource("1_7dn8a")
+name = "Comb Drawer"
+max_amount = 6
+tick_types = null
+is_upgrade = true
+makes_label = false
+hive_part = true
+has_been_seen = true
+stays_visible = true
+upgrade_target = Dictionary[ExtResource("1_7dn8a"), int]({
+ExtResource("2_vk8dd"): 30
+})
+make_tooltip = true
+tooltip_says = "Where the bees work"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

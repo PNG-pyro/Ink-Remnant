@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bllewugjpwm4s"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_100ar"]
+[ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="2_1bllx"]
+[ext_resource type="Resource" uid="uid://dab8djeakvg6j" path="res://Currencies/Malachite_Hive/currencies/Bee_Queen.tres" id="2_100ar"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_a6f05"]
+
+[resource]
+script = ExtResource("3_a6f05")
+job_name = "Crown a mechanical Queen"
+job_desc = "Working on delicate mechanisms..."
+job_story = "It takes a while, but the work is more repetitive than difficult."
+job_reward = Dictionary[ExtResource("1_100ar"), int]({
+ExtResource("2_100ar"): 1
+})
+job_mask = Dictionary[ExtResource("1_100ar"), int]({
+ExtResource("2_1bllx"): 24
+})
+upper_mask = Array[ExtResource("1_100ar")]([ExtResource("2_100ar")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

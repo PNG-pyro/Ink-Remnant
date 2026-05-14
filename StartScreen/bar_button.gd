@@ -23,6 +23,7 @@ var visual_state: int = VisualState.NORMAL
 var current_state = State.IDLE
 var shiny_material: ShaderMaterial = load("res://StartScreen/new_option_mat.tres")
 var rect = ColorRect.new()
+var _active_label: RichTextLabel = null
 
 @export var job_run: Job
 @export var story_box: RichTextLabel
@@ -47,7 +48,7 @@ func _ready():
 	shiny_material.set_shader_parameter("Speed", .3)
 	shiny_material.set_shader_parameter("Rotation_deg", 6)
 	shiny_material.set_shader_parameter("Line_width", .2)
-	shiny_material.set_shader_parameter("Alpha", .10)
+	shiny_material.set_shader_parameter("Alpha", .30)
 	
 	rect.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -102,7 +103,10 @@ func _ready():
 	visual_state |= VisualState.NEW
 	check_affordable()
 
-
+func _notification(what):
+	if what == NOTIFICATION_MOUSE_EXIT:
+		_active_label = null
+		
 func _appear():
 	job_run.shows_up = true
 	visible = true
@@ -269,22 +273,21 @@ func update_tooltip():
 			continue
 			
 		if price.is_full() and not price.name == "Floor Space" and not price.name == "Default Currency":
-			line += "[color=yellow]" + str(job_run.job_reward[price]) + " " + price.name + " - Full,[/color]\n"
+			line += "[color=yellow]" + str(job_run.job_reward[price]) + " " + price.name + " - Full,[/color]\n"		
 			if price.is_upgrade:
-				for upgrade in price.upgrade_target:
-					line += "	- Adds " + str(price.upgrade_target[upgrade]) + " to " + upgrade.name + " max\n"
+					for upgrade in price.upgrade_target:
+						line += "[color=white]	- Adds " + str(price.upgrade_target[upgrade]) + " to " + upgrade.name + " max[/color]\n"
 			if price.is_ticker:
-				for tick in price.tick_types:
-					line += "	- Adds " + str(price.tick_types[tick]) + " per second"
-					
+					for tick in price.tick_types:
+						line += "[color=white]	- Adds " + str(price.tick_types[tick]) + " per second[/color]"					
 		elif not price.is_full() and not price.name == "Floor Space" and not price.name == "Default":
 			line += "[color=pale_green]" + str(job_run.job_reward[price]) + " " + price.name + ",[/color]\n"
 			if price.is_upgrade:
 				for upgrade in price.upgrade_target:
-					line += "	- Adds " + str(price.upgrade_target[upgrade]) + " to " + upgrade.name + " max\n"
+					line += "[color=white]	- Adds " + str(price.upgrade_target[upgrade]) + " to " + upgrade.name + " max[/color]\n"
 			if price.is_ticker:
 				for tick in price.tick_types:
-					line += "	- Adds " + str(price.tick_types[tick]) + " " + tick.name + " per second\n"
+					line += "[color=white]	- Adds " + str(price.tick_types[tick]) + " " + tick.name + " per second[/color]\n"
 
 		elif price.name == "Floor Space":
 			if price.is_full():
@@ -295,6 +298,8 @@ func update_tooltip():
 			line += "[color=white][/color]" #???
 			
 	tooltip_text = line
+	if is_instance_valid(_active_label):
+		_active_label.parse_bbcode(line)
 
 
 func enable_self():
@@ -312,7 +317,8 @@ func _make_custom_tooltip(for_text):
 	label.fit_content = true
 	label.autowrap_mode = TextServer.AUTOWRAP_OFF
 	label.fit_content = true
-	return label
+	_active_label = label
+	return _active_label
 	
 
 func check_affordable():

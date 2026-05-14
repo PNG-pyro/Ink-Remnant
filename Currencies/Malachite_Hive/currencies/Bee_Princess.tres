@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://cccyoy5ft5t4n"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_li8db"]
+
+[resource]
+script = ExtResource("1_li8db")
+name = "Mechanical Princess"
+tick_types = null
+makes_label = false
+hive_part = true
+has_been_seen = true
+stays_visible = true
+make_tooltip = true
+tooltip_says = "Raised on Royal Jelly"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://wf7nhbx5hnhx"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_5gkwc"]
+[ext_resource type="Resource" uid="uid://olo8cpqh0453" path="res://Currencies/Malachite_Hive/currencies/Queen_Excluder.tres" id="2_5gkwc"]
+[ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="2_mua1c"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_lia2c"]
+
+[resource]
+script = ExtResource("3_lia2c")
+job_name = "Patch the queen excluder"
+job_desc = "Working on delicate mechanisms..."
+job_story = "It takes a while, but the work is more repetitive than difficult."
+job_reward = Dictionary[ExtResource("1_5gkwc"), int]({
+ExtResource("2_5gkwc"): 1
+})
+job_mask = Dictionary[ExtResource("1_5gkwc"), int]({
+ExtResource("2_mua1c"): 21
+})
+upper_mask = Array[ExtResource("1_5gkwc")]([ExtResource("2_5gkwc")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

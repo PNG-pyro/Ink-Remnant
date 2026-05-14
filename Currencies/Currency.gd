@@ -11,6 +11,7 @@ class_name Currency
 @export var makes_label: bool = true
 @export var airship_part: bool = false
 @export var alembic_part: bool = false
+@export var hive_part: bool = false
 @export var has_been_seen: bool = false
 @export var stays_visible: bool = false
 @export var upgrade_target: Dictionary[Currency,int]

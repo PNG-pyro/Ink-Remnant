@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c2kyijalccqio"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_5t61q"]
+[ext_resource type="Resource" uid="uid://cccyoy5ft5t4n" path="res://Currencies/Malachite_Hive/currencies/Bee_Princess.tres" id="2_5t61q"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_p6s5o"]
+[ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="3_yf7h4"]
+
+[resource]
+script = ExtResource("3_p6s5o")
+job_name = "   Nurture a mechanical princess"
+job_desc = "Working on delicate mechanisms..."
+job_story = "It takes a while, but the work is more repetitive than difficult."
+job_reward = Dictionary[ExtResource("1_5t61q"), int]({
+ExtResource("2_5t61q"): 1,
+ExtResource("3_yf7h4"): 18
+})
+upper_mask = Array[ExtResource("1_5t61q")]([ExtResource("2_5t61q")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

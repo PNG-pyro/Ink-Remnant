@@ -16,6 +16,7 @@ var simple_jobs: Array[Job] = [
 	load("res://Currencies/Magic/Mirrormancy/Practice_Mirrormancy.tres"),
 	load("res://Currencies/Magic/Thalassomancy/Practice_Thalassomancy.tres"),
 	load("res://Currencies/Magic/Ergomancy/Practice_Ergomancy.tres"),
+	load("res://Currencies/Magic/Apimancy/Practice_Apimancy.tres"),
 	
 	load("res://Currencies/Telescope/Chart_the_stars.tres"),
 ]
@@ -53,18 +54,13 @@ var upgrades: Array[Job] = [
 	load("res://Currencies/Magic/Octomancy/Create_Octagon.tres"),
 	
 	load("res://Currencies/Magic/Lapidamancy/Research_Lapidomancy.tres"),
-	
 	load("res://Currencies/Magic/Cyanomancy/Research_Cyanomancy.tres"),
-	
 	load("res://Currencies/Magic/Calcimancy/Research_Calcimancy.tres"),
-	
 	load("res://Currencies/Magic/Oneiromancy/Research_Oneiromancy.tres"),
-	
 	load("res://Currencies/Magic/Mirrormancy/Research_Mirrormancy.tres"),
-	
 	load("res://Currencies/Magic/Thalassomancy/Research_Thalassomancy.tres"),
-	
 	load("res://Currencies/Magic/Ergomancy/Research_Ergomancy.tres"),
+	load("res://Currencies/Magic/Apimancy/Research_Apimancy.tres"),
 	
 	load("res://Currencies/Mirror/Ticker/Create_mirror_seed.tres"),
 	load("res://Currencies/Mirror/Upgrades/Build_Kaleidoscope_box.tres"),
@@ -208,6 +204,7 @@ var university_inside: Array[Job] = [
 var university_offices: Array[Job] = [
 	load("res://Currencies/University/Offices/Prove_yourself.tres"),
 	load("res://Currencies/University/Offices/Spend_Credits.tres"),
+	load("res://Currencies/University/Offices/Head_to_Malachite_Hive.tres"),
 ]
 
 var journal_hints: Array[Job] = [
@@ -231,6 +228,7 @@ var journal_notes: Array[Job] = [
 	load("res://Currencies/Journal/Notes/Re-Read_Mirrormancy.tres"),
 	load("res://Currencies/Journal/Notes/Re-Read_Thalassomancy.tres"),
 	load("res://Currencies/Journal/Notes/Re-Read_Ergomancy.tres"),
+	load("res://Currencies/Journal/Notes/Re-Read_Calcimancy.tres"),
 ]
 
 var journal_locks: Array[Job] = [
@@ -271,6 +269,21 @@ var alembic_jobs: Array[Job] = [
 	load("res://Currencies/Skybound_Alembic/Watch_Alkahest.tres"),
 	load("res://Currencies/Skybound_Alembic/Discover_calcimancy.tres"),
 	load("res://Currencies/Journal/hints/EOC.tres"),
+]
+
+var hive_jobs: Array[Job] = [
+	load("res://Currencies/Malachite_Hive/Jobs/Inspect_Hive.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Invite_Gelee.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Derive_Apimancy.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Plant_Flowers.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Assemble_worker.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Fix_frames.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Clean_comb_drawers.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Build_brood_box.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Calibrate_drone.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Nurture_a_princess.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Patch_queen_excluder.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Crown_a_queen.tres"),
 ]
 
 

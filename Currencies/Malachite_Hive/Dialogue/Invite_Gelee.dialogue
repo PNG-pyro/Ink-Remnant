@@ -1,0 +1,13 @@
+~ start
+Gelee steps into the classroom, her Butterfly Locus fluttering around her head. She makes the dusty place look glamorous just standing there, but the look in her eyes is one of a researcher as she steps towards the green obelisk hovering in the center of the floor. "Very interesting!" She taps a finger against her lips and looks at you. "Well, I did have a few thoughts..."
+~ Mid
+- "The honey..." 
+	Gelee: "I think there's something special about the honey being produced." She laughs. "Well, I'm sure you realized the same. Why else build a magical hive if not for magical honey? But look here, and here." She pops open a mechanism and points to a few gears. "This is dreamsilver, I'm sure of it..." The two of you discuss for a while, but can't pinpoint the exact magic that would permeate the honey. Besides the magic of bees, of course. => Mid
+- "The mechanical Queen..."
+	Gelee: "You'll need to start with workers, then move on to drones, I think." She works over the schematics with you, pointing out what would and wouldn't work for a butterfly. They're different from bees, but it's still useful. => Mid
+- "The flowers..." 
+	Gelee: "I'm sure you can source them?" She raises an eyebrow. "If you can't, I do have sources." She leads the discussion for a while, debating nectar quality and yeild of several strains. Pollen needs to be taken into account too... => Mid
+- "Ah, it's getting late..." 
+	She politely thanks you for the chance to study the Hive. "I might need to get a few credits myself," she mumbles as you part, looking back at the Hive one last time.
+
+=> END

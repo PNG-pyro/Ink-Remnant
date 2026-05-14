@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://c3jlqar8cg0g5"]
+
+[ext_resource type="Resource" uid="uid://b03rfplu5gmhr" path="res://Currencies/Malachite_Hive/Dialogue/Invite_Gelee.dialogue" id="1_0jekc"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_ojny4"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_ahpd5"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_8wp7j"]
+
+[resource]
+script = ExtResource("4_8wp7j")
+job_name = "Invite Gelee"
+job_desc = "She knows things about insects, right? "
+job_story = "Well, maybe there's not that much overlap between bees and butterflies, but it can't hurt. "
+job_reward = Dictionary[ExtResource("2_ojny4"), int]({
+ExtResource("3_ahpd5"): 0
+})
+repeats = false
+popup_text = "The Malachite Hive is, as the name suggests, a deep green color. It looks like "
+start_dialogue = true
+dialogue = ExtResource("1_0jekc")
+metadata/_custom_type_script = "uid://chnttjydh538r"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://cyh2mf3c1bjjf"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_pe1qo"]
+
+[resource]
+script = ExtResource("1_pe1qo")
+name = "Mechanical Drone"
+tick_types = null
+makes_label = false
+hive_part = true
+has_been_seen = true
+stays_visible = true
+make_tooltip = true
+tooltip_says = "Required for queen production"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

@@ -18,6 +18,7 @@
 [ext_resource type="Material" uid="uid://d0uawxt77ieel" path="res://StartScreen/Backdrop_shader_material.tres" id="12_68wlb"]
 [ext_resource type="Script" uid="uid://cyv5pa6loscuk" path="res://StartScreen/alembic_button.gd" id="12_b6ncd"]
 [ext_resource type="Script" uid="uid://briafwutsdv85" path="res://SaveLoad/load_button_1.gd" id="12_ly71l"]
+[ext_resource type="Script" uid="uid://daftis7ypfljw" path="res://StartScreen/hive_button.gd" id="13_446pc"]
 [ext_resource type="Script" uid="uid://dcqjqbyxbt48c" path="res://StartScreen/load_button_3.gd" id="14_7envs"]
 [ext_resource type="PackedScene" uid="uid://cxse6vagl4302" path="res://StoryPopup/story_popup.tscn" id="16_a6fgy"]
 [ext_resource type="Texture2D" uid="uid://em2o1giqs2ap" path="res://Borders/Work_borders.png" id="16_ffxqw"]
@@ -31,6 +32,7 @@
 [ext_resource type="Script" uid="uid://ckrbnf8hb3cgl" path="res://StartScreen/house_button.gd" id="19_yp2c4"]
 [ext_resource type="Script" uid="uid://c554iuqrsupxi" path="res://StartScreen/house_tabs.gd" id="20_4asdo"]
 [ext_resource type="Script" uid="uid://besriylkeu8sp" path="res://StartScreen/alembic_parts.gd" id="20_yrt3q"]
+[ext_resource type="Script" uid="uid://cbybgpwh3h4it" path="res://StartScreen/hive_parts.gd" id="21_lxauj"]
 [ext_resource type="Material" uid="uid://bl1kc1rd2834a" path="res://StartScreen/border_shader_material.tres" id="22_7vltl"]
 [ext_resource type="Shader" uid="uid://dslgj8u3kyl7y" path="res://StartScreen/Backdrop_Shader.tres" id="24_jd06h"]
 [ext_resource type="Script" uid="uid://w7se8q4yrmtb" path="res://StartScreen/mute_button.gd" id="28_plbck"]
@@ -38,6 +40,7 @@
 [ext_resource type="Texture2D" uid="uid://41gbucui5snq" path="res://Backgrounds/pixel_blue.png" id="30_satxg"]
 [ext_resource type="Texture2D" uid="uid://bc6vvshsbhrvr" path="res://Backgrounds/pixel_orangish.png" id="31_ghnkm"]
 [ext_resource type="Script" uid="uid://bbcn5stl1jk8v" path="res://StartScreen/credits.gd" id="37_58m4n"]
+[ext_resource type="Texture2D" uid="uid://c4eq8vtgtid2f" path="res://steam_14173.png" id="44_tfair"]
 [ext_resource type="Script" uid="uid://c2pr888kk80e8" path="res://StartScreen/jobs_autorun.gd" id="48_gpihu"]
 [ext_resource type="PackedScene" uid="uid://dm045skp7gvvq" path="res://LoadPopup/LoadPop.tscn" id="49_tium7"]
 [ext_resource type="PackedScene" uid="uid://n5c0w6akhri4" path="res://SavePopup/SavePop.tscn" id="50_gpihu"]
@@ -88,7 +91,7 @@ button_text = "Search the city"
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.8671875
-anchor_top = 0.3861111
+anchor_top = 0.020833334
 anchor_right = 0.984375
 anchor_bottom = 0.88472223
 metadata/_edit_use_anchors_ = true
@@ -153,6 +156,12 @@ layout_mode = 2
 text = "Skybound 
 Alembic"
 script = ExtResource("12_b6ncd")
+metadata/_edit_use_anchors_ = true
+
+[node name="HiveButton" type="Button" parent="NavButtons/ScrollContainer/VBoxContainer" unique_id=580568616]
+layout_mode = 2
+text = "Malachite Hive"
+script = ExtResource("13_446pc")
 metadata/_edit_use_anchors_ = true
 
 [node name="SettingsButton" type="Button" parent="." unique_id=1193410101]
@@ -287,6 +296,74 @@ script = ExtResource("18_58m4n")
 metadata/_custom_type_script = "uid://gciinqn85vni"
 
 [node name="AirshipPanel" type="Panel" parent="AirshipFrame" unique_id=250871045 groups=["AirshipFrame"]]
+z_index = -5
+material = ExtResource("12_68wlb")
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="AHiveFrame" type="NinePatchRect" parent="." unique_id=2093190734 groups=["HiveFrame"]]
+visible = false
+material = SubResource("ShaderMaterial_plbck")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21796875
+anchor_top = 0.3861111
+anchor_right = 0.85234374
+anchor_bottom = 0.98194444
+size_flags_horizontal = 3
+texture = ExtResource("6_do1qa")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollFrame" type="ScrollContainer" parent="AHiveFrame" unique_id=1347905560]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.67487687
+anchor_top = 0.027972028
+anchor_right = 0.98275864
+anchor_bottom = 0.974359
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonStackHive" type="VBoxContainer" parent="AHiveFrame/ScrollFrame" unique_id=1313653358]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_2fenb")
+metadata/_custom_type_script = "uid://cq4t44bcucve"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="AHiveFrame" unique_id=1080318479]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.015000001
+anchor_top = 0.028
+anchor_right = 0.671
+anchor_bottom = 1.0
+offset_left = -0.1800003
+offset_top = -0.012000084
+offset_right = 0.14801025
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HiveParts" type="VBoxContainer" parent="AHiveFrame/ScrollContainer" unique_id=785253995]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("21_lxauj")
+metadata/_custom_type_script = "uid://gciinqn85vni"
+
+[node name="HivePanel" type="Panel" parent="AHiveFrame" unique_id=1518361649 groups=["HiveFrame"]]
 z_index = -5
 material = ExtResource("12_68wlb")
 layout_mode = 0
@@ -743,7 +820,7 @@ offset_left = 12.0
 offset_top = 11.9999695
 offset_right = 266.0
 offset_bottom = 67.99997
-text = "Ver. 0.8.4"
+text = "Ver. 0.8.4.1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -869,7 +946,7 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.21796875
 anchor_top = 0.019444445
-anchor_right = 0.984375
+anchor_right = 0.85234374
 anchor_bottom = 0.35833332
 grow_horizontal = 2
 grow_vertical = 2
@@ -1279,6 +1356,16 @@ visible = false
 [node name="LoadPopup" parent="." unique_id=642060012 instance=ExtResource("49_tium7")]
 visible = false
 
+[node name="SteamButton" type="TextureButton" parent="." unique_id=713967602]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1164.0
+offset_top = 611.99994
+offset_right = 1676.0
+offset_bottom = 1124.0
+scale = Vector2(0.07812517, 0.07812517)
+texture_normal = ExtResource("44_tfair")
+
 [connection signal="pressed" from="NavButtons/ScrollContainer/VBoxContainer/WorkButton" to="NavButtons/ScrollContainer/VBoxContainer/WorkButton" method="_on_pressed"]
 [connection signal="pressed" from="NavButtons/ScrollContainer/VBoxContainer/HomeButton" to="NavButtons/ScrollContainer/VBoxContainer/HomeButton" method="_on_pressed"]
 [connection signal="pressed" from="NavButtons/ScrollContainer/VBoxContainer/JournalButton" to="NavButtons/ScrollContainer/VBoxContainer/JournalButton" method="_on_pressed"]
@@ -1288,6 +1375,7 @@ visible = false
 [connection signal="pressed" from="NavButtons/ScrollContainer/VBoxContainer/UniversityButton" to="NavButtons/ScrollContainer/VBoxContainer/UniversityButton" method="_on_pressed"]
 [connection signal="pressed" from="NavButtons/ScrollContainer/VBoxContainer/AirshipButton" to="NavButtons/ScrollContainer/VBoxContainer/AirshipButton" method="_on_pressed"]
 [connection signal="pressed" from="NavButtons/ScrollContainer/VBoxContainer/AlembicButton" to="NavButtons/ScrollContainer/VBoxContainer/AlembicButton" method="_on_pressed"]
+[connection signal="pressed" from="NavButtons/ScrollContainer/VBoxContainer/HiveButton" to="NavButtons/ScrollContainer/VBoxContainer/HiveButton" method="_on_pressed"]
 [connection signal="pressed" from="SettingsButton" to="SettingsButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/SaveButton" to="SaveTabFrame/SaveButton" method="_on_pressed"]
 [connection signal="pressed" from="SaveTabFrame/ExportSave" to="SavePopup" method="_on_export_save_pressed"]

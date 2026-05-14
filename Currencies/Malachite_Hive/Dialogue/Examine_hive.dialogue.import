@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dqwra10nkcbjh"
+path="res://.godot/imported/Examine_hive.dialogue-af679221409ee0397c2647687a5dc2bb.tres"
+
+[deps]
+
+source_file="res://Currencies/Malachite_Hive/Dialogue/Examine_hive.dialogue"
+dest_files=["res://.godot/imported/Examine_hive.dialogue-af679221409ee0397c2647687a5dc2bb.tres"]
+
+[params]
+
+defaults=true

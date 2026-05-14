@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://dab8djeakvg6j"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_gwngp"]
+[ext_resource type="Resource" uid="uid://c05veql0qmy75" path="res://Currencies/Malachite_Hive/currencies/Bee_worker.tres" id="2_lhdox"]
+
+[resource]
+script = ExtResource("1_gwngp")
+name = "Mechanical Queen"
+is_ticker = true
+tick_types = Dictionary[Object, int]({
+ExtResource("2_lhdox"): 1
+})
+tick_amount = 5
+makes_label = false
+hive_part = true
+has_been_seen = true
+stays_visible = true
+make_tooltip = true
+tooltip_says = "The apex of the hive"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

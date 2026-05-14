@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Currency" format=3 uid="uid://wqpn6giss5ep"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_udf21"]
+[ext_resource type="Resource" uid="uid://c05veql0qmy75" path="res://Currencies/Malachite_Hive/currencies/Bee_worker.tres" id="2_wiku2"]
+
+[resource]
+script = ExtResource("1_udf21")
+name = "Flowers"
+max_amount = 50
+tick_types = null
+is_upgrade = true
+makes_label = false
+hive_part = true
+has_been_seen = true
+stays_visible = true
+upgrade_target = Dictionary[ExtResource("1_udf21"), int]({
+ExtResource("2_wiku2"): 3
+})
+make_tooltip = true
+tooltip_says = "Basis of the Hive"
+metadata/_custom_type_script = "uid://4goxmvo7g0yf"

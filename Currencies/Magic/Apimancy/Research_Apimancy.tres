@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bxxxc3rwhvhc7"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_8ilxq"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="2_ge312"]
+[ext_resource type="Resource" uid="uid://bbueq4684j5rs" path="res://Currencies/Magic/Apimancy/Knowledge_Apimancy.tres" id="3_7ocx6"]
+[ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="4_ar2dy"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="5_w4e4w"]
+
+[resource]
+script = ExtResource("5_w4e4w")
+job_name = "Research Apimancy"
+job_desc = "You carefully inspect and clean the hives..."
+job_story = "The bees manage the honey, but they need a touch of help with other things."
+job_duration = 4
+job_reward = Dictionary[ExtResource("1_8ilxq"), int]({
+ExtResource("4_ar2dy"): 5
+})
+job_cost = Dictionary[ExtResource("1_8ilxq"), int]({
+ExtResource("2_ge312"): 45
+})
+job_mask = Dictionary[ExtResource("1_8ilxq"), int]({
+ExtResource("3_7ocx6"): 1
+})
+upper_mask = Array[ExtResource("1_8ilxq")]([ExtResource("4_ar2dy")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

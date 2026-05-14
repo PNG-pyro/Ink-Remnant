@@ -1,0 +1,13 @@
+~ start
+You stand in front of a levitating chunk of green crystal, easily as tall as you are and equally wide. It's roughly hexagonal in shape, with an uneven surface showing tesselated patches that catch the light.
+~ Mid
+- Look for bees
+	You examine the monolith carefully, using simple magical techniques to probe the hidden spaces. Eventually you discover how to open the Hive, and find the inside filled with a dizzying array of tiny clockwork mechanisms, all meshing beautifully. You uncover several types of tiny, winged automata - these must be the workers and drones. => Mid
+- Look for honey
+	The comb drawers and honey frames are damaged from rough handling and lack of care. Whoever stored this here clearly didn't care much about the relic, or simply had no idea what they were doing. Regardless, there's nothing to kickstart the hive. => Mid
+- Look for instructions
+	It's a long shot, but it doesn't hurt to check... But whoever made this didn't think to leave a handy instructional panel behind. Unfortunate, but not unexpected. => Mid
+- Look for a place to start
+	In conclusion, you need to rebuild the hive from the bottom up. Best to start with reparing a few of the simplest automata and setting them to gather honey. Eventually, you'll need a new Queen to make the colony self-sufficient, but you'll have to work from the bottom up. => Mid
+- Stop looking
+=> END

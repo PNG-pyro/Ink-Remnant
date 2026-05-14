@@ -15,7 +15,7 @@ job_reward = Dictionary[ExtResource("1_ujhm3"), int]({
 ExtResource("3_4ytxq"): 1
 })
 job_cost = Dictionary[ExtResource("1_ujhm3"), int]({
-ExtResource("2_ujhm3"): 32
+ExtResource("2_ujhm3"): 31
 })
 job_mask = Dictionary[ExtResource("1_ujhm3"), int]({
 ExtResource("3_a43p7"): 1

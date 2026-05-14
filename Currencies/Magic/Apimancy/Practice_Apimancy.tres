@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://lblue7ce6xqq"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_a3c6w"]
+[ext_resource type="Resource" uid="uid://bbueq4684j5rs" path="res://Currencies/Magic/Apimancy/Knowledge_Apimancy.tres" id="2_ost6s"]
+[ext_resource type="Resource" uid="uid://bmq15p01csdrq" path="res://Currencies/Magic/Magic.tres" id="3_0h7uj"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_sub23"]
+
+[resource]
+script = ExtResource("4_sub23")
+job_name = "Gather magic from bees"
+job_desc = "Bees are magic, this is indisputable. "
+job_story = "They store this magic in their honey. Gathering magic is a sweet process..."
+job_duration = 2
+job_reward = Dictionary[ExtResource("1_a3c6w"), int]({
+ExtResource("3_0h7uj"): 42
+})
+job_mask = Dictionary[ExtResource("1_a3c6w"), int]({
+ExtResource("2_ost6s"): 1
+})
+make_tooltip = false
+metadata/_custom_type_script = "uid://chnttjydh538r"

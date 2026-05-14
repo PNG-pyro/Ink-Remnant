@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b03rfplu5gmhr"
+path="res://.godot/imported/Invite_Gelee.dialogue-8ae037ce878d5428d413c9e1e1f1afaa.tres"
+
+[deps]
+
+source_file="res://Currencies/Malachite_Hive/Dialogue/Invite_Gelee.dialogue"
+dest_files=["res://.godot/imported/Invite_Gelee.dialogue-8ae037ce878d5428d413c9e1e1f1afaa.tres"]
+
+[params]
+
+defaults=true

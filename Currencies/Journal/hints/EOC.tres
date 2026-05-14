@@ -20,5 +20,5 @@ repeats = false
 make_popup = true
 popup_text = "Apologies, but you've reached the end of the current story. There may still be upgrades to buy, though. "
 button_text = "And gagues to fill..."
-signal_name = "appear_alembic"
+signal_name = "appear_hive"
 metadata/_custom_type_script = "uid://chnttjydh538r"

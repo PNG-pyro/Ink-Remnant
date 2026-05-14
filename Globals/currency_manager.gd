@@ -63,6 +63,7 @@ extends Node
 	load("res://Currencies/Magic/Mirrormancy/Knowledge_Mirrormancy.tres"),
 	load("res://Currencies/Magic/Thalassomancy/Knowledge_thalassomancy.tres"),
 	load("res://Currencies/Magic/Ergomancy/Knowledge_Ergomancy.tres"),
+	load("res://Currencies/Magic/Apimancy/Knowledge_Apimancy.tres"),
 	
 	load("res://Currencies/Library/Knowledge_Curator.tres"),
 	load("res://Currencies/Library/Curator/Currencies/Curator_Octomancy.tres"),
@@ -104,11 +105,9 @@ extends Node
 	load("res://Currencies/Magic/Cyanomancy/Kingly_Blue.tres"),
 	
 	load("res://Currencies/Magic/Ergomancy/Rules_of_Ergomancy.tres"),
-	
 	load("res://Currencies/Magic/Oneiromancy/Rules_of_Oneiromancy.tres"),
-	
 	load("res://Currencies/Magic/Thalassomancy/Rules_Thalassomancy.tres"),
-	
+	load("res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres"),
 	
 	load("res://Currencies/Magic/Mirrormancy/rules_mirrormancy.tres"),
 	load("res://Currencies/Magic/Mirrormancy/Runescribed_Mirror.tres"),
@@ -140,6 +139,19 @@ extends Node
 	load("res://Currencies/University/Offices/Airship_access.tres"),
 	load("res://Currencies/University/Offices/Access_Alembic.tres"),
 	load("res://Currencies/University/Offices/Access_hive.tres"),
+	
+	load("res://Currencies/Malachite_Hive/currencies/Bee_Drone.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Bee_Princess.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Bee_Queen.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Bee_worker.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Brood_box.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Comb_Drawer.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Honey.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Honey_Frames.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Pollen.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Queen_Excluder.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Royal_Jelly.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Flowers.tres"),
 ]
 
 func eoc_check() -> bool:

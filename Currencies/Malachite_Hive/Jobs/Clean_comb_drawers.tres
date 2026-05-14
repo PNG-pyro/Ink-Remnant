@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cyba48vxpipvy"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_22bp8"]
+[ext_resource type="Resource" uid="uid://c1rrockdob1rl" path="res://Currencies/Malachite_Hive/currencies/Comb_Drawer.tres" id="2_22bp8"]
+[ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="2_pqng5"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_40eav"]
+
+[resource]
+script = ExtResource("3_40eav")
+job_name = "Clean the comb drawers"
+job_desc = "Working on delicate mechanisms..."
+job_story = "It takes a while, but the work is more repetitive than difficult."
+job_reward = Dictionary[ExtResource("1_22bp8"), int]({
+ExtResource("2_22bp8"): 1
+})
+job_mask = Dictionary[ExtResource("1_22bp8"), int]({
+ExtResource("2_pqng5"): 12
+})
+upper_mask = Array[ExtResource("1_22bp8")]([ExtResource("2_22bp8")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

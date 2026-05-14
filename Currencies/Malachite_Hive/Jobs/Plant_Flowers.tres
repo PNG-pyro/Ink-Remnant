@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b46rj6fwxoo50"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_xt1wk"]
+[ext_resource type="Resource" uid="uid://ev540b7kiffg" path="res://Currencies/Herbs/Herbs.tres" id="2_gh7ll"]
+[ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="3_0rmlq"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_5j3xp"]
+[ext_resource type="Resource" uid="uid://wqpn6giss5ep" path="res://Currencies/Malachite_Hive/currencies/Flowers.tres" id="3_amcju"]
+
+[resource]
+script = ExtResource("3_5j3xp")
+job_name = "Plant flowers"
+job_desc = "Picking through herbs, you find some with flowers..."
+job_story = "And transplant them nearby the hive."
+job_reward = Dictionary[ExtResource("1_xt1wk"), int]({
+ExtResource("3_amcju"): 5
+})
+job_cost = Dictionary[ExtResource("1_xt1wk"), int]({
+ExtResource("2_gh7ll"): 20
+})
+job_mask = Dictionary[ExtResource("1_xt1wk"), int]({
+ExtResource("3_0rmlq"): 3
+})
+upper_mask = Array[ExtResource("1_xt1wk")]([ExtResource("3_amcju")])
+metadata/_custom_type_script = "uid://chnttjydh538r"
