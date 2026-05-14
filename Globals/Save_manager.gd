@@ -104,6 +104,7 @@ func load_save(save_to_load: SaveState) -> bool:
 	BackgroundMusicPlayer.volume_linear = save_to_load.volume
 	BackgroundMusicPlayer.stream_paused = save_to_load.mute
 	SignalHub.volume_set.emit.call_deferred(save_to_load.volume, save_to_load.mute)
+	SignalHub.resource_updated.emit("Default Currency", 0)
 
 	ResponseManager.visited_responses = save_to_load.response_dict
 	
