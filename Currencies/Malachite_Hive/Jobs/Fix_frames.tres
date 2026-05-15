@@ -10,7 +10,7 @@
 script = ExtResource("2_ujq7y")
 job_name = "Fix Honey Frames"
 job_desc = "Working on delicate mechanisms..."
-job_story = "It takes a while, but the work is more repetitive than difficult."
+job_story = "You keep your mind on the sweet treats that will come later and the work goes quick. "
 job_reward = Dictionary[ExtResource("1_ujyoy"), int]({
 ExtResource("2_sm0pi"): 1
 })

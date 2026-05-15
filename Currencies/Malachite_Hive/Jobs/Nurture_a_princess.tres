@@ -10,7 +10,7 @@
 script = ExtResource("3_p6s5o")
 job_name = "   Nurture a mechanical princess"
 job_desc = "Working on delicate mechanisms..."
-job_story = "It takes a while, but the work is more repetitive than difficult."
+job_story = "It's not immediately obvious how the royal jelly is used, since all the bees are technically mechanical. Maybe it's just magic."
 job_reward = Dictionary[ExtResource("1_5t61q"), int]({
 ExtResource("2_5t61q"): 1
 })

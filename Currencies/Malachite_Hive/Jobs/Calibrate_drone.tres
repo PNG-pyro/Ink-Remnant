@@ -10,7 +10,7 @@
 script = ExtResource("3_jcpsw")
 job_name = "   Calibrate a mechanical drone"
 job_desc = "Working on delicate mechanisms..."
-job_story = "It takes a while, but the work is more repetitive than difficult."
+job_story = "Really, these things have more sensors than seems strictly neccesary. Maybe taking a few apart would be worthwhile."
 job_reward = Dictionary[ExtResource("1_vffcq"), int]({
 ExtResource("2_vffcq"): 1
 })

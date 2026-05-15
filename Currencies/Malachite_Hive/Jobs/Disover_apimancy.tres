@@ -16,6 +16,8 @@
 [resource]
 script = ExtResource("2_oiabx")
 job_name = "Discover Apimancy"
+job_desc = "It comes to you with a rustle of wings and the tick-tock of very tiny gears."
+job_story = "You quickly scribble down what you've realized for further study."
 job_reward = Dictionary[ExtResource("1_rpj0d"), int]({
 ExtResource("2_r6ngv"): 1
 })
@@ -31,4 +33,7 @@ ExtResource("9_gdth8"): 150,
 ExtResource("10_ggo6f"): 1
 })
 upper_mask = Array[ExtResource("1_rpj0d")]([ExtResource("2_r6ngv")])
+make_popup = true
+popup_text = "Apimancy is the magic of bees; it churns with golden power, melting and flowing, but it's sweet. It never stops working, but the product is a healing rest and delicious outcome."
+button_text = "Write this in your journal"
 metadata/_custom_type_script = "uid://chnttjydh538r"

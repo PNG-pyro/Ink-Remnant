@@ -230,6 +230,7 @@ var journal_notes: Array[Job] = [
 	load("res://Currencies/Journal/Notes/Re-Read_Thalassomancy.tres"),
 	load("res://Currencies/Journal/Notes/Re-Read_Ergomancy.tres"),
 	load("res://Currencies/Journal/Notes/Re-Read_Calcimancy.tres"),
+	load("res://Currencies/Journal/Notes/Re-Read_Apimancy.tres"),
 ]
 
 var journal_locks: Array[Job] = [
@@ -313,5 +314,6 @@ university_offices +
 journal_hints +
 journal_notes +
 journal_locks +
-airship_jobs
+airship_jobs +
+hive_jobs
 )

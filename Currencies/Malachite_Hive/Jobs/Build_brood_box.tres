@@ -11,7 +11,7 @@
 script = ExtResource("3_et5n5")
 job_name = "Build brood box"
 job_desc = "Working on delicate mechanisms..."
-job_story = "It takes a while, but the work is more repetitive than difficult."
+job_story = "Actual honeybees make round cells - it's the pressure and warmth that causes them to become hexagonal."
 job_reward = Dictionary[ExtResource("1_x67y8"), int]({
 ExtResource("2_8eqr6"): 1
 })

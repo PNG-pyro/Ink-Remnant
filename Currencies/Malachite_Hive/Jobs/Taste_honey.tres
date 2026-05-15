@@ -18,7 +18,7 @@
 script = ExtResource("12_fksel")
 job_name = "Taste the honey"
 job_desc = "You carefully draw a sample of the golden bounty..."
-job_story = "And sample it deliciously."
+job_story = "And taste it deliciously."
 job_reward = Dictionary[ExtResource("1_whk3e"), int]({
 ExtResource("12_tfum2"): 0
 })

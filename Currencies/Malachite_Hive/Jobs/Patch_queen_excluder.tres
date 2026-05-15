@@ -11,7 +11,7 @@
 script = ExtResource("3_lia2c")
 job_name = "Patch the queen excluder"
 job_desc = "Working on delicate mechanisms..."
-job_story = "It takes a while, but the work is more repetitive than difficult."
+job_story = "The enchanted gems are maybe a bit over-the-top, but there's no reason not to be cautious. "
 job_reward = Dictionary[ExtResource("1_5gkwc"), int]({
 ExtResource("2_5gkwc"): 1
 })
