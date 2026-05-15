@@ -7,4 +7,6 @@ script = ExtResource("1_esaaq")
 name = "Coins"
 max_amount = 50
 tick_types = null
+make_tooltip = true
+tooltip_says = "legal tender of the realm"
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

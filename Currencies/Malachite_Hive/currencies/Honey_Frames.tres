@@ -16,7 +16,7 @@ has_been_seen = true
 stays_visible = true
 upgrade_target = Dictionary[ExtResource("1_b03ql"), int]({
 ExtResource("2_jxhpr"): 50,
-ExtResource("3_d8h0m"): 1
+ExtResource("3_d8h0m"): 50
 })
 tooltip_says = "Where the "
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

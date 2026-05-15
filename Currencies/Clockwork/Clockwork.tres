@@ -6,4 +6,7 @@
 script = ExtResource("1_qily0")
 name = "Clockwork"
 max_amount = 9
+tick_types = null
+make_tooltip = true
+tooltip_says = "Tiny springs and cogs"
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

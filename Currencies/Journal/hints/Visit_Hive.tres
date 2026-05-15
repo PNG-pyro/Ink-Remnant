@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://cy4l8wmkhaqaq"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_fp553"]
+[ext_resource type="Resource" uid="uid://cedsksse8w150" path="res://Currencies/University/Offices/Access_hive.tres" id="2_fp553"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_wdfcv"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_assfa"]
+[ext_resource type="Resource" uid="uid://bbueq4684j5rs" path="res://Currencies/Magic/Apimancy/Knowledge_Apimancy.tres" id="4_fesqy"]
+
+[resource]
+script = ExtResource("4_assfa")
+job_name = "   Visit the Malachite Hive"
+job_desc = "You ponder your next avenue of progress..."
+job_story = "And come up with something."
+job_reward = Dictionary[ExtResource("1_fp553"), int]({
+ExtResource("3_wdfcv"): 0
+})
+job_mask = Dictionary[ExtResource("1_fp553"), int]({
+ExtResource("2_fp553"): 1
+})
+upper_mask = Array[ExtResource("1_fp553")]([ExtResource("4_fesqy")])
+make_tooltip = false
+repeats = false
+make_popup = true
+popup_text = "You've gotten access to the Malachite Hive from the Headmaster; you should head to the University and look for the store-room it's being kept in."
+button_text = "OK"
+metadata/_custom_type_script = "uid://chnttjydh538r"

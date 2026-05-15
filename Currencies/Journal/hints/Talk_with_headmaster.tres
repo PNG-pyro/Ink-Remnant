@@ -4,6 +4,9 @@
 [ext_resource type="Resource" uid="uid://d35186en37eyi" path="res://Currencies/University/University_Access.tres" id="2_hvmwk"]
 [ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_5ifom"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_12vus"]
+[ext_resource type="Resource" uid="uid://bbueq4684j5rs" path="res://Currencies/Magic/Apimancy/Knowledge_Apimancy.tres" id="5_an5es"]
+[ext_resource type="Resource" uid="uid://cb5rwgmdtf7al" path="res://Currencies/Magic/Ergomancy/Knowledge_Ergomancy.tres" id="6_5ifom"]
+[ext_resource type="Resource" uid="uid://d4ibhxjofpnm2" path="res://Currencies/Magic/Calcimancy/Knowledge_Calcimancy.tres" id="7_12vus"]
 
 [resource]
 script = ExtResource("4_12vus")
@@ -16,6 +19,7 @@ ExtResource("3_5ifom"): 0
 job_mask = Dictionary[ExtResource("1_an5es"), int]({
 ExtResource("2_hvmwk"): 1
 })
+upper_mask = Array[ExtResource("1_an5es")]([ExtResource("5_an5es"), ExtResource("6_5ifom"), ExtResource("7_12vus")])
 make_tooltip = false
 repeats = false
 make_popup = true

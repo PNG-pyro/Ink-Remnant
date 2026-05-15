@@ -7,7 +7,7 @@
 
 [resource]
 script = ExtResource("4_sub23")
-job_name = "Gather magic from bees"
+job_name = "Gather bee magic"
 job_desc = "Bees are magic, this is indisputable. "
 job_story = "They store this magic in their honey. Gathering magic is a sweet process..."
 job_duration = 2

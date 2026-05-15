@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="Job" format=3 uid="uid://drn5n64mcj7fa"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_ujyoy"]
+[ext_resource type="Resource" uid="uid://b481l10tmoxct" path="res://Currencies/Crystal/Crystal.tres" id="2_qslnh"]
 [ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="2_qwoy6"]
 [ext_resource type="Resource" uid="uid://4vjptqv2iibd" path="res://Currencies/Malachite_Hive/currencies/Honey_Frames.tres" id="2_sm0pi"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_ujq7y"]
@@ -12,6 +13,9 @@ job_desc = "Working on delicate mechanisms..."
 job_story = "It takes a while, but the work is more repetitive than difficult."
 job_reward = Dictionary[ExtResource("1_ujyoy"), int]({
 ExtResource("2_sm0pi"): 1
+})
+job_cost = Dictionary[ExtResource("1_ujyoy"), int]({
+ExtResource("2_qslnh"): 6
 })
 job_mask = Dictionary[ExtResource("1_ujyoy"), int]({
 ExtResource("2_qwoy6"): 9

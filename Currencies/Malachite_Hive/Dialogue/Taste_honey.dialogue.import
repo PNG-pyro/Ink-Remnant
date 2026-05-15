@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dw4n3eyvkkey"
+path="res://.godot/imported/Taste_honey.dialogue-3b925ed9e9d22c158cb9cf9f89e55de4.tres"
+
+[deps]
+
+source_file="res://Currencies/Malachite_Hive/Dialogue/Taste_honey.dialogue"
+dest_files=["res://.godot/imported/Taste_honey.dialogue-3b925ed9e9d22c158cb9cf9f89e55de4.tres"]
+
+[params]
+
+defaults=true

@@ -218,6 +218,7 @@ var journal_hints: Array[Job] = [
 	load("res://Currencies/Journal/hints/Visit_the_bank.tres"),
 	load("res://Currencies/Journal/hints/Visit_Mech_Dept.tres"),
 	load("res://Currencies/Journal/hints/Visit_Alchemy_Dept.tres"),
+	load("res://Currencies/Journal/hints/Visit_Hive.tres"),
 ]
 
 var journal_notes: Array[Job] = [
@@ -268,13 +269,13 @@ var alembic_jobs: Array[Job] = [
 	load("res://Currencies/Skybound_Alembic/Jobs/Rinse_Octave_Manifold.tres"),
 	load("res://Currencies/Skybound_Alembic/Watch_Alkahest.tres"),
 	load("res://Currencies/Skybound_Alembic/Discover_calcimancy.tres"),
-	load("res://Currencies/Journal/hints/EOC.tres"),
 ]
 
 var hive_jobs: Array[Job] = [
 	load("res://Currencies/Malachite_Hive/Jobs/Inspect_Hive.tres"),
 	load("res://Currencies/Malachite_Hive/Jobs/Invite_Gelee.tres"),
 	load("res://Currencies/Malachite_Hive/Jobs/Derive_Apimancy.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Research_Hive.tres"),
 	load("res://Currencies/Malachite_Hive/Jobs/Plant_Flowers.tres"),
 	load("res://Currencies/Malachite_Hive/Jobs/Assemble_worker.tres"),
 	load("res://Currencies/Malachite_Hive/Jobs/Fix_frames.tres"),
@@ -284,6 +285,9 @@ var hive_jobs: Array[Job] = [
 	load("res://Currencies/Malachite_Hive/Jobs/Nurture_a_princess.tres"),
 	load("res://Currencies/Malachite_Hive/Jobs/Patch_queen_excluder.tres"),
 	load("res://Currencies/Malachite_Hive/Jobs/Crown_a_queen.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Disover_apimancy.tres"),
+	load("res://Currencies/Malachite_Hive/Jobs/Taste_honey.tres"),
+	load("res://Currencies/Journal/hints/EOC.tres"),
 ]
 
 

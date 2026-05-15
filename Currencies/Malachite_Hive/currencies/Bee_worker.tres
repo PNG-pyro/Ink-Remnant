@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_ngubd"]
 [ext_resource type="Resource" uid="uid://c8oajjixdu607" path="res://Currencies/Malachite_Hive/currencies/Honey.tres" id="2_o4a3e"]
 [ext_resource type="Resource" uid="uid://ctdwq68h41l6v" path="res://Currencies/Malachite_Hive/currencies/Pollen.tres" id="3_g1tkl"]
+[ext_resource type="Resource" uid="uid://dasi0dgn6prvb" path="res://Currencies/Malachite_Hive/currencies/Wax.tres" id="4_ohq6x"]
 
 [resource]
 script = ExtResource("1_ngubd")
@@ -10,7 +11,8 @@ name = "Mechanical Worker"
 is_ticker = true
 tick_types = Dictionary[Object, int]({
 ExtResource("2_o4a3e"): 1,
-ExtResource("3_g1tkl"): 1
+ExtResource("3_g1tkl"): 1,
+ExtResource("4_ohq6x"): 1
 })
 tick_amount = 1
 makes_label = false

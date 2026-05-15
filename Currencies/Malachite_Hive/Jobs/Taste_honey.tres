@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://b85y6qa4u2xv"]
+
+[ext_resource type="Resource" uid="uid://dw4n3eyvkkey" path="res://Currencies/Malachite_Hive/Dialogue/Taste_honey.dialogue" id="1_tfum2"]
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_whk3e"]
+[ext_resource type="Resource" uid="uid://caxa8p8dwjnw3" path="res://Currencies/Malachite_Hive/currencies/Brood_box.tres" id="2_tfum2"]
+[ext_resource type="Resource" uid="uid://c1rrockdob1rl" path="res://Currencies/Malachite_Hive/currencies/Comb_Drawer.tres" id="3_vk57q"]
+[ext_resource type="Resource" uid="uid://wqpn6giss5ep" path="res://Currencies/Malachite_Hive/currencies/Flowers.tres" id="4_30qim"]
+[ext_resource type="Resource" uid="uid://4vjptqv2iibd" path="res://Currencies/Malachite_Hive/currencies/Honey_Frames.tres" id="5_16oqf"]
+[ext_resource type="Resource" uid="uid://cyh2mf3c1bjjf" path="res://Currencies/Malachite_Hive/currencies/Bee_Drone.tres" id="6_h5s52"]
+[ext_resource type="Resource" uid="uid://cccyoy5ft5t4n" path="res://Currencies/Malachite_Hive/currencies/Bee_Princess.tres" id="7_ai3bu"]
+[ext_resource type="Resource" uid="uid://dab8djeakvg6j" path="res://Currencies/Malachite_Hive/currencies/Bee_Queen.tres" id="8_7u2bo"]
+[ext_resource type="Resource" uid="uid://c05veql0qmy75" path="res://Currencies/Malachite_Hive/currencies/Bee_worker.tres" id="9_qyrkl"]
+[ext_resource type="Resource" uid="uid://olo8cpqh0453" path="res://Currencies/Malachite_Hive/currencies/Queen_Excluder.tres" id="10_g6r4n"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="12_fksel"]
+[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="12_tfum2"]
+
+[resource]
+script = ExtResource("12_fksel")
+job_name = "Taste the honey"
+job_desc = "You carefully draw a sample of the golden bounty..."
+job_story = "And sample it deliciously."
+job_reward = Dictionary[ExtResource("1_whk3e"), int]({
+ExtResource("12_tfum2"): 0
+})
+job_mask = Dictionary[ExtResource("1_whk3e"), int]({
+ExtResource("2_tfum2"): 3,
+ExtResource("3_vk57q"): 6,
+ExtResource("4_30qim"): 50,
+ExtResource("5_16oqf"): 10,
+ExtResource("6_h5s52"): 6,
+ExtResource("7_ai3bu"): 3,
+ExtResource("8_7u2bo"): 1,
+ExtResource("9_qyrkl"): 150,
+ExtResource("10_g6r4n"): 1
+})
+repeats = false
+start_dialogue = true
+dialogue = ExtResource("1_tfum2")
+metadata/_custom_type_script = "uid://chnttjydh538r"

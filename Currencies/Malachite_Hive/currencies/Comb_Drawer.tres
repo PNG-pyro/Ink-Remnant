@@ -1,7 +1,8 @@
 [gd_resource type="Resource" script_class="Currency" format=3 uid="uid://c1rrockdob1rl"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_7dn8a"]
-[ext_resource type="Resource" uid="uid://c05veql0qmy75" path="res://Currencies/Malachite_Hive/currencies/Bee_worker.tres" id="2_vk8dd"]
+[ext_resource type="Resource" uid="uid://db54k6n2k3qs3" path="res://Currencies/Malachite_Hive/currencies/Royal_Jelly.tres" id="2_gxvjm"]
+[ext_resource type="Resource" uid="uid://dasi0dgn6prvb" path="res://Currencies/Malachite_Hive/currencies/Wax.tres" id="3_vk8dd"]
 
 [resource]
 script = ExtResource("1_7dn8a")
@@ -14,7 +15,8 @@ hive_part = true
 has_been_seen = true
 stays_visible = true
 upgrade_target = Dictionary[ExtResource("1_7dn8a"), int]({
-ExtResource("2_vk8dd"): 30
+ExtResource("2_gxvjm"): 12,
+ExtResource("3_vk8dd"): 15
 })
 make_tooltip = true
 tooltip_says = "Where the bees work"

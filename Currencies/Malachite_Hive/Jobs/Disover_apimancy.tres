@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="Job" format=3 uid="uid://bx21knmdufgl5"]
+
+[ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_rpj0d"]
+[ext_resource type="Resource" uid="uid://caxa8p8dwjnw3" path="res://Currencies/Malachite_Hive/currencies/Brood_box.tres" id="2_afxfp"]
+[ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="2_oiabx"]
+[ext_resource type="Resource" uid="uid://bbueq4684j5rs" path="res://Currencies/Magic/Apimancy/Knowledge_Apimancy.tres" id="2_r6ngv"]
+[ext_resource type="Resource" uid="uid://c1rrockdob1rl" path="res://Currencies/Malachite_Hive/currencies/Comb_Drawer.tres" id="3_jiuk2"]
+[ext_resource type="Resource" uid="uid://wqpn6giss5ep" path="res://Currencies/Malachite_Hive/currencies/Flowers.tres" id="4_6c8td"]
+[ext_resource type="Resource" uid="uid://4vjptqv2iibd" path="res://Currencies/Malachite_Hive/currencies/Honey_Frames.tres" id="5_eyeq5"]
+[ext_resource type="Resource" uid="uid://cyh2mf3c1bjjf" path="res://Currencies/Malachite_Hive/currencies/Bee_Drone.tres" id="6_ua2bc"]
+[ext_resource type="Resource" uid="uid://cccyoy5ft5t4n" path="res://Currencies/Malachite_Hive/currencies/Bee_Princess.tres" id="7_7vtms"]
+[ext_resource type="Resource" uid="uid://dab8djeakvg6j" path="res://Currencies/Malachite_Hive/currencies/Bee_Queen.tres" id="8_t8sc4"]
+[ext_resource type="Resource" uid="uid://c05veql0qmy75" path="res://Currencies/Malachite_Hive/currencies/Bee_worker.tres" id="9_gdth8"]
+[ext_resource type="Resource" uid="uid://olo8cpqh0453" path="res://Currencies/Malachite_Hive/currencies/Queen_Excluder.tres" id="10_ggo6f"]
+
+[resource]
+script = ExtResource("2_oiabx")
+job_name = "Discover Apimancy"
+job_reward = Dictionary[ExtResource("1_rpj0d"), int]({
+ExtResource("2_r6ngv"): 1
+})
+job_mask = Dictionary[ExtResource("1_rpj0d"), int]({
+ExtResource("2_afxfp"): 3,
+ExtResource("3_jiuk2"): 6,
+ExtResource("4_6c8td"): 50,
+ExtResource("5_eyeq5"): 10,
+ExtResource("6_ua2bc"): 6,
+ExtResource("7_7vtms"): 3,
+ExtResource("8_t8sc4"): 1,
+ExtResource("9_gdth8"): 150,
+ExtResource("10_ggo6f"): 1
+})
+upper_mask = Array[ExtResource("1_rpj0d")]([ExtResource("2_r6ngv")])
+metadata/_custom_type_script = "uid://chnttjydh538r"

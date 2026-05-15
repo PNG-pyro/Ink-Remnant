@@ -9,4 +9,6 @@ max_amount = 2
 tick_types = null
 has_been_seen = true
 stays_visible = true
+make_tooltip = true
+tooltip_says = "Room to store stuff"
 metadata/_custom_type_script = "uid://4goxmvo7g0yf"

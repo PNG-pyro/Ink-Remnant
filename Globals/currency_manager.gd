@@ -140,18 +140,19 @@ extends Node
 	load("res://Currencies/University/Offices/Access_Alembic.tres"),
 	load("res://Currencies/University/Offices/Access_hive.tres"),
 	
+	load("res://Currencies/Malachite_Hive/currencies/Flowers.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Honey.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Pollen.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Wax.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Royal_Jelly.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Honey_Frames.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Brood_box.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Comb_Drawer.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Queen_Excluder.tres"),
+	load("res://Currencies/Malachite_Hive/currencies/Bee_worker.tres"),
 	load("res://Currencies/Malachite_Hive/currencies/Bee_Drone.tres"),
 	load("res://Currencies/Malachite_Hive/currencies/Bee_Princess.tres"),
 	load("res://Currencies/Malachite_Hive/currencies/Bee_Queen.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Bee_worker.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Brood_box.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Comb_Drawer.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Honey.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Honey_Frames.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Pollen.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Queen_Excluder.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Royal_Jelly.tres"),
-	load("res://Currencies/Malachite_Hive/currencies/Flowers.tres"),
 ]
 
 func eoc_check() -> bool:

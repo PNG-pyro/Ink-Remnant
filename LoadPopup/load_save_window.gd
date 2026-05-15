@@ -20,6 +20,19 @@ func _on_clear_pressed() -> void:
 
 
 func _on_load_pressed() -> void:
+	
+	for currency in CurrencyManager.all_currencies:
+		currency.amount = 0
+		if not currency.stays_visible:
+			currency.has_been_seen = false
+			
+	for job in JobManager.all_jobs:
+		job.shows_up = false
+		
+	SaveManager.university_visible = false
+	ResponseManager.visited_responses = {}
+	SaveManager.visible_buttons = {}
+	
 	var string_save: String = load_string.text
 	string_save = Marshalls.base64_to_raw(string_save).get_string_from_utf8()
 	

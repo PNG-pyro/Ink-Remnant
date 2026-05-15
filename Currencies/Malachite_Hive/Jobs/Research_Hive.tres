@@ -2,19 +2,17 @@
 
 [ext_resource type="Resource" uid="uid://dqwra10nkcbjh" path="res://Currencies/Malachite_Hive/Dialogue/Examine_hive.dialogue" id="1_4e1m8"]
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="2_1htet"]
-[ext_resource type="Resource" uid="uid://chkf1n2bsuu5b" path="res://Currencies/Default_currency.tres" id="3_np83k"]
+[ext_resource type="Resource" uid="uid://lln2o1wqacir" path="res://Currencies/Research/Research.tres" id="3_4e1m8"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="4_hppe6"]
 
 [resource]
 script = ExtResource("4_hppe6")
-job_name = "Research the Malachite Hive"
+job_name = "   Research the Malachite Hive"
 job_desc = "You get out your magnifying glass and tweezers..."
 job_story = "And take careful inventory."
 job_reward = Dictionary[ExtResource("2_1htet"), int]({
-ExtResource("3_np83k"): 0
+ExtResource("3_4e1m8"): 98
 })
-repeats = false
 popup_text = "The Malachite Hive is, as the name suggests, a deep green color. It looks like "
-start_dialogue = true
 dialogue = ExtResource("1_4e1m8")
 metadata/_custom_type_script = "uid://chnttjydh538r"

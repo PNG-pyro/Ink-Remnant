@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_5gkwc"]
 [ext_resource type="Resource" uid="uid://olo8cpqh0453" path="res://Currencies/Malachite_Hive/currencies/Queen_Excluder.tres" id="2_5gkwc"]
+[ext_resource type="Resource" uid="uid://r3h7g75cvdtd" path="res://Currencies/Magic/Lapidamancy/Enchanted_Gem.tres" id="2_lia2c"]
 [ext_resource type="Resource" uid="uid://dkpwo27tgghw7" path="res://Currencies/Magic/Apimancy/Rules_of_Apimancy.tres" id="2_mua1c"]
+[ext_resource type="Resource" uid="uid://dasi0dgn6prvb" path="res://Currencies/Malachite_Hive/currencies/Wax.tres" id="3_6px5u"]
 [ext_resource type="Script" uid="uid://chnttjydh538r" path="res://Currencies/job.gd" id="3_lia2c"]
 
 [resource]
@@ -12,6 +14,10 @@ job_desc = "Working on delicate mechanisms..."
 job_story = "It takes a while, but the work is more repetitive than difficult."
 job_reward = Dictionary[ExtResource("1_5gkwc"), int]({
 ExtResource("2_5gkwc"): 1
+})
+job_cost = Dictionary[ExtResource("1_5gkwc"), int]({
+ExtResource("2_lia2c"): 5,
+ExtResource("3_6px5u"): 10
 })
 job_mask = Dictionary[ExtResource("1_5gkwc"), int]({
 ExtResource("2_mua1c"): 21

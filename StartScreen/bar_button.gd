@@ -89,10 +89,10 @@ func _ready():
 	pressed.connect(_on_pressed)
 	SignalHub.resource_updated.connect(check_visible)
 	SignalHub.resource_updated.connect(func(_a, _b): update_tooltip())
+	SignalHub.resource_updated.connect(func(_a, _b):check_affordable())
 	#SignalHub.resource_upgraded.connect(check_visible)
 	mouse_entered.connect(on_mouse_entry)
 	mouse_exited.connect(on_mouse_exit)
-	SignalHub.resource_updated.connect(func(_a, _b):check_affordable())
 	SignalHub.job_begun.connect(update_visuals)
 	if job_run.button_appears_on != "":
 		SignalHub.get(job_run.button_appears_on).connect(_appear)

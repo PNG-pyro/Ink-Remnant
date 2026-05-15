@@ -69,9 +69,11 @@ func is_unmasked() -> bool:
 
 func check_upper_mask() -> bool:
 	var masked = false
-	for mask in upper_mask:
-		if mask.is_full():
-			masked = true
+	#for mask in upper_mask:
+		#if mask.is_full():
+			#masked = true
+	if upper_mask: 
+		masked = upper_mask.all(func(mask): return mask.is_full())
 	return masked
 
 

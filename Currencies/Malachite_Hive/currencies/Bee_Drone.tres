@@ -1,11 +1,16 @@
 [gd_resource type="Resource" script_class="Currency" format=3 uid="uid://cyh2mf3c1bjjf"]
 
 [ext_resource type="Script" uid="uid://4goxmvo7g0yf" path="res://Currencies/Currency.gd" id="1_pe1qo"]
+[ext_resource type="Resource" uid="uid://db54k6n2k3qs3" path="res://Currencies/Malachite_Hive/currencies/Royal_Jelly.tres" id="2_rpx0b"]
 
 [resource]
 script = ExtResource("1_pe1qo")
 name = "Mechanical Drone"
-tick_types = null
+is_ticker = true
+tick_types = Dictionary[Object, int]({
+ExtResource("2_rpx0b"): 1
+})
+tick_amount = 1
 makes_label = false
 hive_part = true
 has_been_seen = true

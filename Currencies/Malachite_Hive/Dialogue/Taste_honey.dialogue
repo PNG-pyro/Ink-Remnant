@@ -1,0 +1,12 @@
+~ start
+You carefully uncap a tray of comb and run it through a simple centrifuge. The glistening honey drips in rich falls from the collection port, dribbling languidly into a crystal bottle. 
+~ Mid
+- Taste it straight
+	The bright warmth of the honey spreads across your tongue, bringing memories of summer meadows and spring blooms. It sings, strong and sweet, as it melts in your mouth and slides down your throat. There's a distinctive tang of magic, but you can't tell which. => Mid
+- Put it in tea
+	The golden honey swirls into the dark tea, dissolving into the drink. You sip slowly, appreciating the mellow depth of flavor and rich aroma. It's delicious, but the magic is even dimmer here - whatever this honey was intended for, it shouldn't be this. => Mid
+- Spread it on bread
+	The yeasty warmth of the fresh bread melts the honey, saturating the soft center and soaking into the thick crust. The first bite is flaky, the second soft, sweet, and glorious. It's delicious, and you feel magic tingle across your tongue, but this still doesn't seem to be the correct way to draw out the magic of the honey. => Mid
+- Maybe something else...
+	You're not sure what magic the honey holds. It's delicious, but you'll have to do more tests later. 
+=> END
